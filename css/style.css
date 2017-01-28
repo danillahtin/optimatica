@@ -6,6 +6,9 @@
 a {
   text-decoration: none; }
 
+.hidden {
+  visibility: hidden !important; }
+
 ul {
   list-style: none; }
 
@@ -395,11 +398,12 @@ footer .container {
 #how-we-work-intro-section ul {
   margin: 0 auto;
   margin-top: 88px;
-  max-width: 960px;
+  max-width: 1200px;
   overflow: hidden; }
   #how-we-work-intro-section ul li {
     float: left;
-    width: 33.33333%; }
+    width: 33.33333%;
+    position: relative; }
     #how-we-work-intro-section ul li p.number-in-circle {
       margin-top: 0 !important; }
     #how-we-work-intro-section ul li h5 {
@@ -407,6 +411,24 @@ footer .container {
     #how-we-work-intro-section ul li p {
       margin-top: 23px;
       max-width: 232px; }
+    #how-we-work-intro-section ul li:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 16px;
+      top: 40px;
+      left: 50%;
+      right: -50%;
+      margin-left: 80px;
+      margin-right: 80px;
+      border-style: solid;
+      border-width: 4px 0px;
+      -moz-border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat;
+      -webkit-border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat;
+      -o-border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat;
+      border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat; }
+    #how-we-work-intro-section ul li:last-of-type:after {
+      visibility: hidden; }
 
 @font-face {
   font-family: Gilroy;
