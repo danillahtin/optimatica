@@ -3,7 +3,7 @@ html {
 }
 
 header {
-	.intro {
+	.container {
 		p {
 			color: #f2f2f2;
 		}
@@ -71,6 +71,48 @@ footer {
 			color: #848789;
 			text-decoration: underline;
 		}
+	}
+}
+
+#how-we-work-intro-section {
+	ul {
+		p {
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+}
+
+.light-navigation {
+	color: #262626;
+
+	.active {
+		color: #848789;
+	}
+
+	a {
+		color: #262626;
+	}
+
+	.logo {
+		color: $primary-color;
+		border-color: #848789;
+	}
+}
+
+.transparent-navigation {
+	color: white;
+
+	.active {
+		color: #848789;
+	}
+
+	.logo {
+		color: white;
+		border-color: white;
+	}
+
+	a {
+		color: white;
 	}
 }
 

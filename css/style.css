@@ -6,138 +6,6 @@
 a {
   text-decoration: none; }
 
-@font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy/GilroyBold.eot");
-  src: url("../fonts/Gilroy/GilroyBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroyBold.woff") format("woff"), url("../fonts/Gilroy/GilroyBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroyBold.svg#GilroyBold") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-@font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy/GilroyExtraBold.eot");
-  src: url("../fonts/Gilroy/GilroyExtraBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyExtraBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroyExtraBold.woff") format("woff"), url("../fonts/Gilroy/GilroyExtraBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroyExtraBold.svg#GilroyExtraBold") format("svg");
-  font-style: normal;
-  font-weight: 800; }
-@font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy/GilroyLight.eot");
-  src: url("../fonts/Gilroy/GilroyLight.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyLight.woff2") format("woff2"), url("../fonts/Gilroy/GilroyLight.woff") format("woff"), url("../fonts/Gilroy/GilroyLight.ttf") format("truetype"), url("../fonts/Gilroy/GilroyLight.svg#GilroyLight") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-@font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy/GilroyMedium.eot");
-  src: url("../fonts/Gilroy/GilroyMedium.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyMedium.woff2") format("woff2"), url("../fonts/Gilroy/GilroyMedium.woff") format("woff"), url("../fonts/Gilroy/GilroyMedium.ttf") format("truetype"), url("../fonts/Gilroy/GilroyMedium.svg#GilroyMedium") format("svg");
-  font-style: normal;
-  font-weight: 500; }
-@font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy/GilroyRegular.eot");
-  src: url("../fonts/Gilroy/GilroyRegular.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyRegular.woff2") format("woff2"), url("../fonts/Gilroy/GilroyRegular.woff") format("woff"), url("../fonts/Gilroy/GilroyRegular.ttf") format("truetype"), url("../fonts/Gilroy/GilroyRegular.svg#GilroyRegular") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-@font-face {
-  font-family: Gilroy;
-  src: url("../fonts/Gilroy/GilroySemiBold.eot");
-  src: url("../fonts/Gilroy/GilroySemiBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroySemiBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroySemiBold.woff") format("woff"), url("../fonts/Gilroy/GilroySemiBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroySemiBold.svg#GilroySemiBold") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-* {
-  font-family: Gilroy, Helvetica, Arial, sans-serif;
-  font-weight: 400; }
-
-header nav h1 {
-  font-size: 36px;
-  font-weight: 600; }
-header nav p {
-  font-size: 12px; }
-header nav ul li {
-  font-size: 18px;
-  line-height: 35px; }
-header .intro h2 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 55px; }
-header .intro p {
-  font-size: 24px;
-  line-height: 30px; }
-header .logos {
-  font-size: 12px;
-  line-height: 20px; }
-
-.block h3 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 45px; }
-.block h4 {
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase; }
-.block p {
-  font-size: 20px;
-  line-height: 30px; }
-.block ul li {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px; }
-
-#optimize-section h5 {
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase; }
-#optimize-section li p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px; }
-
-#more-functions-section h5 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 20px; }
-
-#facts-section .big-number {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 63px; }
-#facts-section h5 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px; }
-#facts-section p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px; }
-
-#contacts-section .form input {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px; }
-
-footer .info {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px; }
-footer .copyright {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px; }
-
-.button {
-  display: block;
-  width: 400px;
-  font-family: Gilroy;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: white;
-  background-color: #2b80ff;
-  padding: 22px 52px;
-  border: none;
-  cursor: pointer; }
-
-html, body {
-  height: 100%; }
-
 ul {
   list-style: none; }
 
@@ -148,98 +16,31 @@ ul {
     .container {
       margin: 0 7%; } }
 
-#photo-block {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 260px; }
-  @media screen and (max-height: 1000px) {
-    #photo-block {
-      bottom: 25%; } }
-
-#dimming-block {
-  width: 100%;
-  height: 100%; }
+.photo-block, .dimming-block {
+  height: 100%;
+  width: 100%; }
 
 header {
-  position: relative;
   width: 100%;
-  height: 100%;
   text-align: center; }
-  header nav {
-    height: 100px; }
-    header nav .company-logo {
-      margin-top: 48px;
-      float: left; }
-      header nav .company-logo h1, header nav .company-logo p {
-        display: inline-block;
-        vertical-align: middle; }
-      header nav .company-logo h1 {
-        height: 45px;
-        border-right: 1px solid white;
-        padding-right: 8px;
-        line-height: 42px; }
-      header nav .company-logo p {
-        padding-left: 8px;
-        text-align: left; }
-    header nav ul {
-      float: right;
-      overflow: hidden;
-      margin-top: 54px; }
-      header nav ul li {
-        float: left;
-        margin-left: 60px; }
-  header .intro {
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    bottom: 0;
-    overflow: hidden; }
-    header .intro div {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%; }
-      header .intro div h2, header .intro div p, header .intro div a {
-        margin: 0 auto; }
-      header .intro div h2 {
-        max-width: 808px; }
-      header .intro div p {
-        max-width: 685px;
-        margin-top: 50px;
-        margin-bottom: 76px; }
-  header .logos {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 260px; }
-    @media screen and (max-height: 1000px) {
-      header .logos {
-        height: 25%; } }
-    header .logos ul {
-      padding: 0 112px; }
-      header .logos ul li:nth-child(1) div {
-        background: url("../img/index/volkswagen_logo.png") center center no-repeat; }
-      header .logos ul li:nth-child(2) div {
-        background: url("../img/index/ford_logo.png") center center no-repeat; }
-      header .logos ul li:nth-child(3) div {
-        background: url("../img/index/nissan_logo.png") center center no-repeat; }
-      header .logos ul li:nth-child(4) div {
-        background: url("../img/index/audi_logo.png") center center no-repeat; }
-      header .logos ul li:nth-child(5) div {
-        background: url("../img/index/skoda_logo.png") center center no-repeat; }
-      header .logos ul li:nth-child(6) div {
-        background: url("../img/index/infinity_logo.png") center center no-repeat; }
-      header .logos ul li {
-        float: left;
-        width: 16.66667%; }
-        header .logos ul li div {
-          height: 60px;
-          margin-top: 68px;
-          margin-bottom: 24px; }
-          @media screen and (max-height: 1000px) {
-            header .logos ul li div {
-              margin-top: 44px; } }
+  header .container h2, header .container p, header .container a {
+    margin: 0 auto; }
+  header .container h2 {
+    max-width: 808px; }
+  header .container p {
+    max-width: 685px;
+    margin-top: 50px; }
+
+#intro-section .photo-block {
+  background: url("../img/index/header_background.png") center center no-repeat;
+  background-size: cover; }
+#intro-section .dimming-block {
+  background-color: rgba(16, 16, 16, 0.6); }
+#intro-section .container {
+  padding-top: 246px;
+  padding-bottom: 230px; }
+  #intro-section .container p {
+    margin-bottom: 76px; }
 
 section {
   height: 760px; }
@@ -267,6 +68,65 @@ section {
 .right-alined-block {
   text-align: left;
   float: right; }
+
+nav {
+  height: 142px; }
+  nav .company-logo {
+    margin-top: 48px;
+    float: left; }
+    nav .company-logo h1, nav .company-logo p {
+      display: inline-block;
+      vertical-align: middle; }
+    nav .company-logo h1 {
+      height: 45px;
+      border-right-width: 1px;
+      border-right-style: solid;
+      padding-right: 8px;
+      line-height: 42px; }
+    nav .company-logo p {
+      padding-left: 8px;
+      text-align: left; }
+  nav ul {
+    float: right;
+    overflow: hidden;
+    margin-top: 54px; }
+    nav ul li {
+      float: left;
+      margin-left: 60px; }
+
+nav.fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+
+#auto-logos-section {
+  bottom: 0;
+  width: 100%;
+  height: 260px; }
+  #auto-logos-section ul {
+    text-align: center;
+    padding: 0 112px; }
+    #auto-logos-section ul li:nth-child(1) div {
+      background: url("../img/index/volkswagen_logo.png") center center no-repeat; }
+    #auto-logos-section ul li:nth-child(2) div {
+      background: url("../img/index/ford_logo.png") center center no-repeat; }
+    #auto-logos-section ul li:nth-child(3) div {
+      background: url("../img/index/nissan_logo.png") center center no-repeat; }
+    #auto-logos-section ul li:nth-child(4) div {
+      background: url("../img/index/audi_logo.png") center center no-repeat; }
+    #auto-logos-section ul li:nth-child(5) div {
+      background: url("../img/index/skoda_logo.png") center center no-repeat; }
+    #auto-logos-section ul li:nth-child(6) div {
+      background: url("../img/index/infinity_logo.png") center center no-repeat; }
+    #auto-logos-section ul li {
+      float: left;
+      width: 16.66667%; }
+      #auto-logos-section ul li div {
+        height: 60px;
+        margin-top: 68px;
+        margin-bottom: 24px; }
 
 #optimize-section {
   height: auto;
@@ -336,7 +196,8 @@ section {
       display: block;
       max-width: 1110px;
       margin: 0 auto -12% auto;
-      width: 100%; }
+      width: 100%;
+      box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16); }
   #media-planning-section .background-picture1 {
     position: absolute;
     top: 0;
@@ -523,10 +384,161 @@ footer .container {
     footer .container .copyright p:last-of-type {
       float: right; }
 
+#how-we-work-intro-section .photo-block {
+  background: url("../img/how_we_work/header_background.png") center center no-repeat;
+  background-size: cover; }
+#how-we-work-intro-section .dimming-block {
+  background-color: rgba(43, 128, 255, 0.8); }
+#how-we-work-intro-section .container {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+#how-we-work-intro-section ul {
+  margin: 0 auto;
+  margin-top: 88px;
+  max-width: 960px;
+  overflow: hidden; }
+  #how-we-work-intro-section ul li {
+    float: left;
+    width: 33.33333%; }
+    #how-we-work-intro-section ul li p.number-in-circle {
+      margin-top: 0 !important; }
+    #how-we-work-intro-section ul li h5 {
+      margin-top: 36px; }
+    #how-we-work-intro-section ul li p {
+      margin-top: 23px;
+      max-width: 232px; }
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/GilroyBold.eot");
+  src: url("../fonts/Gilroy/GilroyBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroyBold.woff") format("woff"), url("../fonts/Gilroy/GilroyBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroyBold.svg#GilroyBold") format("svg");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/GilroyExtraBold.eot");
+  src: url("../fonts/Gilroy/GilroyExtraBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyExtraBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroyExtraBold.woff") format("woff"), url("../fonts/Gilroy/GilroyExtraBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroyExtraBold.svg#GilroyExtraBold") format("svg");
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/GilroyLight.eot");
+  src: url("../fonts/Gilroy/GilroyLight.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyLight.woff2") format("woff2"), url("../fonts/Gilroy/GilroyLight.woff") format("woff"), url("../fonts/Gilroy/GilroyLight.ttf") format("truetype"), url("../fonts/Gilroy/GilroyLight.svg#GilroyLight") format("svg");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/GilroyMedium.eot");
+  src: url("../fonts/Gilroy/GilroyMedium.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyMedium.woff2") format("woff2"), url("../fonts/Gilroy/GilroyMedium.woff") format("woff"), url("../fonts/Gilroy/GilroyMedium.ttf") format("truetype"), url("../fonts/Gilroy/GilroyMedium.svg#GilroyMedium") format("svg");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/GilroyRegular.eot");
+  src: url("../fonts/Gilroy/GilroyRegular.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroyRegular.woff2") format("woff2"), url("../fonts/Gilroy/GilroyRegular.woff") format("woff"), url("../fonts/Gilroy/GilroyRegular.ttf") format("truetype"), url("../fonts/Gilroy/GilroyRegular.svg#GilroyRegular") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy/GilroySemiBold.eot");
+  src: url("../fonts/Gilroy/GilroySemiBold.eot") format("embedded-opentype"), url("../fonts/Gilroy/GilroySemiBold.woff2") format("woff2"), url("../fonts/Gilroy/GilroySemiBold.woff") format("woff"), url("../fonts/Gilroy/GilroySemiBold.ttf") format("truetype"), url("../fonts/Gilroy/GilroySemiBold.svg#GilroySemiBold") format("svg");
+  font-style: normal;
+  font-weight: 600; }
+* {
+  font-family: Gilroy, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility; }
+
+nav h1 {
+  font-size: 36px;
+  font-weight: 600; }
+nav p {
+  font-size: 12px; }
+nav ul li {
+  font-size: 18px;
+  line-height: 35px; }
+
+header .container h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 55px; }
+header .container p {
+  font-size: 24px;
+  line-height: 30px; }
+
+.block h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px; }
+.block h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase; }
+.block p {
+  font-size: 20px;
+  line-height: 30px; }
+.block ul li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px; }
+
+#auto-logos-section {
+  font-size: 12px;
+  line-height: 20px; }
+
+#optimize-section h5 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase; }
+#optimize-section li p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; }
+
+#more-functions-section h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px; }
+
+#facts-section .big-number {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 63px; }
+#facts-section h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px; }
+#facts-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; }
+
+#contacts-section .form input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px; }
+
+footer .info {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px; }
+footer .copyright {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; }
+
+#how-we-work-intro-section ul h5 {
+  font-size: 22px;
+  font-weight: 600; }
+#how-we-work-intro-section ul p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px; }
+
 html {
   background-color: white; }
 
-header .intro p {
+header .container p {
   color: #f2f2f2; }
 
 #optimize-section h5 {
@@ -559,6 +571,29 @@ footer .copyright a {
   color: #848789;
   text-decoration: underline; }
 
+#how-we-work-intro-section ul p {
+  color: rgba(255, 255, 255, 0.8); }
+
+.light-navigation {
+  color: #262626; }
+  .light-navigation .active {
+    color: #848789; }
+  .light-navigation a {
+    color: #262626; }
+  .light-navigation .logo {
+    color: #2b80ff;
+    border-color: #848789; }
+
+.transparent-navigation {
+  color: white; }
+  .transparent-navigation .active {
+    color: #848789; }
+  .transparent-navigation .logo {
+    color: white;
+    border-color: white; }
+  .transparent-navigation a {
+    color: white; }
+
 .light-section {
   color: black;
   background-color: white; }
@@ -585,11 +620,33 @@ footer .copyright a {
   .gray-section a {
     color: white; }
 
-#photo-block {
-  background: url("../img/index/header_background.png") center center no-repeat;
-  background-size: cover; }
+.button {
+  display: block;
+  width: 400px;
+  font-family: Gilroy !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  line-height: initial !important;
+  color: white;
+  background-color: #2b80ff;
+  padding: 16px 52px;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  border: none;
+  cursor: pointer; }
 
-#dimming-block {
-  background-color: rgba(16, 16, 16, 0.6); }
+.number-in-circle {
+  display: block;
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  line-height: 96px !important;
+  width: 96px !important;
+  height: 96px !important;
+  background-color: white;
+  color: #2b80ff !important;
+  box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.4);
+  border-radius: 48px !important;
+  border: none; }
 
 /*# sourceMappingURL=style.css.map */
