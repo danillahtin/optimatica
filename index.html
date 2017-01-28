@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Optimatica</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -9,56 +11,62 @@
 <body>
 
 	<!-- Header intro -->
-	<header>
+	<header class="dark-section">
 
-		<!-- Navigation -->
-		<nav class="container">
-			<h1>optimatica</h1>
-			<p>Система управления<br>дилерским маркетингом</p>
-			<div>
-				<ul>
-					<li><a href="#">Кейсы</a></li>
-					<li><a href="#">Как мы работаем</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</div>
-		</nav>
+		<div id="photo-block">
+			<div id="dimming-block">
+				<!-- Navigation -->
+				<nav class="container">
+					<div class="company-logo">
+						<h1>optimatica</h1>
+						<p>Система управления<br>дилерским маркетингом</p>
+					</div>
+					<div>
+						<ul>
+							<li><a href="#">Кейсы</a></li>
+							<li><a href="#">Как мы работаем</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
 
-		<div class="intro">
-			<div>
-				<h2>Развивайте дилерский маркетинг, каждый день.</h2>
-				<p>Уже 6 автомобильных брендов в России автоматизировали свой дилерский маркетинг с помощью Optimatica.</p>
-				<a href="#" class="button">Бесплатная демострация системы</a>
+					</div>
+				</nav>
+				<div class="intro">
+					<div>
+						<h2>Развивайте дилерский маркетинг, каждый день.</h2>
+						<p>Уже 6 автомобильных брендов в России автоматизировали свой дилерский маркетинг с помощью Optimatica.</p>
+						<a href="#" class="button">Бесплатная демострация системы</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<!-- Auto logos -->
-		<div class="logos">
+		<div class="logos gray-section">
 			<div class="container">
 				<ul>
 					<li>
-						<div><img src="img/index/volkswagen_logo.png" alt=""></div>
-						<p>Работаем с 2010 года. Это взаимно!</p>
+						<div class="auto-logo"></div>
+						<p>Работаем с 2010 года.<br>Это взаимно!</p>
 					</li>
 					<li>
-						<div><img src="img/index/ford_logo.png" alt=""></div>
-						<p>Система развивается в марке с 2014 года</p>
+						<div class="auto-logo"></div>
+						<p>Система развивается<br>в марке с 2014 года</p>
 					</li>
 					<li>
-						<div><img src="img/index/nissan_logo.png" alt=""></div>
-						<p>TBWA и все дилеры с 2015 года</p>
+						<div class="auto-logo"></div>
+						<p>TBWA и все дилеры<br>с 2015 года</p>
 					</li>
 					<li>
-						<div><img src="img/index/audi_logo.png" alt=""></div>
-						<p>Успешно запустили систему в 2016 году</p>
+						<div class="auto-logo"></div>
+						<p>Успешно запустили<br>систему в 2016 году</p>
 					</li>
 					<li>
-						<div><img src="img/index/skoda_logo.png" alt=""></div>
-						<p>Успешно запустили систему в 2016 году</p>
+						<div class="auto-logo"></div>
+						<p>Успешно запустили<br>систему в 2016 году</p>
 					</li>
 					<li>
-						<div><img src="img/index/infinity_logo.png" alt=""></div>
-						<p>Успешно запустили систему в 2016 году</p>
+						<div class="auto-logo"></div>
+						<p>Успешно запустили<br>систему в 2016 году</p>
 					</li>
 				</ul>
 			</div>
@@ -67,7 +75,7 @@
 
 
 	<!-- Optimize marketing processes section -->
-	<section id="optimize-section">
+	<section id="optimize-section" class="light-section">
 		<div class="container">
 			<div class="block center-aligned-block">
 				<h3>Оптимизируйте ваши маркетинговые процессы</h3>
@@ -100,34 +108,46 @@
 
 
 	<!-- Do media planning online section -->
-	<section id="media-planning-section">
+	<section id="media-planning-section" class="dark-section">
 		<div class="container">
+
+			<img src="img/index/mediaplanning_pic1.png" class="background-picture1">
+			<img src="img/index/mediaplanning_pic2.png" class="background-picture2">
 			<div class="block center-aligned-block">
 				<h4>Медиапланирование </h4>
 				<h3>Составляйте медиапланы онлайн</h3>
 				<p>С MRM-системой дилеры планируют свой маркетинг через Интернет. Система адаптируется под ваши процессы, чтобы наиболее точно учитывать особенности маркетинга бренда.</p>
 			</div>
 			<ul>
-				<li>
-					<img src="img/index/mediaplanning_icon1.png" alt="">
-					<p>Медиапланирование любой сложности: годовое, квартальное, помесячное.</p>
+				<li class="planning-section-item active">
+					<div>
+						<img src="img/index/mediaplanning_icon1.png" alt="">
+						<p>Медиапланирование любой сложности: годовое, квартальное, помесячное.</p>
+						<img src="img/index/mediaplanning_arrow.png">
+					</div>
 				</li>
-				<li>
-					<img src="img/index/mediaplanning_icon2.png" alt="">
-					<p>В формате флоучарта или бюджетных сплитов.</p>
+				<li class="planning-section-item">
+					<div>
+						<img src="img/index/mediaplanning_icon2.png" alt="">
+						<p>В формате флоучарта или бюджетных сплитов.</p>
+						<img src="img/index/mediaplanning_arrow.png">
+					</div>
 				</li>
-				<li>
-					<img src="img/index/mediaplanning_icon3.png" alt="">
-					<p>С автоматическим расчётом минимальных бюджетов и целей по трафику. </p>
+				<li class="planning-section-item">
+					<div>
+						<img src="img/index/mediaplanning_icon3.png" alt="">
+						<p>С автоматическим расчётом минимальных бюджетов и целей по трафику. </p>
+						<img src="img/index/mediaplanning_arrow.png">
+					</div>
 				</li>
 			</ul>
-			<div><img src="img/index/mediaplanning_fig1"></div>
+			<figure><img src="img/index/mediaplanning_fig1.png" id="planning-section-figure"></figure>
 		</div>
 	</section>
 
 
 	<!-- Coordinate advertising material and placements section -->
-	<section id="placement-section">
+	<section id="placement-section" class="light-section">
 		<div class="container">
 			<div class="block right-alined-block">
 				<h4>размещение</h4>
@@ -151,12 +171,15 @@
 					</li>
 				</ul>
 			</div>
+			<figure>
+				<img src="img/index/placement_background.png">
+			</figure>
 		</div>
 	</section>
 
 
 	<!-- Form reportings section -->
-	<section id="reportings-section">
+	<section id="reportings-section" class="light-section">
 		<div class="container">
 			<div class="block left-aligned-block">
 				<h4>отчётность</h4>
@@ -182,7 +205,7 @@
 
 
 	<!-- Mediastorage section -->
-	<section id="mediastorage-section">
+	<section id="mediastorage-section" class="light-section">
 		<div class="container">
 			<div class="block right-alined-block">
 				<h4>медиахранилище</h4>
@@ -200,12 +223,15 @@
 					</li>
 				</ul>
 			</div>
+			<figure>
+				<img src="img/index/mediastorage_background.png">
+			</figure>
 		</div>
 	</section>
 
 
 	<!-- More functions section -->
-	<section id="more-functions-section">
+	<section id="more-functions-section" class="light-section">
 		<div class="container">
 			<div class="block center-aligned-block">
 				<h3>Больше функций для эффективной работы</h3>
@@ -214,32 +240,32 @@
 			<ul>
 				<li>
 					<img src="img/index/function1_icon.png" alt="">
-					<h6>Доступ к системе online</h6>
+					<h5>Доступ к системе online</h5>
 					<p>Вам нужен только компьютер или планшет для доступа к системе. Ролевая модель доступа позволяет настроить работу любого участника в системе с корректными правами.</p>
 				</li>
 				<li>
 					<img src="img/index/function2_icon.png" alt="">
-					<h6>Управление компенсацией по размещениям</h6>
+					<h5>Управление компенсацией по размещениям</h5>
 					<p>Инструменты расчета бонусов, определения критериев их выполнения, чеклисты. Взаиморасчеты между Импортером и Дилером.</p>
 				</li>
 				<li>
 					<img src="img/index/function3_icon.png" alt="">
-					<h6>Умная система уведомлений</h6>
+					<h5>Умная система уведомлений</h5>
 					<p>Система высылает оповещения по ключевым событиям, чтобы вы и дилеры были в курсе всех событий.</p>
 				</li>
 				<li>
 					<img src="img/index/function4_icon.png" alt="">
-					<h6>Все коммуникации внутри системы</h6>
+					<h5>Все коммуникации внутри системы</h5>
 					<p>Вся переписка ведётся внутри системы. Действует чат для общих вопросов, а также лента сообщений для общения в рамках конкретного плана.</p>
 				</li>
 				<li>
 					<img src="img/index/function5_icon.png" alt="">
-					<h6>Полная история изменений</h6>
+					<h5>Полная история изменений</h5>
 					<p>Система контролирует любые изменения и протоколирует их в удобном для вас виде. Всегда понятно, кто и когда внёс коррективы.</p>
 				</li>
 				<li>
 					<img src="img/index/function6_icon.png" alt="">
-					<h6>Excel – наше всё</h6>
+					<h5>Excel – наше всё</h5>
 					<p>Excel невозможно полностью исключить из работы! Optimatica позволяет экспортировать любые списки в Excel и загружать их обратно.</p>
 				</li>
 			</ul>
@@ -248,7 +274,7 @@
 
 
 	<!-- Integration secton -->
-	<section id="integration-section">
+	<section id="integration-section" class="dark-section">
 		<div class="container">
 			<div class="block center-aligned-block">
 				<h3>Всего за две недели мы готовы внедрить систему в вашу дилерскую сеть</h3>
@@ -260,7 +286,7 @@
 
 
 	<!-- Facts section -->
-	<section id="facts-section">
+	<section id="facts-section" class="light-section">
 		<div class="container">
 			<div class="block center-aligned-block">
 				<h3>Мы знаем как правильно автоматизировать дилерский маркетинг</h3>
@@ -268,19 +294,28 @@
 			</div>
 			<ul>
 				<li>
-					<p>6</p>
-					<h5>автобрендов</h5>
-					<p>доверили нам автоматизацию своего дилерского маркетинга</p>
+					<div class="icon"></div>
+					<div class="info">
+						<p class="big-number">6</p>
+						<h5>автобрендов</h5>
+						<p class="text">доверили нам автоматизацию своего дилерского маркетинга</p>
+					</div>
 				</li>
 				<li>
-					<p>550</p>
-					<h5>дилеров</h5>
-					<p>используют Optimatica в своей работе каждый день</p>
+					<div class="icon"></div>
+					<div class="info">
+						<p class="big-number">550</p>
+						<h5>дилеров</h5>
+						<p class="text">используют Optimatica в своей работе каждый день</p>
+					</div>
 				</li>
 				<li>
-					<p>7</p>
-					<h5>лет опыта</h5>
-					<p>в области автоматизации дилерского маркетинга</p>
+					<div class="icon"></div>
+					<div class="info">
+						<p class="big-number">7</p>
+						<h5>лет опыта</h5>
+						<p class="text">в области автоматизации дилерского маркетинга</p>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -288,23 +323,35 @@
 
 
 	<!-- Contacts section -->
-	<section id="contacts-section">
-		<div class="map"></div>
-		<div class="block">
-			<h3>Мы на связи</h3>
-			<p>Оставьте запрос и мы подробнее расскажем вам о системе и проведем бесплатную демонстрацию её возможностей.</p>
-			<form action="">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="E-mail">
-				<input type="text" placeholder="Сообщение">
-				<input type="submit" value="Оставить запрос">
-			</form>
+	<section id="contacts-section" class="light-section">
+		<div  id="YandexMap" class="map"></div>
+		<div class="container">
+			<div class="block">
+				<h3>Мы на связи</h3>
+				<p>Оставьте запрос и мы подробнее расскажем вам о системе и проведем бесплатную демонстрацию её возможностей.</p>
+				<div class="form">
+					<form action="">
+						<div class="short-textfield">
+							<input type="text" placeholder="Имя">
+						</div>
+						<div class="short-textfield">
+							<input type="text" placeholder="E-mail">
+						</div>
+
+						<input type="text" placeholder="Сообщение">
+
+						<div class="button-container">
+						<input class="button" type="submit" value="Оставить запрос">
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
 	<!-- Footer -->
-	<footer>
+	<footer class="gray-section">
 		<div class="container">
 			<div class="info">
 				<div>
@@ -324,5 +371,9 @@
 		</div>
 	</footer>
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

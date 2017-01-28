@@ -4,6 +4,23 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+}
+
+
+$primary-color: #2b80ff;
+
 @import "fonts";
 @import "views";
 @import "layout";
+@import "colors";
+
+#photo-block {
+	background: url('../img/index/header_background.png') center center no-repeat;
+	background-size: cover;
+}
+
+#dimming-block {
+	background-color: rgba(16, 16, 16, 0.6);
+}

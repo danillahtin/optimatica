@@ -2,10 +2,10 @@
     font-family: Gilroy;
     src: url('../fonts/Gilroy/GilroyBold.eot');
     src: url('../fonts/Gilroy/GilroyBold.eot') format('embedded-opentype'),
-         url('../fonts/Gilroy/GilroyBold.woff2') format('woff2'),
-         url('../fonts/Gilroy/GilroyBold.woff') format('woff'),
-         url('../fonts/Gilroy/GilroyBold.ttf') format('truetype'),
-         url('../fonts/Gilroy/GilroyBold.svg#GilroyBold') format('svg');
+    url('../fonts/Gilroy/GilroyBold.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroyBold.woff') format('woff'),
+    url('../fonts/Gilroy/GilroyBold.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroyBold.svg#GilroyBold') format('svg');
     font-style: normal;
     font-weight: 700;
 }
@@ -13,10 +13,10 @@
     font-family: Gilroy;
     src: url('../fonts/Gilroy/GilroyExtraBold.eot');
     src: url('../fonts/Gilroy/GilroyExtraBold.eot') format('embedded-opentype'),
-         url('../fonts/Gilroy/GilroyExtraBold.woff2') format('woff2'),
-         url('../fonts/Gilroy/GilroyExtraBold.woff') format('woff'),
-         url('../fonts/Gilroy/GilroyExtraBold.ttf') format('truetype'),
-         url('../fonts/Gilroy/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
+    url('../fonts/Gilroy/GilroyExtraBold.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroyExtraBold.woff') format('woff'),
+    url('../fonts/Gilroy/GilroyExtraBold.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
     font-style: normal;
     font-weight: 800;
 }
@@ -24,10 +24,10 @@
     font-family: Gilroy;
     src: url('../fonts/Gilroy/GilroyLight.eot');
     src: url('../fonts/Gilroy/GilroyLight.eot') format('embedded-opentype'),
-         url('../fonts/Gilroy/GilroyLight.woff2') format('woff2'),
-         url('../fonts/Gilroy/GilroyLight.woff') format('woff'),
-         url('../fonts/Gilroy/GilroyLight.ttf') format('truetype'),
-         url('../fonts/Gilroy/GilroyLight.svg#GilroyLight') format('svg');
+    url('../fonts/Gilroy/GilroyLight.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroyLight.woff') format('woff'),
+    url('../fonts/Gilroy/GilroyLight.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroyLight.svg#GilroyLight') format('svg');
     font-style: normal;
     font-weight: 300;
 }
@@ -35,10 +35,10 @@
     font-family: Gilroy;
     src: url('../fonts/Gilroy/GilroyMedium.eot');
     src: url('../fonts/Gilroy/GilroyMedium.eot') format('embedded-opentype'),
-         url('../fonts/Gilroy/GilroyMedium.woff2') format('woff2'),
-         url('../fonts/Gilroy/GilroyMedium.woff') format('woff'),
-         url('../fonts/Gilroy/GilroyMedium.ttf') format('truetype'),
-         url('../fonts/Gilroy/GilroyMedium.svg#GilroyMedium') format('svg');
+    url('../fonts/Gilroy/GilroyMedium.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroyMedium.woff') format('woff'),
+    url('../fonts/Gilroy/GilroyMedium.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroyMedium.svg#GilroyMedium') format('svg');
     font-style: normal;
     font-weight: 500;
 }
@@ -46,10 +46,10 @@
     font-family: Gilroy;
     src: url('../fonts/Gilroy/GilroyRegular.eot');
     src: url('../fonts/Gilroy/GilroyRegular.eot') format('embedded-opentype'),
-         url('../fonts/Gilroy/GilroyRegular.woff2') format('woff2'),
-         url('../fonts/Gilroy/GilroyRegular.woff') format('woff'),
-         url('../fonts/Gilroy/GilroyRegular.ttf') format('truetype'),
-         url('../fonts/Gilroy/GilroyRegular.svg#GilroyRegular') format('svg');
+    url('../fonts/Gilroy/GilroyRegular.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroyRegular.woff') format('woff'),
+    url('../fonts/Gilroy/GilroyRegular.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroyRegular.svg#GilroyRegular') format('svg');
     font-style: normal;
     font-weight: 400;
 }
@@ -58,19 +58,156 @@
     font-family: Gilroy;
     src: url('../fonts/Gilroy/GilroySemiBold.eot');
     src: url('../fonts/Gilroy/GilroySemiBold.eot') format('embedded-opentype'),
-         url('../fonts/Gilroy/GilroySemiBold.woff2') format('woff2'),
-         url('../fonts/Gilroy/GilroySemiBold.woff') format('woff'),
-         url('../fonts/Gilroy/GilroySemiBold.ttf') format('truetype'),
-         url('../fonts/Gilroy/GilroySemiBold.svg#GilroySemiBold') format('svg');
+    url('../fonts/Gilroy/GilroySemiBold.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroySemiBold.woff') format('woff'),
+    url('../fonts/Gilroy/GilroySemiBold.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroySemiBold.svg#GilroySemiBold') format('svg');
     font-style: normal;
     font-weight: 600;
 }
 
 
-
 * {
-    font-family: Gilroy;
+    font-family: Gilroy, Helvetica, Arial, sans-serif;
     font-weight: 400;
+    // font-size: 1em;
 }
 
+
+header {
+   nav {
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 12px;
+
+    }
+
+    ul {
+        li {
+            font-size: 18px;
+
+            line-height: 35px;
+        }
+    }
+}
+
+.intro {
+   h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 55px;
+}
+p {
+
+    font-size: 24px;
+    line-height: 30px;
+}   
+}
+
+.logos {
+    font-size: 12px;
+
+    line-height: 20px;
+}
+}
+
+.block {
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    ul {
+        li {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+    }
+}
+
+#optimize-section {
+    h5 {
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    li {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+}
+
+#more-functions-section {
+    h5 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+}
+
+#facts-section {
+    
+    .big-number {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 63px;
+    }
+
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+#contacts-section {
+    .form {
+        input {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+        }
+    }
+}
+
+footer {
+    .info {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .copyright {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
 

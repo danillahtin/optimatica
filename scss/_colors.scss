@@ -1,0 +1,124 @@
+html {
+	background-color: white;
+}
+
+header {
+	.intro {
+		p {
+			color: #f2f2f2;
+		}
+	}
+}
+
+#optimize-section {
+    h5 {
+        color: #333333;
+    }
+
+    li {
+    	p {
+    		color: #848789;
+    	}
+    }
+}
+
+#media-planning-section {
+	ul {
+		li.active {
+			div {
+				border-radius: 4px;
+				background-color: rgba(39, 70, 171, 0.25);
+			}
+		}
+	}
+}
+
+
+#facts-section {
+
+	background-color: #f7f9fe;
+
+	.big-number {
+		color: #333333;
+	}
+
+	h5 {
+		color: #333333;
+	}
+
+	p {
+		color: #848789;
+	}
+}
+
+#mediastorage-section { 
+	background-color: #f7f9fe;
+}
+
+#more-functions-section {
+	h5 {
+		color: #333333;
+	}
+}
+
+footer {
+	.info {
+		color: #ffffff;
+	}
+
+	.copyright {
+		a {
+			color: #848789;
+			text-decoration: underline;
+		}
+	}
+}
+
+.light-section {
+	color: black;
+	background-color: white;
+
+	.block {
+		h4 {
+			color: $primary-color;
+		}
+
+		h3 {
+			color: #333333;
+		}
+
+		p {
+			color: #848789;
+		}
+	}
+
+	a {
+		color: black;
+	}
+}
+
+.dark-section {
+	color: white;
+	background-color: $primary-color;
+
+	a {
+		color: white;
+	}
+	
+	.block {
+		p {
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+	
+}
+
+.gray-section {
+
+	color: #848789;
+	background-color: #333333;
+
+	a {
+		color: white;
+	}
+}
