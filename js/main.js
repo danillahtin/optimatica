@@ -5,14 +5,20 @@ $(document).ready(function(){
 	
 	ymaps.ready(initMap);
 
-  $('.planning-section-item').click(function(event) {
+	$('.planning-section-item').click(function(event) {
 
-  	$('.planning-section-item').removeClass('active');
-    $(this).addClass('active');
+		$('.planning-section-item').removeClass('active');
+		$(this).addClass('active');
 
-  });
 
-    
+		var index = $(this).index('.planning-section-item') + 1;
+		var imageName = 'img/index/mediaplanning_fig' + index + '.png';
+
+		$('#planning-section-figure').attr('src', imageName);
+
+	});
+
+	
 });
 
 
