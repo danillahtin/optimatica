@@ -1,6 +1,45 @@
 var map, placemark;
 
 
+function log(message){
+	console.log(message);
+}
+
+function indexForSelectedFigure() {
+
+	var figures = $("#media-planning-section figure");
+		
+	for (var i = 0; i < figures.length; i++) {
+		if ($(figures[i]).hasClass('active'))
+			return i;
+	}
+}
+
+function setActiveFigureWithIndex(index) {
+
+	var figures = $("#media-planning-section figure");
+		
+	for (var i = 0; i < figures.length; i++) {
+		if (i != index)
+			$(figures[i]).removeClass('active');
+		else 
+			$(figures[i]).addClass('active');
+	}
+}
+
+function setActiveItemWithIndex(index) {
+
+	var items = $('.planning-section-item');
+
+	for (var i = 0; i < items.length; i++) {
+		if (index == i)
+			$(items[i]).addClass('active');
+		else
+			$(items[i]).removeClass('active');
+	}
+}
+
+
 $(document).ready(function(){
 	
 	ymaps.ready(initMap);
@@ -10,14 +49,26 @@ $(document).ready(function(){
 		$('.planning-section-item').removeClass('active');
 		$(this).addClass('active');
 
-
-		var index = $(this).index('.planning-section-item') + 1;
-		var imageName = 'img/index/mediaplanning_fig' + index + '.png';
-
-		$('#planning-section-figure').attr('src', imageName);
-
+		var index = $(this).index('.planning-section-item');
+		setActiveFigureWithIndex(index);
 	});
 
+	$('#arrow-back').click(function(event) {
+		index = indexForSelectedFigure();
+		index += 2;
+
+		setActiveFigureWithIndex(index % 3);
+		setActiveItemWithIndex(index % 3);
+	});
+
+
+	$('#arrow-forward').click(function(event) {
+		index = indexForSelectedFigure();
+		index += 1;
+
+		setActiveFigureWithIndex(index % 3);
+		setActiveItemWithIndex(index % 3);
+	});
 	
 });
 
