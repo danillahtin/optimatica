@@ -45,9 +45,6 @@ header {
   #intro-section .container p {
     margin-bottom: 76px; }
 
-section {
-  height: 760px; }
-
 .block h4 {
   margin: 0 auto 12px auto; }
 .block h3 {
@@ -231,6 +228,7 @@ nav.fixed {
     right: 50%; }
 
 #reportings-section {
+  height: 760px;
   background: url("../img/index/reportings_background.png") center center no-repeat;
   background-size: cover; }
   #reportings-section .block {
@@ -238,6 +236,7 @@ nav.fixed {
     margin-top: 116px; }
 
 #mediastorage-section {
+  height: 760px;
   overflow: hidden; }
   #mediastorage-section .container {
     position: relative;
@@ -293,6 +292,7 @@ nav.fixed {
     max-width: 580px; }
 
 #facts-section {
+  height: 760px;
   padding-top: 122px; }
   #facts-section .block {
     max-width: 677px; }
@@ -423,12 +423,91 @@ footer .container {
       margin-right: 80px;
       border-style: solid;
       border-width: 4px 0px;
-      -moz-border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat;
-      -webkit-border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat;
-      -o-border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat;
-      border-image: url("../img/how_we_work/header_border_pattern.png") 4 155 4 0 repeat repeat; }
+      -moz-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
+      -webkit-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
+      -o-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
+      border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat; }
     #how-we-work-intro-section ul li:last-of-type:after {
       visibility: hidden; }
+
+#development-section {
+  padding-top: 104px;
+  padding-bottom: 182px; }
+  #development-section .center-aligned-block, #development-section #facts-section ul li, #facts-section ul #development-section li {
+    max-width: 604px; }
+  #development-section .container {
+    position: relative;
+    padding-top: 116px; }
+    #development-section .container .block {
+      position: relative;
+      float: none;
+      left: 50%;
+      max-width: 398px;
+      margin-left: 66px; }
+      #development-section .container .block ul li img {
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        margin: 0; }
+      #development-section .container .block ul li p {
+        position: relative;
+        top: -2px;
+        margin-left: 48px;
+        max-width: 356px; }
+    #development-section .container figure img {
+      position: absolute;
+      top: 68px;
+      right: 50%;
+      margin-right: 44px; }
+
+#incalcation-section {
+  height: 760px; }
+  #incalcation-section .container {
+    padding-top: 208px;
+    padding-bottom: 280px;
+    position: relative; }
+    #incalcation-section .container .block {
+      max-width: 418px;
+      position: absolute;
+      right: 50%;
+      margin-right: 40px; }
+    #incalcation-section .container figure img {
+      float: right;
+      position: absolute;
+      left: 50%;
+      margin-left: 20px; }
+
+#support-section {
+  height: 830px;
+  padding-top: 100px;
+  padding-bottom: 150px; }
+  #support-section .center-aligned-block, #support-section #facts-section ul li, #facts-section ul #support-section li {
+    max-width: 528px; }
+  #support-section .container {
+    position: relative;
+    padding-top: 72px; }
+    #support-section .container .right-aligned-block {
+      max-width: 380px;
+      position: relative;
+      float: none;
+      left: 50%;
+      margin-left: 88px; }
+    #support-section .container figure img {
+      position: absolute;
+      top: 68px;
+      right: 50%;
+      margin-right: 60px; }
+
+#in-contact-section .container {
+  padding-top: 90px;
+  padding-bottom: 68px; }
+  #in-contact-section .container .center-aligned-block, #in-contact-section .container #facts-section ul li, #facts-section ul #in-contact-section .container li {
+    max-width: 552px; }
+  #in-contact-section .container img {
+    display: block;
+    margin-top: 36px;
+    width: 98%; }
 
 @font-face {
   font-family: Gilroy;
@@ -557,6 +636,11 @@ footer .copyright {
   font-weight: 400;
   line-height: 25px; }
 
+#in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px; }
+
 html {
   background-color: white; }
 
@@ -616,17 +700,20 @@ footer .copyright a {
   .transparent-navigation a {
     color: white; }
 
-.light-section {
+.light-section, .light-gray-section {
   color: black;
   background-color: white; }
-  .light-section .block h4 {
+  .light-section .block h4, .light-gray-section .block h4 {
     color: #2b80ff; }
-  .light-section .block h3 {
+  .light-section .block h3, .light-gray-section .block h3 {
     color: #333333; }
-  .light-section .block p {
+  .light-section .block p, .light-gray-section .block p {
     color: #848789; }
-  .light-section a {
+  .light-section a, .light-gray-section a {
     color: black; }
+
+.light-gray-section {
+  background-color: #f7f9fe; }
 
 .dark-section {
   color: white;

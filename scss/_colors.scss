@@ -82,6 +82,8 @@ footer {
 	}
 }
 
+
+
 .light-navigation {
 	color: #262626;
 
@@ -137,6 +139,12 @@ footer {
 	a {
 		color: black;
 	}
+}
+
+.light-gray-section {
+	@extend .light-section;
+
+	background-color: #f7f9fe;
 }
 
 .dark-section {
