@@ -188,15 +188,14 @@ header {
     }
 }
 
-#contacts-section {
-    .form {
-        input {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 25px;
-        }
+.form {
+    input, textarea {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
     }
 }
+    
 
 footer {
     .info {

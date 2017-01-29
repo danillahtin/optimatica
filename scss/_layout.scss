@@ -35,18 +35,18 @@ header {
 
 	.container {
 
-			h2, p, a {
-				margin: 0 auto;
-			}
+		h2, p, a {
+			margin: 0 auto;
+		}
 
-			h2 {
-				max-width: 808px;
-			}
+		h2 {
+			max-width: 808px;
+		}
 
-			p {
-				max-width: 685px;
-				margin-top: 50px;
-			}
+		p {
+			max-width: 685px;
+			margin-top: 50px;
+		}
 	}
 }
 
@@ -118,106 +118,107 @@ section {
 }
 
 nav {
-		height: $nav-bar-height;
+	height: $nav-bar-height;
 
-		.company-logo {
-			margin-top: 48px;
-			float: left;
+	.company-logo {
+		margin-top: 48px;
+		float: left;
 
-			h1, p {
-				display: inline-block;
-				vertical-align: middle;
-			}
-
-			h1 {
-				height: 45px;
-				border-right-width: 1px;
-				border-right-style: solid;
-				padding-right: 8px;
-				line-height: 42px;
-			}
-
-			p {
-				padding-left: 8px;
-				text-align: left;
-			}
+		h1, p {
+			display: inline-block;
+			vertical-align: middle;
 		}
 
-		ul {
-			float: right;
-			overflow: hidden;
-			margin-top: 54px;
+		h1 {
+			height: 45px;
+			border-right-width: 1px;
+			border-right-style: solid;
+			padding-right: 8px;
+			line-height: 42px;
+		}
 
-			li {
-				float: left;	
-				margin-left: 60px;
-			}
+		p {
+			padding-left: 8px;
+			text-align: left;
 		}
 	}
 
-	nav.fixed {
+	ul {
+		float: right;
+		overflow: hidden;
+		margin-top: 54px;
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+		li {
+			float: left;	
+			margin-left: 60px;
+		}
+	}
 
-	z-index: 100;
+	&.fixed {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		z-index: 100;
 
 	}
+}
+
 
 #auto-logos-section {
 
-		bottom: 0;
-		width: 100%;
-		height: 260px;
+	bottom: 0;
+	width: 100%;
+	height: 260px;
 
-		ul {
-			text-align: center;			
-			padding: 0 112px;
-			li:nth-child(1) {
-				div {
-					background: url('../img/index/volkswagen_logo.png') center center no-repeat;
-				}
-			}
-			li:nth-child(2) {
-				div {
-					background: url('../img/index/ford_logo.png') center center no-repeat;
-				}
-			}
-			li:nth-child(3) {
-				div {
-					background: url('../img/index/nissan_logo.png') center center no-repeat;
-				}
-			}
-			li:nth-child(4) {
-				div {
-					background: url('../img/index/audi_logo.png') center center no-repeat;
-				}
-			}
-			li:nth-child(5) {
-				div {
-					background: url('../img/index/skoda_logo.png') center center no-repeat;
-				}
-			}
-			li:nth-child(6) {
-				div {
-					background: url('../img/index/infinity_logo.png') center center no-repeat;
-				}
-			}
-
-			li {
-				float: left;
-				width: (100%/6);
-
-				div {
-					height: 60px;
-					margin-top: 68px;
-					margin-bottom: 24px;
-				}
-
+	ul {
+		text-align: center;			
+		padding: 0 112px;
+		li:nth-child(1) {
+			div {
+				background: url('../img/index/volkswagen_logo.png') center center no-repeat;
 			}
 		}
+		li:nth-child(2) {
+			div {
+				background: url('../img/index/ford_logo.png') center center no-repeat;
+			}
+		}
+		li:nth-child(3) {
+			div {
+				background: url('../img/index/nissan_logo.png') center center no-repeat;
+			}
+		}
+		li:nth-child(4) {
+			div {
+				background: url('../img/index/audi_logo.png') center center no-repeat;
+			}
+		}
+		li:nth-child(5) {
+			div {
+				background: url('../img/index/skoda_logo.png') center center no-repeat;
+			}
+		}
+		li:nth-child(6) {
+			div {
+				background: url('../img/index/infinity_logo.png') center center no-repeat;
+			}
+		}
+
+		li {
+			float: left;
+			width: (100%/6);
+
+			div {
+				height: 60px;
+				margin-top: 68px;
+				margin-bottom: 24px;
+			}
+
+		}
+	}
 }
 
 #optimize-section {
@@ -313,8 +314,8 @@ nav {
 
 		&::after {
 			content: "";
-		    clear: both;
-		    display: table;
+			clear: both;
+			display: table;
 		}
 	}
 
@@ -568,40 +569,48 @@ nav {
 			margin-bottom: 36px;
 		}
 	}
+}
 
-	.form {
-		max-width: 495px;
+.form {
+	max-width: 495px;
 
-		.short-textfield {
-			height: 50px;
-			width: 50%;
-			float: left;
-		}
+	.short-textfield {
+		height: 50px;
+		width: 50%;
+		float: left;
+	}
 
-		.short-textfield:first-of-type {
-			padding-right: 8px;
-		}
+	.short-textfield:first-of-type {
+		padding-right: 8px;
+	}
 
-		.short-textfield:last-of-type {
-			padding-left: 8px;
-		}
+	.short-textfield:last-of-type {
+		padding-left: 8px;
+	}
 
-		input {
-			padding: 18px;
-			width: 100%;
-			height: 100%;
-		}
+	input, textarea {
+		padding: 18px;
+		width: 100%;
+		height: 100%;
+	}
 
-		input:nth-child(3) {
-			margin-top:20px;
-			margin-bottom: 30px;
-			height: 110px;
-		}
+	textarea {
+		width: 100%;
+		height: 110px;
+		margin-top:20px;
+		margin-bottom: 30px;
 
-		.button-container {
-			width: 50%;
-			padding-right: 8px;
-		}
+	}
+
+	.button-container {
+		width: 50%;
+		padding-right: 8px;
+	}
+
+	input:focus,
+	textarea:focus,
+	button:focus {
+		outline: none;
 	}
 }
 
@@ -692,17 +701,17 @@ footer {
 			}
 
 			&:after {
-		        content: "";
-			    display: block;
-			    position: absolute;
-			    height: 16px;
-			    top: 40px;
-			    left: 50%;
-			    right: -50%;
-			    margin-left: 80px;
-			    margin-right: 80px;
+				content: "";
+				display: block;
+				position: absolute;
+				height: 16px;
+				top: 40px;
+				left: 50%;
+				right: -50%;
+				margin-left: 80px;
+				margin-right: 80px;
 
-			    border-style: solid;
+				border-style: solid;
 				border-width: 4px 0px;
 				-moz-border-image: url('../img/how_we_work/header_border_pattern.png') 4 125 4 30 repeat repeat;
 				-webkit-border-image: url('../img/how_we_work/header_border_pattern.png') 4 125 4 30 repeat repeat;
@@ -844,3 +853,31 @@ footer {
 		}
 	}
 }
+
+#get-demo-section {
+	.container {
+		padding-top: 122px;
+		padding-bottom: 354px;
+
+		.center-aligned-block {
+			p {
+				max-width: 454px;
+			}
+		}
+
+		.form {
+			margin: 36px auto 0px;
+
+			.button-container {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+#shadowed-navigation-section {
+	box-shadow: 0px 0px 16px 4px rgba(43, 128, 255, 0.2);
+	position: relative;
+	z-index: 100;
+}
+

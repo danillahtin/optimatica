@@ -61,6 +61,16 @@ header {
 	}
 }
 
+.form {
+	input, textarea {
+		border: 1px solid #e1e1e1;
+
+		&:focus {
+			border-color: $primary-color;
+		}
+	}
+}
+
 footer {
 	.info {
 		color: #ffffff;
