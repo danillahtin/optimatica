@@ -311,6 +311,20 @@ footer {
             font-size: 16px;
             font-weight: 400;
             line-height: 25px;
+
+            @media all and (max-width: 1024px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+#support-section {
+    ul {
+        li {
+            p {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -321,6 +335,11 @@ footer {
             font-size: 32px;
             font-weight: 500;
             line-height: 40px;
+
+            @media all and (max-width: 1024px) {
+                font-size: 26px;
+                line-height: 35px;
+            }
         }
     }
 }

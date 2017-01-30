@@ -122,6 +122,7 @@ header {
 
 nav {
 	height: $nav-bar-height;
+	// position: relative;
 
 	.company-logo {
 		margin-top: 48px;
@@ -194,7 +195,6 @@ nav {
 		width: 100%;
 
 		z-index: 100;
-
 	}
 }
 
@@ -1013,6 +1013,11 @@ footer {
 	.container {
 		padding-top: 120px;
 		padding-bottom: 120px;
+
+		@media all and (max-width: 1024px) {
+			padding-top: 156px;
+			padding-bottom: 132px;
+		}
 	}
 
 	ul {
@@ -1072,6 +1077,10 @@ footer {
 
 	padding-top: 104px;
 	padding-bottom: 182px;
+
+	@media all and (max-width: 1024px) {
+		padding-top: 84px;
+	}
 	
 	.center-aligned-block {
 		max-width: 604px;
@@ -1081,11 +1090,20 @@ footer {
 		position: relative;
 		padding-top: 116px;
 
+		@media all and (max-width: 1024px) {
+			padding-top: 56px;
+		}
+
 		.block {
 			position: relative;
 			float: none;
 			left: 50%;
-			max-width: 398px;
+
+			@media all and (max-width: 1024px) {
+				margin-left: -25px;
+			}
+
+			max-width: 368px;
 			margin-left: 66px;
 			ul {
 				li {
@@ -1113,6 +1131,12 @@ footer {
 				top: 68px;
 				right: 50%;
 				margin-right: 44px;
+
+				@media all and (max-width: 1024px) {
+					height: 329px;
+					top: -8px;
+					margin-right: 108px;
+				}
 			}
 		}
 	}
@@ -1121,9 +1145,19 @@ footer {
 #incalcation-section {
 	height: 760px;
 
+	@media all and (max-width: 1024px) {
+		height: 520px;
+	}
+
 	.container {
 		padding-top: 208px;
 		padding-bottom: 280px;
+
+		@media all and (max-width: 1024px) {
+			padding-top: 136px;
+			padding-bottom: 166px;
+		}
+
 		position: relative;
 
 		.block {
@@ -1131,6 +1165,12 @@ footer {
 			position: absolute;
 			right: 50%;
 			margin-right: 40px;
+
+			@media all and (max-width: 1024px) {
+				margin-left: 32px;
+				max-width: 342px;
+				margin-right: 0;
+			}
 		}
 
 		figure {
@@ -1139,6 +1179,11 @@ footer {
 				position: absolute;
 				left: 50%;
 				margin-left: 20px;
+
+				@media all and (max-width: 1024px) {
+					margin-left: 66px;
+					top: 16px;
+				}
 			}
 		}
 	}
@@ -1150,13 +1195,26 @@ footer {
 	padding-top: 100px;
 	padding-bottom: 150px;
 
+	@media all and (max-width: 1024px) {
+		height: 760px;
+		padding-top: 84px;
+	}
+
 	.center-aligned-block {
 		max-width: 528px;
+
+		@media all and (max-width: 1024px) {
+			max-width: 424px;
+		}
 	}
 	
 	.container {
 		position: relative;
 		padding-top: 72px;
+
+		@media all and (max-width: 1024px) {
+			padding-top: 60px;
+		}
 
 		.right-aligned-block {
 			max-width: 380px;
@@ -1165,6 +1223,26 @@ footer {
 			left: 50%;
 
 			margin-left: 88px;
+
+			@media all and (max-width: 1024px) {
+				max-width: 358px;
+				margin-left: 12px;
+
+				ul {
+					li {
+						img {		
+							display: block;
+							float: left;
+						}
+						p {
+							padding-left: 24px;
+							position: relative;
+							top:-4px;
+						}
+					}
+				}
+			}
+
 		}
 
 		figure {
@@ -1173,6 +1251,11 @@ footer {
 				top: 68px;
 				right: 50%;
 				margin-right: 60px;
+
+				@media all and (max-width: 1024px) {
+					margin-right: 72px;
+					top: 56px;
+				}
 			}
 		}
 	}
@@ -1182,6 +1265,11 @@ footer {
 	.container {
 		padding-top: 90px;
 		padding-bottom: 68px;
+
+		@media all and (max-width: 1024px) {
+			padding-top: 84px;
+			padding-bottom: 96px;
+		}
 
 		.center-aligned-block {
 			max-width: 552px;

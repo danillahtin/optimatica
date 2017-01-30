@@ -69,6 +69,8 @@ $(document).ready(function(){
 		setActiveFigureWithIndex(index % 3);
 		setActiveItemWithIndex(index % 3);
 	});
+
+	initNav();
 	
 });
 
@@ -84,4 +86,32 @@ function initMap(){
 	});
 
 	map.geoObjects.add(placemark);
+}
+
+function initNav() {
+
+	// var page = $(location).attr('href');
+	// if (page.indexOf('get_demo') !== -1)
+	// 	return;
+
+	var initialClasses = $('nav').attr('class');
+
+	if ($(window).width() <= 1024) {
+		$('nav').addClass('fixed').addClass('transparent-navigation').addClass('class_name');
+	} else {
+		$('nav').attr('class',initialClasses);
+	}
+
+	log(initialClasses);
+	$(window).resize(function() {
+
+		// log(initialClasses);
+        if ($(window).width() <= 1024) {
+        	$('nav').addClass('fixed').addClass('transparent-navigation');
+        } else {
+        	$('nav').attr('class',initialClasses); 
+        }
+
+        log($('nav').className);
+	});
 }

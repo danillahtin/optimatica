@@ -643,6 +643,10 @@ footer .container {
 #how-we-work-intro-section .container {
   padding-top: 120px;
   padding-bottom: 120px; }
+  @media all and (max-width: 1024px) {
+    #how-we-work-intro-section .container {
+      padding-top: 156px;
+      padding-bottom: 132px; } }
 #how-we-work-intro-section ul {
   margin: 0 auto;
   margin-top: 88px;
@@ -681,17 +685,26 @@ footer .container {
 #development-section {
   padding-top: 104px;
   padding-bottom: 182px; }
+  @media all and (max-width: 1024px) {
+    #development-section {
+      padding-top: 84px; } }
   #development-section .center-aligned-block, #development-section #facts-section ul li, #facts-section ul #development-section li {
     max-width: 604px; }
   #development-section .container {
     position: relative;
     padding-top: 116px; }
+    @media all and (max-width: 1024px) {
+      #development-section .container {
+        padding-top: 56px; } }
     #development-section .container .block {
       position: relative;
       float: none;
       left: 50%;
-      max-width: 398px;
+      max-width: 368px;
       margin-left: 66px; }
+      @media all and (max-width: 1024px) {
+        #development-section .container .block {
+          margin-left: -25px; } }
       #development-section .container .block ul li img {
         display: block;
         float: left;
@@ -708,48 +721,98 @@ footer .container {
       top: 68px;
       right: 50%;
       margin-right: 44px; }
+      @media all and (max-width: 1024px) {
+        #development-section .container figure img {
+          height: 329px;
+          top: -8px;
+          margin-right: 108px; } }
 
 #incalcation-section {
   height: 760px; }
+  @media all and (max-width: 1024px) {
+    #incalcation-section {
+      height: 520px; } }
   #incalcation-section .container {
     padding-top: 208px;
     padding-bottom: 280px;
     position: relative; }
+    @media all and (max-width: 1024px) {
+      #incalcation-section .container {
+        padding-top: 136px;
+        padding-bottom: 166px; } }
     #incalcation-section .container .block {
       max-width: 418px;
       position: absolute;
       right: 50%;
       margin-right: 40px; }
+      @media all and (max-width: 1024px) {
+        #incalcation-section .container .block {
+          margin-left: 32px;
+          max-width: 342px;
+          margin-right: 0; } }
     #incalcation-section .container figure img {
       float: right;
       position: absolute;
       left: 50%;
       margin-left: 20px; }
+      @media all and (max-width: 1024px) {
+        #incalcation-section .container figure img {
+          margin-left: 66px;
+          top: 16px; } }
 
 #support-section {
   height: 830px;
   padding-top: 100px;
   padding-bottom: 150px; }
+  @media all and (max-width: 1024px) {
+    #support-section {
+      height: 760px;
+      padding-top: 84px; } }
   #support-section .center-aligned-block, #support-section #facts-section ul li, #facts-section ul #support-section li {
     max-width: 528px; }
+    @media all and (max-width: 1024px) {
+      #support-section .center-aligned-block, #support-section #facts-section ul li, #facts-section ul #support-section li {
+        max-width: 424px; } }
   #support-section .container {
     position: relative;
     padding-top: 72px; }
+    @media all and (max-width: 1024px) {
+      #support-section .container {
+        padding-top: 60px; } }
     #support-section .container .right-aligned-block {
       max-width: 380px;
       position: relative;
       float: none;
       left: 50%;
       margin-left: 88px; }
+      @media all and (max-width: 1024px) {
+        #support-section .container .right-aligned-block {
+          max-width: 358px;
+          margin-left: 12px; }
+          #support-section .container .right-aligned-block ul li img {
+            display: block;
+            float: left; }
+          #support-section .container .right-aligned-block ul li p {
+            padding-left: 24px;
+            position: relative;
+            top: -4px; } }
     #support-section .container figure img {
       position: absolute;
       top: 68px;
       right: 50%;
       margin-right: 60px; }
+      @media all and (max-width: 1024px) {
+        #support-section .container figure img {
+          margin-right: 72px;
+          top: 56px; } }
 
 #in-contact-section .container {
   padding-top: 90px;
   padding-bottom: 68px; }
+  @media all and (max-width: 1024px) {
+    #in-contact-section .container {
+      padding-top: 84px;
+      padding-bottom: 96px; } }
   #in-contact-section .container .center-aligned-block, #in-contact-section .container #facts-section ul li, #facts-section ul #in-contact-section .container li {
     max-width: 552px; }
   #in-contact-section .container img {
@@ -952,11 +1015,21 @@ footer .copyright {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px; }
+  @media all and (max-width: 1024px) {
+    #how-we-work-intro-section ul p {
+      font-size: 14px; } }
+
+#support-section ul li p {
+  font-size: 16px; }
 
 #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
   font-size: 32px;
   font-weight: 500;
   line-height: 40px; }
+  @media all and (max-width: 1024px) {
+    #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
+      font-size: 26px;
+      line-height: 35px; } }
 
 html {
   background-color: white; }
