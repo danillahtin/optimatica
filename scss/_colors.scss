@@ -108,6 +108,7 @@ footer {
 .light-navigation {
 	color: #262626;
 
+
 	.active {
 		color: #848789;
 	}
@@ -124,9 +125,23 @@ footer {
 		}
 	}
 
+	#navicon {
+		span, span::before, span::after {
+			background-color: #262626;
+
+
+		}
+	}
+
 	@media all and (max-width: $mobile-breakpoint) {
 		color: $primary-color;
 		background-color: white;
+
+		#navicon {
+			span, span::before, span::after {
+				background-color: $primary-color;
+			}
+		}
 	}
 }
 
@@ -145,6 +160,25 @@ footer {
 	a {
 		color: white;
 	}
+
+	#navicon {
+		span, span::before, span::after {
+			background-color: white;
+		}
+	}
+}
+
+#menu {
+
+	@media all and (max-width: 1024px) {
+	background-color: transparentize(#f2f4fa, 0.05);
+
+	ul:first-child {
+		a {
+			color: #404040;
+		}
+	}
+}
 }
 
 .light-section {
@@ -202,12 +236,27 @@ footer {
 	}
 }
 
-.button {
-	color: white;
+.button, .small-button {
+	color: white !important;
 	background-color: $primary-color;
 }
 
-.button:hover {
+.button:hover, .small-button:hover {
+	background-color: #2570e1;
+
+	-webkit-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
+	-moz-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
+	box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
+}
+
+.small-button-inverted {
+	color: $primary-color !important;
+	background-color: transparent;
+	border-color: $primary-color;
+}
+
+.small-button-inverted:hover {
+	color: white !important;
 	background-color: #2570e1;
 
 	-webkit-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);

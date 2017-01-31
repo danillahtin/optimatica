@@ -6,13 +6,14 @@
 
 body {
 	overflow-x: hidden;
+	z-index: 0;
 }
 
 ul {
 	list-style: none;
 }
 
-$nav-bar-height: 104px;
+$nav-bar-height: 96px;
 $container-max-width: 1400px;
 
 
@@ -71,6 +72,7 @@ header {
 		}
 	}
 }
+
 
 #intro-section {
 
@@ -154,6 +156,7 @@ header {
 
 nav {
 	height: $nav-bar-height;
+	position: relative;
 
 	@media all and (max-width: $mobile-breakpoint) { 
 		height: 70px;
@@ -161,12 +164,13 @@ nav {
 		padding: 0 28px !important;
 
 		display: block;
-		position: static;
 	}
 
 	.company-logo {
 		margin-top: 28px;
 		float: left;
+		position: relative;
+	    z-index: 1000;
 
 		@media all and (max-width: 1024px) {
 			margin-top: 30px;
@@ -217,21 +221,6 @@ nav {
 		li {
 			float: left;	
 			margin-left: 60px;
-
-			@media all and (max-width: 1024px) {
-				display: none;
-			}
-		}
-
-		li:last-of-type {
-			display: none;
-
-			@media all and (max-width: 1024px) {
-				display: block;
-				position: absolute;
-				top: 30px;
-				right: 50px;
-			}
 		}
 	}
 
@@ -244,6 +233,117 @@ nav {
 
 		z-index: 100;
 	}
+
+	#navicon {
+		position: absolute;
+		z-index: 1000;
+		right: 50px;
+		top: 21px;
+
+		@media all and (max-width: $mobile-breakpoint) {
+			top: 20px;
+			right: 32px;
+		}
+	}
+
+	#masking-layer {
+		display: none;
+		background-color: white;
+		position: absolute;
+		z-index: 200;
+		width: 100%;
+		height: 100%;
+		left: 0;
+	}
+
+	&.light-navigation {
+		
+		@media all and (max-width: $mobile-breakpoint) {
+		#masking-layer {
+			display: block;
+		}
+	}
+	}
+
+	#menu {
+		@media all and (max-width: 1024px) {
+			box-shadow: 0 0 16px 4px transparentize(#333, 0.9);
+
+
+			display: block;
+			position: absolute;
+			z-index: 0;
+			left: 0;
+			transition: $mediumAnimationDuration;
+			width: 100%;
+			height: 315px;
+			top: -385px;
+			padding: 40px 0 0;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				padding: 40px 80px 54px;
+			}
+
+			&.active {
+				z-index: 100;
+				top: 70px;
+			}
+
+			ul {
+				padding: 0;
+				float: left;
+				margin-right: 100px;
+				position: absolute;
+				left: 50%;
+				margin-left: -192px;
+
+				@media all and (max-width: $mobile-breakpoint) {
+					position: static;
+					float: none;
+					margin: 0;
+				}
+			}
+
+			ul {
+				li {
+					float: none;
+					display: block;
+					text-align: left;
+					margin: 0;
+					margin-bottom: 28px;
+				}
+			}
+
+			.additional-buttons {
+				margin-bottom: 0;
+				margin-left: 30px;
+
+				li {
+					text-align: center;
+					display: block;
+
+					@media all and (max-width: $mobile-breakpoint) {
+						margin-bottom: 16px;
+						width: auto;
+					}
+
+					a {
+						width: 100%;
+					}
+				}
+			}
+		
+		}
+
+		.additional-buttons {
+			display: none;
+
+			@media all and (max-width: 1024px) {
+				display: block;
+			}
+		}
+	}
+
 }
 
 
@@ -517,7 +617,7 @@ nav {
 		max-width: 1110px;
 
 		@media all and (max-width: 1024px) {
-			margin: 66px 80px 36px 80px;
+			margin: 66px 80px 26px 80px;
 		}
 	
 		@media all and (max-width: $mobile-breakpoint) {
@@ -553,7 +653,7 @@ nav {
 				display: block;
 				margin: 0 auto;
 
-				@media all and (max-width: 1024px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					width: 40px;
 				}
 			}
@@ -578,6 +678,7 @@ nav {
 				p {
 					margin: 32px auto 0 auto;
 					text-align: center;
+
 					@media all and (max-width: 1024px) {
 						max-width: 212px;
 					}
@@ -592,11 +693,14 @@ nav {
 				img:last-of-type {
 					visibility: hidden;
 					position: absolute;
-					width: 14px;
 					height: auto;
 					top: 100%;
 					left: 50%;
 					transform: translateX(-50%);
+
+					@media all and (max-width: 1024px) {
+						width: 14px;
+					}
 				}
 
 				@media all and (max-width: 1024px) {
@@ -624,26 +728,72 @@ nav {
 
 	}
 
-	figure {
-		margin: 0 auto;
-		border: 1px solid transparent;
-		display: none;
+	#scrollable-area {
 		position: relative;
-		transition: 1s;
+		width: 100%;
 
+		padding: 0 100px;
 		@media all and (max-width: 1024px) {
-			margin: 0 80px;	
+			padding: 0;
+		}
+		
+		overflow-x: scroll;
+		overflow-y: visible;
+
+		div:first-child {
+			position: relative;
+			z-index: 100;
+			overflow: hidden;
+			padding: 20px 0;
+			width: 100%;
+
+			@media all and (max-width: 1024px) {
+				width: 300%;
+			}
 		}
 
+		div:last-child {
+			z-index: 50;
+			position: absolute;
+			height: 24%;
+			bottom: 0;
+			left: 0;
+			background-color: #fff;
+			width: 100%;
+
+			@media all and (max-width: 1024px) {
+				width: 300%;
+			}
+		}
+	}
+
+	figure {
+		margin: 0;
+		display: none;
+		transition: 1s;
+		float: left;
+		width: 100%;
+		
 		@media all and (max-width: 1024px) {
 			margin: 0;
+			width: (100%/3);
+			display: block;
+			padding: 0 115px;
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+
 		}
 
 		img {
 			display: block;
 			box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
 			width: 100%;
-			margin: 0 auto -12% auto;
+			margin: 0 auto;
+
+			@media all and (max-width: 1024px) {
+			}
+
 			max-width: 1110px;
 
 		}
@@ -683,12 +833,12 @@ nav {
 
 #placement-section {
 
-	margin-top: 280px;
+	margin-top: 170px;
 	margin-bottom: 112px;
 	overflow: auto;
 
 	@media all and (max-width: 1024px) {
-		margin-top: 210px;
+		margin-top: 16%;
 		margin-bottom: 52px;
 	}
 
@@ -1432,6 +1582,8 @@ footer {
 			top: 88px;
 			width: 8px;
 			height: 14px;
+			z-index: 200;
+			cursor: pointer;
 
 			display: none;
 
@@ -1451,7 +1603,7 @@ footer {
 		}
 	}
 
-	.horizontal-scroller {
+	#how-we-work-horizontal-scroller {
 		@media all and (max-width: $mobile-breakpoint) {
 			width: auto;
 			overflow: scroll;

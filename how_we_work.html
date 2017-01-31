@@ -11,7 +11,8 @@
 <body>
 
 	<!-- Navigation -->
-	<nav class="container light-navigation">
+	<nav class="light-navigation">
+		<div class="container">
 		<div class="company-logo">
 			<a href="index.html">
 				<h1 class="logo">optimatica</h1>
@@ -19,12 +20,21 @@
 			</a>
 		</div>
 		<div>
-			<ul>
-				<li class="hidden"><a href="#">Кейсы</a></li>
-				<li><a href="#" class="active">Как мы работаем</a></li>
-				<li><a href="#contacts-section">Контакты</a></li>
-				<li><a href="#"><img src="img/navicon.png" alt=""></a></li>
-			</ul>
+			<div id="masking-layer"></div>
+			<div id="menu">
+				<ul>
+					<li class="hidden"><a href="#">Кейсы</a></li>
+					<li><a href="how_we_work.html">Как мы работаем</a></li>
+					<li><a href="#contacts-section">Контакты</a></li>
+				</ul>
+
+				<ul class="additional-buttons">
+					<li><a href="get_demo.html" class="small-button">получить демоверсию</a></li>
+					<li><a href="tel:+74951882873" class="small-button-inverted">+7 (495) 188 28 73</a></li>
+				</ul>
+			</div>
+			<div id="navicon"><span>toggle menu</span></div>
+		</div>
 		</div>
 	</nav>
 
@@ -40,9 +50,9 @@
 						<img id="how-we-work-arrow-back" src="img/arrow_back.png" alt="">
 						<img id="how-we-work-arrow-forward" src="img/arrow_forward.png" alt="">
 
-						<div class="horizontal-scroller">
+						<div id="how-we-work-horizontal-scroller">
 							<ul>
-								<li>
+								<li class="active">
 									<p class="number-in-circle">1</p>
 									<h5>Разработка</h5>
 									<p>Разрабатываем систему, полностью удовлетворяющую вашим требованиям</p>
@@ -184,7 +194,7 @@
 				</div>
 				<ul>
 					<li class="hidden"><a href="#">Кейсы</a></li>
-					<li><a href="#">Как мы работаем</a></li>
+					<li><a href="how_we_work.html">Как мы работаем</a></li>
 				</ul>
 			</div>
 			<div class="copyright">

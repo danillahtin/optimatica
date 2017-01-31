@@ -9,14 +9,18 @@ a {
 }
 
 .hidden {
-	visibility: hidden !important;
+	display: none !important;
 }
 
 $primary-color: #2b80ff;
 $mobile-breakpoint: 512px;
 
+$fastAnimationDuration: 0.17s;
+$mediumAnimationDuration: 0.33s;
+$longAnimationDuration: 2s;
+
+@import "views";
 @import "layout";
 @import "fonts";
 @import "colors";
-@import "views";
 @import "animations";

@@ -278,7 +278,7 @@ header {
         line-height: 25px;
     }
 
-    @media all and (max-width: 1024px) {
+    @media all and (max-width: $mobile-breakpoint) {
         font-size: 10px;
         font-weight: 400;
         line-height: 15px;

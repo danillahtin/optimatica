@@ -5,6 +5,34 @@ function log(message){
 	console.log(message);
 }
 
+function indexForSelectedHowWeWorkStep() {
+
+	var steps = $("#how-we-work-horizontal-scroller ul li");
+
+	log(steps);
+		
+	for (var i = 0; i < steps.length; i++) {
+		if ($(steps[i]).hasClass('active'))
+			return i;
+	}
+}
+
+function setActiveHowWeWorkStepWithIndex(index) {
+
+	var steps = $("#how-we-work-horizontal-scroller ul li");
+		
+	for (var i = 0; i < steps.length; i++) {
+		if (i != index)
+			$(steps[i]).removeClass('active');
+		else 
+			$(steps[i]).addClass('active');
+	}
+
+	var width = $('#how-we-work-horizontal-scroller').width();
+
+	$('#how-we-work-horizontal-scroller').animate({scrollLeft: width*index}, 800);
+}
+
 function indexForSelectedFigure() {
 
 	var figures = $("#media-planning-section figure");
@@ -25,6 +53,9 @@ function setActiveFigureWithIndex(index) {
 		else 
 			$(figures[i]).addClass('active');
 	}
+
+	var width = $('#scrollable-area').width();
+	$('#scrollable-area').animate({scrollLeft: width*index}, 800);
 }
 
 function setActiveItemWithIndex(index) {
@@ -39,10 +70,16 @@ function setActiveItemWithIndex(index) {
 	}
 }
 
-
 $(document).ready(function(){
 	
 	ymaps.ready(initMap);
+
+	$('#navicon').click(function(event) {
+
+		$(this).toggleClass('active');
+		$('#menu').toggleClass('active');
+
+	});	
 
 	$('.planning-section-item').click(function(event) {
 
@@ -70,7 +107,26 @@ $(document).ready(function(){
 		setActiveItemWithIndex(index % 3);
 	});
 
+	$('#how-we-work-arrow-back').click(function(event) {
+		var index = indexForSelectedHowWeWorkStep();
+		index += 2;
+		log(index);
+
+		setActiveHowWeWorkStepWithIndex(index % 3);
+	});
+
+
+	$('#how-we-work-arrow-forward').click(function(event) {
+		var index = indexForSelectedHowWeWorkStep();
+		index += 1;
+		log(index);
+
+		setActiveHowWeWorkStepWithIndex(index % 3);
+	});
+
 	initNav();
+
+	var navClassIsTransparent = $('nav').hasClass('transparent-navigation');
 	
 });
 
@@ -89,10 +145,6 @@ function initMap(){
 }
 
 function initNav() {
-
-	// var page = $(location).attr('href');
-	// if (page.indexOf('get_demo') !== -1)
-	// 	return;
 
 	var initialClasses = $('nav').attr('class');
 	log(initialClasses);

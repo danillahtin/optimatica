@@ -7,10 +7,197 @@ a {
   text-decoration: none; }
 
 .hidden {
-  visibility: hidden !important; }
+  display: none !important; }
+
+.button {
+  display: inline-block;
+  font-family: Gilroy !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  padding: 0 25px;
+  border-radius: 3px;
+  transition: 0.33s;
+  appearance: none;
+  border: none;
+  cursor: pointer; }
+  @media all and (max-width: 512px) {
+    .button {
+      font-size: 10px !important;
+      font-weight: 400 !important;
+      padding: 0 16px;
+      line-height: 35px !important; } }
+
+.small-button {
+  display: inline-block;
+  font-family: Gilroy !important;
+  font-size: 9px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  padding: 0 15px;
+  border-radius: 3px;
+  transition: 0.33s;
+  appearance: none;
+  border: none;
+  cursor: pointer; }
+
+.small-button-inverted {
+  display: inline-block;
+  font-family: Gilroy !important;
+  font-size: 9px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  padding: 0 15px;
+  border-radius: 3px;
+  transition: 0.33s;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid; }
+
+.number-in-circle {
+  display: block;
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  line-height: 96px !important;
+  width: 96px;
+  height: 96px;
+  background-color: white;
+  color: #2b80ff !important;
+  box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.4);
+  border-radius: 48px !important;
+  border: none; }
+  @media all and (max-width: 512px) {
+    .number-in-circle {
+      width: 72px;
+      height: 72px;
+      font-size: 30px !important;
+      line-height: 72px !important; } }
+
+#navicon {
+  display: none; }
+  @media all and (max-width: 1024px) and (min-width: 513px) {
+    #navicon {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      text-indent: -9999px;
+      appearance: none;
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+      cursor: pointer;
+      transition: background 0.33s;
+      width: 51px;
+      height: 51px; }
+      #navicon span::before {
+        top: -12px;
+        transition-property: top, transform; }
+      #navicon span::after {
+        bottom: -12px;
+        transition-property: bottom, transform; }
+      #navicon span {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 12px;
+        height: 3px;
+        background: white;
+        margin: 12px;
+        transition: background 0s 0.33s; }
+      #navicon span::before,
+      #navicon span::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        content: "";
+        transition-duration: 0.33s, 0.33s;
+        transition-delay: 0.33s, 0s; }
+      #navicon.active span {
+        background-color: transparent !important; }
+      #navicon.active span::before {
+        top: 0;
+        transform: rotate(45deg); }
+      #navicon.active span::after {
+        bottom: 0;
+        transform: rotate(-45deg); }
+      #navicon.active span::before, #navicon.active span::after {
+        transition-delay: 0s, 0.33s; } }
+  @media all and (max-width: 512px) {
+    #navicon {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      text-indent: -9999px;
+      appearance: none;
+      box-shadow: none;
+      border-radius: 0;
+      border: none;
+      cursor: pointer;
+      transition: background 0.33s;
+      width: 26px;
+      height: 26px; }
+      #navicon span::before {
+        top: -8px;
+        transition-property: top, transform; }
+      #navicon span::after {
+        bottom: -8px;
+        transition-property: bottom, transform; }
+      #navicon span {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 8px;
+        height: 2px;
+        background: white;
+        margin: 4px;
+        transition: background 0s 0.33s; }
+      #navicon span::before,
+      #navicon span::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        content: "";
+        transition-duration: 0.33s, 0.33s;
+        transition-delay: 0.33s, 0s; }
+      #navicon.active span {
+        background-color: transparent !important; }
+      #navicon.active span::before {
+        top: 0;
+        transform: rotate(45deg); }
+      #navicon.active span::after {
+        bottom: 0;
+        transform: rotate(-45deg); }
+      #navicon.active span::before, #navicon.active span::after {
+        transition-delay: 0s, 0.33s; } }
+
+textarea {
+  resize: none; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  z-index: 0; }
 
 ul {
   list-style: none; }
@@ -103,17 +290,19 @@ header {
   float: right; }
 
 nav {
-  height: 104px; }
+  height: 96px;
+  position: relative; }
   @media all and (max-width: 512px) {
     nav {
       height: 70px;
       margin: 0 !important;
       padding: 0 28px !important;
-      display: block;
-      position: static; } }
+      display: block; } }
   nav .company-logo {
     margin-top: 28px;
-    float: left; }
+    float: left;
+    position: relative;
+    z-index: 1000; }
     @media all and (max-width: 1024px) {
       nav .company-logo {
         margin-top: 30px; } }
@@ -149,23 +338,88 @@ nav {
     nav ul li {
       float: left;
       margin-left: 60px; }
-      @media all and (max-width: 1024px) {
-        nav ul li {
-          display: none; } }
-    nav ul li:last-of-type {
-      display: none; }
-      @media all and (max-width: 1024px) {
-        nav ul li:last-of-type {
-          display: block;
-          position: absolute;
-          top: 30px;
-          right: 50px; } }
   nav.fixed {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100; }
+  nav #navicon {
+    position: absolute;
+    z-index: 1000;
+    right: 50px;
+    top: 21px; }
+    @media all and (max-width: 512px) {
+      nav #navicon {
+        top: 20px;
+        right: 32px; } }
+  nav #masking-layer {
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    left: 0; }
+  @media all and (max-width: 512px) {
+    nav.light-navigation #masking-layer {
+      display: block; } }
+  @media all and (max-width: 1024px) {
+    nav #menu {
+      box-shadow: 0 0 16px 4px rgba(51, 51, 51, 0.1);
+      display: block;
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      transition: 0.33s;
+      width: 100%;
+      height: 315px;
+      top: -385px;
+      padding: 40px 0 0; } }
+  @media all and (max-width: 1024px) and (max-width: 512px) {
+    nav #menu {
+      padding: 40px 80px 54px; } }
+  @media all and (max-width: 1024px) {
+      nav #menu.active {
+        z-index: 100;
+        top: 70px; }
+      nav #menu ul {
+        padding: 0;
+        float: left;
+        margin-right: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -192px; } }
+    @media all and (max-width: 1024px) and (max-width: 512px) {
+      nav #menu ul {
+        position: static;
+        float: none;
+        margin: 0; } }
+  @media all and (max-width: 1024px) {
+      nav #menu ul li {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 28px; }
+      nav #menu .additional-buttons {
+        margin-bottom: 0;
+        margin-left: 30px; }
+        nav #menu .additional-buttons li {
+          text-align: center;
+          display: block; } }
+      @media all and (max-width: 1024px) and (max-width: 512px) {
+        nav #menu .additional-buttons li {
+          margin-bottom: 16px;
+          width: auto; } }
+  @media all and (max-width: 1024px) {
+          nav #menu .additional-buttons li a {
+            width: 100%; } }
+  nav #menu .additional-buttons {
+    display: none; }
+    @media all and (max-width: 1024px) {
+      nav #menu .additional-buttons {
+        display: block; } }
 
 #auto-logos-section {
   width: 100%;
@@ -349,7 +603,7 @@ nav {
     max-width: 1110px; }
     @media all and (max-width: 1024px) {
       #media-planning-section .container div:nth-of-type(2) {
-        margin: 66px 80px 36px 80px; } }
+        margin: 66px 80px 26px 80px; } }
     @media all and (max-width: 512px) {
       #media-planning-section .container div:nth-of-type(2) {
         margin: 0 0 24px; } }
@@ -374,7 +628,7 @@ nav {
       #media-planning-section ul li img {
         display: block;
         margin: 0 auto; }
-        @media all and (max-width: 1024px) {
+        @media all and (max-width: 512px) {
           #media-planning-section ul li img {
             width: 40px; } }
       #media-planning-section ul li div {
@@ -403,11 +657,13 @@ nav {
         #media-planning-section ul li div img:last-of-type {
           visibility: hidden;
           position: absolute;
-          width: 14px;
           height: auto;
           top: 100%;
           left: 50%;
           transform: translateX(-50%); }
+          @media all and (max-width: 1024px) {
+            #media-planning-section ul li div img:last-of-type {
+              width: 14px; } }
         @media all and (max-width: 1024px) {
           #media-planning-section ul li div {
             cursor: auto; } }
@@ -420,23 +676,52 @@ nav {
       content: "";
       clear: both;
       display: table; }
-  #media-planning-section figure {
-    margin: 0 auto;
-    border: 1px solid transparent;
-    display: none;
+  #media-planning-section #scrollable-area {
     position: relative;
-    transition: 1s; }
+    width: 100%;
+    padding: 0 100px;
+    overflow-x: scroll;
+    overflow-y: visible; }
+    @media all and (max-width: 1024px) {
+      #media-planning-section #scrollable-area {
+        padding: 0; } }
+    #media-planning-section #scrollable-area div:first-child {
+      position: relative;
+      z-index: 100;
+      overflow: hidden;
+      padding: 20px 0;
+      width: 100%; }
+      @media all and (max-width: 1024px) {
+        #media-planning-section #scrollable-area div:first-child {
+          width: 300%; } }
+    #media-planning-section #scrollable-area div:last-child {
+      z-index: 50;
+      position: absolute;
+      height: 24%;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      width: 100%; }
+      @media all and (max-width: 1024px) {
+        #media-planning-section #scrollable-area div:last-child {
+          width: 300%; } }
+  #media-planning-section figure {
+    margin: 0;
+    display: none;
+    transition: 1s;
+    float: left;
+    width: 100%; }
     @media all and (max-width: 1024px) {
       #media-planning-section figure {
-        margin: 0 80px; } }
-    @media all and (max-width: 1024px) {
-      #media-planning-section figure {
-        margin: 0; } }
+        margin: 0;
+        width: 33.33333%;
+        display: block;
+        padding: 0 115px; } }
     #media-planning-section figure img {
       display: block;
       box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
       width: 100%;
-      margin: 0 auto -12% auto;
+      margin: 0 auto;
       max-width: 1110px; }
     #media-planning-section figure.active {
       display: block; }
@@ -462,12 +747,12 @@ nav {
         display: none; } }
 
 #placement-section {
-  margin-top: 280px;
+  margin-top: 170px;
   margin-bottom: 112px;
   overflow: auto; }
   @media all and (max-width: 1024px) {
     #placement-section {
-      margin-top: 210px;
+      margin-top: 16%;
       margin-bottom: 52px; } }
   @media all and (max-width: 512px) {
     #placement-section {
@@ -978,6 +1263,8 @@ footer .container {
     top: 88px;
     width: 8px;
     height: 14px;
+    z-index: 200;
+    cursor: pointer;
     display: none; }
     @media all and (max-width: 512px) {
       #how-we-work-intro-section .container #how-we-work-arrow-forward, #how-we-work-intro-section .container #how-we-work-arrow-back {
@@ -989,7 +1276,7 @@ footer .container {
     left: 50%;
     margin-left: 66px; }
 @media all and (max-width: 512px) {
-  #how-we-work-intro-section .horizontal-scroller {
+  #how-we-work-intro-section #how-we-work-horizontal-scroller {
     width: auto;
     overflow: scroll; } }
 #how-we-work-intro-section ul {
@@ -1446,7 +1733,7 @@ header .container > p {
     font-size: 16px;
     font-weight: 500;
     line-height: 25px; } }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 512px) {
   #media-planning-section {
     font-size: 10px;
     font-weight: 400;
@@ -1613,10 +1900,14 @@ footer .copyright a {
     @media all and (max-width: 512px) {
       .light-navigation .logo {
         color: #2b80ff; } }
+  .light-navigation #navicon span, .light-navigation #navicon span::before, .light-navigation #navicon span::after {
+    background-color: #262626; }
   @media all and (max-width: 512px) {
     .light-navigation {
       color: #2b80ff;
-      background-color: white; } }
+      background-color: white; }
+      .light-navigation #navicon span, .light-navigation #navicon span::before, .light-navigation #navicon span::after {
+        background-color: #2b80ff; } }
 
 .transparent-navigation {
   color: white; }
@@ -1627,6 +1918,14 @@ footer .copyright a {
     border-color: rgba(255, 255, 255, 0.6); }
   .transparent-navigation a {
     color: white; }
+  .transparent-navigation #navicon span, .transparent-navigation #navicon span::before, .transparent-navigation #navicon span::after {
+    background-color: white; }
+
+@media all and (max-width: 1024px) {
+  #menu {
+    background-color: rgba(242, 244, 250, 0.95); }
+    #menu ul:first-child a {
+      color: #404040; } }
 
 .light-section, .light-gray-section {
   color: black;
@@ -1657,11 +1956,23 @@ footer .copyright a {
   .gray-section a {
     color: white; }
 
-.button {
-  color: white;
+.button, .small-button {
+  color: white !important;
   background-color: #2b80ff; }
 
-.button:hover {
+.button:hover, .small-button:hover {
+  background-color: #2570e1;
+  -webkit-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
+  -moz-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
+  box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4); }
+
+.small-button-inverted {
+  color: #2b80ff !important;
+  background-color: transparent;
+  border-color: #2b80ff; }
+
+.small-button-inverted:hover {
+  color: white !important;
   background-color: #2570e1;
   -webkit-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   -moz-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
@@ -1670,45 +1981,6 @@ footer .copyright a {
 .call-to-action {
   color: white;
   background-color: #2b80ff; }
-
-.button {
-  display: inline-block;
-  font-family: Gilroy !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  text-transform: uppercase !important;
-  line-height: 60px;
-  letter-spacing: 0.1em;
-  padding: 0 25px;
-  border-radius: 3px;
-  transition: 0.33s;
-  border: none !important;
-  cursor: pointer; }
-  @media all and (max-width: 512px) {
-    .button {
-      font-size: 10px !important;
-      font-weight: 400 !important;
-      padding: 0 16px;
-      line-height: 35px !important; } }
-
-.number-in-circle {
-  display: block;
-  font-size: 36px !important;
-  font-weight: 600 !important;
-  line-height: 96px !important;
-  width: 96px;
-  height: 96px;
-  background-color: white;
-  color: #2b80ff !important;
-  box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.4);
-  border-radius: 48px !important;
-  border: none; }
-  @media all and (max-width: 512px) {
-    .number-in-circle {
-      width: 72px;
-      height: 72px;
-      font-size: 30px !important;
-      line-height: 72px !important; } }
 
 @-webkit-keyframes fadeIn {
   0% {

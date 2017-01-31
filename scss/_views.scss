@@ -1,21 +1,26 @@
 
-.button {
+@mixin button($font-size, $line-height, $padding) {
 	display: inline-block;
 
 	font-family: Gilroy !important;
-	font-size: 14px !important;
+	font-size: $font-size !important;
 	font-weight: 500 !important;
 	text-transform: uppercase !important;
-	line-height: 60px;
+	line-height: $line-height;
 	letter-spacing: 0.1em;
 
-	padding: 0 25px;
+	padding: 0 $padding;
 	border-radius: 3px;
 
 	transition: 0.33s;
-
-	border: none !important;
+	appearance: none;
+	border: none;
 	cursor: pointer;
+}
+
+
+.button {
+	@include button(14px, 60px, 25px);
 
 	@media all and (max-width: $mobile-breakpoint) {
 		font-size: 10px !important;
@@ -23,6 +28,18 @@
 		padding: 0 16px;
 		line-height: 35px !important;
 	}
+}
+
+.small-button {
+	@include button(9px, 35px, 15px);
+
+}
+
+.small-button-inverted {
+	@include button(9px, 35px, 15px);
+
+	border-width: 1px;
+	border-style: solid;
 }
 
 .number-in-circle {
@@ -49,4 +66,94 @@
 
 	border-radius: 48px !important;
 	border: none;
+}
+
+@mixin navicon($size, $inset) {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: none;
+	cursor: pointer;
+	transition: background $mediumAnimationDuration;
+	width: (18px + $inset*2)*$size;
+	height: (18px + $inset*2)*$size;
+
+	span::before {
+		top: -8px*$size;
+		transition-property: top, transform;
+	}
+
+	span::after {
+		bottom: -8px*$size;
+		transition-property: bottom, transform;
+	}
+
+
+	span {
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 8px*$size;
+		height: 2px*$size;
+		background: white;
+		margin: $size*$inset;
+
+		transition: background 0s $mediumAnimationDuration;
+	}
+
+	span::before,
+	span::after {
+		position: absolute;
+		display: block;
+		left: 0;
+		height: 2px*$size;
+		width: 100%;
+		background-color: #fff;
+		content: "";
+		transition-duration: $mediumAnimationDuration, $mediumAnimationDuration;
+		transition-delay: $mediumAnimationDuration, 0s;
+	}
+
+	&.active span {
+		background-color: transparent !important;
+	}
+
+	&.active span::before {
+		top: 0;
+		transform: rotate(45deg);
+	}
+
+	&.active span::after {
+		bottom: 0;
+		transform: rotate(-45deg);
+	}
+
+	&.active span::before,
+	&.active span::after {
+		transition-delay: 0s, $mediumAnimationDuration;
+	}
+}
+
+#navicon {
+	display: none;
+
+	@media all and (max-width: 1024px) and (min-width: $mobile-breakpoint + 1) { 
+		@include navicon(1.5, 8px);
+	}
+
+	@media all and (max-width: $mobile-breakpoint) { 
+		@include navicon(1, 4px);
+	}
+}
+
+textarea {
+	resize: none;
 }
