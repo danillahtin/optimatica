@@ -10,6 +10,12 @@ header {
 	}
 }
 
+#auto-logos-section {
+	h5 {
+		color: #969899;
+	}
+}
+
 #optimize-section {
 	h5 {
 		color: #333333;
@@ -134,18 +140,10 @@ footer {
 	.logo {
 		color: white;
 		border-color: transparentize(white, 0.4);
-		@media all and (max-width: $mobile-breakpoint) {
-			color: $primary-color;
-		}
 	}
 
 	a {
 		color: white;
-	}
-
-	@media all and (max-width: $mobile-breakpoint) {
-		color: $primary-color;
-		background-color: white;
 	}
 }
 
@@ -218,11 +216,6 @@ footer {
 }
 
 .call-to-action {
-	@extend .button;
-
-	@media all and (max-width: 768px) {
-		color: white;
-		border: 1px solid white;
-		background-color: transparent;
-	}
+	color: white;
+	background-color: $primary-color;
 }

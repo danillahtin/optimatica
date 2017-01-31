@@ -1,7 +1,6 @@
 
 .button {
 	display: inline-block;
-	// width: 400px;
 
 	font-family: Gilroy !important;
 	font-size: 14px !important;
@@ -10,24 +9,20 @@
 	line-height: 60px;
 	letter-spacing: 0.1em;
 
-
 	padding: 0 25px;
 	border-radius: 3px;
 
 	transition: 0.33s;
 
-	border: none;
+	border: none !important;
 	cursor: pointer;
 
 	@media all and (max-width: 768px) {
 		font-size: 10px !important;
 		font-weight: 400 !important;
 		padding: 0 16px;
+		line-height: 35px !important;
 	}
-}
-
-.call-to-action {
-	@extend .button;
 }
 
 .number-in-circle {

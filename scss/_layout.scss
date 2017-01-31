@@ -94,16 +94,33 @@ header {
 			margin-bottom: 76px;
 		}
 
+		@media all and (max-width: 768px) {
+			padding: 104px 28px 65px;
+			text-align: left;
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+
 	}
 }
 
 .block {
 	h4 {
 		margin: 0 auto 12px auto;
+		
+		@media all and (max-width: 768px) { 
+			margin-bottom: 8px;
+		}
 	}
 
 	h3 {
 		margin: 12px auto 30px auto;
+
+		@media all and (max-width: 768px) { 
+			margin: 8px auto 16px auto;
+		}
 	}
 
 	& > p {
@@ -146,7 +163,7 @@ nav {
 		padding: 0 28px !important;
 
 		display: block;
-		position: static !important;
+		position: static;
 	}
 
 	.company-logo {
@@ -199,10 +216,6 @@ nav {
 		overflow: hidden;
 		margin-top: 32px;
 
-		@media all and (max-width: 1024px) {
-
-		}
-
 		li {
 			float: left;	
 			margin-left: 60px;
@@ -245,6 +258,10 @@ nav {
 
 	@media all and (max-width: 1024px) {
 		padding-bottom: 58px;		
+	}
+
+	@media all and (max-width: 768px) {
+		padding: 14px 0 39px;
 	}
 
 	ul {
@@ -291,6 +308,10 @@ nav {
 				width: (100%/3);
 				margin-top: 24px;
 			}
+
+			@media all and (max-width: 1024px) {
+				margin-top: 16px;
+			}
 			
 			div {
 				min-height: 60px;
@@ -298,12 +319,30 @@ nav {
 				@media all and (max-width: 1024px) {
 					transform: scale(0.6666, 0.6666);
 				}
+
+				@media all and (max-width: 768px) {
+					min-height: 24px;
+					background-size: contain;
+					transform: scale(0.5, 0.5);
+				}
+			}
+
+			h5 {
+				display: none;
+
+				@media all and (max-width: 768px) {
+					display: block;
+				}
 			}
 
 			p {
 				margin-top: 24px;
 				@media all and (max-width: 1024px) {
 					margin-top: 0px;
+				}
+
+				@media all and (max-width: 768px) {
+					display: none;
 				}
 			}
 
@@ -313,27 +352,29 @@ nav {
 
 #optimize-section {
 	height: auto;
-	padding: 100px 0 164px 0;
+	padding: 100px 0 164px;
 
 	@media all and (max-width: 1024px) {
-		padding: 72px 0 124px 0;
+		padding: 72px 0 124px;
 	}
+
+	@media all and (max-width: 768px) {
+		padding: 34px 0 72px;
+	}
+
 	overflow: hidden;
 
 	.block {
 		p {
 			max-width: 432px;
-		}
 
-		@media all and (max-width: 1024px) {
-			
-			p {
+			@media all and (max-width: 1024px) {
 				max-width: 338px;
 			}
-			ul {
-				li {
-					margin-top: 42px;
-				}
+
+			@media all and (max-width: 768px) {
+				max-width: none;
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -347,6 +388,10 @@ nav {
 			max-width: 600px;
 		}		
 
+		@media all and (max-width: 768px) {
+			padding: 0 10px;
+		}
+
 		li {
 			display: block;
 			float: left;
@@ -356,13 +401,30 @@ nav {
 				width: 50%;
 			}
 
+			@media all and (max-width: 768px) {
+				float: none;
+				width: 100%;
+			}
+
 			img {
 				margin-right: 0 !important;
+
+				@media all and (max-width: 768px) {
+					display: block;
+					float: left;
+					width: 50px;
+				}
 			}
 
 			h5 {
 				margin-top: 28px;
 				margin-bottom: 20px;
+
+				@media all and (max-width: 768px) {
+					text-align: left;
+					margin: 0;
+					margin-left: 70px;
+				}
 			}
 
 			p {
@@ -372,6 +434,14 @@ nav {
 
 				@media all and (max-width: 1024px) {
 					max-width: 214px !important;			
+				}
+
+				@media all and (max-width: 768px) {
+					text-align: left;
+					margin-left: 70px;
+					margin-right: 0;
+					max-width: none !important;
+
 				}
 			}
 		}
@@ -387,11 +457,23 @@ nav {
 		padding-top: 72px;
 	}
 
+	@media all and (max-width: 768px) {
+		padding-top: 34px;
+	}
+
 	.block {
 		max-width: 575px;
 
 		@media all and (max-width: 1024px) {
 			max-width: 459px;
+		}
+
+		@media all and (max-width: 768px) {
+			max-width: none;
+
+			p {
+				margin-bottom: 12px;
+			}
 		}
 	}
 
@@ -407,14 +489,26 @@ nav {
 			top: 54px;
 			cursor: pointer;
 			z-index: 200;
+
+			@media all and (max-width: 768px) {
+				width: 6px;
+				height: 11px;
+				top: 24px;
+			}
 		}
 
 		#arrow-back {
 			left: 54px;
+			@media all and (max-width: 768px) {
+				left: 15px;
+			}
 		}
 
 		#arrow-forward {
 			right: 54px;
+			@media all and (max-width: 768px) {
+				right: 15px;
+			}
 		}
 	}
 
@@ -427,6 +521,11 @@ nav {
 		@media all and (max-width: 1024px) {
 			margin: 66px 80px 36px 80px;
 		}
+	
+		@media all and (max-width: 768px) {
+			margin: 0 0 24px;
+		}
+
 	}
 
 	ul {
@@ -448,9 +547,17 @@ nav {
 				display: none;
 			}
 
+			@media all and (max-width: 768px) {
+				height: 110px;
+			}
+
 			img {
 				display: block;
 				margin: 0 auto;
+
+				@media all and (max-width: 1024px) {
+					width: 40px;
+				}
 			}
 
 			div {
@@ -459,8 +566,12 @@ nav {
 				
 				@media all and (max-width: 1024px) {
 					max-width: none;
-					padding: 38px 0 0 0;
-				}				
+					padding: 38px 0 0;
+				}		
+
+				@media all and (max-width: 768px) {
+					padding: 18px 0 0;
+				}		
 
 				margin: 0 auto;
 				height: 100%;
@@ -472,11 +583,17 @@ nav {
 					@media all and (max-width: 1024px) {
 						max-width: 212px;
 					}
+
+					@media all and (max-width: 768px) {
+						margin: 12px 32px 0;
+					}
 				}
 
 				img:last-of-type {
 					visibility: hidden;
 					position: absolute;
+					width: 14px;
+					height: auto;
 					top: 100%;
 					left: 50%;
 					transform: translateX(-50%);
@@ -516,6 +633,10 @@ nav {
 
 		@media all and (max-width: 1024px) {
 			margin: 0 80px;	
+		}
+
+		@media all and (max-width: 1024px) {
+			margin: 0;
 		}
 
 		img {
@@ -566,6 +687,14 @@ nav {
 		margin-bottom: 52px;
 	}
 
+	@media all and (max-width: 768px) {
+		margin-top: 104px;
+		margin-bottom: 0;
+		border-top: 1px solid transparentize(#848789, 0.8);
+		padding-top: 34px;
+		padding-bottom: 42px;
+	}
+
 	.container {
 		position: relative;
 		height:628px;
@@ -573,6 +702,11 @@ nav {
 		@media all and (max-width: 1024px) {
 			border: 1px solid transparent;
 			height: 378px;
+		}
+
+		@media all and (max-width: 768px) {
+			height: auto;
+			margin: 0;
 		}
 	}
 
@@ -593,6 +727,11 @@ nav {
 				display: none;
 			}
 		}
+
+		@media all and (max-width: 768px) {
+			position: static;
+			padding: 0 35px;
+		}
 	}
 
 	figure {
@@ -606,6 +745,12 @@ nav {
 			@media all and (max-width: 1024px) {
 				right: 52%;
 			}
+
+			@media all and (max-width: 768px) {
+				position: static;
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 }
@@ -615,6 +760,13 @@ nav {
 
 	@media all and (max-width: 1024px) {
 		height: 460px;
+	}
+
+	@media all and (max-width: 768px) {
+		height: auto;
+		border-top: 1px solid transparentize(#848789, 0.8);
+		padding-top: 34px;
+		background-image: none;
 	}
 
 	background: url('../img/index/reportings_background.png') center center no-repeat;
@@ -633,6 +785,26 @@ nav {
 				display: none;
 			}
 		}
+
+		@media all and (max-width: 768px) {
+			max-width: none;
+			margin-top: 0;
+			margin-left: 0;
+			margin-bottom: 20px;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	img {
+		display: none;
+
+		@media all and (max-width: 768px) {
+			display: block;
+			width: 100%;
+		}
 	}
 }
 
@@ -644,12 +816,21 @@ nav {
 		height: 590px;
 	}
 
+	@media all and (max-width: 768px) {
+		height: auto;
+	}
+
 	.container {
 		position: relative;
 		padding-top: 158px;
 
 		@media all and (max-width: 1024px) {
 			padding-top: 130px;
+		}
+
+		@media all and (max-width: 768px) {
+			padding-top: 34px;
+			padding-bottom: 30px;
 		}
 	}
 
@@ -668,6 +849,11 @@ nav {
 				display: none;
 			}
 		}
+
+		@media all and (max-width: 768px) {
+			position: static;
+			max-width: none;
+		}
 	}
 
 	figure {
@@ -681,6 +867,13 @@ nav {
 				right: 63%;
 				height: 400px;
 			}
+
+			@media all and (max-width: 768px) {
+				position: static;
+
+				width: 150%;
+				height: auto;
+			}
 		}
 	}
 }
@@ -689,14 +882,17 @@ nav {
 
 	padding-top: 102px;
 	padding-bottom: 142px;
-	
-
 	overflow: hidden;
 	height: auto;
 
 	@media all and (max-width: 1024px) {
 		padding-top: 64px;
 		padding-bottom: 100px;
+	}
+
+	@media all and (max-width: 768px) {
+		padding-top: 34px;
+		padding-bottom: 44px;
 	}
 
 	.block {
@@ -735,10 +931,22 @@ nav {
 				margin-top: 40px;
 			}
 
+			@media all and (max-width: 768px) {
+				width: (100%/2);
+				min-height: 0;
+				margin-top: 0px;
+				margin-bottom: 28px;
+				padding: 0 8px;
+			}
+
 			img {
 				margin: 0 auto;
 				display: block;
 				margin-bottom: 36px;
+
+				@media all and (max-width: 768px) {
+					margin-bottom: 12px;
+				}
 			}
 
 			h5 {
@@ -758,6 +966,10 @@ nav {
 				@media all and (max-width: 1024px) {
 					max-width: 200px;
 				}
+
+				@media all and (max-width: 768px) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -770,6 +982,10 @@ nav {
 
 	@media all and (max-width: 1024px) {
 		padding-top: 90px;
+	}
+
+	@media all and (max-width: 768px) {
+		padding-top: 34px;
 	}
 
 	.block {
@@ -796,6 +1012,18 @@ nav {
 			width: 474px;
 		}
 
+		@media all and (max-width: 768px) {
+			width: 100%;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+
+		}
+
+
+
 	}
 }
 
@@ -808,14 +1036,23 @@ nav {
 		padding-top: 76px;
 	}
 
+	@media all and (max-width: $mobile-breakpoint) {
+		height: auto;
+		padding-top: 34px;
+		padding-bottom: 30px;
+	}
+
 	.block {
 		max-width: 677px;
 
 		@media all and (max-width: 1024px) {
-
 			p {
 				max-width: 404px;
 			}
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			max-width: none;
 		}
 	}
 
@@ -825,12 +1062,24 @@ nav {
 		@media all and (max-width: 1024px) {
 			margin-top: 80px;
 		}
+		
+		@media all and (max-width: $mobile-breakpoint) {
+			margin-top: 50px;
+		}
+
+
 		li {
 			@extend .center-aligned-block;
 			display: block;
 			float: left;
 			width: (100%/3);
 			height: 280px;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				float: none;
+				width: 100%;
+				height: auto;
+			}
 
 			.icon {
 				height: 52px;
@@ -852,18 +1101,30 @@ nav {
 					border: none;
 				}
 
+				@media all and (max-width: $mobile-breakpoint) {
+					margin-top: 20px;
+					height: auto;
+				}
+
 				h5 {
 					margin-top: 36px;	
 
 					@media all and (max-width: 1024px) {
 						margin-top: 24px;
 					}				
+					@media all and (max-width: $mobile-breakpoint) {
+						margin-top: 0;
+					}
 				}
 
 				p.text {
 					margin: 0 auto;
 					margin-top: 12px;
 					max-width: 236px;
+					@media all and (max-width: $mobile-breakpoint) {
+						margin-top: 10px;
+						margin-bottom: 64px;
+					}
 				}
 			}
 		}
@@ -940,7 +1201,7 @@ nav {
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
-			padding: 44px 10px 80px;
+			padding: 32px 10px 80px;
 		}
 
 		p {

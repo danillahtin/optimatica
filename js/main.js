@@ -95,8 +95,11 @@ function initNav() {
 	// 	return;
 
 	var initialClasses = $('nav').attr('class');
+	log(initialClasses);
+	
+	var width = $(window).width();
 
-	if ($(window).width() <= 1024) {
+    if ((width <= 1024) && (width > 768)) {
 		$('nav').addClass('fixed').addClass('transparent-navigation').addClass('class_name');
 	} else {
 		$('nav').attr('class',initialClasses);
@@ -105,8 +108,8 @@ function initNav() {
 	log(initialClasses);
 	$(window).resize(function() {
 
-		// log(initialClasses);
-        if ($(window).width() <= 1024) {
+		var width = $(window).width();
+		if ((width <= 1024) && (width > 768)) {
         	$('nav').addClass('fixed').addClass('transparent-navigation');
         } else {
         	$('nav').attr('class',initialClasses); 
