@@ -1,1 +1,6 @@
 .sass-cache
+vcs.xml
+optimatica.iml
+modules.xml
+*.xml
+old_*
