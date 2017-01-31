@@ -79,7 +79,7 @@ nav {
         @media all and (max-width: 1024px) {
             font-size: 28px;
         }
-        @media all and (max-width: 768px) {
+        @media all and (max-width: $mobile-breakpoint) {
             font-size: 18px;
         }
 
@@ -113,7 +113,7 @@ header {
                 line-height: 50px;
             }
 
-            @media all and (max-width: 768px) {
+            @media all and (max-width: $mobile-breakpoint) {
                 font-size: 22px;
                 line-height: 25px;
             }
@@ -127,7 +127,7 @@ header {
             @media all and (max-width: 1024px) {
                 font-size: 20px;
             }
-            @media all and (max-width: 768px) {
+            @media all and (max-width: $mobile-breakpoint) {
                 font-size: 14px;
                 line-height: 20px;
             }
@@ -189,7 +189,7 @@ header {
     }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: $mobile-breakpoint) {
     .block {
         h3 {
             font-size: 18px;
@@ -257,7 +257,7 @@ header {
         }
     }
 
-    @media all and (max-width: 768px) {
+    @media all and (max-width: $mobile-breakpoint) {
         h5 {
             font-size: 10px;
         }
@@ -295,7 +295,7 @@ header {
             font-size: 16px;
         }
         
-        @media all and (max-width: 768px) {
+        @media all and (max-width: $mobile-breakpoint) {
             font-size: 12px;
             line-height: 15px;
         }
@@ -378,7 +378,7 @@ footer {
             font-size: 15px;
         }
 
-        @media all and (max-width: 768px) {
+        @media all and (max-width: $mobile-breakpoint) {
             font-size: 14px;
         }
     }
@@ -393,7 +393,7 @@ footer {
             font-size: 15px;
         }
 
-        @media all and (max-width: 768px) {
+        @media all and (max-width: $mobile-breakpoint) {
             font-size: 10px;
             line-height: 16px;
         }
@@ -447,7 +447,7 @@ footer {
                 line-height: 35px;
             }
 
-            @media all and (max-width: 768px) {
+            @media all and (max-width: $mobile-breakpoint) {
                 font-size: 18px;
                 line-height: 25px;
             }

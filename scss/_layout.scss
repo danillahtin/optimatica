@@ -15,8 +15,6 @@ ul {
 $nav-bar-height: 104px;
 $container-max-width: 1400px;
 
-$mobile-breakpoint: 768px;
-
 
 .container {
 	max-width: $container-max-width;
@@ -94,7 +92,7 @@ header {
 			margin-bottom: 76px;
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			padding: 104px 28px 65px;
 			text-align: left;
 
@@ -110,7 +108,7 @@ header {
 	h4 {
 		margin: 0 auto 12px auto;
 		
-		@media all and (max-width: 768px) { 
+		@media all and (max-width: $mobile-breakpoint) { 
 			margin-bottom: 8px;
 		}
 	}
@@ -118,7 +116,7 @@ header {
 	h3 {
 		margin: 12px auto 30px auto;
 
-		@media all and (max-width: 768px) { 
+		@media all and (max-width: $mobile-breakpoint) { 
 			margin: 8px auto 16px auto;
 		}
 	}
@@ -260,7 +258,7 @@ nav {
 		padding-bottom: 58px;		
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		padding: 14px 0 39px;
 	}
 
@@ -320,7 +318,7 @@ nav {
 					transform: scale(0.6666, 0.6666);
 				}
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					min-height: 24px;
 					background-size: contain;
 					transform: scale(0.5, 0.5);
@@ -330,7 +328,7 @@ nav {
 			h5 {
 				display: none;
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					display: block;
 				}
 			}
@@ -341,7 +339,7 @@ nav {
 					margin-top: 0px;
 				}
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					display: none;
 				}
 			}
@@ -358,7 +356,7 @@ nav {
 		padding: 72px 0 124px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		padding: 34px 0 72px;
 	}
 
@@ -372,7 +370,7 @@ nav {
 				max-width: 338px;
 			}
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				max-width: none;
 				margin-bottom: 0;
 			}
@@ -388,7 +386,7 @@ nav {
 			max-width: 600px;
 		}		
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			padding: 0 10px;
 		}
 
@@ -401,7 +399,7 @@ nav {
 				width: 50%;
 			}
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				float: none;
 				width: 100%;
 			}
@@ -409,7 +407,7 @@ nav {
 			img {
 				margin-right: 0 !important;
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					display: block;
 					float: left;
 					width: 50px;
@@ -420,7 +418,7 @@ nav {
 				margin-top: 28px;
 				margin-bottom: 20px;
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					text-align: left;
 					margin: 0;
 					margin-left: 70px;
@@ -436,7 +434,7 @@ nav {
 					max-width: 214px !important;			
 				}
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					text-align: left;
 					margin-left: 70px;
 					margin-right: 0;
@@ -457,7 +455,7 @@ nav {
 		padding-top: 72px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		padding-top: 34px;
 	}
 
@@ -468,7 +466,7 @@ nav {
 			max-width: 459px;
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			max-width: none;
 
 			p {
@@ -490,7 +488,7 @@ nav {
 			cursor: pointer;
 			z-index: 200;
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				width: 6px;
 				height: 11px;
 				top: 24px;
@@ -499,14 +497,14 @@ nav {
 
 		#arrow-back {
 			left: 54px;
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				left: 15px;
 			}
 		}
 
 		#arrow-forward {
 			right: 54px;
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				right: 15px;
 			}
 		}
@@ -522,7 +520,7 @@ nav {
 			margin: 66px 80px 36px 80px;
 		}
 	
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			margin: 0 0 24px;
 		}
 
@@ -547,7 +545,7 @@ nav {
 				display: none;
 			}
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				height: 110px;
 			}
 
@@ -569,7 +567,7 @@ nav {
 					padding: 38px 0 0;
 				}		
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					padding: 18px 0 0;
 				}		
 
@@ -584,8 +582,10 @@ nav {
 						max-width: 212px;
 					}
 
-					@media all and (max-width: 768px) {
-						margin: 12px 32px 0;
+					@media all and (max-width: $mobile-breakpoint) {
+						padding: 0 32px;
+						max-width: 276px;
+						margin: 12px auto 0;
 					}
 				}
 
@@ -658,9 +658,14 @@ nav {
 		top: 0;
 		left: 0;
 		width: 30%;
+
 		@media all and (max-width: 1024px) {
 			width: 50%;
 			opacity: 0.3;
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			display: none;
 		}
 	}
 
@@ -687,7 +692,7 @@ nav {
 		margin-bottom: 52px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		margin-top: 104px;
 		margin-bottom: 0;
 		border-top: 1px solid transparentize(#848789, 0.8);
@@ -704,7 +709,7 @@ nav {
 			height: 378px;
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			height: auto;
 			margin: 0;
 		}
@@ -728,9 +733,10 @@ nav {
 			}
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			position: static;
 			padding: 0 35px;
+			max-width: none;
 		}
 	}
 
@@ -746,7 +752,7 @@ nav {
 				right: 52%;
 			}
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				position: static;
 				width: 100%;
 				height: auto;
@@ -762,11 +768,17 @@ nav {
 		height: 460px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		height: auto;
 		border-top: 1px solid transparentize(#848789, 0.8);
 		padding-top: 34px;
 		background-image: none;
+	}
+	.container {
+		border: 1px solid transparent;
+		@media all and (max-width: $mobile-breakpoint) {
+			overflow: hidden;
+		}
 	}
 
 	background: url('../img/index/reportings_background.png') center center no-repeat;
@@ -786,7 +798,7 @@ nav {
 			}
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			max-width: none;
 			margin-top: 0;
 			margin-left: 0;
@@ -798,12 +810,15 @@ nav {
 		}
 	}
 
-	img {
+	.img {
 		display: none;
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			display: block;
+			background: url('../img/index/reportings_background_nofade.png') center center no-repeat;
+			background-size: cover;
 			width: 100%;
+			height: 175px;
 		}
 	}
 }
@@ -816,7 +831,7 @@ nav {
 		height: 590px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		height: auto;
 	}
 
@@ -828,7 +843,7 @@ nav {
 			padding-top: 130px;
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			padding-top: 34px;
 			padding-bottom: 30px;
 		}
@@ -850,7 +865,7 @@ nav {
 			}
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			position: static;
 			max-width: none;
 		}
@@ -868,7 +883,7 @@ nav {
 				height: 400px;
 			}
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				position: static;
 
 				width: 150%;
@@ -890,7 +905,7 @@ nav {
 		padding-bottom: 100px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		padding-top: 34px;
 		padding-bottom: 44px;
 	}
@@ -931,7 +946,7 @@ nav {
 				margin-top: 40px;
 			}
 
-			@media all and (max-width: 768px) {
+			@media all and (max-width: $mobile-breakpoint) {
 				width: (100%/2);
 				min-height: 0;
 				margin-top: 0px;
@@ -944,7 +959,7 @@ nav {
 				display: block;
 				margin-bottom: 36px;
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					margin-bottom: 12px;
 				}
 			}
@@ -967,7 +982,7 @@ nav {
 					max-width: 200px;
 				}
 
-				@media all and (max-width: 768px) {
+				@media all and (max-width: $mobile-breakpoint) {
 					display: none;
 				}
 			}
@@ -984,7 +999,7 @@ nav {
 		padding-top: 90px;
 	}
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		padding-top: 34px;
 	}
 
@@ -1012,7 +1027,7 @@ nav {
 			width: 474px;
 		}
 
-		@media all and (max-width: 768px) {
+		@media all and (max-width: $mobile-breakpoint) {
 			width: 100%;
 
 			img {

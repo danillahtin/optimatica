@@ -99,7 +99,7 @@ function initNav() {
 	
 	var width = $(window).width();
 
-    if ((width <= 1024) && (width > 768)) {
+    if ((width <= 1024) && (width > 512)) {
 		$('nav').addClass('fixed').addClass('transparent-navigation').addClass('class_name');
 	} else {
 		$('nav').attr('class',initialClasses);
@@ -109,7 +109,7 @@ function initNav() {
 	$(window).resize(function() {
 
 		var width = $(window).width();
-		if ((width <= 1024) && (width > 768)) {
+		if ((width <= 1024) && (width > 512)) {
         	$('nav').addClass('fixed').addClass('transparent-navigation');
         } else {
         	$('nav').attr('class',initialClasses); 

@@ -17,7 +17,7 @@
 	border: none !important;
 	cursor: pointer;
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		font-size: 10px !important;
 		font-weight: 400 !important;
 		padding: 0 16px;
@@ -35,7 +35,7 @@
 	width: 96px;
 	height: 96px;
 
-	@media all and (max-width: 768px) {
+	@media all and (max-width: $mobile-breakpoint) {
 		width: 72px;
 		height: 72px;
 		font-size: 30px !important;
