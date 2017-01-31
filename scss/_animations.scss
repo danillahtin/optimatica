@@ -52,7 +52,7 @@
     }
 }
 
-@include keyframe(slidInTop) {
+@include keyframe(slidInLeft) {
     0% {
     	opacity: 0;
     	transform: translateX(-40px);
@@ -65,11 +65,13 @@
 }
 
 
+
+
 #intro-section {
 
 	.container {
 		h2, p {
-			@include animation(0, $longAnimationDuration, slidInTop);
+			@include animation(0, $longAnimationDuration, slidInLeft);
 		}
 
 		.button {

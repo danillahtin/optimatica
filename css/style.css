@@ -48,10 +48,10 @@ a {
 .small-button-inverted {
   display: inline-block;
   font-family: Gilroy !important;
-  font-size: 9px !important;
+  font-size: 10px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  line-height: 35px;
+  line-height: 33px;
   letter-spacing: 0.1em;
   padding: 0 15px;
   border-radius: 3px;
@@ -274,6 +274,9 @@ header {
 .block ul li {
   display: block;
   margin-top: 14px; }
+  @media all and (max-width: 1024px) {
+    .block ul li {
+      margin-top: 34px; } }
   .block ul li img {
     margin-right: 18px; }
 
@@ -290,7 +293,7 @@ header {
   float: right; }
 
 nav {
-  height: 96px;
+  height: 93px;
   position: relative; }
   @media all and (max-width: 512px) {
     nav {
@@ -434,6 +437,10 @@ nav {
   #auto-logos-section ul {
     text-align: center;
     max-width: 1176px; }
+    @media all and (max-width: 1024px) {
+      #auto-logos-section ul {
+        max-width: 804px;
+        margin: 0 auto; } }
     #auto-logos-section ul li:nth-child(1) div {
       background: url("../img/index/volkswagen_logo.png") center center no-repeat; }
     #auto-logos-section ul li:nth-child(2) div {
@@ -505,7 +512,7 @@ nav {
     max-width: 1200px; }
     @media all and (max-width: 1024px) {
       #optimize-section ul {
-        margin-top: 32px;
+        margin-top: 12px;
         max-width: 600px; } }
     @media all and (max-width: 512px) {
       #optimize-section ul {
@@ -531,6 +538,9 @@ nav {
       #optimize-section ul li h5 {
         margin-top: 28px;
         margin-bottom: 20px; }
+        @media all and (max-width: 1024px) {
+          #optimize-section ul li h5 {
+            margin-top: 10px; } }
         @media all and (max-width: 512px) {
           #optimize-section ul li h5 {
             text-align: left;
@@ -627,7 +637,8 @@ nav {
           height: 110px; } }
       #media-planning-section ul li img {
         display: block;
-        margin: 0 auto; }
+        margin: 0 auto;
+        width: 64px; }
         @media all and (max-width: 512px) {
           #media-planning-section ul li img {
             width: 40px; } }
@@ -661,7 +672,7 @@ nav {
           top: 100%;
           left: 50%;
           transform: translateX(-50%); }
-          @media all and (max-width: 1024px) {
+          @media all and (max-width: 768px) {
             #media-planning-section ul li div img:last-of-type {
               width: 14px; } }
         @media all and (max-width: 1024px) {
@@ -990,14 +1001,14 @@ nav {
       #integration-section .block p {
         max-width: 462px; } }
   @media all and (max-width: 1024px) {
-    #integration-section .block {
-      width: 474px; } }
+    #integration-section .block img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 504px; } }
   @media all and (max-width: 512px) {
     #integration-section .block {
-      width: 100%; }
-      #integration-section .block img {
-        display: block;
-        width: 100%; } }
+      width: 100%; } }
 
 #facts-section {
   height: 760px;
@@ -1037,10 +1048,10 @@ nav {
           float: none;
           width: 100%;
           height: auto; } }
-      #facts-section ul li .icon {
-        height: 52px; }
+      #facts-section ul li img {
+        height: 64px; }
         @media all and (max-width: 1024px) {
-          #facts-section ul li .icon {
+          #facts-section ul li img {
             height: 41px; } }
       #facts-section ul li .info {
         margin-top: 24px;
@@ -1072,22 +1083,7 @@ nav {
             #facts-section ul li .info p.text {
               margin-top: 10px;
               margin-bottom: 64px; } }
-    #facts-section ul li:nth-child(1) div.icon {
-      background: url("../img/index/facts_icon1.png") center center no-repeat; }
-      @media all and (max-width: 1024px) {
-        #facts-section ul li:nth-child(1) div.icon {
-          background-size: contain; } }
-    #facts-section ul li:nth-child(2) div.icon {
-      background: url("../img/index/facts_icon2.png") center center no-repeat; }
-      @media all and (max-width: 1024px) {
-        #facts-section ul li:nth-child(2) div.icon {
-          background-size: contain; } }
-    #facts-section ul li:nth-child(3) div.icon {
-      background: url("../img/index/facts_icon3.png") center center no-repeat; }
-      @media all and (max-width: 1024px) {
-        #facts-section ul li:nth-child(3) div.icon {
-          background-size: contain; } }
-    #facts-section ul li:nth-child(3) .info {
+    #facts-section ul li:last-child .info {
       border: none; }
 
 #contacts-section {
@@ -1242,7 +1238,7 @@ footer .container {
 #how-we-work-intro-section .dimming-block {
   background-color: rgba(43, 128, 255, 0.8); }
 #how-we-work-intro-section .container {
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 120px; }
   @media all and (max-width: 1024px) {
     #how-we-work-intro-section .container {
@@ -1379,14 +1375,17 @@ footer .container {
         position: relative;
         top: -2px;
         margin-left: 48px;
-        max-width: 356px; }
+        max-width: 356px;
+        margin-top: 60px; }
         @media all and (max-width: 512px) {
           #development-section .container .block ul li p {
             margin-left: 32px;
             max-width: none; } }
+      #development-section .container .block ul li:first-child p {
+        margin-top: 14px; }
     #development-section .container figure img {
       position: absolute;
-      top: 68px;
+      top: 32px;
       right: 50%;
       margin-right: 44px; }
       @media all and (max-width: 1024px) {
@@ -1413,7 +1412,7 @@ footer .container {
       height: auto;
       overflow: hidden; } }
   #incalcation-section .container {
-    padding-top: 208px;
+    padding-top: 218px;
     padding-bottom: 280px;
     position: relative; }
     @media all and (max-width: 1024px) {
@@ -1442,6 +1441,7 @@ footer .container {
     #incalcation-section .container figure img {
       float: right;
       position: absolute;
+      top: 145px;
       left: 50%;
       margin-left: 20px; }
       @media all and (max-width: 1024px) {
@@ -1488,13 +1488,15 @@ footer .container {
       float: none;
       left: 50%;
       margin-left: 88px; }
-      #support-section .container .right-aligned-block ul li img {
-        display: block;
-        float: left; }
-      #support-section .container .right-aligned-block ul li p {
-        padding-left: 24px;
-        position: relative;
-        top: -4px; }
+      #support-section .container .right-aligned-block ul li {
+        margin-top: 25px; }
+        #support-section .container .right-aligned-block ul li img {
+          display: block;
+          float: left; }
+        #support-section .container .right-aligned-block ul li p {
+          padding-left: 24px;
+          position: relative;
+          top: -4px; }
       @media all and (max-width: 1024px) {
         #support-section .container .right-aligned-block {
           max-width: 358px;
@@ -1564,7 +1566,10 @@ footer .container {
   padding-top: 80px;
   padding-bottom: 122px; }
   #get-demo-section .container .center-aligned-block p, #get-demo-section .container #facts-section ul li p, #facts-section ul #get-demo-section .container li p {
-    max-width: 454px; }
+    max-width: 574px; }
+    @media all and (max-width: 512px) {
+      #get-demo-section .container .center-aligned-block p, #get-demo-section .container #facts-section ul li p, #facts-section ul #get-demo-section .container li p {
+        max-width: 464px; } }
   #get-demo-section .container .form {
     margin: 36px auto 0; }
     #get-demo-section .container .form .button-container {
@@ -1616,7 +1621,7 @@ footer .container {
   font-weight: 400; }
 
 nav h1 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600; }
   @media all and (max-width: 1024px) {
     nav h1 {
@@ -1630,7 +1635,7 @@ nav p {
     nav p {
       font-size: 10px; } }
 nav ul li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px; }
 
 header .container > h2 {
@@ -1673,9 +1678,6 @@ header .container > p {
   font-weight: 400;
   line-height: 25px; }
 
-.light-section h4, .light-gray-section h4 {
-  font-weight: 500; }
-
 @media all and (max-width: 1024px) {
   .block h3 {
     font-size: 26px;
@@ -1683,7 +1685,8 @@ header .container > p {
   .block h4 {
     font-size: 14px; }
   .block p {
-    font-size: 16px; } }
+    font-size: 16px;
+    line-height: 25px; } }
 @media all and (max-width: 512px) {
   .block h3 {
     font-size: 18px;
@@ -1695,6 +1698,9 @@ header .container > p {
     line-height: 20px; }
   .block ul li, .block ul p {
     font-size: 13px; } }
+.light-section h4, .light-gray-section h4 {
+  font-weight: 500; }
+
 #auto-logos-section {
   font-size: 12px;
   line-height: 20px; }
@@ -1888,6 +1894,14 @@ footer .copyright a {
 #how-we-work-intro-section ul p {
   color: rgba(255, 255, 255, 0.8); }
 
+nav li a {
+  transition: 0.33s; }
+nav li:hover a {
+  color: #bcbcbc; }
+
+#in-contact-section p {
+  color: white; }
+
 .light-navigation {
   color: #262626; }
   .light-navigation .active {
@@ -1925,7 +1939,9 @@ footer .copyright a {
   #menu {
     background-color: rgba(242, 244, 250, 0.95); }
     #menu ul:first-child a {
-      color: #404040; } }
+      color: #404040; }
+      #menu ul:first-child a:hover {
+        color: #bcbcbc; } }
 
 .light-section, .light-gray-section {
   color: black;
@@ -1955,6 +1971,8 @@ footer .copyright a {
   background-color: #333333; }
   .gray-section a {
     color: white; }
+  .gray-section a:hover {
+    color: #bcbcbc; }
 
 .button, .small-button {
   color: white !important;
@@ -1973,7 +1991,7 @@ footer .copyright a {
 
 .small-button-inverted:hover {
   color: white !important;
-  background-color: #2570e1;
+  background-color: #2b80ff;
   -webkit-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   -moz-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4); }
@@ -2002,28 +2020,28 @@ footer .copyright a {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@-webkit-keyframes slidInTop {
+@-webkit-keyframes slidInLeft {
   0% {
     opacity: 0;
     transform: translateX(-40px); }
   100% {
     opacity: 1;
     transform: none; } }
-@-moz-keyframes slidInTop {
+@-moz-keyframes slidInLeft {
   0% {
     opacity: 0;
     transform: translateX(-40px); }
   100% {
     opacity: 1;
     transform: none; } }
-@-o-keyframes slidInTop {
+@-o-keyframes slidInLeft {
   0% {
     opacity: 0;
     transform: translateX(-40px); }
   100% {
     opacity: 1;
     transform: none; } }
-@keyframes slidInTop {
+@keyframes slidInLeft {
   0% {
     opacity: 0;
     transform: translateX(-40px); }
@@ -2033,22 +2051,22 @@ footer .copyright a {
 #intro-section .container h2, #intro-section .container p {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
-  -webkit-animation-name: slidInTop;
+  -webkit-animation-name: slidInLeft;
   -webkit-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -moz-animation-delay: 0;
   -moz-animation-duration: 2s;
-  -moz-animation-name: slidInTop;
+  -moz-animation-name: slidInLeft;
   -moz-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   -o-animation-delay: 0;
   -o-animation-duration: 2s;
-  -o-animation-name: slidInTop;
+  -o-animation-name: slidInLeft;
   -o-animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */
   animation-delay: 0;
   animation-duration: 2s;
-  animation-name: slidInTop;
+  animation-name: slidInLeft;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */ }
 #intro-section .container .button {

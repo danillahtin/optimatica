@@ -13,7 +13,7 @@ ul {
 	list-style: none;
 }
 
-$nav-bar-height: 96px;
+$nav-bar-height: 93px;
 $container-max-width: 1400px;
 
 
@@ -131,6 +131,10 @@ header {
 		li {
 			display: block;
 			margin-top: 14px;
+
+			@media all and (max-width: 1024px) {
+				margin-top: 34px;
+			}
 
 			img {
 				margin-right: 18px;
@@ -366,6 +370,11 @@ nav {
 		text-align: center;			
 		max-width: 1176px;
 
+		@media all and (max-width: 1024px) {
+			max-width: 804px;
+			margin: 0 auto;
+		}
+
 		li:nth-child(1) {
 			div {
 				background: url('../img/index/volkswagen_logo.png') center center no-repeat;
@@ -482,7 +491,7 @@ nav {
 		max-width: 1200px;
 
 		@media all and (max-width: 1024px) {
-			margin-top: 32px;
+			margin-top: 12px;
 			max-width: 600px;
 		}		
 
@@ -517,6 +526,10 @@ nav {
 			h5 {
 				margin-top: 28px;
 				margin-bottom: 20px;
+
+				@media all and (max-width: 1024px) {
+					margin-top: 10px;
+				}
 
 				@media all and (max-width: $mobile-breakpoint) {
 					text-align: left;
@@ -652,6 +665,7 @@ nav {
 			img {
 				display: block;
 				margin: 0 auto;
+				width: 64px;
 
 				@media all and (max-width: $mobile-breakpoint) {
 					width: 40px;
@@ -698,7 +712,7 @@ nav {
 					left: 50%;
 					transform: translateX(-50%);
 
-					@media all and (max-width: 1024px) {
+					@media all and (max-width: 768px) {
 						width: 14px;
 					}
 				}
@@ -1174,15 +1188,21 @@ nav {
 		}
 
 		@media all and (max-width: 1024px) {
-			width: 474px;
+			// width: 474px;
+
+			img {
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				max-width: 504px;
+			}
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
 			width: 100%;
 
 			img {
-				display: block;
-				width: 100%;
+				// display: block;
 			}
 
 		}
@@ -1246,8 +1266,8 @@ nav {
 				height: auto;
 			}
 
-			.icon {
-				height: 52px;
+			img {
+				height: 64px;
 
 				@media all and (max-width: 1024px) {
 					height: 41px;
@@ -1294,31 +1314,7 @@ nav {
 			}
 		}
 
-		li:nth-child(1) {
-			div.icon {
-				background: url('../img/index/facts_icon1.png') center center no-repeat;
-				@media all and (max-width: 1024px) {
-					background-size: contain;
-				}
-			}
-		}
-		
-		li:nth-child(2) {
-			div.icon {
-				background: url('../img/index/facts_icon2.png') center center no-repeat;
-				@media all and (max-width: 1024px) {
-					background-size: contain;
-				}
-			}
-		}
-
-		li:nth-child(3) {
-			div.icon {
-				background: url('../img/index/facts_icon3.png') center center no-repeat;
-				@media all and (max-width: 1024px) {
-					background-size: contain;
-				}
-			}
+		li:last-child {
 
 			.info {
 				border: none;
@@ -1553,7 +1549,7 @@ footer {
 	}
 
 	.container {
-		padding-top: 120px;
+		padding-top: 110px;
 		padding-bottom: 120px;
 
 		@media all and (max-width: 1024px) {
@@ -1755,9 +1751,16 @@ footer {
 						margin-left: 48px;
 						max-width: 356px; 
 
+						margin-top: 60px; 
+
 						@media all and (max-width: $mobile-breakpoint) {
 							margin-left: 32px;
 							max-width: none;
+						}
+					}
+					&:first-child {
+						p {
+							margin-top: 14px; 
 						}
 					}
 				}
@@ -1767,7 +1770,7 @@ footer {
 		figure {
 			img {
 				position: absolute;
-				top: 68px;
+				top: 32px;
 				right: 50%;
 				margin-right: 44px;
 
@@ -1804,7 +1807,7 @@ footer {
 	}
 
 	.container {
-		padding-top: 208px;
+		padding-top: 218px;
 		padding-bottom: 280px;
 
 		@media all and (max-width: 1024px) {
@@ -1842,6 +1845,7 @@ footer {
 			img {
 				float: right;
 				position: absolute;
+				top: 145px;
 				left: 50%;
 				margin-left: 20px;
 
@@ -1908,6 +1912,8 @@ footer {
 			
 			ul {
 				li {
+
+					margin-top: 25px;
 					img {		
 						display: block;
 						float: left;
@@ -2027,7 +2033,11 @@ footer {
 
 		.center-aligned-block {
 			p {
-				max-width: 454px;
+				max-width: 574px;
+
+				@media all and (max-width: $mobile-breakpoint) {
+					max-width: 464px;
+				}
 			}
 		}
 

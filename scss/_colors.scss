@@ -103,7 +103,26 @@ footer {
 	}
 }
 
+nav {
+	li {
+		a {
+			transition: $mediumAnimationDuration;
+		}
+	}
 
+
+	li:hover {
+		a {
+			color: #bcbcbc;
+		}
+	}
+}
+
+#in-contact-section {
+	p {
+		color: white;
+	}
+}
 
 .light-navigation {
 	color: #262626;
@@ -176,7 +195,15 @@ footer {
 	ul:first-child {
 		a {
 			color: #404040;
+
+			&:hover {
+
+			color: #bcbcbc;
+
+			}
 		}
+		
+
 	}
 }
 }
@@ -234,6 +261,10 @@ footer {
 	a {
 		color: white;
 	}
+	
+	a:hover {
+		color: #bcbcbc;
+	}
 }
 
 .button, .small-button {
@@ -257,7 +288,7 @@ footer {
 
 .small-button-inverted:hover {
 	color: white !important;
-	background-color: #2570e1;
+	background-color: $primary-color;
 
 	-webkit-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
 	-moz-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
