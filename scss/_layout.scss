@@ -12,8 +12,10 @@ ul {
 	list-style: none;
 }
 
-$nav-bar-height: 125px;
+$nav-bar-height: 104px;
 $container-max-width: 1400px;
+
+$mobile-breakpoint: 768px;
 
 
 .container {
@@ -23,6 +25,11 @@ $container-max-width: 1400px;
 
 	@media all and (max-width: 1024px) {
 		margin: 0 35px;
+		padding: 0;
+	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		margin: 0 30px;
 		padding: 0;
 	}
 
@@ -42,6 +49,12 @@ header {
 		padding-left: 60px;
 		padding-right: 60px;
 
+		@media all and (max-width: $mobile-breakpoint) {
+			margin: 0;
+			padding-left: 16px;
+			padding-right: 16px;
+		}
+
 		h2, p, a {
 			margin: 0 auto;
 		}
@@ -53,6 +66,10 @@ header {
 		p {
 			max-width: 685px;
 			margin-top: 50px;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				margin-top: 10px;
+			}
 		}
 	}
 }
@@ -69,7 +86,7 @@ header {
 	}
 
 	.container {
-
+		position: relative;
 		padding-top: 246px;
 		padding-bottom: 230px;
 
@@ -86,17 +103,17 @@ header {
 	}
 
 	h3 {
-		margin: 12px auto 16px auto;
+		margin: 12px auto 30px auto;
 	}
 
-	p {
-		margin: 16px auto 16px auto;
+	& > p {
+		margin: 16px auto 42px auto;
 	}
 
 	ul {
 		li {
 			display: block;
-			margin-top: 26px;
+			margin-top: 14px;
 
 			img {
 				margin-right: 18px;
@@ -122,14 +139,26 @@ header {
 
 nav {
 	height: $nav-bar-height;
-	// position: relative;
+
+	@media all and (max-width: $mobile-breakpoint) { 
+		height: 70px;
+		margin: 0 !important;
+		padding: 0 28px !important;
+
+		display: block;
+		position: static !important;
+	}
 
 	.company-logo {
-		margin-top: 48px;
+		margin-top: 28px;
 		float: left;
 
 		@media all and (max-width: 1024px) {
 			margin-top: 30px;
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			margin-top: 20px;
 		}
 
 		h1, p {
@@ -140,30 +169,38 @@ nav {
 		h1 {
 			height: 45px;
 
+			border-right-width: 1px;
+			border-right-style: solid;
+			padding-right: 11px;
+			line-height: 44px;
+
 			@media all and (max-width: 1024px) {
 				height: 30px;
 				line-height: 28px;
 			}
 
-			border-right-width: 1px;
-			border-right-style: solid;
-			padding-right: 8px;
-			line-height: 42px;
+			@media all and (max-width: $mobile-breakpoint) {
+				border: none;
+			}
 		}
 
 		p {
 			padding-left: 8px;
 			text-align: left;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				display: none;
+			}
 		}
 	}
 
 	ul {
 		float: right;
 		overflow: hidden;
-		margin-top: 54px;
+		margin-top: 32px;
 
 		@media all and (max-width: 1024px) {
-			// margin-top: 28px;
+
 		}
 
 		li {
@@ -329,6 +366,8 @@ nav {
 			}
 
 			p {
+				margin-left: auto;
+				margin-right: auto;
 				max-width: 242px !important;
 
 				@media all and (max-width: 1024px) {
@@ -540,7 +579,8 @@ nav {
 	.block {
 		position: relative;
 		float: none;
-		margin-top: 42px;
+		margin-top: 0;
+		padding-top: 42px;
 		left: 50%;
 		max-width: 510px;
 
@@ -647,7 +687,7 @@ nav {
 
 #more-functions-section {
 
-	padding-top: 122px;
+	padding-top: 102px;
 	padding-bottom: 142px;
 	
 
@@ -661,6 +701,10 @@ nav {
 
 	.block {
 		max-width: 651px;
+
+		p {
+			margin-bottom: 16px;
+		}
 
 		@media all and (max-width: 1024px) {
 			p {
@@ -679,7 +723,7 @@ nav {
 		li {
 			
 			margin-top: 72px;
-			margin-bottom: 20;
+			margin-bottom: 20px;
 			text-align: center;
 			display: block;
 			float: left;
@@ -720,7 +764,7 @@ nav {
 }
 
 #integration-section {
-	padding-top: 120px;
+	padding-top: 102px;
 	padding-bottom: 100px;
 	height: auto;
 
@@ -757,7 +801,7 @@ nav {
 
 #facts-section {
 	height: 760px;
-	padding-top: 122px;
+	padding-top: 102px;
 
 	@media all and (max-width: 1024px) {
 		height: 640px;
@@ -778,8 +822,7 @@ nav {
 	ul {
 		margin-top: 56px;
 
-
-@media all and (max-width: 1024px) {
+		@media all and (max-width: 1024px) {
 			margin-top: 80px;
 		}
 		li {
@@ -870,7 +913,6 @@ nav {
 		left: 0;
 		height: 100%;
 		width: 50%;
-		background-color: #2b80ff;
 
 		@media all and (max-width: 1024px) {
 			display: none;
@@ -881,7 +923,7 @@ nav {
 		float: right;
 		width: 50%;
 		height: 100%;
-		padding: 112px 0 140px 5%;
+		padding: 102px 0 140px 5%;
 
 		@media all and (max-width: 1024px) {
 			float: none;
@@ -897,12 +939,18 @@ nav {
 			}
 		}
 
-		h3 {
-			margin-bottom: 36px;
+		@media all and (max-width: $mobile-breakpoint) {
+			padding: 44px 10px 80px;
 		}
 
 		p {
+			margin-top: 36px;
 			margin-bottom: 36px;
+
+			@media all and (max-width: 1024px) {
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
 		}
 	}
 }
@@ -914,33 +962,69 @@ nav {
 		height: 50px;
 		width: 50%;
 		float: left;
+
+		@media all and (max-width: $mobile-breakpoint) {
+			width: 100%;
+			height: 40px;
+			float: none;
+			margin-top: 20px;
+		}
 	}
 
 	.short-textfield:first-of-type {
 		padding-right: 8px;
+
+		@media all and (max-width: $mobile-breakpoint) {
+			padding-right: 0;
+		}
 	}
 
 	.short-textfield:last-of-type {
 		padding-left: 8px;
+
+		@media all and (max-width: $mobile-breakpoint) {
+			padding-right: 0;
+		}
 	}
 
 	input, textarea {
-		padding: 18px;
+		padding-left: 18px;
+		padding-right: 18px;
 		width: 100%;
 		height: 100%;
+
+		@media all and (max-width: $mobile-breakpoint) {
+			padding: 14px;
+		}
 	}
 
 	textarea {
 		width: 100%;
 		height: 110px;
-		margin-top:20px;
+		margin-top: 20px;
 		margin-bottom: 30px;
+		padding-top: 12px;
+
+		@media all and (max-width: $mobile-breakpoint) {
+			height: 90px;
+			margin-bottom: 25px;
+		}
 
 	}
 
 	.button-container {
 		width: 50%;
 		padding-right: 8px;
+
+		.button {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			width: 100%;
+			padding-right: 0;
+		}
 	}
 
 	input:focus,
@@ -959,23 +1043,44 @@ footer {
 			padding-right: initial;
 			padding-bottom: 62px;
 		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			padding: 40px 10px 32px;
+		}
 		
 		.info {
 			overflow: hidden;
 			padding-bottom: 100px;
 			border-bottom: 1px solid rgba(172, 172, 172, 0.3);
-
+			
+			@media all and (max-width: $mobile-breakpoint) {
+				padding-bottom: 36px;
+			}
 
 			div {
 				float: left;
+
+				@media all and (max-width: $mobile-breakpoint) {
+					float: none;
+					text-align: center;
+				}
 			}
 
 			ul {
 				float: right;
 
+				@media all and (max-width: $mobile-breakpoint) {
+					float: none;
+				}
+
 				li {
 					float: left;
 					margin-left: 56px;
+
+					@media all and (max-width: $mobile-breakpoint) {
+						float: none;
+						margin-left: 0;
+					}
 				}
 			}
 		}
@@ -984,12 +1089,24 @@ footer {
 
 			padding-top: 24px;
 
+			@media all and (max-width: $mobile-breakpoint) {
+				padding-top: 12px;
+			}
+
 			p:first-of-type {
 				float: left;
+
+				@media all and (max-width: $mobile-breakpoint) {
+					float: none;
+				}
 			}
 
 			p:last-of-type {
 				float: right;
+
+				@media all and (max-width: $mobile-breakpoint) {
+					float: none;
+				}
 			}
 		}
 	}
@@ -1017,7 +1134,54 @@ footer {
 			padding-top: 156px;
 			padding-bottom: 132px;
 		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			padding: 54px 0;
+			padding-top: 54px;
+			padding-bottom: 55px;
+
+			& > h2, & > p {
+				margin-left: 16px;
+				margin-right: 16px;
+			}
+		}
+
+		& > div {
+		position: relative;
+
+		}
+
+		#how-we-work-arrow-forward, #how-we-work-arrow-back {
+			position: absolute;
+			top: 88px;
+			width: 8px;
+			height: 14px;
+
+			display: none;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				display: block;
+			}
+		}
+
+		#how-we-work-arrow-back {
+			right: 50%;
+			margin-right: 66px
+		}
+
+		#how-we-work-arrow-forward {
+			left: 50%;
+			margin-left: 66px
+		}
 	}
+
+	.horizontal-scroller {
+		@media all and (max-width: $mobile-breakpoint) {
+			width: auto;
+			overflow: scroll;
+		}
+	}
+
 
 	ul {
 		margin: 0 auto;
@@ -1025,16 +1189,27 @@ footer {
 		max-width: 1200px;
 		overflow: hidden;
 
+		@media all and (max-width: $mobile-breakpoint) {
+			margin-top: 60px;
+			position: relative;
+			width: 300%;
+			max-width: none;
+			margin-right: 0;
+		}
+
 		li {
 			float: left;
 			width: (100%/3);
 			position: relative;
 
+			@media all and (max-width: $mobile-breakpoint) {
+
+			}
+
 			p.number-in-circle {
 				margin-top: 0 !important;
 
 			}
-
 
 			h5 {
 				margin-top: 36px;
@@ -1058,14 +1233,19 @@ footer {
 
 				border-style: solid;
 				border-width: 4px 0px;
+
 				-moz-border-image: url('../img/how_we_work/header_border_pattern.png') 4 125 4 30 repeat repeat;
 				-webkit-border-image: url('../img/how_we_work/header_border_pattern.png') 4 125 4 30 repeat repeat;
 				-o-border-image: url('../img/how_we_work/header_border_pattern.png') 4 125 4 30 repeat repeat;
 				border-image: url('../img/how_we_work/header_border_pattern.png') 4 125 4 30 repeat repeat;
-			}
 
+				@media all and (max-width: $mobile-breakpoint) {
+					display: none;
+				}
+			}
+	
 			&:last-of-type:after {
-				visibility: hidden;
+				display: none;
 			}
 
 		}
@@ -1080,9 +1260,21 @@ footer {
 	@media all and (max-width: 1024px) {
 		padding-top: 84px;
 	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		padding-top: 38px;
+		padding-bottom: 79px;
+	}
 	
 	.center-aligned-block {
 		max-width: 604px;
+
+		@media all and (max-width: 1024px) {
+			max-width: none;
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+
 	}
 
 	.container {
@@ -1092,18 +1284,28 @@ footer {
 		@media all and (max-width: 1024px) {
 			padding-top: 56px;
 		}
+			@media all and (max-width: $mobile-breakpoint) {
+				padding-top: 0;
+				margin-top: 32px;
+			}
 
 		.block {
 			position: relative;
 			float: none;
 			left: 50%;
+			max-width: 368px;
+			margin-left: 66px;
 
 			@media all and (max-width: 1024px) {
 				margin-left: -25px;
 			}
 
-			max-width: 368px;
-			margin-left: 66px;
+			@media all and (max-width: $mobile-breakpoint) {
+				margin: 0;
+				position: static !important;
+				max-width: none;
+			}
+
 			ul {
 				li {
 					img {
@@ -1112,6 +1314,11 @@ footer {
 						width: 24px;
 						height: 24px;
 						margin: 0;
+
+						@media all and (max-width: $mobile-breakpoint) {
+							width: 18px;
+							height: 18px;
+						}
 					}
 
 					p {
@@ -1119,6 +1326,11 @@ footer {
 						top: -2px;
 						margin-left: 48px;
 						max-width: 356px; 
+
+						@media all and (max-width: $mobile-breakpoint) {
+							margin-left: 32px;
+							max-width: none;
+						}
 					}
 				}
 			}
@@ -1136,6 +1348,16 @@ footer {
 					top: -8px;
 					margin-right: 108px;
 				}
+
+				@media all and (max-width: $mobile-breakpoint) {
+					position: static !important;
+					width: 100%;
+					height: auto;
+					padding-right: 24px;
+					margin: 0;
+
+					margin-top: 40px;
+				}
 			}
 		}
 	}
@@ -1148,6 +1370,11 @@ footer {
 		height: 520px;
 	}
 
+	@media all and (max-width: $mobile-breakpoint) {
+		height: auto;
+		overflow: hidden;
+	}
+
 	.container {
 		padding-top: 208px;
 		padding-bottom: 280px;
@@ -1157,10 +1384,15 @@ footer {
 			padding-bottom: 166px;
 		}
 
+		@media all and (max-width: $mobile-breakpoint) {
+			margin: 0;
+			padding: 0;
+		}
+
 		position: relative;
 
 		.block {
-			max-width: 418px;
+			max-width: 420px;
 			position: absolute;
 			right: 50%;
 			margin-right: 40px;
@@ -1169,6 +1401,12 @@ footer {
 				margin-left: 32px;
 				max-width: 342px;
 				margin-right: 0;
+			}
+
+			@media all and (max-width: $mobile-breakpoint) {
+				max-width: none;
+				position: static;
+				margin: 40px 40px 0;
 			}
 		}
 
@@ -1183,7 +1421,15 @@ footer {
 					margin-left: 66px;
 					top: 16px;
 				}
+				@media all and (max-width: $mobile-breakpoint) {
+					float: none;
+					display: block;
+					position: static !important;
+					margin: 16px 0 84px;
+					width: 100%;
+				}
 			}
+
 		}
 	}
 }
@@ -1197,6 +1443,11 @@ footer {
 	@media all and (max-width: 1024px) {
 		height: 760px;
 		padding-top: 84px;
+	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		height: auto;
+		padding: 38px 35px 35px;
 	}
 
 	.center-aligned-block {
@@ -1215,6 +1466,10 @@ footer {
 			padding-top: 60px;
 		}
 
+		@media all and (max-width: $mobile-breakpoint) {
+			padding-top: 12px;
+		}
+
 		.right-aligned-block {
 			max-width: 380px;
 			position: relative;
@@ -1222,30 +1477,42 @@ footer {
 			left: 50%;
 
 			margin-left: 88px;
+			
+			ul {
+				li {
+					img {		
+						display: block;
+						float: left;
+					}
+					p {
+						padding-left: 24px;
+						position: relative;
+						top:-4px;
+					}
+				}
+			}
+
 
 			@media all and (max-width: 1024px) {
 				max-width: 358px;
 				margin-left: 12px;
 
-				ul {
-					li {
-						img {		
-							display: block;
-							float: left;
-						}
-						p {
-							padding-left: 24px;
-							position: relative;
-							top:-4px;
-						}
-					}
-				}
+				
+			}
+
+			@media all and (max-width: $mobile-breakpoint) {
+				position: static;
+				margin: 0 auto;
+				max-width: none;
+				margin-bottom: 44px;
+
 			}
 
 		}
 
 		figure {
 			img {
+				display: inline-block;
 				position: absolute;
 				top: 68px;
 				right: 50%;
@@ -1255,6 +1522,30 @@ footer {
 					margin-right: 72px;
 					top: 56px;
 				}
+
+				@media all and (max-width: $mobile-breakpoint) {
+					
+					position: static;
+					width: 100%;
+					height: auto;
+					margin-right: auto;
+					margin-left: auto;
+
+					padding-left: 12%;
+					padding-right: 12%;
+				}
+			}
+
+			@media all and (max-width: $mobile-breakpoint) {
+
+				width: auto;
+				overflow: hidden;
+				padding-right: 20px;
+
+				margin-left: -35px;
+				margin-right: -35px;
+				text-align: center;
+
 			}
 		}
 	}
@@ -1270,6 +1561,10 @@ footer {
 			padding-bottom: 96px;
 		}
 
+		@media all and (max-width: $mobile-breakpoint) {
+			padding: 50px 5px 37px;
+		}
+
 		.center-aligned-block {
 			max-width: 552px;
 		}
@@ -1279,12 +1574,27 @@ footer {
 			margin-top: 36px;
 			width: 98%;
 		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			figure {
+				margin-top: 26px;
+				margin-left: -35px;
+				margin-right: -35px;
+				height: 158px;
+				background: url('../img/how_we_work/in_contact_fig.png') center center no-repeat;
+				background-size: 611px 158px;
+
+				img {
+					display: none;
+				}
+			}
+		}
 	}
 }
 
 #get-demo-section {
 	.container {
-		padding-top: 122px;
+		padding-top: 80px;
 		padding-bottom: 122px;
 
 		.center-aligned-block {
@@ -1294,7 +1604,7 @@ footer {
 		}
 
 		.form {
-			margin: 36px auto 0px;
+			margin: 36px auto 0;
 
 			.button-container {
 				margin: 0 auto;
@@ -1304,7 +1614,7 @@ footer {
 }
 
 #shadowed-navigation-section {
-	box-shadow: 0px 0px 16px 4px rgba(43, 128, 255, 0.2);
+	box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.2);
 	position: relative;
 	z-index: 100;
 }

@@ -1,24 +1,33 @@
 
 .button {
-	display: block;
-	width: 400px;
+	display: inline-block;
+	// width: 400px;
 
 	font-family: Gilroy !important;
-	font-size: 15px !important;
+	font-size: 14px !important;
 	font-weight: 500 !important;
 	text-transform: uppercase !important;
-	line-height: initial !important;
+	line-height: 60px;
+	letter-spacing: 0.1em;
 
-	color: white;
-	background-color: $primary-color;
 
-	padding: 16px 52px;
+	padding: 0 25px;
+	border-radius: 3px;
 
-	padding-top: 16px !important;
-	padding-bottom: 16px !important;
+	transition: 0.33s;
 
 	border: none;
 	cursor: pointer;
+
+	@media all and (max-width: 768px) {
+		font-size: 10px !important;
+		font-weight: 400 !important;
+		padding: 0 16px;
+	}
+}
+
+.call-to-action {
+	@extend .button;
 }
 
 .number-in-circle {
@@ -28,8 +37,16 @@
 	font-weight: 600 !important;
 	line-height: 96px !important;
 	
-	width: 96px !important;
-	height: 96px !important;
+	width: 96px;
+	height: 96px;
+
+	@media all and (max-width: 768px) {
+		width: 72px;
+		height: 72px;
+		font-size: 30px !important;
+		line-height: 72px !important;
+	}
+
 	background-color: white;
 	color: $primary-color !important;
 

@@ -23,6 +23,10 @@ ul {
     .container {
       margin: 0 35px;
       padding: 0; } }
+  @media all and (max-width: 768px) {
+    .container {
+      margin: 0 30px;
+      padding: 0; } }
 
 .photo-block, .dimming-block {
   height: 100%;
@@ -34,6 +38,11 @@ header {
   header .container {
     padding-left: 60px;
     padding-right: 60px; }
+    @media all and (max-width: 768px) {
+      header .container {
+        margin: 0;
+        padding-left: 16px;
+        padding-right: 16px; } }
     header .container h2, header .container p, header .container a {
       margin: 0 auto; }
     header .container h2 {
@@ -41,6 +50,9 @@ header {
     header .container p {
       max-width: 685px;
       margin-top: 50px; }
+      @media all and (max-width: 768px) {
+        header .container p {
+          margin-top: 10px; } }
 
 #intro-section .photo-block {
   background: url("../img/index/header_background.png") center center no-repeat;
@@ -48,6 +60,7 @@ header {
 #intro-section .dimming-block {
   background-color: rgba(16, 16, 16, 0.6); }
 #intro-section .container {
+  position: relative;
   padding-top: 246px;
   padding-bottom: 230px; }
   #intro-section .container p {
@@ -56,12 +69,12 @@ header {
 .block h4 {
   margin: 0 auto 12px auto; }
 .block h3 {
-  margin: 12px auto 16px auto; }
-.block p {
-  margin: 16px auto 16px auto; }
+  margin: 12px auto 30px auto; }
+.block > p {
+  margin: 16px auto 42px auto; }
 .block ul li {
   display: block;
-  margin-top: 26px; }
+  margin-top: 14px; }
   .block ul li img {
     margin-right: 18px; }
 
@@ -78,13 +91,23 @@ header {
   float: right; }
 
 nav {
-  height: 125px; }
+  height: 104px; }
+  @media all and (max-width: 768px) {
+    nav {
+      height: 70px;
+      margin: 0 !important;
+      padding: 0 28px !important;
+      display: block;
+      position: static !important; } }
   nav .company-logo {
-    margin-top: 48px;
+    margin-top: 28px;
     float: left; }
     @media all and (max-width: 1024px) {
       nav .company-logo {
         margin-top: 30px; } }
+    @media all and (max-width: 768px) {
+      nav .company-logo {
+        margin-top: 20px; } }
     nav .company-logo h1, nav .company-logo p {
       display: inline-block;
       vertical-align: middle; }
@@ -92,19 +115,25 @@ nav {
       height: 45px;
       border-right-width: 1px;
       border-right-style: solid;
-      padding-right: 8px;
-      line-height: 42px; }
+      padding-right: 11px;
+      line-height: 44px; }
       @media all and (max-width: 1024px) {
         nav .company-logo h1 {
           height: 30px;
           line-height: 28px; } }
+      @media all and (max-width: 768px) {
+        nav .company-logo h1 {
+          border: none; } }
     nav .company-logo p {
       padding-left: 8px;
       text-align: left; }
+      @media all and (max-width: 768px) {
+        nav .company-logo p {
+          display: none; } }
   nav ul {
     float: right;
     overflow: hidden;
-    margin-top: 54px; }
+    margin-top: 32px; }
     nav ul li {
       float: left;
       margin-left: 60px; }
@@ -196,12 +225,13 @@ nav {
         #optimize-section ul li {
           width: 50%; } }
       #optimize-section ul li img {
-        height: 66px;
         margin-right: 0 !important; }
       #optimize-section ul li h5 {
         margin-top: 28px;
         margin-bottom: 20px; }
       #optimize-section ul li p {
+        margin-left: auto;
+        margin-right: auto;
         max-width: 242px !important; }
         @media all and (max-width: 1024px) {
           #optimize-section ul li p {
@@ -343,7 +373,8 @@ nav {
   #placement-section .block {
     position: relative;
     float: none;
-    margin-top: 42px;
+    margin-top: 0;
+    padding-top: 42px;
     left: 50%;
     max-width: 510px; }
     @media all and (max-width: 1024px) {
@@ -413,7 +444,7 @@ nav {
         height: 400px; } }
 
 #more-functions-section {
-  padding-top: 122px;
+  padding-top: 102px;
   padding-bottom: 142px;
   overflow: hidden;
   height: auto; }
@@ -423,6 +454,8 @@ nav {
       padding-bottom: 100px; } }
   #more-functions-section .block {
     max-width: 651px; }
+    #more-functions-section .block p {
+      margin-bottom: 16px; }
     @media all and (max-width: 1024px) {
       #more-functions-section .block p {
         max-width: 394px; } }
@@ -433,7 +466,7 @@ nav {
         margin-top: 40px; } }
     #more-functions-section ul li {
       margin-top: 72px;
-      margin-bottom: 20;
+      margin-bottom: 20px;
       text-align: center;
       display: block;
       float: left;
@@ -462,7 +495,7 @@ nav {
             max-width: 200px; } }
 
 #integration-section {
-  padding-top: 120px;
+  padding-top: 102px;
   padding-bottom: 100px;
   height: auto; }
   @media all and (max-width: 1024px) {
@@ -486,7 +519,7 @@ nav {
 
 #facts-section {
   height: 760px;
-  padding-top: 122px; }
+  padding-top: 102px; }
   @media all and (max-width: 1024px) {
     #facts-section {
       height: 640px;
@@ -557,8 +590,7 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    width: 50%;
-    background-color: #2b80ff; }
+    width: 50%; }
     @media all and (max-width: 1024px) {
       #contacts-section .map {
         display: none; } }
@@ -566,7 +598,7 @@ nav {
     float: right;
     width: 50%;
     height: 100%;
-    padding: 112px 0 140px 5%; }
+    padding: 102px 0 140px 5%; }
     @media all and (max-width: 1024px) {
       #contacts-section .block {
         float: none;
@@ -578,10 +610,16 @@ nav {
         #contacts-section .block .button-container {
           margin-left: auto;
           margin-right: auto; } }
-    #contacts-section .block h3 {
-      margin-bottom: 36px; }
+    @media all and (max-width: 768px) {
+      #contacts-section .block {
+        padding: 44px 10px 80px; } }
     #contacts-section .block p {
+      margin-top: 36px;
       margin-bottom: 36px; }
+      @media all and (max-width: 1024px) {
+        #contacts-section .block p {
+          margin-top: 20px;
+          margin-bottom: 30px; } }
 
 .form {
   max-width: 495px; }
@@ -589,22 +627,50 @@ nav {
     height: 50px;
     width: 50%;
     float: left; }
+    @media all and (max-width: 768px) {
+      .form .short-textfield {
+        width: 100%;
+        height: 40px;
+        float: none;
+        margin-top: 20px; } }
   .form .short-textfield:first-of-type {
     padding-right: 8px; }
+    @media all and (max-width: 768px) {
+      .form .short-textfield:first-of-type {
+        padding-right: 0; } }
   .form .short-textfield:last-of-type {
     padding-left: 8px; }
+    @media all and (max-width: 768px) {
+      .form .short-textfield:last-of-type {
+        padding-right: 0; } }
   .form input, .form textarea {
-    padding: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
     width: 100%;
     height: 100%; }
+    @media all and (max-width: 768px) {
+      .form input, .form textarea {
+        padding: 14px; } }
   .form textarea {
     width: 100%;
     height: 110px;
     margin-top: 20px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-top: 12px; }
+    @media all and (max-width: 768px) {
+      .form textarea {
+        height: 90px;
+        margin-bottom: 25px; } }
   .form .button-container {
     width: 50%;
     padding-right: 8px; }
+    .form .button-container .button, .form .button-container .call-to-action {
+      padding-top: 0;
+      padding-bottom: 0; }
+    @media all and (max-width: 768px) {
+      .form .button-container {
+        width: 100%;
+        padding-right: 0; } }
   .form input:focus,
   .form textarea:focus,
   .form button:focus {
@@ -617,23 +683,49 @@ footer .container {
       padding-left: initial;
       padding-right: initial;
       padding-bottom: 62px; } }
+  @media all and (max-width: 768px) {
+    footer .container {
+      padding: 40px 10px 32px; } }
   footer .container .info {
     overflow: hidden;
     padding-bottom: 100px;
     border-bottom: 1px solid rgba(172, 172, 172, 0.3); }
+    @media all and (max-width: 768px) {
+      footer .container .info {
+        padding-bottom: 36px; } }
     footer .container .info div {
       float: left; }
+      @media all and (max-width: 768px) {
+        footer .container .info div {
+          float: none;
+          text-align: center; } }
     footer .container .info ul {
       float: right; }
+      @media all and (max-width: 768px) {
+        footer .container .info ul {
+          float: none; } }
       footer .container .info ul li {
         float: left;
         margin-left: 56px; }
+        @media all and (max-width: 768px) {
+          footer .container .info ul li {
+            float: none;
+            margin-left: 0; } }
   footer .container .copyright {
     padding-top: 24px; }
+    @media all and (max-width: 768px) {
+      footer .container .copyright {
+        padding-top: 12px; } }
     footer .container .copyright p:first-of-type {
       float: left; }
+      @media all and (max-width: 768px) {
+        footer .container .copyright p:first-of-type {
+          float: none; } }
     footer .container .copyright p:last-of-type {
       float: right; }
+      @media all and (max-width: 768px) {
+        footer .container .copyright p:last-of-type {
+          float: none; } }
 
 #how-we-work-intro-section .photo-block {
   background: url("../img/how_we_work/header_background.png") center center no-repeat;
@@ -647,11 +739,47 @@ footer .container {
     #how-we-work-intro-section .container {
       padding-top: 156px;
       padding-bottom: 132px; } }
+  @media all and (max-width: 768px) {
+    #how-we-work-intro-section .container {
+      padding: 54px 0;
+      padding-top: 54px;
+      padding-bottom: 55px; }
+      #how-we-work-intro-section .container > h2, #how-we-work-intro-section .container > p {
+        margin-left: 16px;
+        margin-right: 16px; } }
+  #how-we-work-intro-section .container > div {
+    position: relative; }
+  #how-we-work-intro-section .container #how-we-work-arrow-forward, #how-we-work-intro-section .container #how-we-work-arrow-back {
+    position: absolute;
+    top: 88px;
+    width: 8px;
+    height: 14px;
+    display: none; }
+    @media all and (max-width: 768px) {
+      #how-we-work-intro-section .container #how-we-work-arrow-forward, #how-we-work-intro-section .container #how-we-work-arrow-back {
+        display: block; } }
+  #how-we-work-intro-section .container #how-we-work-arrow-back {
+    right: 50%;
+    margin-right: 66px; }
+  #how-we-work-intro-section .container #how-we-work-arrow-forward {
+    left: 50%;
+    margin-left: 66px; }
+@media all and (max-width: 768px) {
+  #how-we-work-intro-section .horizontal-scroller {
+    width: auto;
+    overflow: scroll; } }
 #how-we-work-intro-section ul {
   margin: 0 auto;
   margin-top: 88px;
   max-width: 1200px;
   overflow: hidden; }
+  @media all and (max-width: 768px) {
+    #how-we-work-intro-section ul {
+      margin-top: 60px;
+      position: relative;
+      width: 300%;
+      max-width: none;
+      margin-right: 0; } }
   #how-we-work-intro-section ul li {
     float: left;
     width: 33.33333%;
@@ -679,8 +807,11 @@ footer .container {
       -webkit-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
       -o-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
       border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat; }
+      @media all and (max-width: 768px) {
+        #how-we-work-intro-section ul li:after {
+          display: none; } }
     #how-we-work-intro-section ul li:last-of-type:after {
-      visibility: hidden; }
+      display: none; }
 
 #development-section {
   padding-top: 104px;
@@ -688,14 +819,27 @@ footer .container {
   @media all and (max-width: 1024px) {
     #development-section {
       padding-top: 84px; } }
+  @media all and (max-width: 768px) {
+    #development-section {
+      padding-top: 38px;
+      padding-bottom: 79px; } }
   #development-section .center-aligned-block, #development-section #facts-section ul li, #facts-section ul #development-section li {
     max-width: 604px; }
+    @media all and (max-width: 1024px) {
+      #development-section .center-aligned-block, #development-section #facts-section ul li, #facts-section ul #development-section li {
+        max-width: none;
+        padding-left: 35px;
+        padding-right: 35px; } }
   #development-section .container {
     position: relative;
     padding-top: 116px; }
     @media all and (max-width: 1024px) {
       #development-section .container {
         padding-top: 56px; } }
+    @media all and (max-width: 768px) {
+      #development-section .container {
+        padding-top: 0;
+        margin-top: 32px; } }
     #development-section .container .block {
       position: relative;
       float: none;
@@ -705,17 +849,30 @@ footer .container {
       @media all and (max-width: 1024px) {
         #development-section .container .block {
           margin-left: -25px; } }
+      @media all and (max-width: 768px) {
+        #development-section .container .block {
+          margin: 0;
+          position: static !important;
+          max-width: none; } }
       #development-section .container .block ul li img {
         display: block;
         float: left;
         width: 24px;
         height: 24px;
         margin: 0; }
+        @media all and (max-width: 768px) {
+          #development-section .container .block ul li img {
+            width: 18px;
+            height: 18px; } }
       #development-section .container .block ul li p {
         position: relative;
         top: -2px;
         margin-left: 48px;
         max-width: 356px; }
+        @media all and (max-width: 768px) {
+          #development-section .container .block ul li p {
+            margin-left: 32px;
+            max-width: none; } }
     #development-section .container figure img {
       position: absolute;
       top: 68px;
@@ -726,12 +883,24 @@ footer .container {
           height: 329px;
           top: -8px;
           margin-right: 108px; } }
+      @media all and (max-width: 768px) {
+        #development-section .container figure img {
+          position: static !important;
+          width: 100%;
+          height: auto;
+          padding-right: 24px;
+          margin: 0;
+          margin-top: 40px; } }
 
 #incalcation-section {
   height: 760px; }
   @media all and (max-width: 1024px) {
     #incalcation-section {
       height: 520px; } }
+  @media all and (max-width: 768px) {
+    #incalcation-section {
+      height: auto;
+      overflow: hidden; } }
   #incalcation-section .container {
     padding-top: 208px;
     padding-bottom: 280px;
@@ -740,8 +909,12 @@ footer .container {
       #incalcation-section .container {
         padding-top: 136px;
         padding-bottom: 166px; } }
+    @media all and (max-width: 768px) {
+      #incalcation-section .container {
+        margin: 0;
+        padding: 0; } }
     #incalcation-section .container .block {
-      max-width: 418px;
+      max-width: 420px;
       position: absolute;
       right: 50%;
       margin-right: 40px; }
@@ -750,6 +923,11 @@ footer .container {
           margin-left: 32px;
           max-width: 342px;
           margin-right: 0; } }
+      @media all and (max-width: 768px) {
+        #incalcation-section .container .block {
+          max-width: none;
+          position: static;
+          margin: 40px 40px 0; } }
     #incalcation-section .container figure img {
       float: right;
       position: absolute;
@@ -759,6 +937,13 @@ footer .container {
         #incalcation-section .container figure img {
           margin-left: 66px;
           top: 16px; } }
+      @media all and (max-width: 768px) {
+        #incalcation-section .container figure img {
+          float: none;
+          display: block;
+          position: static !important;
+          margin: 16px 0 84px;
+          width: 100%; } }
 
 #support-section {
   height: 830px;
@@ -768,6 +953,10 @@ footer .container {
     #support-section {
       height: 760px;
       padding-top: 84px; } }
+  @media all and (max-width: 768px) {
+    #support-section {
+      height: auto;
+      padding: 38px 35px 35px; } }
   #support-section .center-aligned-block, #support-section #facts-section ul li, #facts-section ul #support-section li {
     max-width: 528px; }
     @media all and (max-width: 1024px) {
@@ -779,24 +968,34 @@ footer .container {
     @media all and (max-width: 1024px) {
       #support-section .container {
         padding-top: 60px; } }
+    @media all and (max-width: 768px) {
+      #support-section .container {
+        padding-top: 12px; } }
     #support-section .container .right-aligned-block {
       max-width: 380px;
       position: relative;
       float: none;
       left: 50%;
       margin-left: 88px; }
+      #support-section .container .right-aligned-block ul li img {
+        display: block;
+        float: left; }
+      #support-section .container .right-aligned-block ul li p {
+        padding-left: 24px;
+        position: relative;
+        top: -4px; }
       @media all and (max-width: 1024px) {
         #support-section .container .right-aligned-block {
           max-width: 358px;
-          margin-left: 12px; }
-          #support-section .container .right-aligned-block ul li img {
-            display: block;
-            float: left; }
-          #support-section .container .right-aligned-block ul li p {
-            padding-left: 24px;
-            position: relative;
-            top: -4px; } }
+          margin-left: 12px; } }
+      @media all and (max-width: 768px) {
+        #support-section .container .right-aligned-block {
+          position: static;
+          margin: 0 auto;
+          max-width: none;
+          margin-bottom: 44px; } }
     #support-section .container figure img {
+      display: inline-block;
       position: absolute;
       top: 68px;
       right: 50%;
@@ -805,6 +1004,23 @@ footer .container {
         #support-section .container figure img {
           margin-right: 72px;
           top: 56px; } }
+      @media all and (max-width: 768px) {
+        #support-section .container figure img {
+          position: static;
+          width: 100%;
+          height: auto;
+          margin-right: auto;
+          margin-left: auto;
+          padding-left: 12%;
+          padding-right: 12%; } }
+    @media all and (max-width: 768px) {
+      #support-section .container figure {
+        width: auto;
+        overflow: hidden;
+        padding-right: 20px;
+        margin-left: -35px;
+        margin-right: -35px;
+        text-align: center; } }
 
 #in-contact-section .container {
   padding-top: 90px;
@@ -813,25 +1029,38 @@ footer .container {
     #in-contact-section .container {
       padding-top: 84px;
       padding-bottom: 96px; } }
+  @media all and (max-width: 768px) {
+    #in-contact-section .container {
+      padding: 50px 5px 37px; } }
   #in-contact-section .container .center-aligned-block, #in-contact-section .container #facts-section ul li, #facts-section ul #in-contact-section .container li {
     max-width: 552px; }
   #in-contact-section .container img {
     display: block;
     margin-top: 36px;
     width: 98%; }
+  @media all and (max-width: 768px) {
+    #in-contact-section .container figure {
+      margin-top: 26px;
+      margin-left: -35px;
+      margin-right: -35px;
+      height: 158px;
+      background: url("../img/how_we_work/in_contact_fig.png") center center no-repeat;
+      background-size: 611px 158px; }
+      #in-contact-section .container figure img {
+        display: none; } }
 
 #get-demo-section .container {
-  padding-top: 122px;
+  padding-top: 80px;
   padding-bottom: 122px; }
   #get-demo-section .container .center-aligned-block p, #get-demo-section .container #facts-section ul li p, #facts-section ul #get-demo-section .container li p {
     max-width: 454px; }
   #get-demo-section .container .form {
-    margin: 36px auto 0px; }
+    margin: 36px auto 0; }
     #get-demo-section .container .form .button-container {
       margin: 0 auto; }
 
 #shadowed-navigation-section {
-  box-shadow: 0px 0px 16px 4px rgba(43, 128, 255, 0.2);
+  box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.2);
   position: relative;
   z-index: 100; }
 
@@ -876,11 +1105,14 @@ footer .container {
   font-weight: 400; }
 
 nav h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600; }
   @media all and (max-width: 1024px) {
     nav h1 {
       font-size: 28px; } }
+  @media all and (max-width: 768px) {
+    nav h1 {
+      font-size: 18px; } }
 nav p {
   font-size: 12px; }
   @media all and (max-width: 1024px) {
@@ -890,20 +1122,28 @@ nav ul li {
   font-size: 18px;
   line-height: 35px; }
 
-header .container h2 {
+header .container > h2 {
   font-size: 48px;
   font-weight: 600;
   line-height: 55px; }
   @media all and (max-width: 1024px) {
-    header .container h2 {
+    header .container > h2 {
       font-size: 42px;
       line-height: 50px; } }
-header .container p {
+  @media all and (max-width: 768px) {
+    header .container > h2 {
+      font-size: 22px;
+      line-height: 25px; } }
+header .container > p {
   font-size: 24px;
-  line-height: 30px; }
+  line-height: 35px; }
   @media all and (max-width: 1024px) {
-    header .container p {
+    header .container > p {
       font-size: 20px; } }
+  @media all and (max-width: 768px) {
+    header .container > p {
+      font-size: 14px;
+      line-height: 20px; } }
 
 .block h3 {
   font-size: 32px;
@@ -912,14 +1152,18 @@ header .container p {
 .block h4 {
   font-size: 16px;
   font-weight: 400;
-  text-transform: uppercase; }
-.block p {
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+.block > p {
   font-size: 20px;
   line-height: 30px; }
-.block ul li {
+.block ul li, .block ul p {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px; }
+
+.light-section h4, .light-gray-section h4 {
+  font-weight: 500; }
 
 @media all and (max-width: 1024px) {
   .block h3 {
@@ -928,9 +1172,18 @@ header .container p {
   .block h4 {
     font-size: 14px; }
   .block p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25px; } }
+    font-size: 16px; } }
+@media all and (max-width: 768px) {
+  .block h3 {
+    font-size: 18px;
+    line-height: 25px; }
+  .block h4 {
+    font-size: 9px; }
+  .block p {
+    font-size: 13px;
+    line-height: 20px; }
+  .block ul li, .block ul p {
+    font-size: 13px; } }
 #auto-logos-section {
   font-size: 12px;
   line-height: 20px; }
@@ -943,7 +1196,8 @@ header .container p {
 #optimize-section h5 {
   font-size: 15px;
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.08em; }
 #optimize-section li p {
   font-size: 16px;
   font-weight: 400;
@@ -982,35 +1236,56 @@ header .container p {
   @media all and (max-width: 1024px) {
     #facts-section .big-number {
       font-size: 50px; } }
-#facts-section h5 {
+#facts-section ul h5 {
   font-size: 20px;
   font-weight: 600;
   line-height: 25px; }
-#facts-section p {
+#facts-section ul p {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px; }
   @media all and (max-width: 1024px) {
-    #facts-section p {
+    #facts-section ul p {
       font-size: 14px; } }
 
 .form input, .form textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px; }
+  @media all and (max-width: 1024px) {
+    .form input, .form textarea {
+      font-size: 14px; } }
+.form .button, .form .call-to-action {
+  line-height: 50px; }
 
 footer .info {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px; }
+  @media all and (max-width: 1024px) {
+    footer .info {
+      font-size: 15px; } }
+  @media all and (max-width: 768px) {
+    footer .info {
+      font-size: 14px; } }
 footer .copyright {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px; }
+  @media all and (max-width: 1024px) {
+    footer .copyright {
+      font-size: 15px; } }
+  @media all and (max-width: 768px) {
+    footer .copyright {
+      font-size: 10px;
+      line-height: 16px; } }
 
 #how-we-work-intro-section ul h5 {
   font-size: 22px;
   font-weight: 600; }
+  @media all and (max-width: 768px) {
+    #how-we-work-intro-section ul h5 {
+      font-size: 16px; } }
 #how-we-work-intro-section ul p {
   font-size: 16px;
   font-weight: 400;
@@ -1018,9 +1293,9 @@ footer .copyright {
   @media all and (max-width: 1024px) {
     #how-we-work-intro-section ul p {
       font-size: 14px; } }
-
-#support-section ul li p {
-  font-size: 16px; }
+  @media all and (max-width: 768px) {
+    #how-we-work-intro-section ul p {
+      line-height: 20px; } }
 
 #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
   font-size: 32px;
@@ -1030,6 +1305,10 @@ footer .copyright {
     #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
       font-size: 26px;
       line-height: 35px; } }
+  @media all and (max-width: 768px) {
+    #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
+      font-size: 18px;
+      line-height: 25px; } }
 
 html {
   background-color: white; }
@@ -1060,6 +1339,8 @@ header .container p {
 
 #more-functions-section h5 {
   color: #333333; }
+#more-functions-section ul p {
+  color: #848789; }
 
 .form input, .form textarea {
   border: 1px solid #e1e1e1; }
@@ -1083,7 +1364,14 @@ footer .copyright a {
     color: #262626; }
   .light-navigation .logo {
     color: #2b80ff;
-    border-color: #848789; }
+    border-color: rgba(132, 135, 137, 0.6); }
+    @media all and (max-width: 768px) {
+      .light-navigation .logo {
+        color: #2b80ff; } }
+  @media all and (max-width: 768px) {
+    .light-navigation {
+      color: #2b80ff;
+      background-color: white; } }
 
 .transparent-navigation {
   color: white; }
@@ -1091,9 +1379,16 @@ footer .copyright a {
     color: #848789; }
   .transparent-navigation .logo {
     color: white;
-    border-color: white; }
+    border-color: rgba(255, 255, 255, 0.6); }
+    @media all and (max-width: 768px) {
+      .transparent-navigation .logo {
+        color: #2b80ff; } }
   .transparent-navigation a {
     color: white; }
+  @media all and (max-width: 768px) {
+    .transparent-navigation {
+      color: #2b80ff;
+      background-color: white; } }
 
 .light-section, .light-gray-section {
   color: black;
@@ -1102,7 +1397,7 @@ footer .copyright a {
     color: #2b80ff; }
   .light-section .block h3, .light-gray-section .block h3 {
     color: #333333; }
-  .light-section .block p, .light-gray-section .block p {
+  .light-section .block p, .light-gray-section .block p, .light-section .block li, .light-gray-section .block li {
     color: #848789; }
   .light-section a, .light-gray-section a {
     color: black; }
@@ -1124,33 +1419,150 @@ footer .copyright a {
   .gray-section a {
     color: white; }
 
-.button {
-  display: block;
-  width: 400px;
+.button, .call-to-action {
+  color: white;
+  background-color: #2b80ff; }
+
+.button:hover, .call-to-action:hover {
+  background-color: #2570e1;
+  -webkit-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
+  -moz-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
+  box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4); }
+
+@media all and (max-width: 768px) {
+  .call-to-action {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent; } }
+
+.button, .call-to-action {
+  display: inline-block;
   font-family: Gilroy !important;
-  font-size: 15px !important;
+  font-size: 14px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  line-height: initial !important;
-  color: white;
-  background-color: #2b80ff;
-  padding: 16px 52px;
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  padding: 0 25px;
+  border-radius: 3px;
+  transition: 0.33s;
   border: none;
   cursor: pointer; }
+  @media all and (max-width: 768px) {
+    .button, .call-to-action {
+      font-size: 10px !important;
+      font-weight: 400 !important;
+      padding: 0 16px; } }
 
 .number-in-circle {
   display: block;
   font-size: 36px !important;
   font-weight: 600 !important;
   line-height: 96px !important;
-  width: 96px !important;
-  height: 96px !important;
+  width: 96px;
+  height: 96px;
   background-color: white;
   color: #2b80ff !important;
   box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.4);
   border-radius: 48px !important;
   border: none; }
+  @media all and (max-width: 768px) {
+    .number-in-circle {
+      width: 72px;
+      height: 72px;
+      font-size: 30px !important;
+      line-height: 72px !important; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes slidInTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@-moz-keyframes slidInTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@-o-keyframes slidInTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@keyframes slidInTop {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+#intro-section .container h2, #intro-section .container p {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: slidInTop;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: slidInTop;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0;
+  -o-animation-duration: 2s;
+  -o-animation-name: slidInTop;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 2s;
+  animation-name: slidInTop;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+#intro-section .container .button, #intro-section .container .call-to-action {
+  opacity: 0;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: fadeIn;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 2s;
+  -o-animation-duration: 2s;
+  -o-animation-name: fadeIn;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
 
 /*# sourceMappingURL=style.css.map */

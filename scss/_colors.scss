@@ -11,15 +11,15 @@ header {
 }
 
 #optimize-section {
-    h5 {
-        color: #333333;
-    }
+	h5 {
+		color: #333333;
+	}
 
-    li {
-    	p {
-    		color: #848789;
-    	}
-    }
+	li {
+		p {
+			color: #848789;
+		}
+	}
 }
 
 #media-planning-section {
@@ -58,6 +58,11 @@ header {
 #more-functions-section {
 	h5 {
 		color: #333333;
+	}
+	ul {
+		p {
+			color: #848789;
+		}
 	}
 }
 
@@ -107,7 +112,15 @@ footer {
 
 	.logo {
 		color: $primary-color;
-		border-color: #848789;
+		border-color: transparentize(#848789, 0.4);
+		@media all and (max-width: $mobile-breakpoint) {
+			color: $primary-color;
+		}
+	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		color: $primary-color;
+		background-color: white;
 	}
 }
 
@@ -120,11 +133,19 @@ footer {
 
 	.logo {
 		color: white;
-		border-color: white;
+		border-color: transparentize(white, 0.4);
+		@media all and (max-width: $mobile-breakpoint) {
+			color: $primary-color;
+		}
 	}
 
 	a {
 		color: white;
+	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		color: $primary-color;
+		background-color: white;
 	}
 }
 
@@ -141,7 +162,7 @@ footer {
 			color: #333333;
 		}
 
-		p {
+		p, li {
 			color: #848789;
 		}
 	}
@@ -180,5 +201,28 @@ footer {
 
 	a {
 		color: white;
+	}
+}
+
+.button {
+	color: white;
+	background-color: $primary-color;
+}
+
+.button:hover {
+	background-color: #2570e1;
+
+	-webkit-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
+	-moz-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
+	box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
+}
+
+.call-to-action {
+	@extend .button;
+
+	@media all and (max-width: 768px) {
+		color: white;
+		border: 1px solid white;
+		background-color: transparent;
 	}
 }
