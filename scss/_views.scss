@@ -2,7 +2,6 @@
 @mixin button($font-size, $line-height, $padding) {
 	display: inline-block;
 
-	font-family: Gilroy !important;
 	font-size: $font-size !important;
 	font-weight: 500 !important;
 	text-transform: uppercase !important;
