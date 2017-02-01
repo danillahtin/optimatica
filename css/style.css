@@ -31,10 +31,10 @@ a {
 
 .small-button {
   display: inline-block;
-  font-size: 9px !important;
+  font-size: 12px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  line-height: 35px;
+  line-height: 42px;
   letter-spacing: 0.1em;
   padding: 0 15px;
   border-radius: 3px;
@@ -45,10 +45,10 @@ a {
 
 .small-button-inverted {
   display: inline-block;
-  font-size: 10px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  line-height: 33px;
+  line-height: 40px;
   letter-spacing: 0.1em;
   padding: 0 15px;
   border-radius: 3px;
@@ -98,10 +98,10 @@ a {
       width: 51px;
       height: 51px; }
       #navicon span::before {
-        top: -12px;
+        top: -9px;
         transition-property: top, transform; }
       #navicon span::after {
-        bottom: -12px;
+        bottom: -9px;
         transition-property: bottom, transform; }
       #navicon span {
         display: block;
@@ -152,10 +152,10 @@ a {
       width: 26px;
       height: 26px; }
       #navicon span::before {
-        top: -8px;
+        top: -6px;
         transition-property: top, transform; }
       #navicon span::after {
-        bottom: -8px;
+        bottom: -6px;
         transition-property: bottom, transform; }
       #navicon span {
         display: block;
@@ -456,7 +456,7 @@ header {
       margin-top: 50px; }
       @media all and (max-width: 650px) {
         header .container p {
-          margin-top: 10px; } }
+          margin-top: 14px; } }
 
 #intro-section .photo-block {
   background: url("../img/index/header_background.png") center center no-repeat;
@@ -471,8 +471,10 @@ header {
     margin-bottom: 76px; }
   @media all and (max-width: 650px) {
     #intro-section .container {
-      padding: 104px 28px 65px;
+      padding: 104px 34px 65px 28px;
       text-align: left; }
+      #intro-section .container h2 {
+        padding-right: 26px; }
       #intro-section .container p {
         margin-bottom: 20px; } }
 
@@ -485,9 +487,9 @@ header {
   margin: 12px auto 30px auto; }
   @media all and (max-width: 650px) {
     .block h3 {
-      margin: 8px auto 16px auto; } }
+      margin: 8px auto 0 auto; } }
 .block > p {
-  margin: 16px auto 42px auto; }
+  margin: 10px auto 42px auto; }
 .block ul li {
   display: block;
   margin-top: 14px; }
@@ -516,8 +518,10 @@ nav {
     nav {
       height: 70px;
       margin: 0 !important;
-      padding: 0 28px !important;
-      display: block; } }
+      display: block; }
+      nav .container {
+        margin: 0;
+        padding: 0 28px !important; } }
   nav .company-logo {
     margin-top: 28px;
     float: left;
@@ -603,7 +607,7 @@ nav {
       padding: 40px 0 0; } }
   @media all and (max-width: 1024px) and (max-width: 650px) {
     nav #menu {
-      padding: 20px 80px 54px; } }
+      padding: 20px 30px 54px; } }
   @media all and (max-width: 1024px) {
       nav #menu.active {
         z-index: 100;
@@ -621,7 +625,7 @@ nav {
         margin-left: -192px; } }
     @media all and (max-width: 1024px) and (max-width: 650px) {
       nav #menu ul {
-        width: 160px;
+        max-width: 310px;
         position: static;
         float: none;
         margin: 0 auto; } }
@@ -641,7 +645,7 @@ nav {
         margin-left: 30px; } }
     @media all and (max-width: 1024px) and (max-width: 650px) {
       nav #menu .additional-buttons {
-        margin: 0 auto; } }
+        margin: 20px auto 0; } }
   @media all and (max-width: 1024px) {
         nav #menu .additional-buttons li {
           text-align: center;
@@ -676,7 +680,7 @@ nav {
       padding-bottom: 58px; } }
   @media all and (max-width: 650px) {
     #auto-logos-section {
-      padding: 14px 0 39px; } }
+      padding: 11px 0 37px; } }
   #auto-logos-section ul {
     text-align: center;
     max-width: 1176px; }
@@ -697,11 +701,11 @@ nav {
           margin-top: 38px; } }
       @media all and (max-width: 650px) {
         #auto-logos-section ul li {
-          margin-top: 16px; } }
+          margin-top: 20px; } }
       #auto-logos-section ul li div {
         margin: 0 auto 23px;
         width: 115px;
-        height: 57px; }
+        height: auto; }
         #auto-logos-section ul li div img {
           display: block;
           width: 100%;
@@ -709,12 +713,12 @@ nav {
         @media all and (max-width: 1024px) {
           #auto-logos-section ul li div {
             width: 77px;
-            height: 39px;
+            height: auto;
             margin-bottom: 8px; } }
         @media all and (max-width: 650px) {
           #auto-logos-section ul li div {
             width: 49px;
-            height: 22px; } }
+            height: auto; } }
       #auto-logos-section ul li h5 {
         display: none; }
         @media all and (max-width: 650px) {
@@ -757,7 +761,7 @@ nav {
         max-width: 600px; } }
     @media all and (max-width: 650px) {
       #optimize-section ul {
-        padding: 0 10px; } }
+        padding: 0 24px 0 10px; } }
     #optimize-section ul li {
       display: block;
       float: left;
@@ -775,7 +779,9 @@ nav {
           #optimize-section ul li img {
             display: block;
             float: left;
-            width: 50px; } }
+            width: 51px;
+            position: relative;
+            top: -3px; } }
       #optimize-section ul li h5 {
         margin-top: 28px;
         margin-bottom: 20px; }
@@ -810,7 +816,10 @@ nav {
       padding-top: 72px; } }
   @media all and (max-width: 650px) {
     #media-planning-section {
-      padding-top: 34px; } }
+      padding-top: 34px; }
+      #media-planning-section .container {
+        margin: 0;
+        padding: 0; } }
   #media-planning-section .block {
     max-width: 575px; }
     @media all and (max-width: 1024px) {
@@ -820,7 +829,8 @@ nav {
       #media-planning-section .block {
         max-width: none; }
         #media-planning-section .block p {
-          margin-bottom: 12px; } }
+          margin-bottom: 12px;
+          padding: 0 30px; } }
   #media-planning-section #arrow-back, #media-planning-section #arrow-forward {
     display: none; }
   @media all and (max-width: 1024px) {
@@ -840,13 +850,13 @@ nav {
       left: 54px; } }
   @media all and (max-width: 1024px) and (max-width: 650px) {
     #media-planning-section #arrow-back {
-      left: 15px; } }
+      left: 45px; } }
   @media all and (max-width: 1024px) {
     #media-planning-section #arrow-forward {
       right: 54px; } }
   @media all and (max-width: 1024px) and (max-width: 650px) {
     #media-planning-section #arrow-forward {
-      right: 15px; } }
+      right: 45px; } }
 
   #media-planning-section .container div:nth-of-type(2) {
     position: relative;
@@ -863,6 +873,9 @@ nav {
     @media all and (max-width: 1024px) {
       #media-planning-section ul {
         max-width: none; } }
+    @media all and (max-width: 650px) {
+      #media-planning-section ul {
+        margin: 20px 30px 0; } }
     #media-planning-section ul li {
       position: relative;
       display: block;
@@ -878,11 +891,11 @@ nav {
           height: 110px; } }
       #media-planning-section ul li img {
         display: block;
-        margin: 0 auto;
-        width: 64px; }
+        margin: 0 auto; }
         @media all and (max-width: 650px) {
           #media-planning-section ul li img {
-            width: 40px; } }
+            width: 42px;
+            height: auto; } }
       #media-planning-section ul li div {
         padding: 48px 56px;
         margin: 0 auto;
@@ -896,14 +909,14 @@ nav {
           #media-planning-section ul li div {
             padding: 18px 0 0; } }
         #media-planning-section ul li div p {
-          margin: 32px auto 0 auto;
+          margin: 14px auto 0 auto;
           text-align: center; }
           @media all and (max-width: 1024px) {
             #media-planning-section ul li div p {
               max-width: 212px; } }
           @media all and (max-width: 650px) {
             #media-planning-section ul li div p {
-              padding: 0 32px;
+              padding: 0 28px;
               max-width: 276px;
               margin: 12px auto 0; } }
         #media-planning-section ul li div img:last-of-type {
@@ -969,6 +982,9 @@ nav {
         width: 33.33333%;
         display: block;
         padding: 0 115px; } }
+    @media all and (max-width: 650px) {
+      #media-planning-section figure {
+        padding: 0 30px; } }
     #media-planning-section figure img {
       display: block;
       box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
@@ -1008,7 +1024,7 @@ nav {
       margin-bottom: 52px; } }
   @media all and (max-width: 650px) {
     #placement-section {
-      margin-top: 104px;
+      margin-top: 60px;
       margin-bottom: 0;
       border-top: 1px solid rgba(132, 135, 137, 0.2);
       padding-top: 34px;
@@ -1306,7 +1322,7 @@ nav {
             border: none; } }
         @media all and (max-width: 650px) {
           #facts-section ul li .info {
-            margin-top: 20px;
+            margin-top: 10px;
             height: auto; } }
         #facts-section ul li .info h5 {
           margin-top: 36px; }
@@ -1444,7 +1460,8 @@ footer .container {
       @media all and (max-width: 650px) {
         footer .container .info div {
           float: none;
-          text-align: center; } }
+          text-align: center;
+          padding-bottom: 40px; } }
     footer .container .info ul {
       float: right; }
       @media all and (max-width: 650px) {
