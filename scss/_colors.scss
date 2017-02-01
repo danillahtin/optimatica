@@ -124,7 +124,7 @@ nav {
 	}
 }
 
-.light-navigation {
+@mixin light-navigation() {
 	color: #262626;
 
 
@@ -139,16 +139,11 @@ nav {
 	.logo {
 		color: $primary-color;
 		border-color: transparentize(#848789, 0.4);
-		@media all and (max-width: $mobile-breakpoint) {
-			color: $primary-color;
-		}
 	}
 
 	#navicon {
 		span, span::before, span::after {
 			background-color: #262626;
-
-
 		}
 	}
 
@@ -164,7 +159,11 @@ nav {
 	}
 }
 
-.transparent-navigation {
+.light-navigation {
+	@include light-navigation();
+}
+
+@mixin transparent-navigation() {
 	color: white;
 
 	.active {
@@ -183,6 +182,61 @@ nav {
 	#navicon {
 		span, span::before, span::after {
 			background-color: white;
+		}
+	}
+}
+
+.transparent-navigation {
+	@include transparent-navigation();
+}
+
+#how-we-work-navigation {
+	@media all and (max-width: 1000000px) and (min-width:1025px) {
+		@include light-navigation();
+	}
+
+	@media all and (max-width: 1024px) and (min-width:($mobile-breakpoint + 1)) {
+		@include transparent-navigation();
+	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		@include light-navigation();
+	}
+
+}
+
+nav.active {
+	.active {
+		color: #848789;
+	}
+
+	background-color: white !important;
+
+	.company-logo {
+		a {
+			color: #262626 !important;
+		}
+	}
+
+	.logo {
+		color: $primary-color !important;
+		border-color: transparentize(#848789, 0.4) !important;
+	}
+
+	#navicon {
+		span::before, span::after {
+			background-color: #262626  !important;
+		}
+	}
+
+	@media all and (max-width: $mobile-breakpoint) {
+		color: $primary-color;
+		background-color: white;
+
+		#navicon {
+			span::before, span::after {
+				background-color: $primary-color;
+			}
 		}
 	}
 }

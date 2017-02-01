@@ -78,6 +78,7 @@ $(document).ready(function(){
 
 		$(this).toggleClass('active');
 		$('#menu').toggleClass('active');
+		$('nav').toggleClass('active');
 
 	});	
 
@@ -124,7 +125,7 @@ $(document).ready(function(){
 		setActiveHowWeWorkStepWithIndex(index % 3);
 	});
 
-	initNav();
+	// initNav();
 
 	var navClassIsTransparent = $('nav').hasClass('transparent-navigation');
 	
@@ -152,7 +153,7 @@ function initNav() {
 	var width = $(window).width();
 
     if ((width <= 1024) && (width > 512)) {
-		$('nav').addClass('fixed').addClass('transparent-navigation').addClass('class_name');
+		$('nav').addClass('fixed').addClass('transparent-navigation');
 	} else {
 		$('nav').attr('class',initialClasses);
 	}
