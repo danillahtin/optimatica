@@ -673,7 +673,7 @@ nav {
 		}
 	
 		@media all and (max-width: $mobile-breakpoint) {
-			margin: 0 0 24px;
+			margin: 0;
 		}
 
 	}
@@ -807,9 +807,13 @@ nav {
 			@media all and (max-width: 1024px) {
 				width: 300%;
 			}
+
+			@media all and (max-width: $mobile-breakpoint) {
+
+			}
 		}
 
-		div:last-child {
+		div:nth-child(2) {
 			z-index: 50;
 			position: absolute;
 			height: 24%;
@@ -821,6 +825,22 @@ nav {
 			@media all and (max-width: 1024px) {
 				width: 300%;
 			}
+		}
+
+		
+	}
+
+	.page-control {
+		display: none;
+
+		@media all and (max-width: 1024px) {
+			display: block;
+		} 
+
+		@media all and (max-width: $mobile-breakpoint) {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 
@@ -1646,6 +1666,7 @@ footer {
 
 			@media all and (max-width: $mobile-breakpoint) {
 				display: block;
+				top: 78px;
 			}
 		}
 
@@ -1675,7 +1696,7 @@ footer {
 		overflow: hidden;
 
 		@media all and (max-width: $mobile-breakpoint) {
-			margin-top: 60px;
+			margin-top: 50px;
 			position: relative;
 			width: 300%;
 			max-width: none;
@@ -1697,11 +1718,11 @@ footer {
 			}
 
 			h5 {
-				margin-top: 36px;
+				margin-top: 20px;
 			}
 
 			p {
-				margin-top: 23px;
+				margin-top: 13px;
 				max-width: 232px;
 			}
 
@@ -1756,8 +1777,8 @@ footer {
 
 		@media all and (max-width: 1024px) {
 			max-width: none;
-			padding-left: 35px;
-			padding-right: 35px;
+			padding-left: 25px;
+			padding-right: 25px;
 		}
 
 	}
@@ -1771,7 +1792,7 @@ footer {
 		}
 			@media all and (max-width: $mobile-breakpoint) {
 				padding-top: 0;
-				margin-top: 32px;
+				margin-top: 30px;
 			}
 
 		.block {
@@ -1793,6 +1814,11 @@ footer {
 
 			ul {
 				li {
+
+					@media all and (max-width: $mobile-breakpoint) {
+						margin-top: 16px;
+					}
+
 					img {
 						display: block;
 						float: left;
@@ -1803,6 +1829,7 @@ footer {
 						@media all and (max-width: $mobile-breakpoint) {
 							width: 18px;
 							height: 18px;
+							margin-top: 1px;
 						}
 					}
 
@@ -1817,6 +1844,7 @@ footer {
 						@media all and (max-width: $mobile-breakpoint) {
 							margin-left: 32px;
 							max-width: none;
+							margin-top: 0px;
 						}
 					}
 					&:first-child {
@@ -1944,7 +1972,7 @@ footer {
 
 	@media all and (max-width: $mobile-breakpoint) {
 		height: auto;
-		padding: 38px 35px 35px;
+		padding: 38px 25px 35px 35px;
 	}
 
 	.center-aligned-block {
@@ -1964,7 +1992,8 @@ footer {
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
-			padding-top: 12px;
+			padding-top: 0;
+			margin: 0;
 		}
 
 		.right-aligned-block {
@@ -1978,6 +2007,11 @@ footer {
 				li {
 
 					margin-top: 25px;
+
+					@media all and (max-width: $mobile-breakpoint) {
+						margin-top: 18px;
+					}
+
 					img {		
 						display: block;
 						float: left;

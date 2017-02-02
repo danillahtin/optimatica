@@ -8,8 +8,6 @@ function log(message){
 function indexForSelectedHowWeWorkStep() {
 
 	var steps = $("#how-we-work-horizontal-scroller ul li");
-
-	log(steps);
 		
 	for (var i = 0; i < steps.length; i++) {
 		if ($(steps[i]).hasClass('active'))
@@ -55,10 +53,21 @@ function setActiveFigureWithIndex(index) {
 	}
 
 	var width = $('#scrollable-area').width();
-	$('#scrollable-area').animate({scrollLeft: width*index}, 800);
+	// log(isArrowClicked);
+
+	$('#scrollable-area').animate({
+		scrollLeft: width*index
+	}, 800, function () {
+    	isArrowClicked = false;
+    	var index = indexForSelectedFigure();
+    	setActiveItemWithIndex(index);
+    });
 }
 
 function setActiveItemWithIndex(index) {
+
+	if (!isArrowClicked) {
+
 
 	var items = $('.planning-section-item');
 
@@ -68,7 +77,14 @@ function setActiveItemWithIndex(index) {
 		else
 			$(items[i]).removeClass('active');
 	}
+
+	$('.page-control span').removeClass('active');
+	$($('.page-control span')[index]).addClass('active');
+
+	}
 }
+
+var isArrowClicked = false;
 
 $(document).ready(function(){
 	
@@ -95,6 +111,8 @@ $(document).ready(function(){
 		index = indexForSelectedFigure();
 		index += 2;
 
+		isArrowClicked = true
+
 		setActiveFigureWithIndex(index % 3);
 		setActiveItemWithIndex(index % 3);
 	});
@@ -104,6 +122,8 @@ $(document).ready(function(){
 		index = indexForSelectedFigure();
 		index += 1;
 
+		isArrowClicked = true
+
 		setActiveFigureWithIndex(index % 3);
 		setActiveItemWithIndex(index % 3);
 	});
@@ -111,7 +131,6 @@ $(document).ready(function(){
 	$('#how-we-work-arrow-back').click(function(event) {
 		var index = indexForSelectedHowWeWorkStep();
 		index += 2;
-		log(index);
 
 		setActiveHowWeWorkStepWithIndex(index % 3);
 	});
@@ -120,14 +139,18 @@ $(document).ready(function(){
 	$('#how-we-work-arrow-forward').click(function(event) {
 		var index = indexForSelectedHowWeWorkStep();
 		index += 1;
-		log(index);
 
 		setActiveHowWeWorkStepWithIndex(index % 3);
 	});
 
-	// initNav();
+	$('#scrollable-area').scroll(function() {
+		var offset = $(this).scrollLeft();
+		var page = offset/$(this).width();
 
-	var navClassIsTransparent = $('nav').hasClass('transparent-navigation');
+		setActiveItemWithIndex(Math.round(page));
+	});
+
+
 	
 });
 
@@ -143,31 +166,4 @@ function initMap(){
 	});
 
 	map.geoObjects.add(placemark);
-}
-
-function initNav() {
-
-	var initialClasses = $('nav').attr('class');
-	log(initialClasses);
-	
-	var width = $(window).width();
-
-    if ((width <= 1024) && (width > 512)) {
-		$('nav').addClass('fixed').addClass('transparent-navigation');
-	} else {
-		$('nav').attr('class',initialClasses);
-	}
-
-	log(initialClasses);
-	$(window).resize(function() {
-
-		var width = $(window).width();
-		if ((width <= 1024) && (width > 512)) {
-        	$('nav').addClass('fixed').addClass('transparent-navigation');
-        } else {
-        	$('nav').attr('class',initialClasses); 
-        }
-
-        log($('nav').className);
-	});
 }

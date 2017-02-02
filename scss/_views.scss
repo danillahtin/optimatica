@@ -156,3 +156,55 @@
 textarea {
 	resize: none;
 }
+
+@mixin pageControl($size) {
+	$base-size: 8px;
+	$interval: 8px;
+	$border-width: 1px;
+
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-indent: -9999px;
+	appearance: none;
+	box-shadow: none;
+	border-radius: 0;
+	border: none;
+	transition: background $mediumAnimationDuration;
+	width: ($base-size)*$size*3 + 2*$interval*$size;
+	height: ($base-size) * $size;
+
+	@for $i from 1 through 3 {
+		span:nth-child(#{$i}) {
+			display: block;
+			position: absolute;
+			left: ($i - 1) * ($base-size + $interval);
+			top: 0;
+			width: $base-size*$size;
+			height: $base-size*$size;
+			border: $border-width solid $primary-color;
+			border-radius: 50%;
+			background: transparent;
+			margin: 0;
+
+			transition: $mediumAnimationDuration;
+		}
+	}
+
+	span {
+		display: block;
+	}
+
+	span.active {
+		background-color: $primary-color;
+	}
+
+}
+
+.page-control {
+	@include pageControl(1);
+	z-index: 1000;
+}
