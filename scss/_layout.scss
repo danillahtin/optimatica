@@ -134,8 +134,7 @@ header {
 
 		@media all and (max-width: $mobile-breakpoint) {
 
-		    padding: 104px 34px 65px 28px;
-			text-align: left;
+		    padding: 104px 8px 65px;
 
 			h2 {
 				padding-right: 26px;
@@ -761,7 +760,7 @@ nav {
 			}
 
 			@media all and (max-width: $mobile-breakpoint) {
-				height: 110px;
+				height: 124px; //110px; - старое значение, можно удалить
 			}
 
 			img {
@@ -1283,12 +1282,21 @@ nav {
 	padding-bottom: 100px;
 	height: auto;
 
+	.container {
+
+		@media all and (max-width: $mobile-breakpoint) {
+			margin: 0;
+		}
+	}
+
+
 	@media all and (max-width: 1024px) {
 		padding-top: 90px;
 	}
 
 	@media all and (max-width: $mobile-breakpoint) {
 		padding-top: 34px;
+		padding-bottom: 24px;
 	}
 
 	.block {
@@ -1300,6 +1308,11 @@ nav {
 			@media all and (max-width: 1024px) {
 				max-width: 504px;
 			}
+
+			@media all and (max-width: $mobile-breakpoint) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
 		}
 
 		p {
@@ -1309,10 +1322,16 @@ nav {
 			@media all and (max-width: 1024px) {
 				max-width: 462px;
 			}
+
+			@media all and (max-width: $mobile-breakpoint) {
+				padding-left: 30px;
+				padding-right: 30px;
+				margin-bottom: 0;
+			}
 		}
 
 		@media all and (max-width: 1024px) {
-			// width: 474px;
+			
 
 			img {
 				display: block;
@@ -1324,15 +1343,12 @@ nav {
 
 		@media all and (max-width: $mobile-breakpoint) {
 			width: 100%;
+			padding: 0;
 
 			img {
-				// display: block;
+				margin-top: -36px;	
 			}
-
 		}
-
-
-
 	}
 }
 
@@ -2177,7 +2193,7 @@ footer {
 				margin-right: -35px;
 				height: 158px;
 				background: url('../img/how_we_work/in_contact_fig.png') center center no-repeat;
-				background-size: 443px 158px;
+				background-size: 502px 158px;
 
 				img {
 					display: none;

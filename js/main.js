@@ -168,7 +168,10 @@ $(document).ready(function(){
 	});
 
 	$('#scroll-to-top').click(function() {
-		$(window).animate({scrollTop: 0}, 800);
+		$('html, body').animate({scrollTop: 0}, 400);
+
+
+
 	});
 
 	$(window).scroll(function() {

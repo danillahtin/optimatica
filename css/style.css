@@ -443,6 +443,8 @@ nav.active {
 .dark-section {
   color: white;
   background-color: #2b80ff; }
+  .dark-section h4 {
+    color: rgba(255, 255, 255, 0.8); }
   .dark-section a {
     color: white; }
   .dark-section .block p {
@@ -564,8 +566,7 @@ header {
     margin-bottom: 76px; }
   @media all and (max-width: 650px) {
     #intro-section .container {
-      padding: 104px 34px 65px 28px;
-      text-align: left; }
+      padding: 104px 8px 65px; }
       #intro-section .container h2 {
         padding-right: 26px; }
       #intro-section .container p {
@@ -992,7 +993,7 @@ nav {
           display: none; } }
       @media all and (max-width: 650px) {
         #media-planning-section ul li {
-          height: 110px; } }
+          height: 124px; } }
       #media-planning-section ul li img {
         display: block;
         margin: 0 auto; }
@@ -1355,24 +1356,37 @@ nav {
   padding-top: 102px;
   padding-bottom: 100px;
   height: auto; }
+  @media all and (max-width: 650px) {
+    #integration-section .container {
+      margin: 0; } }
   @media all and (max-width: 1024px) {
     #integration-section {
       padding-top: 90px; } }
   @media all and (max-width: 650px) {
     #integration-section {
-      padding-top: 34px; } }
+      padding-top: 34px;
+      padding-bottom: 24px; } }
   #integration-section .block h3 {
     max-width: 620px;
     margin-bottom: 32px; }
     @media all and (max-width: 1024px) {
       #integration-section .block h3 {
         max-width: 504px; } }
+    @media all and (max-width: 650px) {
+      #integration-section .block h3 {
+        padding-left: 30px;
+        padding-right: 30px; } }
   #integration-section .block p {
     margin: 0 auto 68px auto;
     max-width: 580px; }
     @media all and (max-width: 1024px) {
       #integration-section .block p {
         max-width: 462px; } }
+    @media all and (max-width: 650px) {
+      #integration-section .block p {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 0; } }
   @media all and (max-width: 1024px) {
     #integration-section .block img {
       display: block;
@@ -1381,7 +1395,10 @@ nav {
       max-width: 504px; } }
   @media all and (max-width: 650px) {
     #integration-section .block {
-      width: 100%; } }
+      width: 100%;
+      padding: 0; }
+      #integration-section .block img {
+        margin-top: -36px; } }
 
 #facts-section {
   height: 760px;
@@ -1957,7 +1974,7 @@ footer .container {
       margin-right: -35px;
       height: 158px;
       background: url("../img/how_we_work/in_contact_fig.png") center center no-repeat;
-      background-size: 443px 158px; }
+      background-size: 502px 158px; }
       #in-contact-section .container figure img {
         display: none; } }
 
@@ -2030,7 +2047,7 @@ nav h1 {
       font-size: 28px; } }
   @media all and (max-width: 650px) {
     nav h1 {
-      font-size: 18px; } }
+      font-size: 20px; } }
 nav p {
   font-size: 12px; }
   @media all and (max-width: 1024px) {
@@ -2050,8 +2067,8 @@ header .container > h2 {
       line-height: 50px; } }
   @media all and (max-width: 650px) {
     header .container > h2 {
-      font-size: 22px;
-      line-height: 25px; } }
+      font-size: 26px;
+      line-height: 30px; } }
 header .container > p {
   font-size: 24px;
   line-height: 35px; }
@@ -2060,7 +2077,7 @@ header .container > p {
       font-size: 20px; } }
   @media all and (max-width: 650px) {
     header .container > p {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 20px; } }
 
 .block h3 {
@@ -2091,12 +2108,12 @@ header .container > p {
     line-height: 25px; } }
 @media all and (max-width: 650px) {
   .block h3 {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 25px; }
   .block h4 {
-    font-size: 9px; }
+    font-size: 11px; }
   .block p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px; }
   .block ul li, .block ul p {
     font-size: 13px; } }
@@ -2131,9 +2148,9 @@ header .container > p {
     font-size: 14px; } }
 @media all and (max-width: 650px) {
   #optimize-section h5 {
-    font-size: 10px; }
+    font-size: 12px; }
   #optimize-section li p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 15px; } }
 
 @media all and (max-width: 1024px) {

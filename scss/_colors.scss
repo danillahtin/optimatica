@@ -293,6 +293,11 @@ nav.active {
 
 .dark-section {
 	color: white;
+
+	h4 {
+		color: transparentize(#fff, 0.2);
+	}
+
 	background-color: $primary-color;
 
 	a {

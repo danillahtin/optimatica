@@ -80,7 +80,7 @@ nav {
             font-size: 28px;
         }
         @media all and (max-width: $mobile-breakpoint) {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         font-weight: 600;
@@ -114,8 +114,8 @@ header {
             }
 
             @media all and (max-width: $mobile-breakpoint) {
-                font-size: 22px;
-                line-height: 25px;
+                font-size: 26px;
+                line-height: 30px;
             }
 
         }
@@ -128,7 +128,7 @@ header {
                 font-size: 20px;
             }
             @media all and (max-width: $mobile-breakpoint) {
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 20px;
             }
         }   
@@ -186,16 +186,16 @@ header {
 @media all and (max-width: $mobile-breakpoint) {
     .block {
         h3 {
-            font-size: 18px;
+            font-size: 22px;
             line-height: 25px;
         }
 
         h4 {
-            font-size: 9px;
+            font-size: 11px;
         }
 
         p {
-            font-size: 13px;
+            font-size: 16px;
             line-height: 20px;
         }
 
@@ -259,12 +259,12 @@ header {
 
     @media all and (max-width: $mobile-breakpoint) {
         h5 {
-            font-size: 10px;
+            font-size: 12px;
         }
 
         li {
             p {
-                font-size: 10px;
+                font-size: 12px;
                 line-height: 15px;
             }
         }
