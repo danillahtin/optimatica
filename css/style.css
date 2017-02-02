@@ -1,5 +1,5 @@
 /*
-Error: Invalid CSS after "...ppearance none ": expected "{", was "!important;"
+Error: Invalid CSS after "...appearance none": expected "{", was ";"
         on line 159 of /Users/danillahtin/Documents/Programming/optimatica/scss/_views.scss
         from line 22 of /Users/danillahtin/Documents/Programming/optimatica/scss/style.scss
 
@@ -8,9 +8,9 @@ Error: Invalid CSS after "...ppearance none ": expected "{", was "!important;"
 156: textarea, input {
 157: 	resize: none;
 158: 
-159: 	-webkit-appearance none !important;
-160:     -moz-appearance: none !important;
-161: 	appearance: none !important;
+159: 	-webkit-appearance none;
+160:     -moz-appearance: none;
+161: 	appearance: none;
 162: }
 163: 
 164: @mixin pageControl($size) {
@@ -70,4 +70,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ppearance none \": expected \"{\", was \"!important;\"\A         on line 159 of /Users/danillahtin/Documents/Programming/optimatica/scss/_views.scss\A         from line 22 of /Users/danillahtin/Documents/Programming/optimatica/scss/style.scss\A \A 154: }\A 155: \A 156: textarea, input {\A 157: 	resize: none;\A 158: \A 159: 	-webkit-appearance none !important;\A 160:     -moz-appearance: none !important;\A 161: 	appearance: none !important;\A 162: }\A 163: \A 164: @mixin pageControl($size) {"; }
+  content: "Error: Invalid CSS after \"...appearance none\": expected \"{\", was \";\"\A         on line 159 of /Users/danillahtin/Documents/Programming/optimatica/scss/_views.scss\A         from line 22 of /Users/danillahtin/Documents/Programming/optimatica/scss/style.scss\A \A 154: }\A 155: \A 156: textarea, input {\A 157: 	resize: none;\A 158: \A 159: 	-webkit-appearance none;\A 160:     -moz-appearance: none;\A 161: 	appearance: none;\A 162: }\A 163: \A 164: @mixin pageControl($size) {"; }
