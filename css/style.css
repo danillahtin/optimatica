@@ -320,16 +320,16 @@ nav li:hover a {
   color: white; }
 
 .light-navigation {
-  color: #262626; }
+  color: #333333; }
   .light-navigation .active {
     color: #848789; }
   .light-navigation a {
-    color: #262626; }
+    color: #333333; }
   .light-navigation .logo {
     color: #2b80ff;
     border-color: rgba(132, 135, 137, 0.6); }
   .light-navigation #navicon span, .light-navigation #navicon span::before, .light-navigation #navicon span::after {
-    background-color: #262626; }
+    background-color: #333333; }
   @media all and (max-width: 650px) {
     .light-navigation {
       color: #2b80ff;
@@ -351,16 +351,16 @@ nav li:hover a {
 
 @media all and (max-width: 1000000px) and (min-width: 1025px) {
   #how-we-work-navigation {
-    color: #262626; }
+    color: #333333; }
     #how-we-work-navigation .active {
       color: #848789; }
     #how-we-work-navigation a {
-      color: #262626; }
+      color: #333333; }
     #how-we-work-navigation .logo {
       color: #2b80ff;
       border-color: rgba(132, 135, 137, 0.6); }
     #how-we-work-navigation #navicon span, #how-we-work-navigation #navicon span::before, #how-we-work-navigation #navicon span::after {
-      background-color: #262626; } }
+      background-color: #333333; } }
   @media all and (max-width: 1000000px) and (min-width: 1025px) and (max-width: 650px) {
     #how-we-work-navigation {
       color: #2b80ff;
@@ -382,16 +382,16 @@ nav li:hover a {
       background-color: white; } }
 @media all and (max-width: 650px) {
   #how-we-work-navigation {
-    color: #262626; }
+    color: #333333; }
     #how-we-work-navigation .active {
       color: #848789; }
     #how-we-work-navigation a {
-      color: #262626; }
+      color: #333333; }
     #how-we-work-navigation .logo {
       color: #2b80ff;
       border-color: rgba(132, 135, 137, 0.6); }
     #how-we-work-navigation #navicon span, #how-we-work-navigation #navicon span::before, #how-we-work-navigation #navicon span::after {
-      background-color: #262626; } }
+      background-color: #333333; } }
   @media all and (max-width: 650px) and (max-width: 650px) {
     #how-we-work-navigation {
       color: #2b80ff;
@@ -404,12 +404,12 @@ nav.active {
   nav.active .active {
     color: #848789; }
   nav.active .company-logo a {
-    color: #262626 !important; }
+    color: #333333 !important; }
   nav.active .logo {
     color: #2b80ff !important;
     border-color: rgba(132, 135, 137, 0.6) !important; }
   nav.active #navicon span::before, nav.active #navicon span::after {
-    background-color: #262626  !important; }
+    background-color: #2b80ff !important; }
   @media all and (max-width: 650px) {
     nav.active {
       color: #2b80ff;
