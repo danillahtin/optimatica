@@ -72,12 +72,6 @@
 	.container {
 		h2, p {
 			@include animation(0, $longAnimationDuration, slidInLeft);
-		}
-
-		.button {
-
-			opacity: 0;
-			@include animation($longAnimationDuration, $longAnimationDuration, fadeIn);
-		}
+        }
 	}
 }

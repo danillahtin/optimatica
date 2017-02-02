@@ -528,6 +528,19 @@ header {
         header .container p {
           margin-top: 14px; } }
 
+#scroll-to-top {
+  display: none;
+  opacity: 0;
+  transition: 0.17s;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000; }
+  @media all and (max-width: 650px) {
+    #scroll-to-top {
+      display: block; } }
+
 #intro-section .photo-block {
   background: url("../img/index/header_background.png") center center no-repeat;
   background-size: cover; }
@@ -923,7 +936,8 @@ nav {
       padding: 54px;
       width: 100px;
       height: 100px;
-      cursor: pointer; } }
+      cursor: pointer;
+      visibility: hidden; } }
   @media all and (max-width: 1024px) and (max-width: 650px) {
     #media-planning-section div.arrow {
       padding: 24px 45px; } }
@@ -1494,7 +1508,7 @@ nav {
     @media all and (max-width: 650px) {
       .form .short-textfield {
         width: 100%;
-        height: 40px;
+        height: 45px;
         float: none;
         margin-top: 20px; } }
   .form .short-textfield:first-of-type {
@@ -1523,7 +1537,7 @@ nav {
     padding-top: 12px; }
     @media all and (max-width: 650px) {
       .form textarea {
-        height: 90px;
+        height: 100px;
         margin-bottom: 25px; } }
   .form .button-container {
     width: 50%;
@@ -2297,28 +2311,6 @@ footer .copyright {
   animation-delay: 0;
   animation-duration: 2s;
   animation-name: slidInLeft;
-  animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */ }
-#intro-section .container .button {
-  opacity: 0;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-name: fadeIn;
-  -webkit-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  -moz-animation-delay: 2s;
-  -moz-animation-duration: 2s;
-  -moz-animation-name: fadeIn;
-  -moz-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  -o-animation-delay: 2s;
-  -o-animation-duration: 2s;
-  -o-animation-name: fadeIn;
-  -o-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  animation-delay: 2s;
-  animation-duration: 2s;
-  animation-name: fadeIn;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */ }
 

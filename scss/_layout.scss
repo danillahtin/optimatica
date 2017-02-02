@@ -73,6 +73,23 @@ header {
 	}
 }
 
+#scroll-to-top {
+	display: none;
+	opacity: 0;
+	transition: $fastAnimationDuration;
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	cursor: pointer;
+	z-index: 1000;
+
+	@media all and (max-width: $mobile-breakpoint) {
+		display: block;
+	}
+
+
+}
+
 
 #intro-section {
 

@@ -169,7 +169,16 @@ $(document).ready(function(){
 
 	});
 
+	$('#scroll-to-top').click(function() {
+		$(window).animate({scrollTop: 0}, 800);
+	});
 
+	$(window).scroll(function() {
+
+		var opacity = ($(this).scrollTop() > 100) ? 1 : 0;
+		$('#scroll-to-top').css('opacity', opacity);
+
+	});
 	
 });
 
