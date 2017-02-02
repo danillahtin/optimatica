@@ -1,5 +1,7 @@
 
 @mixin button($font-size, $line-height, $padding) {
+	background:none !important;
+
 	display: inline-block;
 
 	font-size: $font-size !important;
@@ -19,18 +21,17 @@
 
 
 .button {
-	@include button(14px, 60px, 25px);
+	@media all and (min-width: $mobile-breakpoint + 1) {
+		@include button(14px, 60px, 25px);
+	}
 
 	@media all and (max-width: $mobile-breakpoint) {
-		font-size: 10px !important;
-		font-weight: 400 !important;
-		padding: 0 16px;
-		line-height: 35px !important;
+		@include button(12px, 43px, 15px);
 	}
 }
 
 .small-button {
-	@include button(12px, 42px, 15px);
+	@include button(12px, 43px, 15px);
 
 }
 

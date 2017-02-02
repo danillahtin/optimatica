@@ -248,7 +248,7 @@ nav.active {
 
 	ul:first-child {
 		a {
-			color: #404040;
+			color: #333;
 
 			&:hover {
 
@@ -323,11 +323,11 @@ nav.active {
 
 .button, .small-button {
 	color: white !important;
-	background-color: $primary-color;
+	background-color: $primary-color !important;
 }
 
 .button:hover, .small-button:hover {
-	background-color: #2570e1;
+	background-color: #2570e1 !important;
 
 	-webkit-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
 	-moz-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
@@ -336,13 +336,13 @@ nav.active {
 
 .small-button-inverted {
 	color: $primary-color !important;
-	background-color: transparent;
+	background-color: transparent !important;
 	border-color: $primary-color;
 }
 
 .small-button-inverted:hover {
 	color: white !important;
-	background-color: $primary-color;
+	background-color: $primary-color !important;
 
 	-webkit-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
 	-moz-box-shadow: 0 0 35px 0 transparentize(#999, 0.6);
@@ -351,5 +351,5 @@ nav.active {
 
 .call-to-action {
 	color: white;
-	background-color: $primary-color;
+	background-color: $primary-color !important;
 }

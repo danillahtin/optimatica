@@ -9,32 +9,44 @@ a {
 .hidden {
   display: none !important; }
 
-.button {
-  display: inline-block;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  text-transform: uppercase !important;
-  line-height: 60px;
-  letter-spacing: 0.1em;
-  padding: 0 25px;
-  border-radius: 3px;
-  transition: 0.33s;
-  appearance: none;
-  border: none;
-  cursor: pointer; }
-  @media all and (max-width: 650px) {
-    .button {
-      font-size: 10px !important;
-      font-weight: 400 !important;
-      padding: 0 16px;
-      line-height: 35px !important; } }
+@media all and (min-width: 651px) {
+  .button {
+    background: none !important;
+    display: inline-block;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+    padding: 0 25px;
+    border-radius: 3px;
+    transition: 0.33s;
+    appearance: none;
+    border: none;
+    cursor: pointer; } }
+@media all and (max-width: 650px) {
+  .button {
+    background: none !important;
+    display: inline-block;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    line-height: 43px;
+    letter-spacing: 0.1em;
+    padding: 0 15px;
+    border-radius: 3px;
+    transition: 0.33s;
+    appearance: none;
+    border: none;
+    cursor: pointer; } }
 
 .small-button {
+  background: none !important;
   display: inline-block;
   font-size: 12px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  line-height: 42px;
+  line-height: 43px;
   letter-spacing: 0.1em;
   padding: 0 15px;
   border-radius: 3px;
@@ -44,6 +56,7 @@ a {
   cursor: pointer; }
 
 .small-button-inverted {
+  background: none !important;
   display: inline-block;
   font-size: 13px !important;
   font-weight: 500 !important;
@@ -408,7 +421,7 @@ nav.active {
   #menu {
     background-color: rgba(242, 244, 250, 0.95); }
     #menu ul:first-child a {
-      color: #404040; }
+      color: #333; }
       #menu ul:first-child a:hover {
         color: #bcbcbc; } }
 
@@ -445,29 +458,29 @@ nav.active {
 
 .button, .small-button {
   color: white !important;
-  background-color: #2b80ff; }
+  background-color: #2b80ff !important; }
 
 .button:hover, .small-button:hover {
-  background-color: #2570e1;
+  background-color: #2570e1 !important;
   -webkit-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   -moz-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4); }
 
 .small-button-inverted {
   color: #2b80ff !important;
-  background-color: transparent;
+  background-color: transparent !important;
   border-color: #2b80ff; }
 
 .small-button-inverted:hover {
   color: white !important;
-  background-color: #2b80ff;
+  background-color: #2b80ff !important;
   -webkit-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   -moz-box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4);
   box-shadow: 0 0 35px 0 rgba(153, 153, 153, 0.4); }
 
 .call-to-action {
   color: white;
-  background-color: #2b80ff; }
+  background-color: #2b80ff !important; }
 
 body {
   overflow-x: hidden;
@@ -520,6 +533,16 @@ header {
   background-size: cover; }
 #intro-section .dimming-block {
   background-color: rgba(16, 16, 16, 0.6); }
+#intro-section .button {
+  display: inline-block; }
+  @media all and (max-width: 1024px) {
+    #intro-section .button.desktop-button {
+      display: none; } }
+  #intro-section .button.tablet-button {
+    display: none; }
+    @media all and (max-width: 1024px) {
+      #intro-section .button.tablet-button {
+        display: inline-block; } }
 #intro-section .container {
   position: relative;
   padding-top: 246px;
@@ -1045,7 +1068,7 @@ nav {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 10px; } }
+        margin-top: 14px; } }
     @media all and (max-width: 650px) {
       #media-planning-section .page-control {
         margin: 0; } }
