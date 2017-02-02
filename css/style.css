@@ -2169,7 +2169,7 @@ header .container > p {
     font-size: 16px;
     line-height: 20px; }
   .block ul li, .block ul p {
-    font-size: 13px; } }
+    font-size: 16px; } }
 .light-section h4, .light-gray-section h4 {
   font-weight: 500; }
 
@@ -2365,6 +2365,34 @@ footer .copyright {
   100% {
     opacity: 1;
     transform: none; } }
+@-webkit-keyframes fadeInZoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.1, 1.1); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@-moz-keyframes fadeInZoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.1, 1.1); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@-o-keyframes fadeInZoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.1, 1.1); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+@keyframes fadeInZoomOut {
+  0% {
+    opacity: 0;
+    transform: scale(1.1, 1.1); }
+  100% {
+    opacity: 1;
+    transform: none; } }
 #intro-section .container h2, #intro-section .container p {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
@@ -2386,5 +2414,13 @@ footer .copyright {
   animation-name: slidInLeft;
   animation-fill-mode: forwards;
   /* this prevents the animation from restarting! */ }
+
+#optimize-section-icon-1 {
+  transition: 1s;
+  opacity: 0;
+  transform: scale(1.1, 1.1); }
+  #optimize-section-icon-1.presented {
+    opacity: 1;
+    transform: none; }
 
 /*# sourceMappingURL=style.css.map */

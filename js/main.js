@@ -182,6 +182,24 @@ $(document).ready(function(){
 		$('#scroll-to-top').css('opacity', opacity);
 
 	});
+
+
+
+			var controller = new ScrollMagic.Controller();
+
+
+			var scene = new ScrollMagic.Scene({triggerElement: '#optimize-section'}).setClassToggle("#optimize-section-icon-1", "presented").addTo(controller);
+
+Scene({triggerElement: "#sec1"})
+					.setClassToggle("#high1", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+			controller.addScene(scene);
+
+
+
+
+	
 	
 });
 
