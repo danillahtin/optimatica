@@ -1,6 +1,5 @@
 
 @mixin button($font-size, $line-height, $padding) {
-	background:none !important;
 
 	display: inline-block;
 
@@ -154,8 +153,12 @@
 	}
 }
 
-textarea {
+textarea, input {
 	resize: none;
+
+	-webkit-appearance none !important;
+    -moz-appearance: none !important;
+	appearance: none !important;
 }
 
 @mixin pageControl($size) {
