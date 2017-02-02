@@ -159,6 +159,8 @@ textarea, input {
 	-webkit-appearance: none !important;
     -moz-appearance: none !important;
 	appearance: none !important;
+
+ 	border-radius: 3px;
 }
 
 @mixin pageControl($size) {
