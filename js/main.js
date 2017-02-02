@@ -5,6 +5,16 @@ function log(message){
 	console.log(message);
 }
 
+$.fn.scrollEnd = function(callback, timeout) {          
+  $(this).scroll(function(){
+    var $this = $(this);
+    if ($this.data('scrollTimeout')) {
+      clearTimeout($this.data('scrollTimeout'));
+    }
+    $this.data('scrollTimeout', setTimeout(callback,timeout));
+  });
+};
+
 function indexForSelectedHowWeWorkStep() {
 
 	var steps = $("#how-we-work-horizontal-scroller ul li");
@@ -53,7 +63,6 @@ function setActiveFigureWithIndex(index) {
 	}
 
 	var width = $('#scrollable-area').width();
-	// log(isArrowClicked);
 
 	$('#scrollable-area').animate({
 		scrollLeft: width*index
@@ -148,6 +157,16 @@ $(document).ready(function(){
 		var page = offset/$(this).width();
 
 		setActiveItemWithIndex(Math.round(page));
+	});
+
+	$('#scrollable-area').on("swipe",function(event) {
+
+		log ('mouse');
+	  	var offset = $('#scrollable-area').scrollLeft();
+		var page = offset/$('#scrollable-area').width();
+
+		setActiveFigureWithIndex(Math.round(page));
+
 	});
 
 

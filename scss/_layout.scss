@@ -629,40 +629,60 @@ nav {
 
 	#arrow-back, #arrow-forward {
 		display: none;
+
+		@media all and (max-width: 1024px) {
+			display: block;
+		}
 	}
 
 	@media all and (max-width: 1024px) {
 
-		#arrow-back, #arrow-forward {
-			display: block !important;
-			position: absolute !important;
-			top: 54px;
+		div.arrow {
+			
+			position: absolute;
+			z-index: 1000;
+			padding: 54px;
+			width:100px;
+			height: 100px;
 			cursor: pointer;
-			z-index: 200;
+
 
 			@media all and (max-width: $mobile-breakpoint) {
-				width: 6px;
-				height: 11px;
-				top: 24px;
+				padding: 24px 45px;
+			}
+
+			img {
+				display: block !important;
+				z-index: 200;
+
+				@media all and (max-width: $mobile-breakpoint) {
+					width: 6px;
+					height: 11px;
+
+				}
+
+			}
+
+			&:nth-child(1) {
+				left: 54px;
+				@media all and (max-width: $mobile-breakpoint) {
+					left: 0px;
+				}
+			}
+
+			&:nth-child(2) {
+				right: 54px;
+				@media all and (max-width: $mobile-breakpoint) {
+					right: 0px;
+				}
 			}
 		}
 
-		#arrow-back {
-			left: 54px;
-			@media all and (max-width: $mobile-breakpoint) {
-				left: 45px;
-			}
-		}
 
-		#arrow-forward {
-			right: 54px;
-			@media all and (max-width: $mobile-breakpoint) {
-				right: 45px;
-			}
-		}
+		
 	}
 
-	.container div:nth-of-type(2) {
+	.container > div:nth-child(2) {
 		position: relative;
 		
 		margin: 88px auto 40px auto;
@@ -835,12 +855,14 @@ nav {
 
 		@media all and (max-width: 1024px) {
 			display: block;
-		} 
-
-		@media all and (max-width: $mobile-breakpoint) {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
+			margin-top: 14px;
+		} 
+
+		@media all and (max-width: $mobile-breakpoint) {
+			margin: 0;
 		}
 	}
 
