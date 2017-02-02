@@ -96,8 +96,6 @@ function setActiveItemWithIndex(index) {
 var isArrowClicked = false;
 
 $(document).ready(function(){
-	
-	ymaps.ready(initMap);
 
 	$('#navicon').click(function(event) {
 
@@ -183,15 +181,31 @@ $(document).ready(function(){
 });
 
 
-function initMap(){     
-	map = new ymaps.Map("YandexMap", {
-		center: [55.756548, 37.595285],
-		zoom: 15
-	});
+function initMap() {     
 
-	placemark = new ymaps.Placemark([55.756548, 37.595285], { 
-		hintContent: 'Optimatica'
-	});
+	var office = { lat: 55.756548, lng: 37.595285};
 
-	map.geoObjects.add(placemark);
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: office,
+        styles:[ { "elementType": "geometry", "stylers": [ { "color": "#212121" } ] }, { "elementType": "geometry.stroke", "stylers": [ { "weight": 7.5 } ] }, { "elementType": "labels.icon", "stylers": [ { "color": "#326afb" }, { "visibility": "off" } ] }, { "elementType": "labels.text.fill", "stylers": [ { "color": "#326afb" }, { "visibility": "on" } ] }, { "elementType": "labels.text.stroke", "stylers": [ { "color": "#212121" } ] }, { "featureType": "administrative", "elementType": "geometry", "stylers": [ { "color": "#757575" } ] }, { "featureType": "administrative.country", "elementType": "labels.text.fill", "stylers": [ { "color": "#9e9e9e" } ] }, { "featureType": "administrative.land_parcel", "stylers": [ { "visibility": "off" } ] }, { "featureType": "administrative.locality", "elementType": "labels.text.fill", "stylers": [ { "color": "#bdbdbd" } ] }, { "featureType": "poi", "elementType": "labels.text.fill", "stylers": [ { "color": "#757575" } ] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [ { "color": "#181818" } ] }, { "featureType": "poi.park", "elementType": "labels.text.fill", "stylers": [ { "color": "#616161" } ] }, { "featureType": "poi.park", "elementType": "labels.text.stroke", "stylers": [ { "color": "#1b1b1b" } ] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [ { "color": "#2c2c2c" } ] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [ { "color": "#8a8a8a" } ] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [ { "color": "#373737" } ] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [ { "color": "#3c3c3c" } ] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [ { "color": "#326afb" } ] }, { "featureType": "road.highway.controlled_access", "elementType": "geometry", "stylers": [ { "color": "#4e4e4e" } ] }, { "featureType": "road.local", "elementType": "labels.text.fill", "stylers": [ { "color": "#616161" } ] }, { "featureType": "transit", "elementType": "labels.text.fill", "stylers": [ { "color": "#757575" } ] }, { "featureType": "water", "elementType": "geometry", "stylers": [ { "color": "#000000" } ] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [ { "color": "#326afb" } ] } ]
+    });
+
+
+    var pinColor = "2b80ff";
+    var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
+        new google.maps.Size(21, 34),
+        new google.maps.Point(0,0),
+        new google.maps.Point(10, 34));
+    var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
+        new google.maps.Size(40, 37),
+        new google.maps.Point(0, 0),
+        new google.maps.Point(12, 35));
+
+    var marker = new google.maps.Marker({
+        position: office,
+        map: map,
+        icon: pinImage,
+        shadow: pinShadow
+    });
 }
