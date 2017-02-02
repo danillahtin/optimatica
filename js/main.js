@@ -97,6 +97,8 @@ var isArrowClicked = false;
 
 $(document).ready(function(){
 
+	document.addEventListener("touchstart", function(){}, true);
+
 	$('#navicon').click(function(event) {
 
 		$(this).toggleClass('active');

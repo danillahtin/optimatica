@@ -561,6 +561,9 @@ header {
     #scroll-to-top {
       display: block; } }
 
+div.arrow {
+  -webkit-tap-highlight-color: transparent; }
+
 #intro-section .photo-block {
   background: url("../img/index/header_background.png") center center no-repeat;
   background-size: cover; }
