@@ -113,7 +113,7 @@ nav {
 
 	li:hover {
 		a {
-			color: #bcbcbc;
+			color: #848789;
 		}
 	}
 }
@@ -244,21 +244,21 @@ nav.active {
 #menu {
 
 	@media all and (max-width: 1024px) {
-	background-color: transparentize(#f2f4fa, 0.05);
+		background-color: transparentize(#f2f4fa, 0.05);
 
-	ul:first-child {
-		a {
-			color: #333;
+		ul:first-child {
+			a {
+				color: #333;
 
-			&:hover {
+				&:hover {
 
-			color: #bcbcbc;
+				color: #848789;
 
+				}
 			}
-		}
-		
+			
 
-	}
+		}
 }
 }
 

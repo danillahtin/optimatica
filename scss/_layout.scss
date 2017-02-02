@@ -2192,6 +2192,10 @@ footer {
 		padding-top: 80px;
 		padding-bottom: 122px;
 
+		@media all and (max-width: $mobile-breakpoint) {
+			padding-top: 35px;
+		}
+
 		.center-aligned-block {
 			p {
 				max-width: 574px;
