@@ -9,7 +9,7 @@ a {
 .hidden {
   display: none !important; }
 
-@media all and (min-width: 651px) {
+@media all and (min-width: 671px) {
   .button {
     display: inline-block;
     font-size: 14px !important;
@@ -23,7 +23,7 @@ a {
     appearance: none;
     border: none;
     cursor: pointer; } }
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
   .button {
     display: inline-block;
     font-size: 12px !important;
@@ -80,7 +80,7 @@ a {
   box-shadow: 0 0 16px 4px rgba(43, 128, 255, 0.4);
   border-radius: 48px !important;
   border: none; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     .number-in-circle {
       width: 72px;
       height: 72px;
@@ -89,7 +89,7 @@ a {
 
 #navicon {
   display: none; }
-  @media all and (max-width: 1024px) and (min-width: 651px) {
+  @media all and (max-width: 1024px) and (min-width: 671px) {
     #navicon {
       display: block;
       position: relative;
@@ -143,7 +143,7 @@ a {
         transform: rotate(-45deg); }
       #navicon.active span::before, #navicon.active span::after {
         transition-delay: 0s, 0.33s; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #navicon {
       display: block;
       position: relative;
@@ -325,12 +325,16 @@ nav li:hover a {
     color: #848789; }
   .light-navigation a {
     color: #333333; }
+    .light-navigation a:hover {
+      color: #848789; }
+  .light-navigation .company-logo > a:hover {
+    color: #333; }
   .light-navigation .logo {
     color: #2b80ff;
     border-color: rgba(132, 135, 137, 0.6); }
   .light-navigation #navicon span, .light-navigation #navicon span::before, .light-navigation #navicon span::after {
     background-color: #333333; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     .light-navigation {
       color: #2b80ff;
       background-color: white; }
@@ -356,19 +360,23 @@ nav li:hover a {
       color: #848789; }
     #how-we-work-navigation a {
       color: #333333; }
+      #how-we-work-navigation a:hover {
+        color: #848789; }
+    #how-we-work-navigation .company-logo > a:hover {
+      color: #333; }
     #how-we-work-navigation .logo {
       color: #2b80ff;
       border-color: rgba(132, 135, 137, 0.6); }
     #how-we-work-navigation #navicon span, #how-we-work-navigation #navicon span::before, #how-we-work-navigation #navicon span::after {
       background-color: #333333; } }
-  @media all and (max-width: 1000000px) and (min-width: 1025px) and (max-width: 650px) {
+  @media all and (max-width: 1000000px) and (min-width: 1025px) and (max-width: 670px) {
     #how-we-work-navigation {
       color: #2b80ff;
       background-color: white; }
       #how-we-work-navigation #navicon span, #how-we-work-navigation #navicon span::before, #how-we-work-navigation #navicon span::after {
         background-color: #2b80ff; } }
 
-@media all and (max-width: 1024px) and (min-width: 651px) {
+@media all and (max-width: 1024px) and (min-width: 671px) {
   #how-we-work-navigation {
     color: white; }
     #how-we-work-navigation .active {
@@ -380,19 +388,23 @@ nav li:hover a {
       color: white; }
     #how-we-work-navigation #navicon span, #how-we-work-navigation #navicon span::before, #how-we-work-navigation #navicon span::after {
       background-color: white; } }
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
   #how-we-work-navigation {
     color: #333333; }
     #how-we-work-navigation .active {
       color: #848789; }
     #how-we-work-navigation a {
       color: #333333; }
+      #how-we-work-navigation a:hover {
+        color: #848789; }
+    #how-we-work-navigation .company-logo > a:hover {
+      color: #333; }
     #how-we-work-navigation .logo {
       color: #2b80ff;
       border-color: rgba(132, 135, 137, 0.6); }
     #how-we-work-navigation #navicon span, #how-we-work-navigation #navicon span::before, #how-we-work-navigation #navicon span::after {
       background-color: #333333; } }
-  @media all and (max-width: 650px) and (max-width: 650px) {
+  @media all and (max-width: 670px) and (max-width: 670px) {
     #how-we-work-navigation {
       color: #2b80ff;
       background-color: white; }
@@ -405,12 +417,14 @@ nav.active {
     color: #848789; }
   nav.active .company-logo a {
     color: #333333 !important; }
+  nav.active .company-logo a:hover {
+    color: #333; }
   nav.active .logo {
     color: #2b80ff !important;
     border-color: rgba(132, 135, 137, 0.6) !important; }
   nav.active #navicon span::before, nav.active #navicon span::after {
     background-color: #2b80ff !important; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     nav.active {
       color: #2b80ff;
       background-color: white; }
@@ -499,7 +513,7 @@ ul {
     .container {
       margin: 0 35px;
       padding: 0; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     .container {
       margin: 0 30px;
       padding: 0; } }
@@ -514,7 +528,7 @@ header {
   header .container {
     padding-left: 60px;
     padding-right: 60px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       header .container {
         margin: 0;
         padding-left: 16px;
@@ -526,7 +540,7 @@ header {
     header .container p {
       max-width: 685px;
       margin-top: 50px; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         header .container p {
           margin-top: 14px; } }
 
@@ -539,7 +553,7 @@ header {
   bottom: 20px;
   cursor: pointer;
   z-index: 1000; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #scroll-to-top {
       display: block; } }
 
@@ -564,7 +578,7 @@ header {
   padding-bottom: 230px; }
   #intro-section .container p {
     margin-bottom: 76px; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #intro-section .container {
       padding: 104px 8px 65px; }
       #intro-section .container h2 {
@@ -574,12 +588,12 @@ header {
 
 .block h4 {
   margin: 0 auto 12px auto; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     .block h4 {
       margin-bottom: 8px; } }
 .block h3 {
   margin: 12px auto 30px auto; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     .block h3 {
       margin: 8px auto 0 auto; } }
 .block > p {
@@ -608,7 +622,7 @@ header {
 nav {
   height: 93px;
   position: relative; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     nav {
       height: 70px;
       margin: 0 !important;
@@ -624,7 +638,7 @@ nav {
     @media all and (max-width: 1024px) {
       nav .company-logo {
         margin-top: 30px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       nav .company-logo {
         margin-top: 20px; } }
     nav .company-logo h1, nav .company-logo p {
@@ -640,13 +654,13 @@ nav {
         nav .company-logo h1 {
           height: 30px;
           line-height: 28px; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         nav .company-logo h1 {
           border: none; } }
     nav .company-logo p {
       padding-left: 8px;
       text-align: left; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         nav .company-logo p {
           display: none; } }
   nav ul {
@@ -667,7 +681,7 @@ nav {
     z-index: 1000;
     right: 50px;
     top: 21px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       nav #navicon {
         top: 20px;
         right: 32px; } }
@@ -699,14 +713,14 @@ nav {
       height: 320px;
       top: -385px;
       padding: 40px 0 0; } }
-  @media all and (max-width: 1024px) and (max-width: 650px) {
+  @media all and (max-width: 1024px) and (max-width: 670px) {
     nav #menu {
       padding: 20px 30px 54px; } }
   @media all and (max-width: 1024px) {
       nav #menu.active {
         z-index: 100;
         top: 93px; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       nav #menu.active {
         top: 70px; } }
   @media all and (max-width: 1024px) {
@@ -717,7 +731,7 @@ nav {
         position: absolute;
         left: 50%;
         margin-left: -192px; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       nav #menu ul {
         max-width: 310px;
         position: static;
@@ -730,21 +744,21 @@ nav {
         text-align: left;
         margin: 0;
         margin-bottom: 28px; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       nav #menu ul li {
         margin-bottom: 10px; } }
   @media all and (max-width: 1024px) {
       nav #menu .additional-buttons {
         margin-bottom: 0;
         margin-left: 30px; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       nav #menu .additional-buttons {
         margin: 14px auto 0; } }
   @media all and (max-width: 1024px) {
         nav #menu .additional-buttons li {
           text-align: center;
           display: block; } }
-      @media all and (max-width: 1024px) and (max-width: 650px) {
+      @media all and (max-width: 1024px) and (max-width: 670px) {
         nav #menu .additional-buttons li {
           margin-bottom: 16px;
           width: auto; } }
@@ -757,7 +771,7 @@ nav {
       nav #menu .additional-buttons {
         display: block; } }
 
-@media all and (max-width: 1024px) and (min-width: 650px) {
+@media all and (max-width: 1024px) and (min-width: 670px) {
   #how-we-work-navigation {
     position: absolute;
     top: 0;
@@ -772,7 +786,7 @@ nav {
   @media all and (max-width: 1024px) {
     #auto-logos-section {
       padding-bottom: 58px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #auto-logos-section {
       padding: 11px 0 37px; } }
   #auto-logos-section ul {
@@ -782,7 +796,7 @@ nav {
       #auto-logos-section ul {
         max-width: 804px;
         margin: 14px auto 0; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #auto-logos-section ul {
         margin-top: 0; } }
     #auto-logos-section ul li {
@@ -793,7 +807,7 @@ nav {
         #auto-logos-section ul li {
           width: 33.33333%;
           margin-top: 38px; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #auto-logos-section ul li {
           margin-top: 20px; } }
       #auto-logos-section ul li div {
@@ -809,13 +823,13 @@ nav {
             width: 77px;
             height: auto;
             margin-bottom: 8px; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #auto-logos-section ul li div {
             width: 49px;
             height: auto; } }
       #auto-logos-section ul li h5 {
         display: none; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #auto-logos-section ul li h5 {
             display: block; } }
       #auto-logos-section ul li p {
@@ -823,7 +837,7 @@ nav {
         @media all and (max-width: 1024px) {
           #auto-logos-section ul li p {
             margin-top: 0px; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #auto-logos-section ul li p {
             display: none; } }
 
@@ -834,7 +848,7 @@ nav {
   @media all and (max-width: 1024px) {
     #optimize-section {
       padding: 72px 0 124px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #optimize-section {
       padding: 34px 0 72px; } }
   #optimize-section .block p {
@@ -842,7 +856,7 @@ nav {
     @media all and (max-width: 1024px) {
       #optimize-section .block p {
         max-width: 338px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #optimize-section .block p {
         max-width: none;
         margin-bottom: 0; } }
@@ -853,7 +867,7 @@ nav {
       #optimize-section ul {
         margin-top: 12px;
         max-width: 600px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #optimize-section ul {
         padding: 0 24px 0 10px; } }
     #optimize-section ul li {
@@ -863,13 +877,13 @@ nav {
       @media all and (max-width: 1024px) {
         #optimize-section ul li {
           width: 50%; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #optimize-section ul li {
           float: none;
           width: 100%; } }
       #optimize-section ul li img {
         margin-right: 0 !important; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #optimize-section ul li img {
             display: block;
             float: left;
@@ -882,7 +896,7 @@ nav {
         @media all and (max-width: 1024px) {
           #optimize-section ul li h5 {
             margin-top: 10px; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #optimize-section ul li h5 {
             text-align: left;
             margin: 0;
@@ -894,7 +908,7 @@ nav {
         @media all and (max-width: 1024px) {
           #optimize-section ul li p {
             max-width: 214px !important; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #optimize-section ul li p {
             text-align: left;
             margin-left: 70px;
@@ -907,8 +921,10 @@ nav {
   padding-top: 112px; }
   @media all and (max-width: 1024px) {
     #media-planning-section {
-      padding-top: 72px; } }
-  @media all and (max-width: 650px) {
+      padding-top: 72px; }
+      #media-planning-section .container {
+        margin: 0 80px; } }
+  @media all and (max-width: 670px) {
     #media-planning-section {
       padding-top: 34px; }
       #media-planning-section .container {
@@ -919,7 +935,7 @@ nav {
     @media all and (max-width: 1024px) {
       #media-planning-section .block {
         max-width: 459px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #media-planning-section .block {
         max-width: none; }
         #media-planning-section .block p {
@@ -937,29 +953,29 @@ nav {
       padding: 54px;
       width: 100px;
       height: 100px;
-      cursor: pointer;
-      visibility: hidden; } }
-  @media all and (max-width: 1024px) and (max-width: 650px) {
+      cursor: pointer; } }
+  @media all and (max-width: 1024px) and (max-width: 670px) {
     #media-planning-section div.arrow {
       padding: 24px 45px; } }
   @media all and (max-width: 1024px) {
       #media-planning-section div.arrow img {
         display: block !important;
-        z-index: 200; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+        z-index: 200;
+        transform: translate(-50%, -50%); } }
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       #media-planning-section div.arrow img {
         width: 6px;
         height: 11px; } }
   @media all and (max-width: 1024px) {
       #media-planning-section div.arrow:nth-child(1) {
         left: 54px; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       #media-planning-section div.arrow:nth-child(1) {
         left: 0px; } }
   @media all and (max-width: 1024px) {
       #media-planning-section div.arrow:nth-child(2) {
         right: 54px; } }
-    @media all and (max-width: 1024px) and (max-width: 650px) {
+    @media all and (max-width: 1024px) and (max-width: 670px) {
       #media-planning-section div.arrow:nth-child(2) {
         right: 0px; } }
 
@@ -970,7 +986,7 @@ nav {
     @media all and (max-width: 1024px) {
       #media-planning-section .container > div:nth-child(2) {
         margin: 66px 80px 26px 80px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #media-planning-section .container > div:nth-child(2) {
         margin: 0; } }
   #media-planning-section ul {
@@ -978,7 +994,7 @@ nav {
     @media all and (max-width: 1024px) {
       #media-planning-section ul {
         max-width: none; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #media-planning-section ul {
         margin: 20px 30px 0; } }
     #media-planning-section ul li {
@@ -991,13 +1007,13 @@ nav {
         #media-planning-section ul li {
           width: 100%;
           display: none; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #media-planning-section ul li {
           height: 124px; } }
       #media-planning-section ul li img {
         display: block;
         margin: 0 auto; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #media-planning-section ul li img {
             width: 42px;
             height: auto; } }
@@ -1010,7 +1026,7 @@ nav {
           #media-planning-section ul li div {
             max-width: none;
             padding: 38px 0 0; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #media-planning-section ul li div {
             padding: 18px 0 0; } }
         #media-planning-section ul li div p {
@@ -1019,7 +1035,7 @@ nav {
           @media all and (max-width: 1024px) {
             #media-planning-section ul li div p {
               max-width: 212px; } }
-          @media all and (max-width: 650px) {
+          @media all and (max-width: 670px) {
             #media-planning-section ul li div p {
               padding: 0 28px;
               max-width: 276px;
@@ -1059,10 +1075,11 @@ nav {
       position: relative;
       z-index: 100;
       overflow: hidden;
-      padding: 20px 0;
+      padding: 40px 0 20px;
       width: 100%; }
       @media all and (max-width: 1024px) {
         #media-planning-section #scrollable-area div:first-child {
+          padding: 20px 0;
           width: 300%; } }
     #media-planning-section #scrollable-area div:nth-child(2) {
       z-index: 50;
@@ -1084,7 +1101,7 @@ nav {
         left: 50%;
         transform: translateX(-50%);
         margin-top: 14px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #media-planning-section .page-control {
         margin: 0; } }
   #media-planning-section figure {
@@ -1098,8 +1115,8 @@ nav {
         margin: 0;
         width: 33.33333%;
         display: block;
-        padding: 0 115px; } }
-    @media all and (max-width: 650px) {
+        padding: 0 80px; } }
+    @media all and (max-width: 670px) {
       #media-planning-section figure {
         padding: 0 30px; } }
     #media-planning-section figure img {
@@ -1119,7 +1136,7 @@ nav {
       #media-planning-section .background-picture1 {
         width: 50%;
         opacity: 0.3; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #media-planning-section .background-picture1 {
         display: none; } }
   #media-planning-section .background-picture2 {
@@ -1139,7 +1156,7 @@ nav {
     #placement-section {
       margin-top: 16%;
       margin-bottom: 52px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #placement-section {
       margin-top: 60px;
       margin-bottom: 0;
@@ -1153,7 +1170,7 @@ nav {
       #placement-section .container {
         border: 1px solid transparent;
         height: 378px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #placement-section .container {
         height: auto;
         margin: 0; } }
@@ -1164,13 +1181,17 @@ nav {
     padding-top: 42px;
     left: 50%;
     max-width: 510px; }
+    #placement-section .block img {
+      float: left; }
+    #placement-section .block p {
+      overflow: hidden; }
     @media all and (max-width: 1024px) {
       #placement-section .block {
         max-width: 357px;
         left: 45%; }
         #placement-section .block ul {
           display: none; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #placement-section .block {
         position: static;
         padding: 0 35px;
@@ -1183,7 +1204,7 @@ nav {
     @media all and (max-width: 1024px) {
       #placement-section figure img {
         right: 52%; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #placement-section figure img {
         position: static;
         width: 100%;
@@ -1196,7 +1217,7 @@ nav {
   @media all and (max-width: 1024px) {
     #reportings-section {
       height: 460px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #reportings-section {
       height: auto;
       border-top: 1px solid rgba(132, 135, 137, 0.2);
@@ -1204,12 +1225,16 @@ nav {
       background-image: none; } }
   #reportings-section .container {
     border: 1px solid transparent; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #reportings-section .container {
         overflow: hidden; } }
   #reportings-section .block {
     max-width: 527px;
     margin-top: 116px; }
+    #reportings-section .block img {
+      float: left; }
+    #reportings-section .block p {
+      overflow: hidden; }
     @media all and (max-width: 1024px) {
       #reportings-section .block {
         max-width: 348px;
@@ -1217,7 +1242,7 @@ nav {
         margin-left: 24px; }
         #reportings-section .block ul {
           display: none; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #reportings-section .block {
         max-width: none;
         margin-top: 0;
@@ -1227,7 +1252,7 @@ nav {
           margin-bottom: 0; } }
   #reportings-section .img {
     display: none; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #reportings-section .img {
         display: block;
         background: url("../img/index/reportings_background_nofade.png") center center no-repeat;
@@ -1241,7 +1266,7 @@ nav {
   @media all and (max-width: 1024px) {
     #mediastorage-section {
       height: 590px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #mediastorage-section {
       height: auto; } }
   #mediastorage-section .container {
@@ -1250,7 +1275,7 @@ nav {
     @media all and (max-width: 1024px) {
       #mediastorage-section .container {
         padding-top: 130px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #mediastorage-section .container {
         padding-top: 34px;
         padding-bottom: 30px; } }
@@ -1259,13 +1284,17 @@ nav {
     position: relative;
     float: none;
     left: 50%; }
+    #mediastorage-section .block img {
+      float: left; }
+    #mediastorage-section .block p {
+      overflow: hidden; }
     @media all and (max-width: 1024px) {
       #mediastorage-section .block {
         left: 45%;
         max-width: 334px; }
         #mediastorage-section .block ul {
           display: none; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #mediastorage-section .block {
         position: static;
         max-width: none; } }
@@ -1278,7 +1307,7 @@ nav {
         top: 84px;
         right: 63%;
         height: 400px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #mediastorage-section figure img {
         position: static;
         width: 150%;
@@ -1293,7 +1322,7 @@ nav {
     #more-functions-section {
       padding-top: 64px;
       padding-bottom: 100px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #more-functions-section {
       padding-top: 34px;
       padding-bottom: 44px; } }
@@ -1319,9 +1348,9 @@ nav {
       min-height: 252px; }
       @media all and (max-width: 1024px) {
         #more-functions-section ul li {
-          min-height: 248px;
+          min-height: 260px;
           margin-top: 40px; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #more-functions-section ul li {
           width: 50%;
           min-height: 0;
@@ -1332,7 +1361,7 @@ nav {
         margin: 0 auto;
         display: block;
         margin-bottom: 36px; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #more-functions-section ul li img {
             margin-bottom: 12px; } }
       #more-functions-section ul li h5 {
@@ -1348,7 +1377,7 @@ nav {
         @media all and (max-width: 1024px) {
           #more-functions-section ul li p {
             max-width: 200px; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #more-functions-section ul li p {
             display: none; } }
 
@@ -1356,13 +1385,13 @@ nav {
   padding-top: 102px;
   padding-bottom: 100px;
   height: auto; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #integration-section .container {
       margin: 0; } }
   @media all and (max-width: 1024px) {
     #integration-section {
       padding-top: 90px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #integration-section {
       padding-top: 34px;
       padding-bottom: 24px; } }
@@ -1372,7 +1401,7 @@ nav {
     @media all and (max-width: 1024px) {
       #integration-section .block h3 {
         max-width: 504px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #integration-section .block h3 {
         padding-left: 30px;
         padding-right: 30px; } }
@@ -1382,7 +1411,7 @@ nav {
     @media all and (max-width: 1024px) {
       #integration-section .block p {
         max-width: 462px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #integration-section .block p {
         padding-left: 30px;
         padding-right: 30px;
@@ -1393,7 +1422,7 @@ nav {
       width: 100%;
       margin: 0 auto;
       max-width: 504px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #integration-section .block {
       width: 100%;
       padding: 0; }
@@ -1407,7 +1436,7 @@ nav {
     #facts-section {
       height: 640px;
       padding-top: 76px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #facts-section {
       height: auto;
       padding-top: 34px;
@@ -1417,7 +1446,7 @@ nav {
     @media all and (max-width: 1024px) {
       #facts-section .block p {
         max-width: 404px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #facts-section .block {
         max-width: none; } }
   #facts-section ul {
@@ -1425,7 +1454,7 @@ nav {
     @media all and (max-width: 1024px) {
       #facts-section ul {
         margin-top: 80px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #facts-section ul {
         margin-top: 50px; } }
     #facts-section ul li {
@@ -1433,7 +1462,7 @@ nav {
       float: left;
       width: 33.33333%;
       height: 280px; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #facts-section ul li {
           float: none;
           width: 100%;
@@ -1453,7 +1482,7 @@ nav {
             margin-top: 32px;
             padding-top: 0;
             border: none; } }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #facts-section ul li .info {
             margin-top: 10px;
             height: auto; } }
@@ -1462,14 +1491,14 @@ nav {
           @media all and (max-width: 1024px) {
             #facts-section ul li .info h5 {
               margin-top: 24px; } }
-          @media all and (max-width: 650px) {
+          @media all and (max-width: 670px) {
             #facts-section ul li .info h5 {
               margin-top: 0; } }
         #facts-section ul li .info p.text {
           margin: 0 auto;
           margin-top: 12px;
           max-width: 236px; }
-          @media all and (max-width: 650px) {
+          @media all and (max-width: 670px) {
             #facts-section ul li .info p.text {
               margin-top: 10px;
               margin-bottom: 64px; } }
@@ -1505,7 +1534,7 @@ nav {
         #contacts-section .block .button-container {
           margin-left: auto;
           margin-right: auto; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #contacts-section .block {
         padding: 32px 10px 80px; } }
     #contacts-section .block p {
@@ -1522,7 +1551,7 @@ nav {
     height: 50px;
     width: 50%;
     float: left; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       .form .short-textfield {
         width: 100%;
         height: 45px;
@@ -1530,12 +1559,12 @@ nav {
         margin-top: 20px; } }
   .form .short-textfield:first-of-type {
     padding-right: 8px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       .form .short-textfield:first-of-type {
         padding-right: 0; } }
   .form .short-textfield:last-of-type {
     padding-left: 8px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       .form .short-textfield:last-of-type {
         padding-right: 0; } }
   .form input, .form textarea {
@@ -1543,7 +1572,7 @@ nav {
     padding-right: 18px;
     width: 100%;
     height: 100%; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       .form input, .form textarea {
         padding: 14px; } }
   .form textarea {
@@ -1552,7 +1581,7 @@ nav {
     margin-top: 20px;
     margin-bottom: 30px;
     padding-top: 12px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       .form textarea {
         height: 100px;
         margin-bottom: 25px; } }
@@ -1562,7 +1591,7 @@ nav {
     .form .button-container .button {
       padding-top: 0;
       padding-bottom: 0; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       .form .button-container {
         width: 100%;
         padding-right: 0; } }
@@ -1578,48 +1607,48 @@ footer .container {
       padding-left: initial;
       padding-right: initial;
       padding-bottom: 62px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     footer .container {
       padding: 40px 10px 32px; } }
   footer .container .info {
     overflow: hidden;
     padding-bottom: 100px;
     border-bottom: 1px solid rgba(172, 172, 172, 0.3); }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       footer .container .info {
         padding-bottom: 36px; } }
     footer .container .info div {
       float: left; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         footer .container .info div {
           float: none;
           text-align: center;
           padding-bottom: 40px; } }
     footer .container .info ul {
       float: right; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         footer .container .info ul {
           float: none; } }
       footer .container .info ul li {
         float: left;
         margin-left: 56px; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           footer .container .info ul li {
             float: none;
             margin-left: 0; } }
   footer .container .copyright {
     padding-top: 24px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       footer .container .copyright {
         padding-top: 12px; } }
     footer .container .copyright p:first-of-type {
       float: left; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         footer .container .copyright p:first-of-type {
           float: none; } }
     footer .container .copyright p:last-of-type {
       float: right; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         footer .container .copyright p:last-of-type {
           float: none; } }
 
@@ -1639,7 +1668,7 @@ footer .container {
     #how-we-work-intro-section .container {
       padding-left: 0;
       padding-right: 0; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #how-we-work-intro-section .container {
       padding: 54px 0;
       padding-top: 54px;
@@ -1661,7 +1690,7 @@ footer .container {
     z-index: 90;
     cursor: pointer;
     display: none; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #how-we-work-intro-section .container #how-we-work-arrow-forward, #how-we-work-intro-section .container #how-we-work-arrow-back {
         display: block;
         top: 78px; } }
@@ -1671,7 +1700,7 @@ footer .container {
   #how-we-work-intro-section .container #how-we-work-arrow-forward {
     left: 50%;
     margin-left: 66px; }
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
   #how-we-work-intro-section #how-we-work-horizontal-scroller {
     width: auto;
     overflow: scroll; } }
@@ -1680,7 +1709,7 @@ footer .container {
   margin-top: 88px;
   max-width: 1200px;
   overflow: hidden; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #how-we-work-intro-section ul {
       margin-top: 50px;
       position: relative;
@@ -1714,7 +1743,7 @@ footer .container {
       -webkit-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
       -o-border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat;
       border-image: url("../img/how_we_work/header_border_pattern.png") 4 125 4 30 repeat repeat; }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #how-we-work-intro-section ul li:after {
           display: none; } }
     #how-we-work-intro-section ul li:last-of-type:after {
@@ -1726,7 +1755,7 @@ footer .container {
   @media all and (max-width: 1024px) {
     #development-section {
       padding-top: 84px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #development-section {
       padding-top: 38px;
       padding-bottom: 79px; } }
@@ -1734,16 +1763,18 @@ footer .container {
     max-width: 604px; }
     @media all and (max-width: 1024px) {
       #development-section .center-aligned-block, #development-section #facts-section ul li, #facts-section ul #development-section li {
-        max-width: none;
         padding-left: 25px;
         padding-right: 25px; } }
+    @media all and (670px) {
+      #development-section .center-aligned-block, #development-section #facts-section ul li, #facts-section ul #development-section li {
+        max-width: none; } }
   #development-section .container {
     position: relative;
     padding-top: 116px; }
     @media all and (max-width: 1024px) {
       #development-section .container {
         padding-top: 56px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #development-section .container {
         padding-top: 0;
         margin-top: 30px; } }
@@ -1756,12 +1787,12 @@ footer .container {
       @media all and (max-width: 1024px) {
         #development-section .container .block {
           margin-left: -25px; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #development-section .container .block {
           margin: 0;
           position: static !important;
           max-width: none; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #development-section .container .block ul li {
           margin-top: 16px; } }
       #development-section .container .block ul li img {
@@ -1770,7 +1801,7 @@ footer .container {
         width: 24px;
         height: 24px;
         margin: 0; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #development-section .container .block ul li img {
             width: 18px;
             height: 18px;
@@ -1781,7 +1812,7 @@ footer .container {
         margin-left: 48px;
         max-width: 356px;
         margin-top: 60px; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #development-section .container .block ul li p {
             margin-left: 32px;
             max-width: none;
@@ -1814,8 +1845,8 @@ footer .container {
   height: 760px; }
   @media all and (max-width: 1024px) {
     #incalcation-section {
-      height: 520px; } }
-  @media all and (max-width: 650px) {
+      height: 570px; } }
+  @media all and (max-width: 670px) {
     #incalcation-section {
       height: auto;
       overflow: hidden; } }
@@ -1827,7 +1858,7 @@ footer .container {
       #incalcation-section .container {
         padding-top: 136px;
         padding-bottom: 166px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #incalcation-section .container {
         margin: 0;
         padding: 0; } }
@@ -1839,9 +1870,8 @@ footer .container {
       @media all and (max-width: 1024px) {
         #incalcation-section .container .block {
           margin-left: 32px;
-          max-width: 342px;
-          margin-right: 0; } }
-      @media all and (max-width: 650px) {
+          max-width: 342px; } }
+      @media all and (max-width: 670px) {
         #incalcation-section .container .block {
           max-width: none;
           position: static;
@@ -1849,14 +1879,14 @@ footer .container {
     #incalcation-section .container figure img {
       float: right;
       position: absolute;
-      top: 145px;
+      top: 193px;
       left: 50%;
       margin-left: 20px; }
       @media all and (max-width: 1024px) {
         #incalcation-section .container figure img {
           margin-left: 66px;
-          top: 16px; } }
-      @media all and (max-width: 650px) {
+          top: 86px; } }
+      @media all and (max-width: 670px) {
         #incalcation-section .container figure img {
           float: none;
           display: block;
@@ -1865,29 +1895,32 @@ footer .container {
           width: 100%; } }
 
 #support-section {
-  height: 830px;
+  height: 890px;
   padding-top: 100px;
   padding-bottom: 150px; }
   @media all and (max-width: 1024px) {
     #support-section {
-      height: 760px;
+      height: 850px;
       padding-top: 84px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #support-section {
       height: auto;
       padding: 38px 25px 35px 35px; } }
   #support-section .center-aligned-block, #support-section #facts-section ul li, #facts-section ul #support-section li {
     max-width: 528px; }
+    @media all and (min-width: 671px) {
+      #support-section .center-aligned-block > p, #support-section #facts-section ul li > p, #facts-section ul #support-section li > p {
+        margin-bottom: 0; } }
     @media all and (max-width: 1024px) {
       #support-section .center-aligned-block, #support-section #facts-section ul li, #facts-section ul #support-section li {
         max-width: 424px; } }
   #support-section .container {
     position: relative;
-    padding-top: 72px; }
+    padding-top: 88px; }
     @media all and (max-width: 1024px) {
       #support-section .container {
         padding-top: 60px; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #support-section .container {
         padding-top: 0;
         margin: 0; } }
@@ -1899,7 +1932,7 @@ footer .container {
       margin-left: 88px; }
       #support-section .container .right-aligned-block ul li {
         margin-top: 25px; }
-        @media all and (max-width: 650px) {
+        @media all and (max-width: 670px) {
           #support-section .container .right-aligned-block ul li {
             margin-top: 18px; } }
         #support-section .container .right-aligned-block ul li img {
@@ -1916,7 +1949,7 @@ footer .container {
       @media all and (max-width: 760px) {
         #support-section .container .right-aligned-block {
           left: 40%; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #support-section .container .right-aligned-block {
           position: static;
           margin: 0 auto;
@@ -1925,15 +1958,15 @@ footer .container {
     #support-section .container figure img {
       display: inline-block;
       position: absolute;
-      top: 68px;
+      top: 52px;
       right: 50%;
       margin-right: 60px; }
       @media all and (max-width: 1024px) {
         #support-section .container figure img {
-          margin-right: 72px;
+          margin-right: 32px;
           top: 56px;
           right: 60%; } }
-      @media all and (max-width: 650px) {
+      @media all and (max-width: 670px) {
         #support-section .container figure img {
           position: static;
           width: 100%;
@@ -1942,7 +1975,7 @@ footer .container {
           margin-left: auto;
           padding-left: 12%;
           padding-right: 12%; } }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #support-section .container figure {
         width: auto;
         overflow: hidden;
@@ -1958,7 +1991,7 @@ footer .container {
     #in-contact-section .container {
       padding-top: 84px;
       padding-bottom: 96px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #in-contact-section .container {
       padding: 50px 5px 37px; } }
   #in-contact-section .container .center-aligned-block, #in-contact-section .container #facts-section ul li, #facts-section ul #in-contact-section .container li {
@@ -1967,7 +2000,7 @@ footer .container {
     display: block;
     margin-top: 36px;
     width: 98%; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #in-contact-section .container figure {
       margin-top: 26px;
       margin-left: -35px;
@@ -1981,12 +2014,12 @@ footer .container {
 #get-demo-section .container {
   padding-top: 80px;
   padding-bottom: 122px; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #get-demo-section .container {
       padding-top: 35px; } }
   #get-demo-section .container .center-aligned-block p, #get-demo-section .container #facts-section ul li p, #facts-section ul #get-demo-section .container li p {
     max-width: 574px; }
-    @media all and (max-width: 650px) {
+    @media all and (max-width: 670px) {
       #get-demo-section .container .center-aligned-block p, #get-demo-section .container #facts-section ul li p, #facts-section ul #get-demo-section .container li p {
         max-width: 464px; } }
   #get-demo-section .container .form {
@@ -2045,7 +2078,7 @@ nav h1 {
   @media all and (max-width: 1024px) {
     nav h1 {
       font-size: 28px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     nav h1 {
       font-size: 20px; } }
 nav p {
@@ -2065,7 +2098,7 @@ header .container > h2 {
     header .container > h2 {
       font-size: 42px;
       line-height: 50px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     header .container > h2 {
       font-size: 26px;
       line-height: 30px; } }
@@ -2075,7 +2108,7 @@ header .container > p {
   @media all and (max-width: 1024px) {
     header .container > p {
       font-size: 20px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     header .container > p {
       font-size: 16px;
       line-height: 20px; } }
@@ -2106,7 +2139,7 @@ header .container > p {
   .block p {
     font-size: 16px;
     line-height: 25px; } }
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
   .block h3 {
     font-size: 22px;
     line-height: 25px; }
@@ -2146,7 +2179,7 @@ header .container > p {
     font-size: 15px; }
   #optimize-section li p {
     font-size: 14px; } }
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
   #optimize-section h5 {
     font-size: 12px; }
   #optimize-section li p {
@@ -2158,7 +2191,7 @@ header .container > p {
     font-size: 16px;
     font-weight: 500;
     line-height: 25px; } }
-@media all and (max-width: 650px) {
+@media all and (max-width: 670px) {
   #media-planning-section {
     font-size: 10px;
     font-weight: 400;
@@ -2171,7 +2204,7 @@ header .container > p {
   @media all and (max-width: 1024px) {
     #more-functions-section h5 {
       font-size: 16px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #more-functions-section h5 {
       font-size: 12px;
       line-height: 15px; } }
@@ -2219,7 +2252,7 @@ footer .info {
   @media all and (max-width: 1024px) {
     footer .info {
       font-size: 15px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     footer .info {
       font-size: 14px; } }
 footer .copyright {
@@ -2229,7 +2262,7 @@ footer .copyright {
   @media all and (max-width: 1024px) {
     footer .copyright {
       font-size: 15px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     footer .copyright {
       font-size: 10px;
       line-height: 16px; } }
@@ -2237,7 +2270,7 @@ footer .copyright {
 #how-we-work-intro-section ul h5 {
   font-size: 22px;
   font-weight: 600; }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #how-we-work-intro-section ul h5 {
       font-size: 16px; } }
 #how-we-work-intro-section ul p {
@@ -2247,7 +2280,7 @@ footer .copyright {
   @media all and (max-width: 1024px) {
     #how-we-work-intro-section ul p {
       font-size: 14px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #how-we-work-intro-section ul p {
       line-height: 20px; } }
 
@@ -2259,7 +2292,7 @@ footer .copyright {
     #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
       font-size: 26px;
       line-height: 35px; } }
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 670px) {
     #in-contact-section .center-aligned-block p, #in-contact-section #facts-section ul li p, #facts-section ul #in-contact-section li p {
       font-size: 18px;
       line-height: 25px; } }

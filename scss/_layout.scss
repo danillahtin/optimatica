@@ -174,6 +174,7 @@ header {
 			display: block;
 			margin-top: 14px;
 
+
 			@media all and (max-width: 1024px) {
 				margin-top: 34px;
 			}
@@ -636,6 +637,10 @@ nav {
 
 	@media all and (max-width: 1024px) {
 		padding-top: 72px;
+
+		.container {
+			margin: 0 80px;
+		}
 	}
 
 	@media all and (max-width: $mobile-breakpoint) {
@@ -682,7 +687,6 @@ nav {
 			width:100px;
 			height: 100px;
 			cursor: pointer;
-			visibility: hidden;
 
 
 			@media all and (max-width: $mobile-breakpoint) {
@@ -692,6 +696,7 @@ nav {
 			img {
 				display: block !important;
 				z-index: 200;
+				transform: translate(-50%, -50%);
 
 				@media all and (max-width: $mobile-breakpoint) {
 					width: 6px;
@@ -859,10 +864,12 @@ nav {
 			position: relative;
 			z-index: 100;
 			overflow: hidden;
-			padding: 20px 0;
+			padding: 40px 0 20px;
+
 			width: 100%;
 
 			@media all and (max-width: 1024px) {
+				padding: 20px 0;
 				width: 300%;
 			}
 
@@ -915,7 +922,7 @@ nav {
 			margin: 0;
 			width: (100%/3);
 			display: block;
-			padding: 0 115px;
+			padding: 0 80px;
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
@@ -991,6 +998,7 @@ nav {
 		position: relative;
 		height:628px;
 
+
 		@media all and (max-width: 1024px) {
 			border: 1px solid transparent;
 			height: 378px;
@@ -1010,6 +1018,14 @@ nav {
 		left: 50%;
 		max-width: 510px;
 
+		img {
+			float: left;
+		}
+
+
+		p {
+			overflow: hidden;
+		}
 
 		@media all and (max-width: 1024px) {
 			max-width: 357px;
@@ -1061,6 +1077,7 @@ nav {
 		padding-top: 34px;
 		background-image: none;
 	}
+
 	.container {
 		border: 1px solid transparent;
 		@media all and (max-width: $mobile-breakpoint) {
@@ -1074,6 +1091,14 @@ nav {
 	.block {
 		max-width: 527px;
 		margin-top: 116px;
+
+		img {
+			float: left;
+		}
+
+		p {
+			overflow: hidden;
+		}
 
 		@media all and (max-width: 1024px) {
 			max-width: 348px;
@@ -1134,6 +1159,7 @@ nav {
 			padding-top: 34px;
 			padding-bottom: 30px;
 		}
+
 	}
 
 	.block {
@@ -1141,6 +1167,14 @@ nav {
 		position: relative;
 		float: none;
 		left: 50%;
+
+		img {
+			float: left;
+		}
+
+		p {
+			overflow: hidden;
+		}
 
 		@media all and (max-width: 1024px) {
 			
@@ -1229,7 +1263,7 @@ nav {
 			min-height: 252px;
 
 			@media all and (max-width: 1024px) {
-				min-height: 248px;
+				min-height: 260px;
 				margin-top: 40px;
 			}
 
@@ -1853,9 +1887,12 @@ footer {
 		max-width: 604px;
 
 		@media all and (max-width: 1024px) {
-			max-width: none;
 			padding-left: 25px;
 			padding-right: 25px;
+		}
+
+		@media all and ($mobile-breakpoint) {
+			max-width: none;
 		}
 
 	}
@@ -1968,7 +2005,7 @@ footer {
 	height: 760px;
 
 	@media all and (max-width: 1024px) {
-		height: 520px;
+		height: 570px;
 	}
 
 	@media all and (max-width: $mobile-breakpoint) {
@@ -2001,7 +2038,7 @@ footer {
 			@media all and (max-width: 1024px) {
 				margin-left: 32px;
 				max-width: 342px;
-				margin-right: 0;
+				// margin-right: 0;
 			}
 
 			@media all and (max-width: $mobile-breakpoint) {
@@ -2015,13 +2052,13 @@ footer {
 			img {
 				float: right;
 				position: absolute;
-				top: 145px;
+				top: 193px;
 				left: 50%;
 				margin-left: 20px;
 
 				@media all and (max-width: 1024px) {
 					margin-left: 66px;
-					top: 16px;
+					top: 86px;
 				}
 				@media all and (max-width: $mobile-breakpoint) {
 					float: none;
@@ -2038,12 +2075,12 @@ footer {
 
 #support-section {
 
-	height: 830px;
+	height: 890px;
 	padding-top: 100px;
 	padding-bottom: 150px;
 
 	@media all and (max-width: 1024px) {
-		height: 760px;
+		height: 850px;
 		padding-top: 84px;
 	}
 
@@ -2055,6 +2092,12 @@ footer {
 	.center-aligned-block {
 		max-width: 528px;
 
+		@media all and (min-width: $mobile-breakpoint + 1) {
+			& > p {
+				margin-bottom: 0;
+			}
+		}
+
 		@media all and (max-width: 1024px) {
 			max-width: 424px;
 		}
@@ -2062,7 +2105,7 @@ footer {
 	
 	.container {
 		position: relative;
-		padding-top: 72px;
+		padding-top: 88px;
 
 		@media all and (max-width: 1024px) {
 			padding-top: 60px;
@@ -2124,12 +2167,12 @@ footer {
 			img {
 				display: inline-block;
 				position: absolute;
-				top: 68px;
+				top: 52px;
 				right: 50%;
 				margin-right: 60px;
 
 				@media all and (max-width: 1024px) {
-					margin-right: 72px;
+					margin-right: 32px;
 					top: 56px;
 					right: 60%;
 				}
