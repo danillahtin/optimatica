@@ -1995,6 +1995,9 @@ footer .container {
           margin-left: auto;
           padding-left: 12%;
           padding-right: 12%; } }
+      @media all and (max-width: 500px) {
+        #support-section .container figure img {
+          padding: 0; } }
     @media all and (max-width: 670px) {
       #support-section .container figure {
         width: auto;
@@ -2003,6 +2006,10 @@ footer .container {
         margin-left: -35px;
         margin-right: -35px;
         text-align: center; } }
+    @media all and (max-width: 500px) {
+      #support-section .container figure {
+        margin-left: 0;
+        margin-right: 0; } }
 
 #in-contact-section .container {
   padding-top: 90px;

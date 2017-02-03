@@ -2215,9 +2215,14 @@ footer {
 					height: auto;
 					margin-right: auto;
 					margin-left: auto;
+					
 
 					padding-left: 12%;
 					padding-right: 12%;
+				}
+
+				@media all and (max-width: 500px) {
+					padding: 0;
 				}
 			}
 
@@ -2232,6 +2237,11 @@ footer {
 				text-align: center;
 
 			}
+
+			@media all and (max-width: 500px) {
+					margin-left: 0;
+					margin-right: 0;
+				}
 		}
 	}
 }
