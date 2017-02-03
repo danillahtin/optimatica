@@ -186,20 +186,20 @@ var isArrowClicked = false;
 
 // // Optimize section
 
-	var controller = new ScrollMagic.Controller();
+	// var controller = new ScrollMagic.Controller();
 
-	// var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section"})
-	// 				// trigger a velocity opaticy animation
-	// 				.setVelocity("#optimize-section-icon-1", {opacity: 1}, {duration: 400})
-	// 				.addIndicators() // add indicators (requires plugin)
-	// 				.addTo(controller);
+	// // var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section"})
+	// // 				// trigger a velocity opaticy animation
+	// // 				.setVelocity("#optimize-section-icon-1", {opacity: 1}, {duration: 400})
+	// // 				.addIndicators() // add indicators (requires plugin)
+	// // 				.addTo(controller);
 
 
 	// for (var i = 1; i <= 4; i++) {
-	// 	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section"})
+	// 	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section-icon-1"})
 	// 		.setVelocity("#optimize-section-icon-"+i, {
 	// 			opacity: [1, "easeInOutCubic", 0],
-	// 			scale: 2
+	// 			scale: [1, 1.2]
 	// 		}, {
 	// 			duration: 500,
 	// 			delay: 500*(i-1)

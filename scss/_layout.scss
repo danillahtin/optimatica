@@ -83,7 +83,7 @@ header {
 	opacity: 0;
 	transition: $fastAnimationDuration;
 	position: fixed;
-	left: 20px;
+	right: 20px;
 	bottom: 20px;
 	cursor: pointer;
 	z-index: 1000;
@@ -753,6 +753,10 @@ nav {
 
 	ul {
 		position: relative;
+	
+	    max-width: 1100px;
+	    margin: auto;
+
 
 		@media all and (max-width: 1024px) {
 			max-width: none;
@@ -1959,7 +1963,8 @@ footer {
 
 			ul {
 				li {
-
+					
+					position: relative;
 					@media all and (max-width: $mobile-breakpoint) {
 						margin-top: 16px;
 					}
@@ -1997,6 +2002,28 @@ footer {
 							margin-top: 14px; 
 						}
 					}
+
+					&::after {
+						content: "";
+						position: absolute;
+						top: 47px;
+						left: 10px;
+						width: 3px;
+						height: 43px;
+
+						background-image: linear-gradient($primary-color 33%, rgba(255,255,255,0) 0%);
+						background-position: right;
+						background-size: 3px 9px;
+						background-repeat: repeat-y;
+
+						@media all and (max-width: $mobile-breakpoint) {
+							display: none;
+						}
+					}
+
+					&:last-child::after {
+						display: none;
+					}
 				}
 			}
 		}
@@ -2023,7 +2050,7 @@ footer {
 					margin-top: 40px;
 				}
 
-				@media all and (max-width: 512px) {
+				@media all and (max-width: 460px) {
 					padding: 0 24px 0 0;
 
 				}
@@ -2091,12 +2118,20 @@ footer {
 					margin-left: 66px;
 					top: 86px;
 				}
-				@media all and (max-width: $mobile-breakpoint) {
+
+				@media all and (max-width: 680px) {
 					float: none;
 					display: block;
 					position: static !important;
-					margin: 16px 0 84px;
+					margin: 16px auto 84px;
+					width: 70%;
+				}
+
+				@media all and (max-width: 460px) {
+
 					width: 100%;
+					padding: 0 30px;
+
 				}
 			}
 
@@ -2266,8 +2301,9 @@ footer {
 
 		img {
 			display: block;
-			margin-top: 36px;
-			width: 98%;
+			margin: 0 auto;
+			// margin-top: 36px;
+			// width: 98%;
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
