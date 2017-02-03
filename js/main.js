@@ -4,6 +4,10 @@ var mediumAnimationDuration = 0.33;
 var longAnimationDuration = 0.7;
 var veryLongAnimationDuration = 1.3;
 
+
+
+// Helpers
+
 function log(message){
 	console.log(message);
 }
@@ -98,8 +102,10 @@ function setActiveItemWithIndex(index) {
 
 var isArrowClicked = false;
 
-// $(document).ready(function(){
 
+
+
+// Handlers
 
 	$('#navicon').click(function(event) {
 
@@ -161,16 +167,6 @@ var isArrowClicked = false;
 		setActiveItemWithIndex(Math.round(page));
 	});
 
-	$('#scrollable-area').on("swipe",function(event) {
-
-		log ('mouse');
-		var offset = $('#scrollable-area').scrollLeft();
-		var page = offset/$('#scrollable-area').width();
-
-		setActiveFigureWithIndex(Math.round(page));
-
-	});
-
 	$('#scroll-to-top').click(function() {
 		$('html, body').animate({scrollTop: 0}, 400);
 	});
@@ -184,121 +180,130 @@ var isArrowClicked = false;
 
 
 
+
+// Animations
+
+
+// // Optimize section
+
 	var controller = new ScrollMagic.Controller();
 
-
-	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section"})
-	.setTween("#optimize-section-icon-1", longAnimationDuration, {
-		opacity: 1, 
-		transform: 'none'
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
-
-	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section", offset: 50})
-	.setTween("#optimize-section-icon-2", longAnimationDuration, {
-		opacity: 1, 
-		transform: 'none'
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
-
-	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section", offset: 100})
-	.setTween("#optimize-section-icon-3", longAnimationDuration, {
-		opacity: 1, 
-		transform: 'none'
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
-
-	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section", offset: 150})
-	.setTween("#optimize-section-icon-4", longAnimationDuration, {
-		opacity: 1, 
-		transform: 'none'
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
+	// var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section"})
+	// 				// trigger a velocity opaticy animation
+	// 				.setVelocity("#optimize-section-icon-1", {opacity: 1}, {duration: 400})
+	// 				.addIndicators() // add indicators (requires plugin)
+	// 				.addTo(controller);
 
 
+	// for (var i = 1; i <= 4; i++) {
+	// 	var scene = new ScrollMagic.Scene({triggerElement: "#optimize-section"})
+	// 		.setVelocity("#optimize-section-icon-"+i, {
+	// 			opacity: [1, "easeInOutCubic", 0],
+	// 			scale: 2
+	// 		}, {
+	// 			duration: 500,
+	// 			delay: 500*(i-1)
+	// 		})
+	// 		.addIndicators()
+	// 		.addTo(controller);
+
+	// }
 
 
-// Ноутбук
-var scene = new ScrollMagic.Scene({triggerElement: "#placement-section", duration: 600, offset: -100})
-.setTween("#placement-section figure img", longAnimationDuration, {
-	opacity: 1, 
-	transform: 'none'
-})
-.addIndicators({name: "1 (duration: 0)"})
-.addTo(controller);
+// // placement section
 
-// Список
-var items = $('#placement-section ul li');
+// // Ноутбук
+// var scene = new ScrollMagic.Scene({triggerElement: "#placement-section", offset: -100})
+// .setVelocity("#placement-section figure img", longAnimationDuration, {
+// 	opacity: 1, 
+// 	transform: 'none'
+// })
+// .addIndicators({name: "1 (duration: 0)"})
+// .addTo(controller);
 
-for (var i = 1; i <= items.length; i++) {
+// // Список
+// var items = $('#placement-section ul li');
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#placement-section", duration: 0, offset: 150 + (i-1)*50})
-	.setTween("#placement-section ul li:nth-child(" + i + ")", veryLongAnimationDuration, {
-		opacity: 1, 
-		transform: 'none',
-		ease:Elastic.easeOut.config(1, 0.5)
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
-}
+// for (var i = 1; i <= items.length; i++) {
 
-
-
-items = $('#reportings-section ul li');
-
-for (var i = 1; i <= items.length; i++) {
-
-	var scene = new ScrollMagic.Scene({triggerElement: "#reportings-section", duration: 0, offset: 150 + (i-1)*50 })
-	.setTween("#reportings-section ul li:nth-child(" + i + ")", veryLongAnimationDuration, {
-		opacity: 1, 
-		transform: 'none',
-		ease:Elastic.easeOut.config(1, 0.5)
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
-}
-
-
-// Ноутбук
-var scene = new ScrollMagic.Scene({triggerElement: "#reportings-section", duration: 600, offset: -100})
-.setTween("#reportings-section", longAnimationDuration, {
-	opacity: 1, 
-	transform: 'none'
-})
-.addIndicators({name: "Not working!!"})
-.addTo(controller);
+// 	var scene = new ScrollMagic.Scene({triggerElement: "#placement-section", offset: 150 + (i-1)*50})
+// 	.setVelocity("#placement-section ul li:nth-child(" + i + ")", veryLongAnimationDuration, {
+// 		opacity: 1, 
+// 		transform: 'none',
+// 		ease:Elastic.easeOut.config(1, 0.5)
+// 	})
+// 	.addIndicators({name: "1 (duration: 0)"})
+// 	.addTo(controller);
+// }
 
 
 
 
 
-var scene = new ScrollMagic.Scene({triggerElement: "#mediastorage-section", duration: 600, offset: -100})
-.setTween("#mediastorage-section figure img", longAnimationDuration, {
-	opacity: 1, 
-	transform: 'none'
-})
-.addIndicators({name: "1 (duration: 0)"})
-.addTo(controller);
+// // Reportings section
+
+// items = $('#reportings-section ul li');
+
+// for (var i = 1; i <= items.length; i++) {
+
+// 	var scene = new ScrollMagic.Scene({triggerElement: "#reportings-section", offset: 150 + (i-1)*50 })
+// 	.setVelocity("#reportings-section ul li:nth-child(" + i + ")", veryLongAnimationDuration, {
+// 		opacity: 1, 
+// 		transform: 'none',
+// 		ease:Elastic.easeOut.config(1, 0.5)
+// 	})
+// 	.addIndicators({name: "1 (duration: 0)"})
+// 	.addTo(controller);
+// }
 
 
-var items = $('#mediastorage-section ul li');
+// // Ноутбук
+// var scene = new ScrollMagic.Scene({triggerElement: "#reportings-section", offset: -100})
+// .setVelocity("#reportings-section", longAnimationDuration, {
+// 	opacity: 1, 
+// 	transform: 'none'
+// })
+// .addIndicators({name: "Not working!!"})
+// .addTo(controller);
 
-for (var i = 1; i <= items.length; i++) {
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#mediastorage-section", duration: 0, offset: 150 + (i-1)*50})
-	.setTween("#mediastorage-section ul li:nth-child(" + i + ")", veryLongAnimationDuration, {
-		opacity: 1, 
-		transform: 'none',
-		ease:Elastic.easeOut.config(1, 0.5)
-	})
-	.addIndicators({name: "1 (duration: 0)"})
-	.addTo(controller);
-}
 
+
+
+
+
+// // Mediastorage section
+
+// var scene = new ScrollMagic.Scene({triggerElement: "#mediastorage-section", offset: -100})
+// .setVelocity("#mediastorage-section figure img", longAnimationDuration, {
+// 	opacity: 1, 
+// 	transform: 'none'
+// })
+// .addIndicators({name: "1 (duration: 0)"})
+// .addTo(controller);
+
+
+// var items = $('#mediastorage-section ul li');
+
+// for (var i = 1; i <= items.length; i++) {
+
+// 	var scene = new ScrollMagic.Scene({triggerElement: "#mediastorage-section", offset: 150 + (i-1)*50})
+// 	.setVelocity("#mediastorage-section ul li:nth-child(" + i + ")", veryLongAnimationDuration, {
+// 		opacity: 1, 
+// 		transform: 'none',
+// 		ease:Elastic.easeOut.config(1, 0.5)
+// 	})
+// 	.addIndicators({name: "1 (duration: 0)"})
+// 	.addTo(controller);
+// }
+
+
+
+
+
+
+
+// Maps
 
 function initMap() {     
 
