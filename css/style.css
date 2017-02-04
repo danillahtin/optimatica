@@ -1383,7 +1383,7 @@ nav {
       min-height: 252px; }
       @media all and (max-width: 1024px) {
         #more-functions-section ul li {
-          min-height: 260px;
+          min-height: 266px;
           margin-top: 40px; } }
       @media all and (max-width: 670px) {
         #more-functions-section ul li {
