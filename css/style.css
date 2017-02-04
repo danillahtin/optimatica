@@ -276,7 +276,7 @@ header .container p {
 #optimize-section li p {
   color: #848789; }
 
-#media-planning-section ul li.active div {
+#planning-selection {
   border-radius: 4px;
   background-color: rgba(39, 70, 171, 0.25); }
 
@@ -997,96 +997,100 @@ nav {
     @media all and (max-width: 670px) {
       #media-planning-section .container > div:nth-child(2) {
         margin: 0; } }
-  #media-planning-section ul {
+  #media-planning-section div.items-container {
     position: relative;
     max-width: 1100px;
     margin: auto; }
     @media all and (max-width: 1024px) {
-      #media-planning-section ul {
+      #media-planning-section div.items-container {
         max-width: none; } }
     @media all and (max-width: 670px) {
-      #media-planning-section ul {
+      #media-planning-section div.items-container {
         margin: 20px 30px 0; } }
-    #media-planning-section ul li {
-      position: relative;
-      display: block;
-      float: left;
-      width: 33.33333%;
-      height: 240px; }
-      @media all and (max-width: 1024px) {
-        #media-planning-section ul li {
-          width: 100%;
-          display: none; } }
+  #media-planning-section #planning-selection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.33333%;
+    height: 100%; }
+    @media all and (max-width: 1024px) {
+      #media-planning-section #planning-selection {
+        width: 100%; } }
+    #media-planning-section #planning-selection img {
+      position: absolute;
+      height: auto;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%); }
       @media all and (max-width: 670px) {
-        #media-planning-section ul li {
-          height: 124px; } }
-      #media-planning-section ul li img {
-        display: block;
-        margin: 0 auto 22px; }
-        @media all and (max-width: 670px) {
-          #media-planning-section ul li img {
-            margin: 0 auto 12px;
-            width: 42px;
-            height: auto; } }
-      #media-planning-section ul li div {
-        padding: 35px 34px 48px;
-        margin: 0 auto;
-        height: 100%;
-        cursor: pointer; }
-        @media all and (max-width: 1024px) {
-          #media-planning-section ul li div {
-            max-width: none;
-            padding: 38px 0 0; } }
-        @media all and (max-width: 670px) {
-          #media-planning-section ul li div {
-            padding: 18px 0 0; } }
-        #media-planning-section ul li div p {
-          margin: 14px auto 0 auto;
-          text-align: center; }
-          @media all and (max-width: 1024px) {
-            #media-planning-section ul li div p {
-              max-width: 212px; } }
-          @media all and (max-width: 670px) {
-            #media-planning-section ul li div p {
-              padding: 0 28px;
-              max-width: 276px;
-              margin: 12px auto 0; } }
-        #media-planning-section ul li div img:last-of-type {
-          visibility: hidden;
-          position: absolute;
-          height: auto;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%); }
-          @media all and (max-width: 670px) {
-            #media-planning-section ul li div img:last-of-type {
-              width: 14px; } }
-        @media all and (max-width: 1024px) {
-          #media-planning-section ul li div {
-            cursor: auto; } }
-      #media-planning-section ul li.active img:last-of-type {
-        visibility: visible; }
+        #media-planning-section #planning-selection img {
+          width: 14px; } }
+  #media-planning-section ul li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 33.33333%;
+    height: 240px; }
+    @media all and (max-width: 1024px) {
+      #media-planning-section ul li {
+        width: 100%;
+        display: none; } }
+    @media all and (max-width: 670px) {
+      #media-planning-section ul li {
+        height: 124px; } }
+    #media-planning-section ul li img {
+      display: block;
+      margin: 0 auto 22px; }
+      @media all and (max-width: 670px) {
+        #media-planning-section ul li img {
+          margin: 0 auto 12px;
+          width: 42px;
+          height: auto; } }
+    #media-planning-section ul li div {
+      padding: 35px 34px 48px;
+      margin: 0 auto;
+      height: 100%;
+      cursor: pointer; }
       @media all and (max-width: 1024px) {
-        #media-planning-section ul li.active {
-          display: block; } }
-    #media-planning-section ul::after {
-      content: "";
-      clear: both;
-      display: table; }
+        #media-planning-section ul li div {
+          max-width: none;
+          padding: 38px 0 0; } }
+      @media all and (max-width: 670px) {
+        #media-planning-section ul li div {
+          padding: 18px 0 0; } }
+      #media-planning-section ul li div p {
+        margin: 14px auto 0 auto;
+        text-align: center; }
+        @media all and (max-width: 1024px) {
+          #media-planning-section ul li div p {
+            max-width: 212px; } }
+        @media all and (max-width: 670px) {
+          #media-planning-section ul li div p {
+            padding: 0 28px;
+            max-width: 276px;
+            margin: 12px auto 0; } }
+      @media all and (max-width: 1024px) {
+        #media-planning-section ul li div {
+          cursor: auto; } }
+    @media all and (max-width: 1024px) {
+      #media-planning-section ul li.active {
+        display: block; } }
+  #media-planning-section ul::after {
+    content: "";
+    clear: both;
+    display: table; }
   #media-planning-section #scrollable-area {
     position: relative;
     width: 100%;
-    padding: 0 100px;
-    overflow-x: scroll;
-    overflow-y: visible; }
+    padding: 20px 100px;
+    overflow: auto; }
     @media all and (max-width: 1024px) {
       #media-planning-section #scrollable-area {
         padding: 0; } }
     #media-planning-section #scrollable-area div:first-child {
       position: relative;
       z-index: 100;
-      overflow: hidden;
-      padding: 40px 0 20px;
+      padding: 20px 0 0;
       width: 100%; }
       @media all and (max-width: 1024px) {
         #media-planning-section #scrollable-area div:first-child {
@@ -1116,13 +1120,14 @@ nav {
       #media-planning-section .page-control {
         margin: 0; } }
   #media-planning-section figure {
+    position: absolute;
     margin: 0;
-    display: none;
-    transition: 1s;
     float: left;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     @media all and (max-width: 1024px) {
       #media-planning-section figure {
+        position: relative;
         margin: 0;
         width: 33.33333%;
         display: block;
@@ -1136,8 +1141,16 @@ nav {
       width: 100%;
       margin: 0 auto;
       max-width: 1110px; }
+    #media-planning-section figure.placeholder {
+      display: block;
+      position: relative;
+      visibility: hidden; }
+      @media all and (max-width: 1024px) {
+        #media-planning-section figure.placeholder {
+          display: none; } }
     #media-planning-section figure.active {
-      display: block; }
+      display: block;
+      z-index: 1; }
   #media-planning-section .background-picture1 {
     position: absolute;
     top: 0;
@@ -1725,7 +1738,7 @@ footer .container {
 @media all and (max-width: 670px) {
   #how-we-work-intro-section #how-we-work-horizontal-scroller {
     width: auto;
-    overflow: scroll; } }
+    overflow: auto; } }
 #how-we-work-intro-section ul {
   margin: 0 auto;
   margin-top: 88px;

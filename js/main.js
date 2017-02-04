@@ -48,6 +48,11 @@ function setActiveHowWeWorkStepWithIndex(index) {
 	$('#how-we-work-horizontal-scroller').animate({scrollLeft: width*index}, 800);
 }
 
+
+
+
+
+
 function indexForSelectedFigure() {
 
 	var figures = $("#media-planning-section figure");
@@ -60,39 +65,56 @@ function indexForSelectedFigure() {
 
 function setActiveFigureWithIndex(index) {
 
-	var figures = $("#media-planning-section figure");
+	log(isAnimating);
 
-	for (var i = 0; i < figures.length; i++) {
-		if (i != index)
-			$(figures[i]).removeClass('active');
-		else 
-			$(figures[i]).addClass('active');
+	var figures = $("#media-planning-section figure");
+	var activeFigure = $("#media-planning-section figure.active");
+
+	$(figures).css('z-index', 0);
+	$(activeFigure).css('z-index', 50);
+	$(figures[index]).css('z-index', 100);
+
+	$(figures).removeClass('active');
+	$(figures[index]).addClass('active');
+
+	if ($(window).width() > 1024) {
+
+		log('willAnimate');
+		isAnimating = true;
+
+		$(figures[index]).velocity ({
+			opacity: [1, 0]
+		}, {
+			duration: 200,
+			complete: function() {
+				isAnimating = false;
+			}
+		});
+	} else {
+
+
+		var width = $('#scrollable-area').width();
+
+		$('#scrollable-area').animate({
+			scrollLeft: width*index
+		}, 800, function () {
+			isArrowClicked = false;
+			var index = indexForSelectedFigure();
+			setActiveItemWithIndex(index);
+		});
 	}
 
-	var width = $('#scrollable-area').width();
-
-	$('#scrollable-area').animate({
-		scrollLeft: width*index
-	}, 800, function () {
-		isArrowClicked = false;
-		var index = indexForSelectedFigure();
-		setActiveItemWithIndex(index);
-	});
 }
 
 function setActiveItemWithIndex(index) {
 
 	if (!isArrowClicked) {
 
+		log('start calc');
 
 		var items = $('.planning-section-item');
-
-		for (var i = 0; i < items.length; i++) {
-			if (index == i)
-				$(items[i]).addClass('active');
-			else
-				$(items[i]).removeClass('active');
-		}
+		items.removeClass('active');
+		$(items[index]).addClass('active');
 
 		$('.page-control span').removeClass('active');
 		$($('.page-control span')[index]).addClass('active');
@@ -101,7 +123,7 @@ function setActiveItemWithIndex(index) {
 }
 
 var isArrowClicked = false;
-
+var isAnimating = false;
 
 
 
@@ -117,10 +139,28 @@ var isArrowClicked = false;
 
 	$('.planning-section-item').click(function(event) {
 
+
+		if (isAnimating)
+			return false;
+
+		if ($(window).width() <= 1024)
+			return false;
+
 		$('.planning-section-item').removeClass('active');
 		$(this).addClass('active');
 
 		var index = $(this).index('.planning-section-item');
+
+		var offset = 100/3*index;
+
+		$('#planning-selection').velocity({
+			left: offset + "%"
+		}, {
+			duration: 400,
+			delay: 0,
+			ease:Elastic.easeOut
+		});
+
 		setActiveFigureWithIndex(index);
 	});
 

@@ -751,7 +751,7 @@ nav {
 
 	}
 
-	ul {
+	div.items-container {
 		position: relative;
 	
 	    max-width: 1100px;
@@ -765,6 +765,48 @@ nav {
 		@media all and (max-width: $mobile-breakpoint) {
 			margin: 20px 30px 0;
 		}
+	}
+
+	#planning-selection {
+
+		position: absolute;
+		top:0;
+		left: 0;
+		width: (100%/3);
+		height: 100%;
+
+		@media all and (max-width: 1024px) {
+			width: 100%;
+
+		} 
+
+				img {
+					position: absolute;
+					height: auto;
+					top: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+
+					@media all and (max-width: $mobile-breakpoint) {
+						width: 14px;
+					}
+				}
+	}
+
+	ul {
+		// position: relative;
+	
+	 //    max-width: 1100px;
+	 //    margin: auto;
+
+
+		// @media all and (max-width: 1024px) {
+		// 	max-width: none;
+		// }
+
+		// @media all and (max-width: $mobile-breakpoint) {
+		// 	margin: 20px 30px 0;
+		// }
 
 		li {
 			position: relative;
@@ -826,19 +868,6 @@ nav {
 					}
 				}
 
-				img:last-of-type {
-					visibility: hidden;
-					position: absolute;
-					height: auto;
-					top: 100%;
-					left: 50%;
-					transform: translateX(-50%);
-
-					@media all and (max-width: $mobile-breakpoint) {
-						width: 14px;
-					}
-				}
-
 				@media all and (max-width: 1024px) {
 					cursor: auto;
 				}
@@ -846,9 +875,6 @@ nav {
 			}
 
 			&.active {
-				img:last-of-type {
-					visibility: visible;
-				}
 
 				@media all and (max-width: 1024px) {
 					display: block;
@@ -868,19 +894,17 @@ nav {
 		position: relative;
 		width: 100%;
 
-		padding: 0 100px;
+		padding: 20px 100px;
 		@media all and (max-width: 1024px) {
 			padding: 0;
 		}
 		
-		overflow-x: scroll;
-		overflow-y: visible;
+		overflow: auto;
 
 		div:first-child {
 			position: relative;
 			z-index: 100;
-			overflow: hidden;
-			padding: 40px 0 20px;
+			padding: 20px 0 0;
 
 			width: 100%;
 
@@ -928,13 +952,14 @@ nav {
 	}
 
 	figure {
+		position: absolute;
 		margin: 0;
-		display: none;
-		transition: 1s;
 		float: left;
 		width: 100%;
+		height: auto;
 		
 		@media all and (max-width: 1024px) {
+			position: relative;
 			margin: 0;
 			width: (100%/3);
 			display: block;
@@ -958,8 +983,18 @@ nav {
 
 		}
 
+		&.placeholder {
+			display: block;
+			position: relative;
+			visibility: hidden;
+			@media all and (max-width: 1024px) {
+				display: none;
+			}
+		}
+
 		&.active {
 			display: block;
+			z-index: 1;
 		}
 	}
 
@@ -1830,7 +1865,7 @@ footer {
 	#how-we-work-horizontal-scroller {
 		@media all and (max-width: $mobile-breakpoint) {
 			width: auto;
-			overflow: scroll;
+			overflow: auto;
 		}
 	}
 
