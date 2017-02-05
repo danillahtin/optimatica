@@ -268,8 +268,10 @@ html {
 header .container p {
   color: #f2f2f2; }
 
-#auto-logos-section h5 {
-  color: #969899; }
+#auto-logos-section {
+  background-color: #222222; }
+  #auto-logos-section h5 {
+    color: #969899; }
 
 #optimize-section h5 {
   color: #333333; }
@@ -500,7 +502,9 @@ nav.active {
 
 html, body {
   overflow-x: hidden;
-  z-index: 0; }
+  z-index: 0;
+  width: 100%;
+  height: 100%; }
 
 ul {
   list-style: none; }
@@ -564,30 +568,31 @@ header {
 div.arrow {
   -webkit-tap-highlight-color: transparent; }
 
-#intro-section .photo-block {
-  background: url("../img/index/header_background.png") center center no-repeat;
-  background-size: cover; }
-#intro-section .dimming-block {
-  background-color: rgba(16, 16, 16, 0.6); }
-#intro-section .button {
-  display: inline-block; }
-  @media all and (max-width: 1024px) {
-    #intro-section .button.desktop-button {
-      display: none; } }
-  #intro-section .button.tablet-button {
-    display: none; }
+#intro-section {
+  height: 100%; }
+  #intro-section .photo-block {
+    background: url("../img/index/header_background.png") center center no-repeat;
+    background-size: cover;
+    height: 100%; }
+  #intro-section .dimming-block {
+    background-color: rgba(16, 16, 16, 0.6); }
+  #intro-section .button {
+    display: inline-block; }
     @media all and (max-width: 1024px) {
-      #intro-section .button.tablet-button {
-        display: inline-block; } }
-#intro-section .container {
-  position: relative;
-  padding-top: 188px;
-  padding-bottom: 160px; }
-  #intro-section .container p {
-    margin-bottom: 74px; }
-  @media all and (max-width: 670px) {
-    #intro-section .container {
-      padding: 78px 22px 46px; }
+      #intro-section .button.desktop-button {
+        display: none; } }
+    #intro-section .button.tablet-button {
+      display: none; }
+      @media all and (max-width: 1024px) {
+        #intro-section .button.tablet-button {
+          display: inline-block; } }
+  #intro-section .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    #intro-section .container p {
+      margin-bottom: 74px; }
+    @media all and (max-width: 670px) {
       #intro-section .container h2 {
         max-width: 426px;
         margin-bottom: 10px; }
@@ -679,7 +684,8 @@ nav {
       float: left;
       margin-left: 60px; }
   nav.fixed {
-    position: absolute;
+    position: relative;
+    float: left;
     top: 0;
     left: 0;
     width: 100%;
@@ -781,7 +787,8 @@ nav {
 
 @media all and (max-width: 1024px) and (min-width: 670px) {
   #how-we-work-navigation {
-    position: absolute;
+    position: relative;
+    float: left;
     top: 0;
     left: 0;
     width: 100%;
@@ -852,6 +859,8 @@ nav {
 #optimize-section {
   height: auto;
   padding: 100px 0 164px;
+  position: relative;
+  z-index: 100;
   overflow: hidden; }
   @media all and (max-width: 1024px) {
     #optimize-section {
@@ -925,19 +934,19 @@ nav {
 
 #media-planning-section {
   position: relative;
-  height: auto;
-  padding-top: 112px; }
+  height: auto; }
+  #media-planning-section .container {
+    padding-top: 112px;
+    position: relative; }
   @media all and (max-width: 1024px) {
-    #media-planning-section {
-      padding-top: 72px; }
-      #media-planning-section .container {
-        margin: 0 80px; } }
+    #media-planning-section .container {
+      padding-top: 72px;
+      margin: 0 80px; } }
   @media all and (max-width: 670px) {
-    #media-planning-section {
-      padding-top: 46px; }
-      #media-planning-section .container {
-        margin: 0;
-        padding: 0; } }
+    #media-planning-section .container {
+      margin: 0;
+      padding: 0;
+      padding-top: 46px; } }
   #media-planning-section .block {
     max-width: 575px; }
     @media all and (max-width: 1024px) {
@@ -1086,7 +1095,8 @@ nav {
     overflow: auto; }
     @media all and (max-width: 1024px) {
       #media-planning-section #scrollable-area {
-        padding: 0; } }
+        padding-left: 0;
+        padding-right: 0; } }
     #media-planning-section #scrollable-area div:first-child {
       position: relative;
       z-index: 100;
@@ -1155,10 +1165,11 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%; }
+    width: 44%;
+    transform: translate(-45%, -59%); }
     @media all and (max-width: 1024px) {
       #media-planning-section .background-picture1 {
-        width: 50%;
+        width: 60%;
         opacity: 0.3; } }
     @media all and (max-width: 670px) {
       #media-planning-section .background-picture1 {
@@ -1167,7 +1178,8 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    width: 30%; }
+    width: 42%;
+    transform: translate(28%, -68%); }
     @media all and (max-width: 1024px) {
       #media-planning-section .background-picture2 {
         display: none; } }
@@ -2062,7 +2074,13 @@ footer .container {
     max-width: 552px; }
   #in-contact-section .container img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 910px;
+    width: 100%; }
+    @media all and (max-width: 1024px) {
+      #in-contact-section .container img {
+        max-width: none;
+        margin-top: 36px; } }
   @media all and (max-width: 670px) {
     #in-contact-section .container figure {
       margin-top: 26px;

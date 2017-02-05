@@ -521,20 +521,11 @@ function initMap() {
     });
 
 
-    var pinColor = "2b80ff";
-    var pinImage = new google.maps.MarkerImage("https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor,
-        new google.maps.Size(21, 34),
-        new google.maps.Point(0,0),
-        new google.maps.Point(10, 34));
-    var pinShadow = new google.maps.MarkerImage("https://chart.apis.google.com/chart?chst=d_map_pin_shadow",
-        new google.maps.Size(40, 37),
-        new google.maps.Point(0, 0),
-        new google.maps.Point(12, 35));
+    var pinImage = new google.maps.MarkerImage("img/pin.svg", null, null, new google.maps.Point(47, 59));
 
     var marker = new google.maps.Marker({
         position: office,
         map: map,
-        icon: pinImage,
-        shadow: pinShadow
+        icon: pinImage
     });
 }
