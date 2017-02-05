@@ -228,13 +228,8 @@ nav {
 	height: $nav-bar-height;
 	position: relative;
 
-	@media all and (max-width: 1024px) {
-		height: 0;
-	}
-
 	@media all and (max-width: $mobile-breakpoint) { 
-		// height: 70px;
-		height: 0;
+		height: 70px;
 		margin: 0 !important;
 
 		.container {
@@ -463,7 +458,6 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 0;
 
 	z-index: 100;
 }
