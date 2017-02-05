@@ -23,8 +23,8 @@ var controller = new ScrollMagic.Controller();
   .addTo(controller);
 
 
-  new ScrollMagic.Scene({triggerElement:"header", duration: '150%', triggerHook: 0})
-  .setTween("header .photo-block", fastAnimationDuration, {y: '20%'})
+  new ScrollMagic.Scene({triggerElement:"header", duration: '100%', triggerHook: 0})
+  .setTween("header .photo-block", fastAnimationDuration, {y: "10%", ease: Linear.easeNone})
   .addTo(controller);
 
 

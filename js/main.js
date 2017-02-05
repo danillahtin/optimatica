@@ -12,16 +12,6 @@ function log(message){
 	console.log(message);
 }
 
-$.fn.scrollEnd = function(callback, timeout) {          
-	$(this).scroll(function(){
-		var $this = $(this);
-		if ($this.data('scrollTimeout')) {
-			clearTimeout($this.data('scrollTimeout'));
-		}
-		$this.data('scrollTimeout', setTimeout(callback,timeout));
-	});
-};
-
 function indexForSelectedHowWeWorkStep() {
 
 	var steps = $("#how-we-work-horizontal-scroller ul li");
@@ -85,6 +75,8 @@ function setActiveFigureWithIndex(index) {
 
 	} else {
 
+		$($figures).removeClass("active");
+		$($figures[index]).addClass('active');
 
 		var width = $('#scrollable-area').width();
 
@@ -196,7 +188,6 @@ var isAnimating = false;
 	$('#scroll-to-top').click(function() {
 		$('html, body').animate({scrollTop: 0}, 400);
 	});
-
 
 // Maps
 

@@ -29,7 +29,7 @@ $(document).ready(function() {
 		var tl = new TimelineMax();
 
 		tl.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
-		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px"})
+		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px"}, 0)
 		.staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 20px"}, 0.25)
 		.set($li, {className:"+=presented"});
 
