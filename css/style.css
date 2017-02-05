@@ -643,9 +643,12 @@ div.arrow {
 nav {
   height: 93px;
   position: relative; }
+  @media all and (max-width: 1024px) {
+    nav {
+      height: 0; } }
   @media all and (max-width: 670px) {
     nav {
-      height: 70px;
+      height: 0;
       margin: 0 !important;
       display: block; }
       nav .container {
@@ -803,6 +806,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    height: 0;
     z-index: 100; } }
 
 #auto-logos-section {
