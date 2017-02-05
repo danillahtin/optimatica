@@ -129,94 +129,94 @@ var isAnimating = false;
 
 // Handlers
 
-	$('#navicon').click(function(event) {
+	// $('#navicon').click(function(event) {
 
-		$(this).toggleClass('active');
-		$('#menu').toggleClass('active');
-		$('nav').toggleClass('active');
+	// 	$(this).toggleClass('active');
+	// 	$('#menu').toggleClass('active');
+	// 	$('nav').toggleClass('active');
 
-	});	
+	// });	
 
-	$('.planning-section-item').click(function(event) {
-
-
-		if (isAnimating)
-			return false;
-
-		if ($(window).width() <= 1024)
-			return false;
-
-		$('.planning-section-item').removeClass('active');
-		$(this).addClass('active');
-
-		var index = $(this).index('.planning-section-item');
-
-		var offset = 100/3*index;
-
-		$('#planning-selection').velocity({
-			left: offset + "%"
-		}, {
-			duration: 400,
-			delay: 0,
-			ease:Elastic.easeOut
-		});
-
-		setActiveFigureWithIndex(index);
-	});
-
-	$('#arrow-back').click(function(event) {
-		index = indexForSelectedFigure();
-		index += 2;
-
-		isArrowClicked = true
-
-		setActiveFigureWithIndex(index % 3);
-		setActiveItemWithIndex(index % 3);
-	});
+	// $('.planning-section-item').click(function(event) {
 
 
-	$('#arrow-forward').click(function(event) {
-		index = indexForSelectedFigure();
-		index += 1;
+	// 	if (isAnimating)
+	// 		return false;
 
-		isArrowClicked = true
+	// 	if ($(window).width() <= 1024)
+	// 		return false;
 
-		setActiveFigureWithIndex(index % 3);
-		setActiveItemWithIndex(index % 3);
-	});
+	// 	$('.planning-section-item').removeClass('active');
+	// 	$(this).addClass('active');
 
-	$('#how-we-work-arrow-back').click(function(event) {
-		var index = indexForSelectedHowWeWorkStep();
-		index += 2;
+	// 	var index = $(this).index('.planning-section-item');
 
-		setActiveHowWeWorkStepWithIndex(index % 3);
-	});
+	// 	var offset = 100/3*index;
+
+	// 	$('#planning-selection').velocity({
+	// 		left: offset + "%"
+	// 	}, {
+	// 		duration: 400,
+	// 		delay: 0,
+	// 		ease:Elastic.easeOut
+	// 	});
+
+	// 	setActiveFigureWithIndex(index);
+	// });
+
+	// $('#arrow-back').click(function(event) {
+	// 	index = indexForSelectedFigure();
+	// 	index += 2;
+
+	// 	isArrowClicked = true
+
+	// 	setActiveFigureWithIndex(index % 3);
+	// 	setActiveItemWithIndex(index % 3);
+	// });
 
 
-	$('#how-we-work-arrow-forward').click(function(event) {
-		var index = indexForSelectedHowWeWorkStep();
-		index += 1;
+	// $('#arrow-forward').click(function(event) {
+	// 	index = indexForSelectedFigure();
+	// 	index += 1;
 
-		setActiveHowWeWorkStepWithIndex(index % 3);
-	});
+	// 	isArrowClicked = true
 
-	$('#scrollable-area').scroll(function() {
-		var offset = $(this).scrollLeft();
-		var page = offset/$(this).width();
+	// 	setActiveFigureWithIndex(index % 3);
+	// 	setActiveItemWithIndex(index % 3);
+	// });
 
-		setActiveItemWithIndex(Math.round(page));
-	});
+	// $('#how-we-work-arrow-back').click(function(event) {
+	// 	var index = indexForSelectedHowWeWorkStep();
+	// 	index += 2;
 
-	$('#scroll-to-top').click(function() {
-		$('html, body').animate({scrollTop: 0}, 400);
-	});
+	// 	setActiveHowWeWorkStepWithIndex(index % 3);
+	// });
 
-	$(window).scroll(function() {
 
-		var opacity = ($(this).scrollTop() > 100) ? 1 : 0;
-		$('#scroll-to-top').css('opacity', opacity);
+	// $('#how-we-work-arrow-forward').click(function(event) {
+	// 	var index = indexForSelectedHowWeWorkStep();
+	// 	index += 1;
 
-	});
+	// 	setActiveHowWeWorkStepWithIndex(index % 3);
+	// });
+
+	// $('#scrollable-area').scroll(function() {
+	// 	var offset = $(this).scrollLeft();
+	// 	var page = offset/$(this).width();
+
+	// 	setActiveItemWithIndex(Math.round(page));
+	// });
+
+	// $('#scroll-to-top').click(function() {
+	// 	$('html, body').animate({scrollTop: 0}, 400);
+	// });
+
+	// $(window).scroll(function() {
+
+	// 	var opacity = ($(this).scrollTop() > 100) ? 1 : 0;
+	// 	$('#scroll-to-top').css('opacity', opacity);
+
+	// });
 
 
 
@@ -357,168 +357,7 @@ function initMap() {
         minZoom: 10,
         maxZoom: 19,
         mapTypeControl: false,
-        styles:[
-  {
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#f5f5f5"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#616161"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#f5f5f5"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#bdbdbd"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#eeeeee"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#757575"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e5e5e5"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#9e9e9e"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#ffffff"
-      }
-    ]
-  },
-  {
-    "featureType": "road.arterial",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#757575"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#dadada"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#616161"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "color": "#91349e"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#9e9e9e"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e5e5e5"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#eeeeee"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#c9c9c9"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#9e9e9e"
-      }
-    ]
-  }
-]
-    });
+        styles:
 
 
     var pinImage = new google.maps.MarkerImage("img/pin.svg", null, null, new google.maps.Point(47, 59));
