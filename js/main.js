@@ -1,129 +1,129 @@
 
-var fastAnimationDuration = 0.17;
-var mediumAnimationDuration = 0.33;
-var longAnimationDuration = 0.7;
-var veryLongAnimationDuration = 1.3;
+// var fastAnimationDuration = 0.17;
+// var mediumAnimationDuration = 0.33;
+// var longAnimationDuration = 0.7;
+// var veryLongAnimationDuration = 1.3;
 
 
 
-// Helpers
+// // Helpers
 
-function log(message){
-	console.log(message);
-}
+// function log(message){
+// 	console.log(message);
+// }
 
-$.fn.scrollEnd = function(callback, timeout) {          
-	$(this).scroll(function(){
-		var $this = $(this);
-		if ($this.data('scrollTimeout')) {
-			clearTimeout($this.data('scrollTimeout'));
-		}
-		$this.data('scrollTimeout', setTimeout(callback,timeout));
-	});
-};
+// $.fn.scrollEnd = function(callback, timeout) {          
+// 	$(this).scroll(function(){
+// 		var $this = $(this);
+// 		if ($this.data('scrollTimeout')) {
+// 			clearTimeout($this.data('scrollTimeout'));
+// 		}
+// 		$this.data('scrollTimeout', setTimeout(callback,timeout));
+// 	});
+// };
 
-function indexForSelectedHowWeWorkStep() {
+// function indexForSelectedHowWeWorkStep() {
 
-	var steps = $("#how-we-work-horizontal-scroller ul li");
+// 	var steps = $("#how-we-work-horizontal-scroller ul li");
 
-	for (var i = 0; i < steps.length; i++) {
-		if ($(steps[i]).hasClass('active'))
-			return i;
-	}
-}
+// 	for (var i = 0; i < steps.length; i++) {
+// 		if ($(steps[i]).hasClass('active'))
+// 			return i;
+// 	}
+// }
 
-function setActiveHowWeWorkStepWithIndex(index) {
+// function setActiveHowWeWorkStepWithIndex(index) {
 
-	var steps = $("#how-we-work-horizontal-scroller ul li");
+// 	var steps = $("#how-we-work-horizontal-scroller ul li");
 
-	for (var i = 0; i < steps.length; i++) {
-		if (i != index)
-			$(steps[i]).removeClass('active');
-		else 
-			$(steps[i]).addClass('active');
-	}
+// 	for (var i = 0; i < steps.length; i++) {
+// 		if (i != index)
+// 			$(steps[i]).removeClass('active');
+// 		else 
+// 			$(steps[i]).addClass('active');
+// 	}
 
-	var width = $('#how-we-work-horizontal-scroller').width();
+// 	var width = $('#how-we-work-horizontal-scroller').width();
 
-	$('#how-we-work-horizontal-scroller').animate({scrollLeft: width*index}, 800);
-}
-
-
+// 	$('#how-we-work-horizontal-scroller').animate({scrollLeft: width*index}, 800);
+// }
 
 
 
 
-function indexForSelectedFigure() {
-
-	var figures = $("#media-planning-section figure");
-
-	for (var i = 0; i < figures.length; i++) {
-		if ($(figures[i]).hasClass('active'))
-			return i;
-	}
-}
-
-function setActiveFigureWithIndex(index) {
-
-	log(isAnimating);
-
-	var figures = $("#media-planning-section figure");
-	var activeFigure = $("#media-planning-section figure.active");
-
-	$(figures).css('z-index', 0);
-	$(activeFigure).css('z-index', 50);
-	$(figures[index]).css('z-index', 100);
-
-	$(figures).removeClass('active');
-	$(figures[index]).addClass('active');
-
-	if ($(window).width() > 1024) {
-
-		log('willAnimate');
-		isAnimating = true;
-
-		$(figures[index]).velocity ({
-			opacity: [1, 0]
-		}, {
-			duration: 200,
-			complete: function() {
-				isAnimating = false;
-			}
-		});
-	} else {
 
 
-		var width = $('#scrollable-area').width();
+// function indexForSelectedFigure() {
 
-		$('#scrollable-area').animate({
-			scrollLeft: width*index
-		}, 800, function () {
-			isArrowClicked = false;
-			var index = indexForSelectedFigure();
-			setActiveItemWithIndex(index);
-		});
-	}
+// 	var figures = $("#media-planning-section figure");
 
-}
+// 	for (var i = 0; i < figures.length; i++) {
+// 		if ($(figures[i]).hasClass('active'))
+// 			return i;
+// 	}
+// }
 
-function setActiveItemWithIndex(index) {
+// function setActiveFigureWithIndex(index) {
 
-	if (!isArrowClicked) {
+// 	log(isAnimating);
 
-		log('start calc');
+// 	var figures = $("#media-planning-section figure");
+// 	var activeFigure = $("#media-planning-section figure.active");
 
-		var items = $('.planning-section-item');
-		items.removeClass('active');
-		$(items[index]).addClass('active');
+// 	$(figures).css('z-index', 0);
+// 	$(activeFigure).css('z-index', 50);
+// 	$(figures[index]).css('z-index', 100);
 
-		$('.page-control span').removeClass('active');
-		$($('.page-control span')[index]).addClass('active');
+// 	$(figures).removeClass('active');
+// 	$(figures[index]).addClass('active');
 
-	}
-}
+// 	if ($(window).width() > 1024) {
 
-var isArrowClicked = false;
-var isAnimating = false;
+// 		log('willAnimate');
+// 		isAnimating = true;
+
+// 		$(figures[index]).velocity ({
+// 			opacity: [1, 0]
+// 		}, {
+// 			duration: 200,
+// 			complete: function() {
+// 				isAnimating = false;
+// 			}
+// 		});
+// 	} else {
+
+
+// 		var width = $('#scrollable-area').width();
+
+// 		$('#scrollable-area').animate({
+// 			scrollLeft: width*index
+// 		}, 800, function () {
+// 			isArrowClicked = false;
+// 			var index = indexForSelectedFigure();
+// 			setActiveItemWithIndex(index);
+// 		});
+// 	}
+
+// }
+
+// function setActiveItemWithIndex(index) {
+
+// 	if (!isArrowClicked) {
+
+// 		log('start calc');
+
+// 		var items = $('.planning-section-item');
+// 		items.removeClass('active');
+// 		$(items[index]).addClass('active');
+
+// 		$('.page-control span').removeClass('active');
+// 		$($('.page-control span')[index]).addClass('active');
+
+// 	}
+// }
+
+// var isArrowClicked = false;
+// var isAnimating = false;
 
 
 
@@ -349,22 +349,22 @@ function initMap() {
 
 	var office = { lat: 55.756548, lng: 37.595285};
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: office,
-        scrollwheel: false,
-        streetViewControl: false,
-        minZoom: 10,
-        maxZoom: 19,
-        mapTypeControl: false,
-        styles:
+    // var map = new google.maps.Map(document.getElementById('map'), {
+    //     zoom: 15,
+    //     center: office,
+    //     scrollwheel: false,
+    //     streetViewControl: false,
+    //     minZoom: 10,
+    //     maxZoom: 19,
+    //     mapTypeControl: false,
+    //     styles:
 
 
-    var pinImage = new google.maps.MarkerImage("img/pin.svg", null, null, new google.maps.Point(47, 59));
+    // var pinImage = new google.maps.MarkerImage("img/pin.svg", null, null, new google.maps.Point(47, 59));
 
-    var marker = new google.maps.Marker({
-        position: office,
-        map: map,
-        icon: pinImage
-    });
+    // var marker = new google.maps.Marker({
+    //     position: office,
+    //     map: map,
+    //     icon: pinImage
+    // });
 }
