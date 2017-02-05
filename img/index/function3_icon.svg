@@ -3,16 +3,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
-<g>
-	<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M10,36V22.971C10,15.422,16.149,9,23.696,9h0.608C31.852,9,38,15.422,38,22.971V36"/>
-	<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M8.988,36h30.024C39.541,36,40,36.758,40,37.286v2.485C40,40.299,39.541,41,39.012,41H8.988C8.461,41,8,40.299,8,39.771v-2.485
-		C8,36.758,8.461,36,8.988,36z"/>
-	<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M19,10V7.02
-		C19,4.247,21.228,2,24,2s5,2.247,5,5.02V10"/>
-	<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M29.752,41.109C29.752,43.811,27.177,46,24,46c-3.176,0-5.752-2.189-5.752-4.891"/>
-	<rect fill="none" width="48" height="48"/>
-</g>
+<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M10,36V22.971C10,15.422,16.149,9,23.696,9h0.608C31.852,9,38,15.422,38,22.971V36"/>
+<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M8.988,36h30.024C39.541,36,40,36.758,40,37.286v2.485C40,40.299,39.541,41,39.012,41H8.988C8.461,41,8,40.299,8,39.771v-2.485
+	C8,36.758,8.461,36,8.988,36z"/>
+<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M19,10V7.02
+	C19,4.247,21.228,2,24,2s5,2.247,5,5.02V10"/>
+<path fill="none" stroke="#257EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M29.752,41.109C29.752,43.811,27.177,46,24,46c-3.176,0-5.752-2.189-5.752-4.891"/>
+<rect fill="none" width="48" height="48"/>
 </svg>

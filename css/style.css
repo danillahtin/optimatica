@@ -526,11 +526,15 @@ ul {
 
 .photo-block, .dimming-block {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  transition: 0;
+  position: absolute; }
 
 header {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: -1; }
   header .container {
     padding-left: 60px;
     padding-right: 60px; }
@@ -620,7 +624,9 @@ div.arrow {
     .block ul li {
       margin-top: 34px; } }
   .block ul li img {
-    margin-right: 18px; }
+    margin-right: 18px;
+    position: relative;
+    top: 3px; }
 
 .center-aligned-block, #facts-section ul li {
   text-align: center;
@@ -692,6 +698,9 @@ nav {
     left: 0;
     width: 100%;
     z-index: 100; }
+    @media all and (max-width: 670px) {
+      nav.fixed {
+        position: absolute; } }
   nav #navicon {
     position: absolute;
     z-index: 1000;
@@ -799,7 +808,10 @@ nav {
 #auto-logos-section {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 72px; }
+  padding-bottom: 72px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75); }
   @media all and (max-width: 1024px) {
     #auto-logos-section {
       padding-bottom: 58px; } }
@@ -1254,8 +1266,7 @@ nav {
 
 #reportings-section {
   height: 760px;
-  background: url("../img/index/reportings_background.png") center center no-repeat;
-  background-size: cover; }
+  position: relative; }
   @media all and (max-width: 1024px) {
     #reportings-section {
       height: 460px; } }
@@ -1266,7 +1277,9 @@ nav {
       padding-top: 46px;
       background-image: none; } }
   #reportings-section .container {
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+    z-index: 100;
+    position: relative; }
     @media all and (max-width: 670px) {
       #reportings-section .container {
         overflow: hidden; } }
@@ -1296,12 +1309,16 @@ nav {
         #reportings-section .block p {
           margin-bottom: 0; } }
   #reportings-section .img {
-    display: none; }
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../img/index/reportings_background.png") center center no-repeat;
+    background-size: cover; }
     @media all and (max-width: 670px) {
       #reportings-section .img {
-        display: block;
         background: url("../img/index/reportings_background_nofade.png") center center no-repeat;
-        background-size: cover;
         width: 100%;
         height: 175px; } }
 
@@ -1709,7 +1726,9 @@ footer .container {
   background-color: rgba(43, 128, 255, 0.8); }
 #how-we-work-intro-section .container {
   padding-top: 110px;
-  padding-bottom: 120px; }
+  padding-bottom: 120px;
+  z-index: 100;
+  position: relative; }
   @media all and (max-width: 1024px) {
     #how-we-work-intro-section .container {
       padding-top: 156px;
@@ -2458,26 +2477,90 @@ footer .copyright {
   100% {
     opacity: 1;
     transform: none; } }
-#intro-section .container h2, #intro-section .container p {
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-name: slidInLeft;
-  -webkit-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 2s;
-  -moz-animation-name: slidInLeft;
-  -moz-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  -o-animation-delay: 0;
-  -o-animation-duration: 2s;
-  -o-animation-name: slidInLeft;
-  -o-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  animation-delay: 0;
-  animation-duration: 2s;
-  animation-name: slidInLeft;
-  animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */ }
+#intro-section {
+  background-color: white;
+  opacity: 0; }
+
+#optimize-section-icon-1 {
+  opacity: 0;
+  transform: scale(1.2); }
+
+#optimize-section-icon-2 {
+  opacity: 0;
+  transform: scale(1.2); }
+
+#optimize-section-icon-3 {
+  opacity: 0;
+  transform: scale(1.2); }
+
+#optimize-section-icon-4 {
+  opacity: 0;
+  transform: scale(1.2); }
+
+#placement-section .block {
+  opacity: 0; }
+#placement-section ul {
+  opacity: 0;
+  transform: translate(20px, 20px); }
+#placement-section figure img {
+  opacity: 0;
+  transform: translateX(-50px); }
+
+#reportings-section .block {
+  opacity: 0; }
+#reportings-section .img {
+  opacity: 0;
+  transform: translateX(50px); }
+#reportings-section ul {
+  opacity: 0;
+  transform: translate(-20px, 20px); }
+
+@media all and (min-width: 1025px) {
+  #media-planning-section figure {
+    opacity: 0; } }
+
+#mediastorage-section .block {
+  opacity: 0; }
+#mediastorage-section ul {
+  opacity: 0;
+  transform: translate(20px, 20px); }
+#mediastorage-section figure img {
+  opacity: 0;
+  transform: translateX(-40px); }
+
+#more-functions-section ul li {
+  transform: translateY(-60px);
+  opacity: 0; }
+
+#integration-section p, #integration-section h3, #integration-section img {
+  opacity: 0; }
+#integration-section p, #integration-section h3 {
+  transform: translateX(-40px); }
+#integration-section img {
+  transform: translateX(40px); }
+
+#facts-section .info {
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+  transition: border 500ms ease-out; }
+
+@media all and (min-width: 671px) {
+  #how-we-work-intro-section .photo-block, #how-we-work-intro-section .container {
+    opacity: 0; }
+  #how-we-work-intro-section ul li:after {
+    opacity: 0;
+    transition: 1s; }
+  #how-we-work-intro-section ul li.presented:after {
+    opacity: 1; } }
+
+#development-section ul li::after {
+  opacity: 0;
+  transition: 1s; }
+#development-section ul li.presented::after {
+  opacity: 1; }
+
+#in-contact-section {
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
