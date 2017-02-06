@@ -616,7 +616,7 @@ div.arrow {
         max-width: 426px;
         margin-bottom: 10px; }
       #intro-section .container p {
-        margin-bottom: 28px; } }
+        margin-bottom: 38px; } }
 
 .block h4 {
   margin: 0 auto 12px auto; }
@@ -1388,6 +1388,7 @@ nav {
     @media all and (max-width: 670px) {
       #mediastorage-section figure img {
         position: static;
+        margin-left: -8px;
         width: 150%;
         height: auto; } }
 
@@ -1433,10 +1434,12 @@ nav {
       @media all and (max-width: 670px) {
         #more-functions-section ul li {
           width: 50%;
-          min-height: 0;
+          min-height: 92px;
           margin-top: 0px;
           margin-bottom: 28px;
-          padding: 0 8px; } }
+          padding: 0 8px; }
+          #more-functions-section ul li:last-child {
+            display: none; } }
       #more-functions-section ul li img {
         margin: 0 auto;
         display: block;
