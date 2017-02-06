@@ -615,6 +615,7 @@ div.arrow {
       margin-bottom: 74px; }
     @media all and (max-width: 670px) {
       #intro-section .container h2 {
+        padding-top: 10px;
         max-width: 426px;
         margin-bottom: 10px; }
       #intro-section .container p {
