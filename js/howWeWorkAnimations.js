@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 		tl.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
 		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"}, 0)
-		.staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 50px", ease: Bounce.easeOut}, 0.3)
+		.staggerFrom($li, longAnimationDuration, {opacity: 0, x: "+= 50px"}, 0.3)
 
 
 		new ScrollMagic.Scene({triggerElement:"#support-section"})
@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 		$section = $('#in-contact-section.dark-section');
 		$text = $('#in-contact-section .block');
-		$img = $('#in-contact-section img');
+		$img = $('#in-contact-section figure');
 
 		var tl = new TimelineMax();
 

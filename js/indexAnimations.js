@@ -40,19 +40,6 @@ if ($("#optimize-section")) {
 
 }
 
-if ($('#media-planning-section')) {
-  var $items = $("#media-planning-section > div > img");
-
-  var tl = new TimelineMax();
-
-  tl.to($items[0], mediumAnimationDuration, {rotation: 15, y: '+= 45px', x: '+= 17px'})
-  .to($items[1], mediumAnimationDuration, {rotation: -25, y: '+= 20px', x: '-= 12px' }, 0);
-  
-  new ScrollMagic.Scene({triggerElement: "#media-planning-section", duration: $('#media-planning-section').height(), triggerHook: "onEnter"})
-  .setTween(tl)
-  .addTo(controller)
-}
-
 // placement section
 
 if ($("#placement-section")) {
@@ -150,9 +137,7 @@ if ($("#facts-section")) {
   $img = $("#facts-section img");
   $info = $("#facts-section .info");
 
-  tween.staggerFrom($img, longAnimationDuration, {y: '-=100%', opacity: 0}, 0.25)
-  .staggerFrom($p, longAnimationDuration, {opacity: 0}, 0.25)
-  .from($info, longAnimationDuration, {borderColor: 'transparent'}, 0.5);
+  tween.staggerFrom($img, longAnimationDuration, {y: '-=100%', opacity: 0}, 0.25);
   
 
   new ScrollMagic.Scene({triggerElement: "#facts-section"})
