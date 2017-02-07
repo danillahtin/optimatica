@@ -475,6 +475,8 @@ nav.active {
     color: white; }
   .gray-section a:hover {
     color: #bcbcbc; }
+  .gray-section a.active {
+    color: #bcbcbc; }
 
 .button, .small-button {
   color: white !important;
