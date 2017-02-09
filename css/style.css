@@ -2581,7 +2581,7 @@ footer .copyright {
   transition: border 500ms ease-out; }
 
 @media all and (min-width: 671px) {
-  #how-we-work-intro-section .photo-block, #how-we-work-intro-section .container {
+  #how-we-work-intro-section .container {
     opacity: 0; }
   #how-we-work-intro-section ul li:after {
     opacity: 0;

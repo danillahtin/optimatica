@@ -13,8 +13,7 @@ $(document).ready(function() {
 
 
 		var tween = new TimelineMax();
-		tween.to($photo, longAnimationDuration, {opacity: 1})
-		.to($text, longAnimationDuration, {opacity: 1})
+		tween.to($text, longAnimationDuration, {opacity: 1})
 		.staggerFrom($items, longAnimationDuration, {opacity: 0, x: "+= 100%"}, 0.5)
 		.set($items, {className:"+=presented"})
 		.from($blocks, mediumAnimationDuration, {opacity: 0, y: "-= 30px"});
