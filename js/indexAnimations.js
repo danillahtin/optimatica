@@ -18,13 +18,8 @@ if ($('#intro-section')) {
 
 var controller = new ScrollMagic.Controller();
 
-  new ScrollMagic.Scene({triggerElement:"header", offset: window.innerHeight})
+  new ScrollMagic.Scene({reverse: false, triggerElement:"header", offset: window.innerHeight})
   .setTween("#scroll-to-top", fastAnimationDuration, {opacity: 1})
-  .addTo(controller);
-
-
-  new ScrollMagic.Scene({triggerElement:"header", duration: '100%', triggerHook: 0})
-  .setTween("header .photo-block", fastAnimationDuration, {y: "10%", ease: Linear.easeNone})
   .addTo(controller);
 
 
@@ -34,7 +29,7 @@ if ($("#optimize-section")) {
   var $items = $("#optimize-section ul li");
   var tween = new TweenMax.staggerTo($items, mediumAnimationDuration, {opacity: 1, scale: 1}, 0.25);
   
-  new ScrollMagic.Scene({triggerElement: "#optimize-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#optimize-section"})
   .setTween(tween)
   .addTo(controller);
 
@@ -51,10 +46,10 @@ if ($("#placement-section")) {
   $ul = $("#placement-section ul");
 
   tween.to($img, longAnimationDuration, {opacity: 1, transform: 'none'})
-  .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
+  // .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
   .to($ul, longAnimationDuration, {opacity: 1, transform: 'none'});
 
-  new ScrollMagic.Scene({triggerElement: "#placement-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#placement-section"})
   .setTween(tween)
   .addTo(controller);
 
@@ -71,10 +66,10 @@ if ($("#reportings-section")) {
   $ul = $("#reportings-section ul");
 
   tween.to($img, longAnimationDuration, {opacity: 1, transform: 'none'})
-  .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
+  // .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
   .to($ul, longAnimationDuration, {opacity: 1, transform: 'none'});
 
-  new ScrollMagic.Scene({triggerElement: "#reportings-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#reportings-section"})
   .setTween(tween)
   .addTo(controller);
 
@@ -89,10 +84,10 @@ if ($("#mediastorage-section")) {
   $ul = $("#mediastorage-section ul");
 
   tween.to($img, longAnimationDuration, {opacity: 1, transform: 'none'})
-  .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
+  // .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
   .to($ul, longAnimationDuration, {opacity: 1, transform: 'none'});
 
-  new ScrollMagic.Scene({triggerElement: "#mediastorage-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#mediastorage-section"})
   .setTween(tween)
   .addTo(controller);
 
@@ -103,7 +98,7 @@ if ($('#more-functions-section')) {
   var $items = $('#more-functions-section ul li');
   var tween = new TweenMax.staggerTo($items, mediumAnimationDuration, {opacity: 1, transform: 'none'}, 0.25);
 
-  new ScrollMagic.Scene({triggerElement: "#more-functions-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#more-functions-section"})
   .setTween(tween)
   .addTo(controller);
 }
@@ -123,7 +118,7 @@ if ($("#integration-section")) {
   .to($text, longAnimationDuration, {opacity: 1, transform: 'none'}, 1)
   .to($img, longAnimationDuration, {opacity: 1, transform: 'none'}, 1);
 
-  new ScrollMagic.Scene({triggerElement: "#integration-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#integration-section"})
   .setTween(tween)
   .addTo(controller);
 
@@ -140,7 +135,7 @@ if ($("#facts-section")) {
   tween.staggerFrom($img, longAnimationDuration, {y: '-=100%', opacity: 0}, 0.25);
   
 
-  new ScrollMagic.Scene({triggerElement: "#facts-section"})
+  new ScrollMagic.Scene({reverse: false, triggerElement: "#facts-section"})
   .setTween(tween)
   .addTo(controller);
 

@@ -33,7 +33,7 @@ $(document).ready(function() {
 		.staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 20px"}, 0.25)
 		.set($li, {className:"+=presented"});
 
-		new ScrollMagic.Scene({triggerElement:"#development-section"})
+		new ScrollMagic.Scene({reverse: false, triggerElement:"#development-section"})
 	    .setTween(tl)
 	    .addTo(controller);
 	}
@@ -47,11 +47,11 @@ $(document).ready(function() {
 		var tl = new TimelineMax();
 
 		tl.from($section, longAnimationDuration, {backgroundColor: "white"})
-		.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
+		// .from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
 		.from($img, longAnimationDuration, {opacity: 0, x: "+= 50px"})
 
 
-		new ScrollMagic.Scene({triggerElement:"#incalcation-section"})
+		new ScrollMagic.Scene({reverse: false, triggerElement:"#incalcation-section"})
 	    .setTween(tl)
 	    .addTo(controller);
 	}
@@ -64,12 +64,12 @@ $(document).ready(function() {
 
 		var tl = new TimelineMax();
 
-		tl.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
-		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"}, 0)
-		.staggerFrom($li, longAnimationDuration, {opacity: 0, x: "+= 50px"}, 0.3)
+		tl.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"}, 0)
+		// .from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
+		.from($li, longAnimationDuration, {opacity: 0, x: "+= 50px", y: "+= 50px"}, 0.3)
 
 
-		new ScrollMagic.Scene({triggerElement:"#support-section"})
+		new ScrollMagic.Scene({reverse: false, triggerElement:"#support-section"})
 	    .setTween(tl)
 	    .addTo(controller);
 	}
@@ -83,12 +83,12 @@ $(document).ready(function() {
 		var tl = new TimelineMax();
 
 		tl.to($section, longAnimationDuration, {backgroundColor: '#2b80ff'})
-		.from($text, longAnimationDuration, {opacity: 0})
+		// .from($text, longAnimationDuration, {opacity: 0})
 		.from($img, 1, {opacity: 0}, longAnimationDuration*2)
 		.fromTo($img, 2, {scale: 0.2}, {scale: 1, ease: Elastic.easeOut}, longAnimationDuration*2);
 
 
-		new ScrollMagic.Scene({triggerElement:"#in-contact-section"})
+		new ScrollMagic.Scene({reverse: false, triggerElement:"#in-contact-section"})
 	    .setTween(tl)
 	    .addTo(controller);
 	}

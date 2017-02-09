@@ -2524,8 +2524,6 @@ footer .copyright {
   opacity: 0;
   transform: scale(1.2); }
 
-#placement-section .block {
-  opacity: 0; }
 #placement-section ul {
   opacity: 0;
   transform: translate(20px, 20px); }
@@ -2533,8 +2531,6 @@ footer .copyright {
   opacity: 0;
   transform: translateX(-50px); }
 
-#reportings-section .block {
-  opacity: 0; }
 #reportings-section .img {
   opacity: 0;
   transform: translateX(50px); }
@@ -2548,8 +2544,6 @@ footer .copyright {
     #media-planning-section figure.active {
       opacity: 1; } }
 
-#mediastorage-section .block {
-  opacity: 0; }
 #mediastorage-section ul {
   opacity: 0;
   transform: translate(20px, 20px); }
