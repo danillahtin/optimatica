@@ -8,9 +8,9 @@ if ($('#intro-section')) {
   var tl = new TimelineMax();
 
 
-  tl.to($('#intro-section'), 1.5, {opacity: 1})
+  tl.to($('#intro-section'), longAnimationDuration, {opacity: 1})
   .from($text, longAnimationDuration, {opacity: 0, x: '-=20px'}, 0.5)
-  .from($('nav'), mediumAnimationDuration, {autoOpacity: 0, y: '-=100%'}, 1)
+  .from($('nav'), mediumAnimationDuration, {autoOpacity: 0, y: '-=100%'}, 0.8)
   .to($('#intro-section'), 2, {backgroundColor: '#2b80ff'});
 
 }
