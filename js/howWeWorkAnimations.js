@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 		var tween = new TimelineMax();
 		tween.to($text, longAnimationDuration, {opacity: 1})
-		.staggerFrom($items, longAnimationDuration, {opacity: 0, x: "+= 100%"}, 0.5)
+		.staggerFrom($items, longAnimationDuration, {opacity: 0, x: "+= 100%"}, 0.3)
 		.set($items, {className:"+=presented"})
 		.from($blocks, mediumAnimationDuration, {opacity: 0, y: "-= 30px"});
 	}
@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 		tl.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
 		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px"}, 0)
-		.staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 20px"}, 0.25)
+		.staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 20px"}, 0.25, 0)
 		.set($li, {className:"+=presented"});
 
 		new ScrollMagic.Scene({reverse: false, triggerElement:"#development-section"})
@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 		var tl = new TimelineMax();
 
-		tl.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"}, 0)
+		tl.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"})
 		// .from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
 		.from($li, longAnimationDuration, {opacity: 0, x: "+= 50px", y: "+= 50px"}, 0.3)
 
@@ -81,10 +81,10 @@ $(document).ready(function() {
 
 		var tl = new TimelineMax();
 
-		tl.to($section, longAnimationDuration, {backgroundColor: '#2b80ff'})
+		tl
+		// .to($section, longAnimationDuration, {backgroundColor: '#2b80ff'})
 		// .from($text, longAnimationDuration, {opacity: 0})
-		.from($img, 1, {opacity: 0}, longAnimationDuration*2)
-		.fromTo($img, 2, {scale: 0.2}, {scale: 1, ease: Elastic.easeOut}, longAnimationDuration*2);
+		.from($img, 1, {opacity: 0})
 
 
 		new ScrollMagic.Scene({reverse: false, triggerElement:"#in-contact-section"})

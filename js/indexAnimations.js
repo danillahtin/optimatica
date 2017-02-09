@@ -8,9 +8,9 @@ if ($('#intro-section')) {
   var tl = new TimelineMax();
 
 
-  tl.to($('#intro-section'), 2, {opacity: 1})
-  .from($text, longAnimationDuration, {opacity: 0, x: '-=20px'})
-  .from($('nav'), mediumAnimationDuration, {autoOpacity: 0, y: '-=100%'})
+  tl.to($('#intro-section'), 1.5, {opacity: 1})
+  .from($text, longAnimationDuration, {opacity: 0, x: '-=20px'}, 0.5)
+  .from($('nav'), mediumAnimationDuration, {autoOpacity: 0, y: '-=100%'}, 1)
   .to($('#intro-section'), 2, {backgroundColor: '#2b80ff'});
 
 }
@@ -46,7 +46,6 @@ if ($("#placement-section")) {
   $ul = $("#placement-section ul");
 
   tween.to($img, longAnimationDuration, {opacity: 1, transform: 'none'})
-  // .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
   .to($ul, longAnimationDuration, {opacity: 1, transform: 'none'});
 
   new ScrollMagic.Scene({reverse: false, triggerElement: "#placement-section"})
@@ -66,7 +65,6 @@ if ($("#reportings-section")) {
   $ul = $("#reportings-section ul");
 
   tween.to($img, longAnimationDuration, {opacity: 1, transform: 'none'})
-  // .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
   .to($ul, longAnimationDuration, {opacity: 1, transform: 'none'});
 
   new ScrollMagic.Scene({reverse: false, triggerElement: "#reportings-section"})
@@ -84,7 +82,6 @@ if ($("#mediastorage-section")) {
   $ul = $("#mediastorage-section ul");
 
   tween.to($img, longAnimationDuration, {opacity: 1, transform: 'none'})
-  // .to($block, longAnimationDuration, {opacity: 1, transform: 'none'}, 0)
   .to($ul, longAnimationDuration, {opacity: 1, transform: 'none'});
 
   new ScrollMagic.Scene({reverse: false, triggerElement: "#mediastorage-section"})
@@ -114,9 +111,10 @@ if ($("#integration-section")) {
   $text = $("#integration-section p, #integration-section h3");
   $img = $("#integration-section img");
 
-  tween.from($section, longAnimationDuration, {backgroundColor: 'white'})
-  .to($text, longAnimationDuration, {opacity: 1, transform: 'none'}, 1)
-  .to($img, longAnimationDuration, {opacity: 1, transform: 'none'}, 1);
+  tween
+  // .from($section, longAnimationDuration, {backgroundColor: 'white'})
+  // .to($text, longAnimationDuration, {opacity: 1, transform: 'none'}, 1)
+  .to($img, longAnimationDuration, {opacity: 1, transform: 'none'});
 
   new ScrollMagic.Scene({reverse: false, triggerElement: "#integration-section"})
   .setTween(tween)

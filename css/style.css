@@ -2567,11 +2567,8 @@ footer .copyright {
   transform: translateY(-60px);
   opacity: 0; }
 
-#integration-section p, #integration-section h3, #integration-section img {
-  opacity: 0; }
-#integration-section p, #integration-section h3 {
-  transform: translateX(-40px); }
 #integration-section img {
+  opacity: 0;
   transform: translateX(40px); }
 
 #facts-section .info {
@@ -2594,8 +2591,5 @@ footer .copyright {
   transition: 1s; }
 #development-section ul li.presented::after {
   opacity: 1; }
-
-#in-contact-section {
-  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
