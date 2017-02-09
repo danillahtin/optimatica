@@ -1849,8 +1849,23 @@ footer {
 #how-we-work-intro-section {
 
 	.photo-block {
-		background: url('../img/how_we_work/header_background.png') center center no-repeat;
+		background: url('../img/how_we_work/header_background.jpg') center center no-repeat;
 		background-size: cover;
+
+		@media all and (max-width: 1120px) {
+			background: url('../img/how_we_work/header_background_desktop.jpg') center center no-repeat;
+			background-size: cover;			
+		}
+		
+		@media all and (max-width: 800px) {
+			background: url('../img/how_we_work/header_background_tablet.jpg') center center no-repeat;
+			background-size: cover;			
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			background: url('../img/how_we_work/header_background_mobile.jpg') center center no-repeat;
+			background-size: cover;			
+		}
 	}
 
 	.dimming-block {

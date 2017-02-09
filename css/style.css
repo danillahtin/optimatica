@@ -1747,8 +1747,20 @@ footer .container {
           float: none; } }
 
 #how-we-work-intro-section .photo-block {
-  background: url("../img/how_we_work/header_background.png") center center no-repeat;
+  background: url("../img/how_we_work/header_background.jpg") center center no-repeat;
   background-size: cover; }
+  @media all and (max-width: 1120px) {
+    #how-we-work-intro-section .photo-block {
+      background: url("../img/how_we_work/header_background_desktop.jpg") center center no-repeat;
+      background-size: cover; } }
+  @media all and (max-width: 800px) {
+    #how-we-work-intro-section .photo-block {
+      background: url("../img/how_we_work/header_background_tablet.jpg") center center no-repeat;
+      background-size: cover; } }
+  @media all and (max-width: 670px) {
+    #how-we-work-intro-section .photo-block {
+      background: url("../img/how_we_work/header_background_mobile.jpg") center center no-repeat;
+      background-size: cover; } }
 #how-we-work-intro-section .dimming-block {
   background-color: rgba(43, 128, 255, 0.8); }
 #how-we-work-intro-section .container {
