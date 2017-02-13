@@ -35,19 +35,21 @@ if ($("#optimize-section")) {
 
 }
 
-if ($("media-planning-section")) {
-  log($('#scrollable-area'));
-  var localController = new ScrollMagic.Controller({container : '#scrollable-area', vertical: false});
+// if ($("media-planning-section")) {
 
-  var tween = new TweenMax
-  .from($('#scrollable-area'), 0.5, {backgroundColor: 'green'});
-  // .to($('#scrollable-area'), mediumAnimationDuration, {scrollTo:800});
+//   var localController = new ScrollMagic.Controller({container : '#scrollable-area', vertical: false});
 
-  new ScrollMagic.Scene({offset: 600})
-  .setTween(tween)
-  .addTo(localController)
-  .addIndicators();
-}
+//   var tween = new TweenMax
+//   // .from($('#scrollable-area'), 0.5, {backgroundColor: 'green'});
+//   .to($('#scrollable-area'), 2, {scrollTo:$('#scrollable-area figure')[1]});
+
+//   new ScrollMagic.Scene({triggerElement: $('#scrollable-area figure')[0], offset: 200, triggerHook: 0, reverse: true})
+//   .setTween(tween)
+//   // .addIndicators()
+//   .addTo(localController);
+// }
+// $('#scrollable-area').on('mousewheel', selector, data, handler)
+
 
 // placement section
 
