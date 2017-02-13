@@ -455,4 +455,16 @@ footer {
     }
 }
 
+.success-submit {
+    p {
+        font-size: 24px;
 
+        @media all and (max-width: 1024px) {
+            font-size: 20px;
+        }
+
+        @media all and (max-width: $mobile-breakpoint) {
+            font-size: 16px;
+        }
+    }
+}

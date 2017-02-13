@@ -213,7 +213,20 @@ var isAnimating = false;
 	});
 
 	$('#scroll-to-top').click(function() {
-		$('html, body').animate({scrollTop: 0}, 400);
+		log('click');
+		TweenLite.to(window, mediumAnimationDuration, {scrollTo:'#intro-section'});
 	});
 
 
+function onFormSubmit() {
+	log("submit");
+	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
+}
+
+$('.close').click(function(event) {
+	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:0});
+});
+
+$('.dimming-view').click(function(event) {
+	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:0});
+});

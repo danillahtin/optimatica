@@ -504,7 +504,13 @@ nav.active {
   color: white;
   background-color: #2b80ff; }
 
-html, body {
+.dimming-view {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+html {
+  height: 100%; }
+
+body {
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -578,6 +584,54 @@ header {
 
 div.arrow {
   -webkit-tap-highlight-color: transparent; }
+
+div.success-submit {
+  position: fixed;
+  z-index: 2000;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  div.success-submit .dimming-view {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 32px; }
+    div.success-submit .dimming-view .container {
+      max-width: 840px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      padding: 68px 30px 35px; }
+      div.success-submit .dimming-view .container .block h3 {
+        margin-bottom: 22px; }
+      div.success-submit .dimming-view .container .block p {
+        max-width: 310px;
+        margin-bottom: 16px; }
+        @media all and (max-width: 1024px) {
+          div.success-submit .dimming-view .container .block p {
+            max-width: 290px; } }
+      div.success-submit .dimming-view .container img {
+        display: block;
+        margin: auto; }
+        @media all and (max-width: 1024px) {
+          div.success-submit .dimming-view .container img {
+            max-width: 341px;
+            width: 50%; } }
+        @media all and (max-width: 670px) {
+          div.success-submit .dimming-view .container img {
+            width: 65%; } }
+      div.success-submit .dimming-view .container .close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 26px;
+        height: 26px;
+        background: url("../img/close.svg") center center no-repeat;
+        cursor: pointer; }
 
 #intro-section {
   height: 100%; }
@@ -1140,17 +1194,13 @@ nav {
         #media-planning-section #scrollable-area div:first-child {
           padding: 20px 0;
           width: 300%; } }
-    #media-planning-section #scrollable-area div:nth-child(2) {
-      z-index: 50;
-      position: absolute;
-      height: 24%;
-      bottom: 0;
-      left: 0;
-      background-color: #fff;
-      width: 100%; }
-      @media all and (max-width: 1024px) {
-        #media-planning-section #scrollable-area div:nth-child(2) {
-          width: 300%; } }
+  #media-planning-section #gallery-white-mask {
+    position: absolute;
+    height: 11%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%; }
   #media-planning-section .page-control {
     display: none; }
     @media all and (max-width: 1024px) {
@@ -2440,6 +2490,15 @@ footer .copyright {
       font-size: 18px;
       line-height: 25px; } }
 
+.success-submit p {
+  font-size: 24px; }
+  @media all and (max-width: 1024px) {
+    .success-submit p {
+      font-size: 20px; } }
+  @media all and (max-width: 670px) {
+    .success-submit p {
+      font-size: 16px; } }
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -2591,5 +2650,14 @@ footer .copyright {
   transition: 1s; }
 #development-section ul li.presented::after {
   opacity: 1; }
+
+.success-submit {
+  opacity: 0;
+  visibility: hidden; }
+
+.close {
+  transition: 0.3s; }
+  .close:hover {
+    transform: scale(1.3, 1.3); }
 
 /*# sourceMappingURL=style.css.map */

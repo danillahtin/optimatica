@@ -371,3 +371,14 @@ nav.active {
 	color: white;
 	background-color: $primary-color;
 }
+
+
+.dimming-view {
+	background-color: rgba(0,0,0, 0.4);
+}
+
+.success-submit {
+	.container {
+		// background-color: white;
+	}
+}

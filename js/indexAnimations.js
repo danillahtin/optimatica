@@ -35,6 +35,20 @@ if ($("#optimize-section")) {
 
 }
 
+if ($("media-planning-section")) {
+  log($('#scrollable-area'));
+  var localController = new ScrollMagic.Controller({container : '#scrollable-area', vertical: false});
+
+  var tween = new TweenMax
+  .from($('#scrollable-area'), 0.5, {backgroundColor: 'green'});
+  // .to($('#scrollable-area'), mediumAnimationDuration, {scrollTo:800});
+
+  new ScrollMagic.Scene({offset: 600})
+  .setTween(tween)
+  .addTo(localController)
+  .addIndicators();
+}
+
 // placement section
 
 if ($("#placement-section")) {
@@ -136,8 +150,8 @@ if ($("#facts-section")) {
   new ScrollMagic.Scene({reverse: false, triggerElement: "#facts-section"})
   .setTween(tween)
   .addTo(controller);
-
-
 }
+
+
 
 });

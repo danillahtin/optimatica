@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Optimatica</title>
+	<title>Optimatica - MRM-система управления дилерским маркетингом</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -172,8 +172,8 @@
 					<figure><img src="img/index/mediaplanning_fig3.png" id="planning-section-figure"></figure>
 					<figure class="placeholder"><img src="img/index/mediaplanning_fig3.png" id="planning-section-figure"></figure>
 				</div>
-				<div></div> <!-- White mask -->
 		</div>
+		<div id="gallery-white-mask"></div> <!-- White mask -->
 		<div class="page-control">
 			<span class="active">pageControl</span>
 			<span>pageControl</span>
@@ -382,7 +382,7 @@
 				<h3>Свяжитесь с нами</h3>
 				<p>Отправьте запрос – и мы подробнее расскажем вам о системе и проведём бесплатную демонстрацию её возможностей.</p>
 				<div class="form">
-					<form action="">
+					<form action="#contacts-section" onsubmit="onFormSubmit()">
 						<div class="short-textfield">
 							<input type="text" placeholder="Имя">
 						</div>
@@ -400,6 +400,22 @@
 			</div>
 		</div>
 	</section>
+
+
+	<div class="success-submit">
+		<div class="dimming-view">
+			<div class="container light-section">
+				<div class="block center-aligned-block">
+					<h3>Ваше сообщение отправлено!</h3>
+					<p>Мы свяжемся с&#x2060;&nbsp;&#x2060;вами в&#x2060;&nbsp;&#x2060;самое ближайшее время.</p>
+				</div>
+				<img src="img/success-submit.png">
+				<div class="close">
+					<div class="close-button"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- Footer -->
@@ -427,6 +443,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+
 	<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
 	<script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js" type="text/javascript"></script>
 	<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js" type="text/javascript"></script>
