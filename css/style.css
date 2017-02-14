@@ -2438,7 +2438,7 @@ header .container > p {
   line-height: 25px; }
   @media all and (max-width: 1024px) {
     .form input, .form textarea {
-      font-size: 14px; } }
+      font-size: 16px; } }
 .form .button {
   line-height: 50px; }
 
