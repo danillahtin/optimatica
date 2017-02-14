@@ -230,14 +230,7 @@ $(document).ready(function() {
 $('form').submit(function(evt) {
 	log("submit");
 	evt.preventDefault();
-
-	if($(this).valid()) {
-		log('invalid');
-    } else {
-    	log('valid');
-		TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
-    }
-
+	$(this).valid()
 });
 
 $('.close').click(function(event) {
@@ -248,33 +241,27 @@ $('.dimming-view').click(function(event) {
 	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:0});
 });
 
-	 $('form').validate({
+ $('form').validate({
 
 		  focusInvalid: true,
 		  errorClass: "invalid",
-		  // rules:{
-    //         name:{
-    //             required: true
-    //         },
-    //         email:{
-    //             required: true,
-    //             email: true
-    //         },  
-    //         message:{
-    //             required: false
-    //         }
-    //    },
+		  onfocusout: false,
+		  errorPlacement: function(error, element){},
+		  rules:{
+            name:{
+                required: true
+            },
+            email:{
+                required: true,
+                email: true
+            },  
+            message:{
+                required: false
+            }
+       },
        submitHandler: function (form) { 
-           alert('valid form submitted');
+   			TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
            return false; 
        },
-       highlight: function(element) {
-       	log($(element));
-        $(element).addClass('invalid');
-       },
-       unhighlight: function(element) {
-       	log($(element));
-        $(element).removeClass('invalid');
-       }
 	});
 });

@@ -1206,7 +1206,8 @@ nav {
     left: 0;
     background-color: #fff;
     width: 100%;
-    z-index: 1; }
+    z-index: 1;
+    visibility: hidden; }
   #media-planning-section .page-control {
     display: none; }
     @media all and (max-width: 1024px) {
