@@ -143,7 +143,7 @@ var isArrowClicked = false;
 var isAnimating = false;
 
 
-
+$(document).ready(function() {
 // Handlers
 
 	$('#navicon').click(function(event) {
@@ -219,14 +219,26 @@ var isAnimating = false;
 
 	$('#scroll-to-top').click(function() {
 		log('click');
-		TweenLite.to(window, mediumAnimationDuration, {scrollTo:'#intro-section'});
+
 	});
 
 
-function onFormSubmit() {
+// $('.form input, .form textarea').change(function(){
+// 	$('.form input, .form textarea').removeClass('invalid');
+// });
+
+$('form').submit(function(evt) {
 	log("submit");
-	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
-}
+	evt.preventDefault();
+
+	if($(this).valid()) {
+		log('invalid');
+    } else {
+    	log('valid');
+		TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
+    }
+
+});
 
 $('.close').click(function(event) {
 	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:0});
@@ -234,4 +246,35 @@ $('.close').click(function(event) {
 
 $('.dimming-view').click(function(event) {
 	TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:0});
+});
+
+	 $('form').validate({
+
+		  focusInvalid: true,
+		  errorClass: "invalid",
+		  // rules:{
+    //         name:{
+    //             required: true
+    //         },
+    //         email:{
+    //             required: true,
+    //             email: true
+    //         },  
+    //         message:{
+    //             required: false
+    //         }
+    //    },
+       submitHandler: function (form) { 
+           alert('valid form submitted');
+           return false; 
+       },
+       highlight: function(element) {
+       	log($(element));
+        $(element).addClass('invalid');
+       },
+       unhighlight: function(element) {
+       	log($(element));
+        $(element).removeClass('invalid');
+       }
+	});
 });

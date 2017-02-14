@@ -74,6 +74,10 @@ header {
 		&:focus {
 			border-color: $primary-color;
 		}
+
+		&.invalid {
+			border-color: red;
+		}
 	}
 }
 

@@ -305,6 +305,8 @@ header .container p {
   border: 1px solid #e1e1e1; }
   .form input:focus, .form textarea:focus {
     border-color: #2b80ff; }
+  .form input.invalid, .form textarea.invalid {
+    border-color: red; }
 
 footer .info {
   color: #ffffff; }
@@ -1190,7 +1192,7 @@ nav {
         padding-right: 0; } }
     #media-planning-section #scrollable-area div:first-child {
       position: relative;
-      z-index: 100;
+      z-index: 500;
       padding: 20px 0 0;
       width: 100%; }
       @media all and (max-width: 1024px) {
@@ -1210,10 +1212,11 @@ nav {
     @media all and (max-width: 1024px) {
       #media-planning-section .page-control {
         display: block;
-        position: absolute;
+        position: relative;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 14px; } }
+        margin-top: 14px;
+        z-index: 200; } }
     @media all and (max-width: 670px) {
       #media-planning-section .page-control {
         margin: 0; } }
