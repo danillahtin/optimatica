@@ -1182,6 +1182,7 @@ nav {
   #media-planning-section #scrollable-area {
     position: relative;
     width: 100%;
+    z-index: 500;
     -webkit-overflow-scrolling: touch;
     padding: 20px 100px;
     overflow-x: scroll;

@@ -1004,6 +1004,7 @@ nav {
 	#scrollable-area {
 		position: relative;
 		width: 100%;
+		z-index: 500;
 
 	  -webkit-overflow-scrolling: touch;
 
