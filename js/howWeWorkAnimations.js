@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 
 	var controller = new ScrollMagic.Controller();
-
+	
 	if ($('#how-we-work-intro-section') && ($(window).width() > 670)) {
 
 		$photo = $('#how-we-work-intro-section .photo-block');

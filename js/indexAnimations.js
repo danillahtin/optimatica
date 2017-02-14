@@ -1,6 +1,17 @@
 
 $(document).ready(function() {
 
+//   $("#scrollable-area").panelSnap({panelSelector: 'figure', onSnapStart: function(){
+//     log('start snap');
+//   },
+//   onSnapFinish: function(){},
+//   onActivate: function(){
+//     log('activate snap');
+//   },
+//   directionThreshold: 50,
+//   slideSpeed: 2000
+// });
+
 if ($('#intro-section')) {
   
   $text = $('#intro-section .container');
@@ -17,11 +28,6 @@ if ($('#intro-section')) {
 
 
 var controller = new ScrollMagic.Controller();
-
-  new ScrollMagic.Scene({reverse: false, triggerElement:"header", offset: window.innerHeight})
-  .setTween("#scroll-to-top", fastAnimationDuration, {opacity: 1})
-  .addTo(controller);
-
 
 
 if ($("#optimize-section")) {
@@ -49,6 +55,7 @@ if ($("#optimize-section")) {
 //   .addTo(localController);
 // }
 // $('#scrollable-area').on('mousewheel', selector, data, handler)
+
 
 
 // placement section

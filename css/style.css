@@ -522,6 +522,9 @@ body {
 ul {
   list-style: none; }
 
+section {
+  overflow: hidden; }
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -1200,7 +1203,8 @@ nav {
     bottom: 0;
     left: 0;
     background-color: #fff;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
   #media-planning-section .page-control {
     display: none; }
     @media all and (max-width: 1024px) {

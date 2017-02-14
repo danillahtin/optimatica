@@ -32,6 +32,11 @@ var longAnimationDuration = 0.7;
 var veryLongAnimationDuration = 1.3;
 
 
+var controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({offset: window.innerHeight})
+  .setTween("#scroll-to-top", fastAnimationDuration, {opacity: 1})
+  .addTo(controller);
 
 // Helpers
 

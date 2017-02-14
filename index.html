@@ -26,7 +26,7 @@
 				<div id="masking-layer"></div>
 				<div id="menu">
 					<ul>
-						<li><a href="#">Кейсы</a></li>
+						<li><a href="#" style="display:none">Кейсы</a></li>
 						<li><a href="how_we_work.html">Как мы работаем</a></li>
 						<li><a href="#contacts-section">Контакты</a></li>
 					</ul>
@@ -382,15 +382,15 @@
 				<h3>Свяжитесь с нами</h3>
 				<p>Отправьте запрос – и мы подробнее расскажем вам о системе и проведём бесплатную демонстрацию её возможностей.</p>
 				<div class="form">
-					<form action="#contacts-section" onsubmit="onFormSubmit()">
+					<form action="contact.php#contacts-section" method="post" onsubmit="onFormSubmit()">
 						<div class="short-textfield">
-							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Имя" name="name">
 						</div>
 						<div class="short-textfield">
-							<input type="text" placeholder="E-mail">
+							<input type="text" placeholder="E-mail" name="email">
 						</div>
 
-						<textarea placeholder="Сообщение"></textarea>
+						<textarea placeholder="Сообщение" name="message"></textarea>
 
 						<div class="button-container">
 						<input class="button" type="submit" value="Оставить запрос">
@@ -428,7 +428,7 @@
 					<p><a href="tel:+74951882873">+7 (495) 188 28 73</a></p>
 				</div>
 				<ul>
-					<li><a href="#">Кейсы</a></li>
+					<li><a href="#" style="display:none">Кейсы</a></li>
 					<li><a href="how_we_work.html">Как мы работаем</a></li>
 				</ul>
 			</div>
@@ -444,10 +444,13 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+	
+	<script src="js/jquery.panelSnap.js" type="text/javascript"></script>
 
 	<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
 	<script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js" type="text/javascript"></script>
 	<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js" type="text/javascript"></script>
+
 	<script src="js/main.js" type="text/javascript"></script>
 	<script src="js/indexAnimations.js" type="text/javascript"></script>
 
