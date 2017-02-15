@@ -1728,7 +1728,7 @@ nav {
       .form input, .form textarea {
         padding: 14px; } }
     .form input.invalid, .form textarea.invalid {
-      background: url("../img/question.svg") 95% center no-repeat; }
+      background: #fff url("../img/question.svg") 95% center no-repeat; }
       @media all and (max-width: 670px) {
         .form input.invalid, .form textarea.invalid {
           background-position: 97% 50%; } }
@@ -1743,7 +1743,7 @@ nav {
         height: 100px;
         margin-bottom: 25px; } }
     .form textarea.invalid {
-      background: url("../img/question.svg") 98% 92% no-repeat; }
+      background: #fff url("../img/question.svg") 98% 92% no-repeat; }
       @media all and (max-width: 670px) {
         .form textarea.invalid {
           background-position: 97% 14%; } }
