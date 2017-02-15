@@ -335,6 +335,11 @@ nav li:hover a {
       color: #848789; }
   .light-navigation .company-logo > a:hover {
     color: #333; }
+  .light-navigation .company-logo div.img {
+    background: transparent url("../img/logo_blue_desktop.png") center center no-repeat; }
+    @media all and (max-width: 670px) {
+      .light-navigation .company-logo div.img {
+        background: transparent url("../img/logo_blue_mobile.png") center center no-repeat; } }
   .light-navigation .logo {
     color: #2b80ff;
     border-color: rgba(132, 135, 137, 0.6); }
@@ -370,6 +375,12 @@ nav li:hover a {
         color: #848789; }
     #how-we-work-navigation .company-logo > a:hover {
       color: #333; }
+    #how-we-work-navigation .company-logo div.img {
+      background: transparent url("../img/logo_blue_desktop.png") center center no-repeat; } }
+    @media all and (max-width: 1000000px) and (min-width: 1025px) and (max-width: 670px) {
+      #how-we-work-navigation .company-logo div.img {
+        background: transparent url("../img/logo_blue_mobile.png") center center no-repeat; } }
+@media all and (max-width: 1000000px) and (min-width: 1025px) {
     #how-we-work-navigation .logo {
       color: #2b80ff;
       border-color: rgba(132, 135, 137, 0.6); }
@@ -405,6 +416,12 @@ nav li:hover a {
         color: #848789; }
     #how-we-work-navigation .company-logo > a:hover {
       color: #333; }
+    #how-we-work-navigation .company-logo div.img {
+      background: transparent url("../img/logo_blue_desktop.png") center center no-repeat; } }
+    @media all and (max-width: 670px) and (max-width: 670px) {
+      #how-we-work-navigation .company-logo div.img {
+        background: transparent url("../img/logo_blue_mobile.png") center center no-repeat; } }
+@media all and (max-width: 670px) {
     #how-we-work-navigation .logo {
       color: #2b80ff;
       border-color: rgba(132, 135, 137, 0.6); }
@@ -425,6 +442,11 @@ nav.active {
     color: #333333 !important; }
   nav.active .company-logo a:hover {
     color: #333; }
+  nav.active .company-logo div.img {
+    background: transparent url("../img/logo_blue_desktop.png") center center no-repeat; }
+    @media all and (max-width: 670px) {
+      nav.active .company-logo div.img {
+        background: transparent url("../img/logo_blue_mobile.png") center center no-repeat; } }
   nav.active .logo {
     color: #2b80ff !important;
     border-color: rgba(132, 135, 137, 0.6) !important; }
@@ -766,9 +788,14 @@ nav {
           display: none; } }
     nav .company-logo div.img {
       background: transparent url("../img/logo_white_desktop.png") center center no-repeat;
+      position: relative;
       width: 315px;
-      height: 48px;
-      position: relative; }
+      height: 48px; }
+      @media all and (max-width: 670px) {
+        nav .company-logo div.img {
+          background: transparent url("../img/logo_white_mobile.png") center center no-repeat;
+          width: 160px;
+          height: 32px; } }
   nav ul {
     float: right;
     overflow: hidden;

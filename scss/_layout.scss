@@ -385,9 +385,15 @@ nav {
 
 		div.img {
 			background: transparent url('../img/logo_white_desktop.png') center center no-repeat;
+			position: relative;
 			width: 315px;
 			height: 48px;
-			position: relative;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				background: transparent url('../img/logo_white_mobile.png') center center no-repeat;
+				width: 160px;
+				height: 32px;
+			}
 		}
 	}
 
