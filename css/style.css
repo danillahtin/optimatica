@@ -764,6 +764,11 @@ nav {
       @media all and (max-width: 670px) {
         nav .company-logo p {
           display: none; } }
+    nav .company-logo div.img {
+      background: transparent url("../img/logo_white_desktop.png") center center no-repeat;
+      width: 315px;
+      height: 48px;
+      position: relative; }
   nav ul {
     float: right;
     overflow: hidden;

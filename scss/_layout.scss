@@ -382,6 +382,13 @@ nav {
 				display: none;
 			}
 		}
+
+		div.img {
+			background: transparent url('../img/logo_white_desktop.png') center center no-repeat;
+			width: 315px;
+			height: 48px;
+			position: relative;
+		}
 	}
 
 	ul {
