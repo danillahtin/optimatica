@@ -145,10 +145,10 @@ nav {
 		}
 
 		div.img {
-			background: transparent url('../img/logo_blue_desktop.png') center center no-repeat;
+			background: transparent url('../img/logo_blue_desktop.svg') center center no-repeat;
 
 			@media all and (max-width: $mobile-breakpoint) {
-				background: transparent url('../img/logo_blue_mobile.png') center center no-repeat;
+				background: transparent url('../img/logo_blue_mobile.svg') center center no-repeat;
 			}
 		}
 	}
@@ -241,10 +241,10 @@ nav.active {
 
 	.company-logo {
 		div.img {
-			background: transparent url('../img/logo_blue_desktop.png') center center no-repeat;
+			background: transparent url('../img/logo_blue_desktop.svg') center center no-repeat;
 
 			@media all and (max-width: $mobile-breakpoint) {
-				background: transparent url('../img/logo_blue_mobile.png') center center no-repeat;
+				background: transparent url('../img/logo_blue_mobile.svg') center center no-repeat;
 			}
 		}
 	}
