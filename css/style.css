@@ -789,7 +789,7 @@ nav {
     nav .company-logo div.img {
       background: transparent url("../img/logo_white_desktop.svg") center center no-repeat;
       position: relative;
-      width: 309px;
+      width: 319px;
       height: 48px; }
       @media all and (max-width: 670px) {
         nav .company-logo div.img {
