@@ -256,7 +256,7 @@ $('.dimming-view').click(function(event) {
                 email: true
             },  
             message:{
-                required: false
+                required: true
             }
        },
        submitHandler: function (form) { 

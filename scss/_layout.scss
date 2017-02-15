@@ -1794,6 +1794,14 @@ nav {
 		@media all and (max-width: $mobile-breakpoint) {
 			padding: 14px;
 		}
+
+		&.invalid {
+			background: url('../img/question.svg') 95% center no-repeat;
+			
+			@media all and (max-width: $mobile-breakpoint) {
+				background-position: 97% 50%;
+			}
+		}
 	}
 
 	textarea {
@@ -1806,6 +1814,14 @@ nav {
 		@media all and (max-width: $mobile-breakpoint) {
 			height: 100px;
 			margin-bottom: 25px;
+		}
+
+		&.invalid {
+			background: url('../img/question.svg') 98% 92% no-repeat;
+
+			@media all and (max-width: $mobile-breakpoint) {
+				background-position: 97% 14%;
+			}
 		}
 
 	}
