@@ -219,7 +219,8 @@ $(document).ready(function() {
 
 	$('#scroll-to-top').click(function() {
 		log('click');
-
+		$('body').stop().animate({scrollTop : 0}, '500', function() { 
+		});
 	});
 
 

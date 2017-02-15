@@ -763,7 +763,7 @@ nav {
         margin-top: 18px; } }
     @media all and (max-width: 670px) {
       nav .company-logo {
-        margin-top: 10px; } }
+        margin-top: 16px; } }
     nav .company-logo h1, nav .company-logo p {
       display: inline-block;
       vertical-align: middle; }
@@ -820,7 +820,7 @@ nav {
     top: 8px; }
     @media all and (max-width: 670px) {
       nav #navicon {
-        top: 10px;
+        top: 16px;
         right: 32px; } }
   nav #masking-layer {
     opacity: 0;
