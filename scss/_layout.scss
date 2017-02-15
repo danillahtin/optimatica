@@ -386,13 +386,13 @@ nav {
 		div.img {
 			background: transparent url('../img/logo_white_desktop.svg') center center no-repeat;
 			position: relative;
-			width: 315px;
+			width: 309px;
 			height: 48px;
 
 			@media all and (max-width: $mobile-breakpoint) {
 				background: transparent url('../img/logo_white_mobile.svg') center center no-repeat;
-				width: 160px;
-				height: 32px;
+				width: 140px;
+				height: 27px;
 			}
 		}
 	}
