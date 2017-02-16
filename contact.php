@@ -1,4 +1,5 @@
-<?
+<?php
+
 	if($_POST["submit"]) {
 
 	    $recipient="danil_lahtin@mail.ru";

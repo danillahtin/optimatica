@@ -261,7 +261,15 @@ $('.dimming-view').click(function(event) {
             }
        },
        submitHandler: function (form) { 
-   			TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
+			$.ajax({
+			        url: 'contact.php',
+			        type: 'POST',
+			        data: $(form).serialize(),
+			        success: function(data) {
+					   			TweenLite.to(".success-submit", fastAnimationDuration, {autoAlpha:1});
+			                 }
+			    });
+
            return false; 
        },
 	});
