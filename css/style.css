@@ -2641,9 +2641,6 @@ footer .copyright {
   opacity: 0;
   transform: scale(1.2); }
 
-#placement-section ul {
-  opacity: 0;
-  transform: translate(20px, 20px); }
 #placement-section figure img {
   opacity: 0;
   transform: translateX(-50px); }
@@ -2651,9 +2648,6 @@ footer .copyright {
 #reportings-section .img {
   opacity: 0;
   transform: translateX(50px); }
-#reportings-section ul {
-  opacity: 0;
-  transform: translate(-20px, 20px); }
 
 @media all and (min-width: 1025px) {
   #media-planning-section figure {
@@ -2661,9 +2655,6 @@ footer .copyright {
     #media-planning-section figure.active {
       opacity: 1; } }
 
-#mediastorage-section ul {
-  opacity: 0;
-  transform: translate(20px, 20px); }
 #mediastorage-section figure img {
   opacity: 0;
   transform: translateX(-40px); }
