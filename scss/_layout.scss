@@ -1039,12 +1039,59 @@ nav {
 
 			@media all and (max-width: 1024px) {
 				padding: 20px 0;
-				width: 300%;
+				// width: 300%;
 			}
 
 			@media all and (max-width: $mobile-breakpoint) {
 
 			}
+		}
+	}
+
+	figure {
+		position: absolute;
+		margin: 0;
+		float: left;
+		width: 100%;
+		height: auto;
+		
+		@media all and (max-width: 1024px) {
+			position: absolute;
+			margin: 0;
+			// width: (100%/3);
+			display: block;
+			padding: 0 80px;
+		}
+
+		@media all and (max-width: $mobile-breakpoint) {
+			padding: 0 30px;
+		}
+
+		img {
+			display: block;
+			box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
+			width: 100%;
+			margin: 0 auto;
+
+			@media all and (max-width: 1024px) {
+			}
+
+			max-width: 1110px;
+
+		}
+
+		&.placeholder {
+			display: block;
+			position: relative;
+			visibility: hidden;
+			// @media all and (max-width: 1024px) {
+				// display: none;
+			// }
+		}
+
+		&.active {
+			display: block;
+			z-index: 1;
 		}
 	}
 
@@ -1073,53 +1120,6 @@ nav {
 
 		@media all and (max-width: $mobile-breakpoint) {
 			margin: 0;
-		}
-	}
-
-	figure {
-		position: absolute;
-		margin: 0;
-		float: left;
-		width: 100%;
-		height: auto;
-		
-		@media all and (max-width: 1024px) {
-			position: relative;
-			margin: 0;
-			width: (100%/3);
-			display: block;
-			padding: 0 80px;
-		}
-
-		@media all and (max-width: $mobile-breakpoint) {
-			padding: 0 30px;
-		}
-
-		img {
-			display: block;
-			box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
-			width: 100%;
-			margin: 0 auto;
-
-			@media all and (max-width: 1024px) {
-			}
-
-			max-width: 1110px;
-
-		}
-
-		&.placeholder {
-			display: block;
-			position: relative;
-			visibility: hidden;
-			@media all and (max-width: 1024px) {
-				display: none;
-			}
-		}
-
-		&.active {
-			display: block;
-			z-index: 1;
 		}
 	}
 

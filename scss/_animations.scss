@@ -198,7 +198,7 @@
     ul li {
         &::after {
             opacity: 0;
-            transition: 1s;
+            transition: 0s;
         }
 
         &.presented::after {

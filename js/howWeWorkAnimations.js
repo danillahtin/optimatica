@@ -27,10 +27,11 @@ $(document).ready(function() {
 
 		var tl = new TimelineMax();
 
-		tl.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
-		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px"}, 0)
-		.staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 20px"}, 0.25, 0)
-		.set($li, {className:"+=presented"});
+		tl.set($li, {className:"+=presented"})
+		.from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
+		// .staggerFrom($li, mediumAnimationDuration, {opacity: 0, x: "+= 20px"}, 0.25, 0)
+		.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px"}, 0);
+		
 
 		new ScrollMagic.Scene({reverse: false, triggerElement:"#development-section"})
 	    .setTween(tl)
@@ -63,9 +64,9 @@ $(document).ready(function() {
 
 		var tl = new TimelineMax();
 
-		tl.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"})
+		tl.from($img, longAnimationDuration, {opacity: 0, x: "-= 50px", y: "+= 50px"});
 		// .from($block, longAnimationDuration, {opacity: 0, y: "-= 20px"})
-		.from($li, longAnimationDuration, {opacity: 0, x: "+= 50px", y: "+= 50px"}, 0.3)
+		// .from($li, longAnimationDuration, {opacity: 0, x: "+= 50px", y: "+= 50px"}, 0.3)
 
 
 		new ScrollMagic.Scene({reverse: false, triggerElement:"#support-section"})

@@ -1230,8 +1230,35 @@ nav {
       width: 100%; }
       @media all and (max-width: 1024px) {
         #media-planning-section #scrollable-area div:first-child {
-          padding: 20px 0;
-          width: 300%; } }
+          padding: 20px 0; } }
+  #media-planning-section figure {
+    position: absolute;
+    margin: 0;
+    float: left;
+    width: 100%;
+    height: auto; }
+    @media all and (max-width: 1024px) {
+      #media-planning-section figure {
+        position: absolute;
+        margin: 0;
+        display: block;
+        padding: 0 80px; } }
+    @media all and (max-width: 670px) {
+      #media-planning-section figure {
+        padding: 0 30px; } }
+    #media-planning-section figure img {
+      display: block;
+      box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1110px; }
+    #media-planning-section figure.placeholder {
+      display: block;
+      position: relative;
+      visibility: hidden; }
+    #media-planning-section figure.active {
+      display: block;
+      z-index: 1; }
   #media-planning-section #gallery-white-mask {
     position: absolute;
     height: 11%;
@@ -1253,38 +1280,6 @@ nav {
     @media all and (max-width: 670px) {
       #media-planning-section .page-control {
         margin: 0; } }
-  #media-planning-section figure {
-    position: absolute;
-    margin: 0;
-    float: left;
-    width: 100%;
-    height: auto; }
-    @media all and (max-width: 1024px) {
-      #media-planning-section figure {
-        position: relative;
-        margin: 0;
-        width: 33.33333%;
-        display: block;
-        padding: 0 80px; } }
-    @media all and (max-width: 670px) {
-      #media-planning-section figure {
-        padding: 0 30px; } }
-    #media-planning-section figure img {
-      display: block;
-      box-shadow: 0 3px 17px 3px rgba(0, 0, 0, 0.16);
-      width: 100%;
-      margin: 0 auto;
-      max-width: 1110px; }
-    #media-planning-section figure.placeholder {
-      display: block;
-      position: relative;
-      visibility: hidden; }
-      @media all and (max-width: 1024px) {
-        #media-planning-section figure.placeholder {
-          display: none; } }
-    #media-planning-section figure.active {
-      display: block;
-      z-index: 1; }
   #media-planning-section .background-picture1 {
     position: absolute;
     opacity: 0.65;
@@ -2698,7 +2693,7 @@ footer .copyright {
 
 #development-section ul li::after {
   opacity: 0;
-  transition: 1s; }
+  transition: 0s; }
 #development-section ul li.presented::after {
   opacity: 1; }
 
