@@ -52,7 +52,7 @@ header {
 	}
 }
 
-#mediastorage-section { 
+#mediastorage-section {
 	background-color: #f7f9fe;
 }
 
@@ -126,6 +126,9 @@ nav {
 @mixin light-navigation() {
 	color: #333333;
 
+	div.img {
+		border-color: transparentize(#333, 0.3);
+	}
 
 	.active {
 		color: #848789;
@@ -145,10 +148,10 @@ nav {
 		}
 
 		div.img {
-			background: transparent url('../img/logo_blue_desktop.svg') center center no-repeat;
+			background: transparent url('../img/logo_blue_desktop.svg') left center no-repeat;
 
 			@media all and (max-width: $mobile-breakpoint) {
-				background: transparent url('../img/logo_blue_mobile.svg') center center no-repeat;
+				background: transparent url('../img/logo_blue_mobile.svg') left center no-repeat;
 			}
 		}
 	}
@@ -182,6 +185,10 @@ nav {
 
 @mixin transparent-navigation() {
 	color: white;
+
+	div.img {
+		border-color: transparentize(#fff, 0.3);
+	}
 
 	.active {
 		color: #848789;
@@ -241,10 +248,10 @@ nav.active {
 
 	.company-logo {
 		div.img {
-			background: transparent url('../img/logo_blue_desktop.svg') center center no-repeat;
+			background: transparent url('../img/logo_blue_desktop.svg') left center no-repeat;
 
 			@media all and (max-width: $mobile-breakpoint) {
-				background: transparent url('../img/logo_blue_mobile.svg') center center no-repeat;
+				background: transparent url('../img/logo_blue_mobile.svg') left center no-repeat;
 			}
 		}
 	}
@@ -287,7 +294,7 @@ nav.active {
 
 				}
 			}
-			
+
 
 		}
 }
@@ -334,13 +341,13 @@ nav.active {
 	a {
 		color: white;
 	}
-	
+
 	.block {
 		p {
 			color: rgba(255, 255, 255, 0.8);
 		}
 	}
-	
+
 }
 
 .gray-section {
@@ -351,7 +358,7 @@ nav.active {
 	a {
 		color: white;
 	}
-	
+
 	a:hover {
 		color: #bcbcbc;
 	}

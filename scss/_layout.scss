@@ -52,7 +52,7 @@ $container-max-width: 1400px;
 	height: 100%;
 	width: 100%;
 	transition: 0;
-	
+
 	position: absolute;
 }
 
@@ -63,7 +63,7 @@ header {
 	z-index: -1;
 
 	.container {
-		
+
 		padding-left: 60px;
 		padding-right: 60px;
 
@@ -151,7 +151,7 @@ div.success-submit {
 				p {
 					max-width: 310px;
 					margin-bottom:16px;
-					
+
 					@media all and (max-width: 1024px) {
 						max-width: 290px;
 		            }
@@ -196,17 +196,17 @@ div.success-submit {
 
 		@media all and (max-width: 1120px) {
 			background: url('../img/index/header_background_desktop.jpg') center center no-repeat;
-			background-size: cover;			
+			background-size: cover;
 		}
-		
+
 		@media all and (max-width: 800px) {
 			background: url('../img/index/header_background_tablet.jpg') center center no-repeat;
-			background-size: cover;			
+			background-size: cover;
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
 			background: url('../img/index/header_background_mobile.jpg') center center no-repeat;
-			background-size: cover;			
+			background-size: cover;
 		}
 
 		height: 100%;
@@ -220,19 +220,19 @@ div.success-submit {
 		display: inline-block;
 
 		&.desktop-button {
-			
+
 			@media all and (max-width: 1024px) {
 				display: none;
 			}
 
 		}
 		&.tablet-button {
-			
+
 			display: none;
 
 			@media all and (max-width: 1024px) {
 				display: inline-block;
-			}	
+			}
 		}
 
 	}
@@ -265,8 +265,8 @@ div.success-submit {
 .block {
 	h4 {
 		margin: 0 auto 12px auto;
-		
-		@media all and (max-width: $mobile-breakpoint) { 
+
+		@media all and (max-width: $mobile-breakpoint) {
 			margin-bottom: 8px;
 		}
 	}
@@ -274,7 +274,7 @@ div.success-submit {
 	h3 {
 		margin: 12px auto 30px auto;
 
-		@media all and (max-width: $mobile-breakpoint) { 
+		@media all and (max-width: $mobile-breakpoint) {
 			margin: 8px auto 0 auto;
 		}
 	}
@@ -325,7 +325,7 @@ nav {
 		height: 74px;
 	}
 
-	@media all and (max-width: $mobile-breakpoint) { 
+	@media all and (max-width: $mobile-breakpoint) {
 		height: 60px;
 		margin: 0 !important;
 
@@ -375,8 +375,11 @@ nav {
 		}
 
 		p {
-			padding-left: 8px;
+			float: left;
+			padding-left: 10px;
 			text-align: left;
+
+			margin-top: 7px;
 
 			@media all and (max-width: $mobile-breakpoint) {
 				display: none;
@@ -384,13 +387,19 @@ nav {
 		}
 
 		div.img {
-			background: transparent url('../img/logo_white_desktop.svg') center center no-repeat;
+			display: inline-block;
+			float: left;
+			border-right-width: 1px;
+			border-right-style: solid;
+			background: transparent url('../img/logo_white_desktop.svg') left center no-repeat;
 			position: relative;
-			width: 319px;
-			height: 48px;
+			width: 172px;
+			height: 40px;
 
 			@media all and (max-width: $mobile-breakpoint) {
-				background: transparent url('../img/logo_white_mobile.svg') center center no-repeat;
+				float: none;
+				display: block;
+				background: transparent url('../img/logo_white_mobile.svg') left center no-repeat;
 				width: 140px;
 				height: 27px;
 			}
@@ -403,7 +412,7 @@ nav {
 		margin-top: 20px;
 
 		li {
-			float: left;	
+			float: left;
 			margin-left: 60px;
 		}
 	}
@@ -458,7 +467,7 @@ nav {
 	}
 
 	&.light-navigation {
-		
+
 		@media all and (max-width: 1024px) {
 			#masking-layer {
 				opacity: 1;
@@ -548,7 +557,7 @@ nav {
 					}
 				}
 			}
-		
+
 		}
 
 		.additional-buttons {
@@ -586,7 +595,7 @@ nav {
 	padding-bottom: 72px;
 
 	@media all and (max-width: 1024px) {
-		padding-bottom: 58px;		
+		padding-bottom: 58px;
 	}
 
 	@media all and (max-width: $mobile-breakpoint) {
@@ -594,7 +603,7 @@ nav {
 	}
 
 	ul {
-		text-align: center;			
+		text-align: center;
 		max-width: 1176px;
 
 		@media all and (max-width: 1024px) {
@@ -604,7 +613,7 @@ nav {
 
 		@media all and (max-width: $mobile-breakpoint) {
 			margin-top: 0;
-		}		
+		}
 
 		li {
 			float: left;
@@ -619,7 +628,7 @@ nav {
 			@media all and (max-width: $mobile-breakpoint) {
 				margin-top: 20px;
 			}
-			
+
 			div {
 				margin: 0 auto 23px;
 				width: 115px;
@@ -705,7 +714,7 @@ nav {
 		@media all and (max-width: 1024px) {
 			margin-top: 12px;
 			max-width: 600px;
-		}		
+		}
 
 		@media all and (max-width: $mobile-breakpoint) {
 			padding: 0 24px 0 10px;
@@ -758,7 +767,7 @@ nav {
 				max-width: 242px !important;
 
 				@media all and (max-width: 1024px) {
-					max-width: 214px !important;			
+					max-width: 214px !important;
 				}
 
 				@media all and (max-width: $mobile-breakpoint) {
@@ -827,7 +836,7 @@ nav {
 	@media all and (max-width: 1024px) {
 
 		div.arrow {
-			
+
 			position: absolute;
 			z-index: 1000;
 			padding: 54px;
@@ -869,19 +878,19 @@ nav {
 		}
 
 
-		
+
 	}
 
 	.container > div:nth-child(2) {
 		position: relative;
-		
+
 		margin: 88px auto 40px auto;
 		max-width: 1110px;
 
 		@media all and (max-width: 1024px) {
 			margin: 66px 80px 26px 80px;
 		}
-	
+
 		@media all and (max-width: $mobile-breakpoint) {
 			margin: 0;
 		}
@@ -890,7 +899,7 @@ nav {
 
 	div.items-container {
 		position: relative;
-	
+
 	    max-width: 1100px;
 	    margin: auto;
 
@@ -915,7 +924,7 @@ nav {
 		@media all and (max-width: 1024px) {
 			width: 100%;
 
-		} 
+		}
 
 				img {
 					position: absolute;
@@ -963,15 +972,15 @@ nav {
 			div {
 
 				padding: 35px 34px 48px;
-				
+
 				@media all and (max-width: 1024px) {
 					max-width: none;
 					padding: 38px 0 0;
-				}		
+				}
 
 				@media all and (max-width: $mobile-breakpoint) {
 					padding: 18px 0 0;
-				}		
+				}
 
 				margin: 0 auto;
 				height: 100%;
@@ -1027,8 +1036,8 @@ nav {
 			padding-left: 0;
 			padding-right: 0;
 		}
-		
-		overflow-x: scroll; 
+
+		overflow-x: scroll;
 	    -webkit-overflow-scrolling: touch;
 
 		div:first-child {
@@ -1054,7 +1063,7 @@ nav {
 		float: left;
 		width: 100%;
 		height: auto;
-		
+
 		@media all and (max-width: 1024px) {
 			position: absolute;
 			margin: 0;
@@ -1116,7 +1125,7 @@ nav {
 			transform: translateX(-50%);
 			margin-top: 14px;
 			z-index: 200;
-		} 
+		}
 
 		@media all and (max-width: $mobile-breakpoint) {
 			margin: 0;
@@ -1380,7 +1389,7 @@ nav {
 		}
 
 		@media all and (max-width: 1024px) {
-			
+
 			left: 45%;
 			max-width: 334px;
 
@@ -1463,7 +1472,7 @@ nav {
 		}
 
 		li {
-			
+
 			margin-top: 40px;
 			margin-bottom: 20px;
 			text-align: center;
@@ -1580,7 +1589,7 @@ nav {
 		}
 
 		@media all and (max-width: 1024px) {
-			
+
 
 			img {
 				display: block;
@@ -1595,7 +1604,7 @@ nav {
 			padding: 0;
 
 			img {
-				margin-top: 18px;	
+				margin-top: 18px;
 			}
 		}
 	}
@@ -1636,7 +1645,7 @@ nav {
 		@media all and (max-width: 1024px) {
 			margin-top: 80px;
 		}
-		
+
 		@media all and (max-width: $mobile-breakpoint) {
 			margin-top: 50px;
 		}
@@ -1668,7 +1677,7 @@ nav {
 				height: 200px;
 				border-right: 1px solid transparentize(#2b80ff, 0.6);
 				padding-top: 12px;
-				
+
 				@media all and (max-width: 1024px) {
 					margin-top: 32px;
 					padding-top: 0;
@@ -1681,11 +1690,11 @@ nav {
 				}
 
 				h5 {
-					margin-top: 36px;	
+					margin-top: 36px;
 
 					@media all and (max-width: 1024px) {
 						margin-top: 24px;
-					}				
+					}
 					@media all and (max-width: $mobile-breakpoint) {
 						margin-top: 0;
 					}
@@ -1810,7 +1819,7 @@ nav {
 
 		&.invalid {
 			background: #fff url('../img/question.svg') 95% center no-repeat;
-			
+
 			@media all and (max-width: $mobile-breakpoint) {
 				background-position: 97% 50%;
 			}
@@ -1866,7 +1875,7 @@ footer {
 		padding: 62px 112px 76px 112px;
 
 		@media all and (max-width: 1024px) {
-			padding-left: initial; 
+			padding-left: initial;
 			padding-right: initial;
 			padding-bottom: 62px;
 		}
@@ -1874,12 +1883,12 @@ footer {
 		@media all and (max-width: $mobile-breakpoint) {
 			padding: 40px 10px 32px;
 		}
-		
+
 		.info {
 			overflow: hidden;
 			padding-bottom: 100px;
 			border-bottom: 1px solid rgba(172, 172, 172, 0.3);
-			
+
 			@media all and (max-width: $mobile-breakpoint) {
 				padding-bottom: 36px;
 			}
@@ -1951,17 +1960,17 @@ footer {
 
 		@media all and (max-width: 1120px) {
 			background: url('../img/how_we_work/header_background_desktop.jpg') center center no-repeat;
-			background-size: cover;			
+			background-size: cover;
 		}
-		
+
 		@media all and (max-width: 800px) {
 			background: url('../img/how_we_work/header_background_tablet.jpg') center center no-repeat;
-			background-size: cover;			
+			background-size: cover;
 		}
 
 		@media all and (max-width: $mobile-breakpoint) {
 			background: url('../img/how_we_work/header_background_mobile.jpg') center center no-repeat;
-			background-size: cover;			
+			background-size: cover;
 		}
 	}
 
@@ -1999,7 +2008,7 @@ footer {
 				margin-right: 16px;
 			}
 
-			& > p { 
+			& > p {
 				max-width: 428px;
 
 				padding-left: 16px;
@@ -2067,7 +2076,7 @@ footer {
 			float: left;
 			width: (100%/3);
 			position: relative;
-			
+
 
 			@media all and (max-width: $mobile-breakpoint) {
 
@@ -2110,7 +2119,7 @@ footer {
 					display: none;
 				}
 			}
-	
+
 			&:last-of-type:after {
 				display: none;
 			}
@@ -2132,7 +2141,7 @@ footer {
 		padding-top: 38px;
 		padding-bottom: 79px;
 	}
-	
+
 	.center-aligned-block {
 		max-width: 604px;
 
@@ -2178,7 +2187,7 @@ footer {
 
 			ul {
 				li {
-					
+
 					position: relative;
 					@media all and (max-width: $mobile-breakpoint) {
 						margin-top: 16px;
@@ -2202,9 +2211,9 @@ footer {
 						position: relative;
 						top: -2px;
 						margin-left: 48px;
-						max-width: 356px; 
+						max-width: 356px;
 
-						margin-top: 60px; 
+						margin-top: 60px;
 
 						@media all and (max-width: $mobile-breakpoint) {
 							margin-left: 32px;
@@ -2214,7 +2223,7 @@ footer {
 					}
 					&:first-child {
 						p {
-							margin-top: 14px; 
+							margin-top: 14px;
 						}
 					}
 
@@ -2383,7 +2392,7 @@ footer {
 			max-width: 500px;
 		}
 	}
-	
+
 	.container {
 		position: relative;
 		padding-top: 88px;
@@ -2403,7 +2412,7 @@ footer {
 			float: none;
 			left: 50%;
 			margin-left: 88px;
-			
+
 			ul {
 				li {
 
@@ -2413,7 +2422,7 @@ footer {
 						margin-top: 18px;
 					}
 
-					img {		
+					img {
 						display: block;
 						float: left;
 					}
@@ -2459,13 +2468,13 @@ footer {
 				}
 
 				@media all and (max-width: $mobile-breakpoint) {
-					
+
 					position: static;
 					width: 100%;
 					height: auto;
 					margin-right: auto;
 					margin-left: auto;
-					
+
 
 					padding-left: 12%;
 					padding-right: 12%;
@@ -2578,4 +2587,3 @@ footer {
 	z-index: 100;
 	overflow: visible;
 }
-

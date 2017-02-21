@@ -87,10 +87,10 @@ nav {
     }
 
     p {
-        font-size: 12px;
-        @media all and (max-width: 1024px) {
-            font-size: 10px;
-        }
+        font-size: 11px;
+        // @media all and (max-width: 1024px) {
+        //     font-size: 10px;
+        // }
     }
 
     ul {
@@ -131,7 +131,7 @@ header {
                 font-size: 16px;
                 line-height: 20px;
             }
-        }   
+        }
     }
 }
 
@@ -199,10 +199,10 @@ header {
             line-height: 20px;
         }
 
-        ul { 
+        ul {
             li, p {
                 font-size: 16px;
-                } 
+                }
             }
     }
 }
@@ -294,7 +294,7 @@ header {
         @media all and (max-width: 1024px) {
             font-size: 16px;
         }
-        
+
         @media all and (max-width: $mobile-breakpoint) {
             font-size: 12px;
             line-height: 15px;
@@ -373,7 +373,7 @@ footer {
         font-size: 18px;
         font-weight: 400;
         line-height: 25px;
-        
+
         @media all and (max-width: 1024px) {
             font-size: 15px;
         }
