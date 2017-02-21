@@ -2,7 +2,7 @@
 
 	if($_POST["submit"]) {
 
-	    $recipient="danil_lahtin@mail.ru";
+	    $recipient="hello@optimatica.ru";
 	    $subject="Заявка с сайта Optimatika";
 	    $sender=$_POST["name"];
 	    $senderEmail=$_POST["email"];
