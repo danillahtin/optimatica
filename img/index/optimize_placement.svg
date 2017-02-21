@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="92px" height="68px" viewBox="0 0 92 68" enable-background="new 0 0 92 68" xml:space="preserve">
+<polygon fill="#FFFFFF" points="78,54 64,60 64,42 78,48 "/>
+<polygon fill="#B5D4FF" points="78,54 64,60 64,42 78,48 "/>
+<polygon fill="none" stroke="#257EFF" stroke-miterlimit="10" points="78.5,54 64.5,60 64.5,42 78.5,48 "/>
+<polyline fill="none" stroke="#257EFF" stroke-miterlimit="10" points="81.5,52 81.5,4.5 9.5,4.5 9.5,52.5 58,52.5 "/>
+<line fill="#FFFFFF" stroke="#257EFF" stroke-miterlimit="10" x1="10" y1="13.5" x2="82" y2="13.5"/>
+<g>
+	<path fill="#257EFF" d="M24,21v4h-4v-4H24 M25,20h-6v6h6V20L25,20z"/>
+</g>
+<g>
+	<path fill="#257EFF" d="M24,31v4h-4v-4H24 M25,30h-6v6h6V30L25,30z"/>
+</g>
+<g>
+	<path fill="#257EFF" d="M24,41v4h-4v-4H24 M25,40h-6v6h6V40L25,40z"/>
+</g>
+<g>
+	<g>
+		<circle fill="#257EFF" cx="15" cy="9" r="1"/>
+		<path fill="#257EFF" d="M15,8.5c0.276,0,0.5,0.225,0.5,0.5S15.276,9.5,15,9.5S14.5,9.275,14.5,9S14.724,8.5,15,8.5 M15,7.5
+			c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S15.828,7.5,15,7.5L15,7.5z"/>
+	</g>
+	<g>
+		<circle fill="#257EFF" cx="21" cy="9" r="1"/>
+		<path fill="#257EFF" d="M21,8.5c0.276,0,0.5,0.225,0.5,0.5S21.276,9.5,21,9.5S20.5,9.275,20.5,9S20.724,8.5,21,8.5 M21,7.5
+			c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S21.828,7.5,21,7.5L21,7.5z"/>
+	</g>
+	<g>
+		<circle fill="#257EFF" cx="27" cy="9" r="1"/>
+		<path fill="#257EFF" d="M27,8.5c0.276,0,0.5,0.225,0.5,0.5S27.276,9.5,27,9.5S26.5,9.275,26.5,9S26.724,8.5,27,8.5 M27,7.5
+			c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5s1.5-0.672,1.5-1.5S27.828,7.5,27,7.5L27,7.5z"/>
+	</g>
+</g>
+<line fill="none" stroke="#257EFF" stroke-miterlimit="10" x1="30" y1="20.5" x2="57" y2="20.5"/>
+<line fill="none" stroke="#257EFF" stroke-miterlimit="10" x1="30" y1="30.5" x2="57" y2="30.5"/>
+<line fill="none" stroke="#257EFF" stroke-miterlimit="10" x1="30" y1="40.5" x2="57" y2="40.5"/>
+<line fill="none" stroke="#257EFF" stroke-miterlimit="10" x1="30" y1="24.5" x2="46" y2="24.5"/>
+<line fill="none" stroke="#257EFF" stroke-miterlimit="10" x1="30" y1="34.5" x2="46" y2="34.5"/>
+<line fill="none" stroke="#257EFF" stroke-miterlimit="10" x1="30" y1="44.5" x2="46" y2="44.5"/>
+<g>
+	<path fill="none" d="M58,51c0,1.474,0.811,2.75,2,3.443v-6.887C58.811,48.25,58,49.526,58,51z"/>
+	<path fill="#257EFF" d="M58,51c0-1.474,0.811-2.75,2-3.443v-1.135c-1.765,0.772-3,2.528-3,4.578s1.235,3.806,3,4.578v-1.135
+		C58.811,53.75,58,52.474,58,51z"/>
+</g>
+<g>
+	<rect x="60" y="41" fill="#FFFFFF" width="5" height="21"/>
+	<path fill="#257EFF" d="M65,41v20h-4V41H65 M66,40h-6v22h6V40L66,40z"/>
+</g>
+<g>
+	<g>
+		<rect x="76.5" y="45.5" fill="#FFFFFF" width="5" height="11"/>
+		<path fill="#257EFF" d="M81,46v10h-4V46H81 M82,45h-6v12h6V45L82,45z"/>
+	</g>
+	<g>
+		<rect x="81" y="49" fill="#FFFFFF" width="3" height="5"/>
+		<path fill="#257EFF" d="M84,49v4h-2v-4H84 M85,48h-4v6h4V48L85,48z"/>
+	</g>
+	<g>
+		<g>
+			<path fill="#257EFF" d="M79,65c-1.103,0-2-0.897-2-2h-1c0,1.656,1.343,3,3,3s3-1.344,3-3h-1C81,64.103,80.103,65,79,65z"/>
+		</g>
+		<g>
+			<rect x="77" y="57" fill="none" width="4" height="6"/>
+			<polygon fill="#257EFF" points="77,57 81,57 81,63 82,63 82,56 76,56 76,63 77,63 			"/>
+		</g>
+	</g>
+</g>
+</svg>
